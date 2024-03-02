@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import { TextField, Button, Typography, Container } from '@mui/material';
 import { Formik, Form, Field } from 'formik';
 import { Checkbox, FormControlLabel, Link } from '@mui/material';
@@ -8,7 +8,7 @@ function App() {
     <div className="AppBackground">
       <img src="/images/Ellipse1.svg" alt="Your Image" className="YourImage" />
       <img src={'/images/Ellipse2.svg'} alt="Your Second Image" className="YourSecondImage" />
-      <div className="YourText">Welcome Back</div>
+      <div className="YourText">No Worries</div>
       <div className="CustomContainer">
         <div className="LoginText">Login
           <div className="WelcomeText">Glad you're back.!
