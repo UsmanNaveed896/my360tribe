@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import img from '../assets/Ellipse1.svg';
-import img2 from '../assets/Ellipse2.svg';
+import Img from '../assets/Ellipse1.svg';
+import Img2 from '../assets/Ellipse2.svg';
 
 const MainContainer = () => {
-    const [isOpen, setIsOpen] = useState(open);
+    const [isOpen, setIsOpen] = useState(true);
 
     const openModal = () => {
         setIsOpen(true);
@@ -14,46 +14,49 @@ const MainContainer = () => {
         setIsOpen(false);
     };
     return (
-        <div className="h-screen flex items-center justify-center">
-            <div className="bg-gradient-to-b from-blue-900 to-black w-full h-full relative">
-                <div>
-                    <div className="grid grid-cols-2">
-                        {/* First grid */}
+        <>
+            <div className="bg-gradient-to-b from-blue-900 to-black h-[100vh]">
+                <div className="px-6 pt-24">
+                    <div className="grid md:grid-cols-2 grid-cols-1  items-center">
                         <div className='colum1'>
-                            <div className="text-white font-NotoSans font-semibold text-6xl leading-none absolute left-10 top-1/2 transform -translate-y-1/2">
+                            <div className="text-white font-semibold text-6xl text-center">
                                 Welcome Back
                             </div>
                         </div>
-                        {/* Second grid */}
-                        <div className='column2 flex items-center justify-center'>
-                            <div className="shadow-xl border border-solid border-gray-300 rounded-lg">
-                                <div className="border border-solid border-gray-300 rounded-lg">
-                                    <div className="bg-blue-900 w-full h-full relative text-white font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Login</div>
-                                    <input
-    type="text"
-    name="username"
-    className=" bg-blue-900 w-full h-full relative w-98 h-27 text-lg font-normal leading-27 tracking-normal text-left"
-    placeholder="Username"
-/>
 
-
+                        <div className='column2'>
+                            <div className='relative md:block hidden'>
+                                <img className='absolute z-1' src={Img} alt='buble' />
+                            </div>
+                            <div className='flex justify-center relative z-[999]'>
+                                <div className='border border-white rounded-xl py-4 px-24 mt-12'>
+                                    <div className='content'>
+                                        <h1 className='text-white font-bold text-3xl mt-5'>Login</h1>
+                                        <h1 className='text-white mt-2 '>Glad you’re back.!</h1>
+                                        <div className='inputs mt-5'>
+                                            <input className='rounded-xl bg-[transparent] border border-white pl-2 pr-16 py-2' placeholder='User Name' />
+                                            <div>
+                                                <input className='rounded-xl bg-[transparent] border border-white pl-2 pr-16 py-2 my-4' placeholder='Password' />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-                {/* <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            </div>
+
+            {/* <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
   <div className="bg-white p-8 rounded-lg shadow-lg">
     <div className="text-white font-NotoSans font-semibold text-6xl leading-none w-678px h-131px">
       Welcome Back
     </div>
     {/* Add more content or buttons for the dialog here */}
-                {/* </div>
+            {/* </div>
 </div>  */}
 
-            </div>
+
 
             {/* <div
                 className="absolute top-824.82 left-1169.84 w-220 h-220 transform rotate-28.5"
@@ -76,7 +79,7 @@ const MainContainer = () => {
                     className="w-full h-full"
                 /> */}
             {/* </div> */}
-        </div>
+        </>
     );
 };
 
