@@ -34,10 +34,15 @@ const MainContainer = () => {
                                         <h1 className='text-white font-bold text-3xl mt-5'>Login</h1>
                                         <h1 className='text-white mt-2 '>Glad you’re back.!</h1>
                                         <div className='inputs mt-5'>
-                                            <input className='rounded-xl bg-[transparent] border border-white pl-2 pr-16 py-2' placeholder='User Name' />
+                                            <input
+                                                className='rounded-xl bg-transparent border border-white pl-2 pr-16 py-2 text-white placeholder-white'
+                                                placeholder='User Name'
+                                            />
+
                                             <div>
-                                                <input className='rounded-xl bg-[transparent] border border-white pl-2 pr-16 py-2 my-4' placeholder='Password' />
+                                                <input className='rounded-xl bg-[transparent] border border-white pl-2 pr-16 py-2 my-4 text-white placeholder-white' placeholder='Password' />
                                             </div>
+                                            <button className=' text-white bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white font-bold py-2 px-4 rounded '>Login</button>
                                         </div>
                                     </div>
                                 </div>
