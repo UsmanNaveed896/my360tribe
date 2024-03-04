@@ -28,11 +28,11 @@ const OTP = () => {
                                         <h1 className='text-white mt-2 text-center pt-8'>We've sent a verificaton code to your email -</h1>
                                         <h1 className='text-white text-center'>codingnepalweb@gmail.com</h1>
                                         <div className="flex justify-between">
-  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white py-2 px-2 mt-2" />
-  {/* <input className="rounded-xl bg-transparent border border-white text-white placeholder-white" />
-  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white" />
-  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white" />
-  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white" /> */}
+  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white w-16 h-8 px-3 py-2" />
+  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white w-16 h-8 px-3 py-2" />
+  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white w-16 h-8 px-3 py-2" />
+  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white w-16 h-8 px-3 py-2" />
+  <input className="rounded-xl bg-transparent border border-white text-white placeholder-white w-16 h-8 px-3 py-2" />
 </div>
 
                                         {/* <div className='inputs  grid md:grid-cols-5 grid-cols-1 items-center relative'>
