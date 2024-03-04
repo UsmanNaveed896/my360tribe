@@ -5,7 +5,7 @@ import Homepage from './pages/homepagesections/container'
 import MainContainer from '../src/Popups/MainContainer'
 import ForgotPassword from '../src/Popups/ForgotPassword'
 import SignUp from '../src/Popups/SignUp2'
-import OTP from '../src/Popups/OTP'
+import EmailVerification from '../src/Popups/EmailVerification'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Terms from './pages/terms&condtion/terms';
@@ -13,11 +13,11 @@ import Terms from './pages/terms&condtion/terms';
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Homepage />
 
-      <Footer /> 
-
+      <Footer />  */}
+<EmailVerification/>
     </>
   )
 }
