@@ -7,19 +7,17 @@ import ForgotPassword from '../src/Popups/ForgotPassword'
 import SignUp from '../src/Popups/SignUp2'
 import OTP from '../src/Popups/OTP'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Terms from './pages/terms&condtion/terms';
+
 function App() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Homepage />
-      <Footer /> */}
-      <OTP/>
-      {/* <Router>
-      <Routes>
-        <Route exact path="/" component={MainContainer} />
-        <Route path="/signup" component={SignUp} />
-      </Routes>
-    </Router> */}
+
+      <Footer /> 
+
     </>
   )
 }
