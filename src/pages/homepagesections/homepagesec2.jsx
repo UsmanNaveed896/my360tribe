@@ -1,8 +1,9 @@
 import React from 'react'
 import Img from '../../assets/Group 1000006079.png'
 const Homepagesec2 = () => {
+  
     return (
-        <div className='bg-[#d1d8f5] pb-16' >
+        <div className='bg-[#d1d8f5] pb-16' id="targetDiv1" >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 items-center gap-16'>
@@ -24,6 +25,7 @@ const Homepagesec2 = () => {
                             </ul>
                         </div>
                     </div>
+                  
                 </div>
             </div>
         </div>

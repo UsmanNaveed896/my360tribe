@@ -11,12 +11,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Terms from './pages/terms&condtion/terms';
 
 function App() {
+  const handleClick = (a) => {
+    setTimeout(() => {
+      const targetDiv = document.getElementById(`targetDiv${a}`);
+      if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
   return (
     <>
-      <Header />
+      <Header handleClick={handleClick} />
       <Homepage />
-
-      <Footer /> 
+      {/* <OTP /> */}
+      <Footer />
 
     </>
   )

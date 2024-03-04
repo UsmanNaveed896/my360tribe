@@ -5,13 +5,12 @@ const Homepagesec7 = () => {
 
     return (
         <>
-            <div className='bg-[#d1d8f5] pb-16' >
+            <div className='bg-[#d1d8f5] pb-16' id="targetDiv5">
                 <div className='flex justify-center'>
                     <div className='container max-w-[1200px] mt-16'>
                         <div className='flex justify-center'>
                             <div>
-                                <h1 className='text-[#0a194e] text-center font-bold text-5xl'>Meet our team</h1>
-                                <p className='text-[#0a194e] text-[35px] mt-6'>Founders and Founding Board </p>
+                                <h1 className='text-[#0a194e] text-center font-bold text-5xl'>Donation Request</h1>
                             </div>
                         </div>
                         <div className='flex justify-center mt-12 '>
