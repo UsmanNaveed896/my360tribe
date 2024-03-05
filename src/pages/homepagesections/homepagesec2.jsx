@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import Img from '../../assets/Group 1000006079.png'
+import Img from '../../assets/logo1.png'
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
+import 'chartjs-plugin-datalabels';
 const Homepagesec2 = () => {
     const [selectedText, setSelectedText] = useState(''); // State to manage selected text
 
@@ -15,6 +16,19 @@ const Homepagesec2 = () => {
     ],
   };
   const options = {
+    plugins: {
+      legend: {
+        display: true,
+        position: 'right',
+        labels: {
+          usePointStyle: true,
+        },
+        onClick: (e) => e.stopPropagation(),
+      },
+      tooltip: {
+        enabled: false,
+      },
+    },
     onClick: (event, elements) => {
       if (elements.length > 0) {
         const selectedIndex = elements[0].index;
@@ -29,7 +43,18 @@ const Homepagesec2 = () => {
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 items-center gap-16'>
                         <div className='colum1 mt-8'>
-                        <Pie className='mt-12' data={data} options={options} />
+                          <div className='relative'>
+                          <Pie  className='mt-12' data={data} options={options} />
+                          <div className=''>
+                            <p className='absolute text-white top-0 left-[219px] top-[150px] text-center font-bold text-[20px]'>Executive <br></br> board</p>
+                            <p className='absolute text-white top-0 left-[260px] top-[290px] text-center font-bold text-[20px]'>Advisory <br></br> board</p>
+                            <p className='absolute text-white top-0 left-[140px] top-[350px] text-center font-bold text-[20px]'>Service <br></br> organization</p>
+                            <p className='absolute text-white top-0 left-[30px] top-[300px] text-center font-bold text-[20px]'>Concierge</p>
+                            <p className='absolute text-white top-0 left-[60px] top-[170px] text-center font-bold text-[20px]'>Peer support <br></br> organization</p>
+                            <img className='absolute text-white top-0 left-[135px] top-[235px] h-[100px]' src={Img} alt='logo' />
+                          </div>
+                          </div>
+                       
                             {/* <img src={Img} alt='chart' /> */}
                         </div>
                         <div className='column2'>
