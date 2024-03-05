@@ -1,9 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Img from '../../assets/Group 1000006061.png'
 import Img1 from '../../assets/Group 1000006062.png'
 import Img2 from '../../assets/Group 1000006063.png'
 import Img3 from '../../assets/Group 1000006064.png'
+import PicsModal from '../../Popups/picsModal'
+
 const Homepage = () => {
+    const [isModalOpen, setIsModalOpen] = useState({
+        mod1: false,
+        mod2: false,
+        mod3: false,
+        mod4: false,
+    });
+
+    const img1= 
+        {
+            heading: 'Service Organizations',
+            text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+        }
+       
+        const img2=  {
+            heading: 'Concierge',
+            text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+        }
+        const img3= {
+            heading: 'Operators',
+            text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+        }
+        const img4=  {
+            heading: 'Peer Support Members',
+            text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+        }
+        const handleCancel = () => {
+            // Implement cancel logic here
+            console.log('Cancelling...');
+            setIsModalOpen(false);
+          };
     const Gradient = 'linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)';
     return (
         <div className='bg-[#070c1f]' >
@@ -19,18 +51,43 @@ const Homepage = () => {
                     </div>
                     <div className='flex justify-between mt-32 pb-16'>
                         <div>
-                            <img src={Img} alt='pic' />
+                            <img className='cursor-pointer' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                                ...st,
+                                mod1: true,
+                                mod2: false,
+                                mod3: false,
+                                mod4: false,
+                            }))} />
                         </div>
                         <div>
-                            <img src={Img1} alt='pic' />
+                            <img className='cursor-pointer' src={Img1} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                                ...st,
+                                mod1: false,
+                                mod2: true,
+                                mod3: false,
+                                mod4: false,
+                            }))} />
                         </div>
                         <div>
-                            <img src={Img2} alt='pic' />
+                            <img className='cursor-pointer' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                                ...st,
+                                mod1: false,
+                                mod2: false,
+                                mod3: true,
+                                mod4: false,
+                            }))} />
                         </div>
                         <div>
-                            <img src={Img3} alt='pic' />
+                            <img className='cursor-pointer' src={Img3} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                                ...st,
+                                mod1: false,
+                                mod2: false,
+                                mod3: false,
+                                mod4: true,
+                            }))} />
                         </div>
                     </div>
+                    <PicsModal isOpen={isModalOpen} onCancel={handleCancel} data={isModalOpen.mod1 ? img1 : isModalOpen.mod2 ? img2 : isModalOpen.mod3 ? img3 : img4}/>
                 </div>
             </div>
         </div>
