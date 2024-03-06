@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Img from '../../assets/logo2 1.png'
+import Img from '../../assets/logo1.png'
 import Img2 from '../../assets/target.png'
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
@@ -56,8 +56,8 @@ const Homepagesec2 = () => {
                             <p className='absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px] z-[5]'>Service <br></br> organization</p>
                             <p className='absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]'>Concierge</p>
                             <p className='absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]'>Peer support <br></br> organization</p>
-                            <img className='absolute text-white top-0 left-[135px] top-[145px] h-[100px] z-[5]' src={Img} alt='logo' />
-                            <img className='absolute text-white top-0 left-[-35px] top-[-32px] h-[470px] ' src={Img2} alt='logo' />
+                            <img className='absolute text-white top-0 left-[150px] top-[157px] h-[80px] z-[5]' src={Img} alt='logo' />
+                            <img className='absolute text-white top-0 left-[-35px] top-[-36px] h-[470px] ' src={Img2} alt='logo' />
                           </div>
                           </div>
                        
