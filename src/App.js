@@ -6,9 +6,11 @@ import MainContainer from '../src/Popups/MainContainer'
 import ForgotPassword from '../src/Popups/ForgotPassword'
 import SignUp from '../src/Popups/SignUp2'
 import OTP from '../src/Popups/OTP'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 import Terms from './pages/terms&condtion/terms';
+import { Route, Routes } from 'react-router-dom';
+import Dummy from './pages/dummypage/dummy';
 
 function App() {
   const handleClick = (a) => {
@@ -22,10 +24,12 @@ function App() {
   return (
     <>
       <Header handleClick={handleClick} />
-      <Homepage />
       {/* <OTP /> */}
+      <Routes>
+        <Route exact path='/' element={< Homepage />} />
+        <Route exact path='/dummy' element={< Dummy />} />
+      </Routes>
       <Footer />
-
     </>
   )
 }
