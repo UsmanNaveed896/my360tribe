@@ -19,13 +19,13 @@ const Footer = () => {
                     <p className='font-bold text-xl'>Lorem Ipsum is simply
                         dummy text</p>
                     <div>
-                        <input className='bg-[#323030] py-2 pr-16 pl-3 border border-2 border-white rounded-xl mt-6' placeholder='First Name' type='text' />
+                        <input className='bg-[white] py-2 pr-16 pl-3 border border-2 text-black border-white rounded-xl mt-6' placeholder='First Name' type='text' />
                     </div>
                     <div>
-                        <input className='bg-[#323030] py-2 pr-16 pl-3 border border-2 border-white rounded-xl mt-6' placeholder='Postal Code' type='text' />
+                        <input className='bg-[white] py-2 pr-16 pl-3 border border-2 text-black border-white rounded-xl mt-6' placeholder='Postal Code' type='text' />
                     </div>
                     <div>
-                        <input className='bg-[#323030] py-2 pr-16 pl-3 border border-2 border-white rounded-xl mt-6' placeholder='Email' type='text' />
+                        <input className='bg-[white] py-2 pr-16 pl-3 border border-2 text-black border-white rounded-xl mt-6' placeholder='Email' type='text' />
                     </div>
                     <button className='px-[105px] mt-6 font-bold rounded-xl text-white font-bold py-2 text-[15px]' style={{ background: buttonGradient }}>Submit</button>
 
