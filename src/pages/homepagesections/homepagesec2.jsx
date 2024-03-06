@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Img from '../../assets/logo1.png'
+import Img from '../../assets/logo2 1.png'
+import Img2 from '../../assets/target.png'
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import 'chartjs-plugin-datalabels';
@@ -18,15 +19,17 @@ const Homepagesec2 = () => {
   const options = {
     plugins: {
       legend: {
-        display: true,
+        display: false,
         position: 'right',
         labels: {
           usePointStyle: true,
         },
         onClick: (e) => e.stopPropagation(),
       },
-      tooltip: {
-        enabled: false,
+    },
+    layout: {
+      margin: {
+        left: 20, // Adjust the left margin as needed
       },
     },
     onClick: (event, elements) => {
@@ -43,15 +46,16 @@ const Homepagesec2 = () => {
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 items-center gap-16'>
                         <div className='colum1 mt-8'>
-                          <div className='relative'>
-                          <Pie  className='mt-12' data={data} options={options} />
+                          <div className='relative h-[400px]'>
+                          <Pie  className='mt-12 ' data={data} options={options} />
                           <div className=''>
-                            <p className='absolute text-white top-0 left-[219px] top-[150px] text-center font-bold text-[20px]'>Executive <br></br> board</p>
-                            <p className='absolute text-white top-0 left-[260px] top-[290px] text-center font-bold text-[20px]'>Advisory <br></br> board</p>
-                            <p className='absolute text-white top-0 left-[140px] top-[350px] text-center font-bold text-[20px]'>Service <br></br> organization</p>
-                            <p className='absolute text-white top-0 left-[30px] top-[300px] text-center font-bold text-[20px]'>Concierge</p>
-                            <p className='absolute text-white top-0 left-[60px] top-[170px] text-center font-bold text-[20px]'>Peer support <br></br> organization</p>
-                            <img className='absolute text-white top-0 left-[135px] top-[235px] h-[100px]' src={Img} alt='logo' />
+                            <p className='absolute text-white top-0 left-[219px] top-[80px] text-center font-bold text-[20px]'>Executive <br></br> board</p>
+                            <p className='absolute text-white top-0 left-[260px] top-[200px] text-center font-bold text-[20px]'>Advisory <br></br> board</p>
+                            <p className='absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px]'>Service <br></br> organization</p>
+                            <p className='absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px]'>Concierge</p>
+                            <p className='absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px]'>Peer support <br></br> organization</p>
+                            <img className='absolute text-white top-0 left-[135px] top-[145px] h-[100px]' src={Img} alt='logo' />
+                            <img className='absolute text-white top-0 left-[-35px] top-[-32px] h-[470px]' src={Img2} alt='logo' />
                           </div>
                           </div>
                        
