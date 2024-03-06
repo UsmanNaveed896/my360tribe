@@ -21,7 +21,7 @@ const Modal = ({ isOpen, onDeactivate, onCancel, data }) => {
                 <ul className='text-center font-bold'>
                   {
                     data?.map((item, index) => (
-                      <li className='py-2 cursor-pointer hover:font-semibold' key={index} onClick={() => navigate('/dummy')}>
+                      <li className='py-2 cursor-pointer hover:font-semibold' key={index} onClick={() => navigate('/dummy', { state: item })}>
                         {item}
                       </li>
                     ))
