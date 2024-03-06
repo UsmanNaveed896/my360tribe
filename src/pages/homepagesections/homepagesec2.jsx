@@ -26,12 +26,14 @@ const Homepagesec2 = () => {
         },
         onClick: (e) => e.stopPropagation(),
       },
+      tooltip: { enabled: false },
     },
     layout: {
       margin: {
         left: 20, // Adjust the left margin as needed
       },
     },
+  
     onClick: (event, elements) => {
       if (elements.length > 0) {
         const selectedIndex = elements[0].index;
@@ -54,8 +56,8 @@ const Homepagesec2 = () => {
                             <p className='absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px] z-[5]'>Service <br></br> organization</p>
                             <p className='absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]'>Concierge</p>
                             <p className='absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]'>Peer support <br></br> organization</p>
-                            <img className='absolute text-white top-0 left-[135px] top-[145px] h-[100px]' src={Img} alt='logo' />
-                            <img className='absolute text-white top-0 left-[-35px] top-[-32px] h-[470px] z-[1]' src={Img2} alt='logo' />
+                            <img className='absolute text-white top-0 left-[135px] top-[145px] h-[100px] z-[5]' src={Img} alt='logo' />
+                            <img className='absolute text-white top-0 left-[-35px] top-[-32px] h-[470px] ' src={Img2} alt='logo' />
                           </div>
                           </div>
                        
