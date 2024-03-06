@@ -27,7 +27,7 @@ function App() {
       {/* <OTP /> */}
       <Routes>
         <Route exact path='/' element={< Homepage />} />
-        <Route exact path='/dummy' element={< Dummy />} />
+        <Route exact path='/dummy' element={< Dummy  handleClick={handleClick} />} />
       </Routes>
       <Footer />
     </>
