@@ -47,15 +47,15 @@ const Homepagesec2 = () => {
                     <div className='grid grid-cols-2 items-center gap-16'>
                         <div className='colum1 mt-8'>
                           <div className='relative h-[400px]'>
-                          <Pie  className='mt-12 ' data={data} options={options} />
+                          <Pie  className='mt-12 z-[4] relative' data={data} options={options} />
                           <div className=''>
-                            <p className='absolute text-white top-0 left-[219px] top-[80px] text-center font-bold text-[20px]'>Executive <br></br> board</p>
-                            <p className='absolute text-white top-0 left-[260px] top-[200px] text-center font-bold text-[20px]'>Advisory <br></br> board</p>
-                            <p className='absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px]'>Service <br></br> organization</p>
-                            <p className='absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px]'>Concierge</p>
-                            <p className='absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px]'>Peer support <br></br> organization</p>
+                            <p className='absolute text-white top-0 left-[219px] top-[80px] text-center font-bold text-[20px] z-[5]'>Executive <br></br> board</p>
+                            <p className='absolute text-white top-0 left-[260px] top-[200px] text-center font-bold text-[20px] z-[5]'>Advisory <br></br> board</p>
+                            <p className='absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px] z-[5]'>Service <br></br> organization</p>
+                            <p className='absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]'>Concierge</p>
+                            <p className='absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]'>Peer support <br></br> organization</p>
                             <img className='absolute text-white top-0 left-[135px] top-[145px] h-[100px]' src={Img} alt='logo' />
-                            <img className='absolute text-white top-0 left-[-35px] top-[-32px] h-[470px]' src={Img2} alt='logo' />
+                            <img className='absolute text-white top-0 left-[-35px] top-[-32px] h-[470px] z-[1]' src={Img2} alt='logo' />
                           </div>
                           </div>
                        
