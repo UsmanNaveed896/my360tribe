@@ -6,7 +6,7 @@ const Header = ({ handleClick }) => {
     const buttonGradient='linear-gradient(to bottom, #12179d, #001c83, #001c69, #031a4e, #0d1633)';
     return (
         <div>
-            <nav className="flex items-center justify-between  text-white px-12"
+            <nav className="flex items-center justify-between  text-white px-12 fixed w-full top-0 z-[9999]"
             style={{background:gradient}}
             >
                 <div className="flex items-center">
