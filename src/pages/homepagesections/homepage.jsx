@@ -38,7 +38,7 @@ const Homepage = () => {
           };
     const Gradient = 'linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)';
     return (
-        <div className='bg-[#070c1f]' >
+        <div className='bg-[#070c1f] mt-16' >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='flex justify-end'>
