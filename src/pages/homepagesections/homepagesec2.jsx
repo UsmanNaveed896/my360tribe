@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Img from '../../assets/logo1.png'
 import Img2 from '../../assets/target.png'
+import Img4 from '../../assets/Group2266.png'
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import 'chartjs-plugin-datalabels';
@@ -43,7 +44,7 @@ const Homepagesec2 = () => {
     },
   };
     return (
-        <div className='bg-[#d1d8f5] pb-16' id="targetDiv1" >
+        <div className='bg-[#d1d8f5] pb-16 bg-contain' id="targetDiv1" style={{ backgroundImage: `url(${Img4})`, }} >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 items-center gap-16'>

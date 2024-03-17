@@ -1,8 +1,10 @@
 import React from 'react'
 import Img from '../../assets/Group 1000006028.png'
+import Img4 from '../../assets/Group2266.png'
+
 const Homepagesec4 = () => {
     return (
-        <div className='bg-[#d1d8f5] pb-16' id="targetDiv3">
+        <div className='bg-[#d1d8f5] pb-16 bg-contain' id="targetDiv3" style={{ backgroundImage: `url(${Img4})`, }}>
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='flex justify-center'>
