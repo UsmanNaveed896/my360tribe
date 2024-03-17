@@ -3,6 +3,8 @@ import Img from '../../assets/Group 1000006061.png'
 import Img1 from '../../assets/Group 1000006062.png'
 import Img2 from '../../assets/Group 1000006063.png'
 import Img3 from '../../assets/Group 1000006064.png'
+import Img4 from '../../assets/Group2266.png'
+
 import PicsModal from '../../Popups/picsModal'
 
 const Homepage = () => {
@@ -38,7 +40,7 @@ const Homepage = () => {
           };
     const Gradient = 'linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)';
     return (
-        <div className='bg-[#070c1f] mt-16' >
+        <div className='bg-[#070c1f] mt-16 bg-contain' style={{ backgroundImage: `url(${Img4})`, }}>
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='flex justify-end'>

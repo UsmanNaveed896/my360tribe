@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from '../../assets/logo1.png'
+
 const Header = ({ handleClick }) => {
 
     const gradient = 'linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)';
@@ -7,7 +8,7 @@ const Header = ({ handleClick }) => {
     return (
         <div>
             <nav className="flex items-center justify-between  text-white px-12 fixed w-full top-0 z-[9999]"
-            style={{background:gradient}}
+            style={{background:gradient ,}}
             >
                 <div className="flex items-center">
                     <ul className="flex gap-3">

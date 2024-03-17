@@ -1,6 +1,7 @@
 import React ,{ useState } from 'react'
 import Img from '../../assets/1 (1).png'
 import Img2 from '../../assets/Capture-3-1065x684 2.png'
+import Img4 from '../../assets/Group2266.png'
 import Modal from '../../Popups/Modal';
 const Homepagesec3 = () => {
     const [isModalOpen, setIsModalOpen] = useState({
@@ -21,7 +22,7 @@ const Homepagesec3 = () => {
       setIsModalOpen(false);
     };
     return (
-        <div className='bg-[#192242] pb-16' id="targetDiv2">
+        <div className='bg-[#192242] pb-16 bg-contain' id="targetDiv2" style={{ backgroundImage: `url(${Img4})`, }}>
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 '>
