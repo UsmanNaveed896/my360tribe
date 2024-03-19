@@ -11,7 +11,7 @@ import OTP from '../src/Popups/OTP'
 import Terms from './pages/terms&condtion/terms';
 import { Route, Routes } from 'react-router-dom';
 import Dummy from './pages/dummypage/dummy';
-
+import ScrollToTopOnRouteChange from './components/scroll';
 function App() {
   const handleClick = (a) => {
     setTimeout(() => {
@@ -25,6 +25,7 @@ function App() {
     <>
       <Header handleClick={handleClick} />
       {/* <OTP /> */}
+      <ScrollToTopOnRouteChange/>
       <Routes>
         <Route exact path='/' element={< Homepage />} />
         <Route exact path='/dummy' element={< Dummy  handleClick={handleClick} />} />

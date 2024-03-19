@@ -1,7 +1,7 @@
 import React ,{ useState } from 'react'
 import Img from '../../assets/1 (1).png'
 import Img2 from '../../assets/Capture-3-1065x684 2.png'
-import Img4 from '../../assets/Group2266.png'
+import Img4 from '../../assets/dffd.png'
 import Modal from '../../Popups/Modal';
 const Homepagesec3 = () => {
     const [isModalOpen, setIsModalOpen] = useState({

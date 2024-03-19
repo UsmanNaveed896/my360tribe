@@ -52,6 +52,15 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div className='flex justify-between mt-32 pb-16'>
+                    <div>
+                            <img className='cursor-pointer' src={Img3} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                                ...st,
+                                mod1: false,
+                                mod2: false,
+                                mod3: false,
+                                mod4: true,
+                            }))} />
+                        </div>
                         <div>
                             <img className='cursor-pointer' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
@@ -70,6 +79,7 @@ const Homepage = () => {
                                 mod4: false,
                             }))} />
                         </div>
+                       
                         <div>
                             <img className='cursor-pointer' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
@@ -77,15 +87,6 @@ const Homepage = () => {
                                 mod2: false,
                                 mod3: true,
                                 mod4: false,
-                            }))} />
-                        </div>
-                        <div>
-                            <img className='cursor-pointer' src={Img3} alt='pic' onClick={() => setIsModalOpen((st) => ({
-                                ...st,
-                                mod1: false,
-                                mod2: false,
-                                mod3: false,
-                                mod4: true,
                             }))} />
                         </div>
                     </div>
