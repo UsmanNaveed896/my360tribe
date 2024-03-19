@@ -6,8 +6,6 @@ const Dummy = ({ handleClick }) => {
     const navigate=useNavigate();
     const location=useLocation();
     const buttonGradient='linear-gradient(to bottom, #12179d, #001c83, #001c69, #031a4e, #0d1633)';
-
- 
       
   return (
     <div className='main'>

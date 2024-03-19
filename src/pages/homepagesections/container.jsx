@@ -7,11 +7,11 @@ import Homepagesec5 from './homepagesec5'
 import Homepagesec6 from './homepagesec6'
 import Homepagesec7 from './homepagesec7'
 
-const Container = ({myDivRef}) => {
+const Container = () => {
     return (
         <div>
             <Homepage />
-            <Homepagesec2 myDivRef={myDivRef}/>
+            <Homepagesec2 />
             <Homepagesec3 />
             <Homepagesec4 />
             <Homepagesec5 />
