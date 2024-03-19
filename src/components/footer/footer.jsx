@@ -5,8 +5,8 @@ const Footer = () => {
     const buttonGradient = 'linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)';
 
     return (
-        <div className='px-12 py-8 bg-[#3e3b3b]'>
-            <div className='flex justify-between'>
+        <div className='px-12 py-8 bg-gradient-to-r from-black to-gray-400'>
+            <div className='flex justify-between mt-16'>
                 <div className='logo text-white'>
                     <img src={Img} alt='logo' />
                     <p className='mt-4 font-bold'>NEW YORK OFFICE</p>
@@ -15,21 +15,7 @@ const Footer = () => {
                     <p>Lorem Ipsum is simply dummy text</p>
                 </div>
 
-                <div className='logo text-white'>
-                    <p className='font-bold text-xl'>Lorem Ipsum is simply
-                        dummy text</p>
-                    <div>
-                        <input className='bg-[white] py-2 pr-16 pl-3 border border-2 text-black border-white rounded-xl mt-6' placeholder='First Name' type='text' />
-                    </div>
-                    <div>
-                        <input className='bg-[white] py-2 pr-16 pl-3 border border-2 text-black border-white rounded-xl mt-6' placeholder='Postal Code' type='text' />
-                    </div>
-                    <div>
-                        <input className='bg-[white] py-2 pr-16 pl-3 border border-2 text-black border-white rounded-xl mt-6' placeholder='Email' type='text' />
-                    </div>
-                    <button className='px-[105px] mt-6 font-bold rounded-xl text-white font-bold py-2 text-[15px]' style={{ background: buttonGradient }}>Submit</button>
-
-                </div>
+            
                 <div className='txt text-white'>
                     <p className='mt-4 font-bold'>What we do</p>
                     <p>Issues</p>

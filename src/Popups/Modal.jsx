@@ -26,11 +26,11 @@ const Modal = ({ isOpen, onDeactivate, onCancel, data }) => {
                       </li>
                     ))
                   }
-<li className='py-10'> <button type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-gradient-to-b from-blue-900 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onClick={onCancel}>Cancel</button></li>
+                  <li className='py-10'> <button type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-gradient-to-b from-blue-900 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onClick={onCancel}>Cancel</button></li>
                 </ul>
-                
+
               </div>
-            
+
             </div>
 
           </div>
