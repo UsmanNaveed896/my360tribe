@@ -32,18 +32,19 @@ const Homepagesec3 = () => {
                             </div>
                             <div className='flex gap-12 mt-16 justify-center'>
                                 <button className='border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white px-6 py-4'
-                               onClick={()=>setIsModalOpen((st)=>({
+                               onMouseEnter={()=>setIsModalOpen((st)=>({
                                 ...st,
                                 mod1:true,
                                 mod2:false,
                                 mod3:false,
                                 mod4:false,
                                }))}
+                           
                                 >
                                     <i class="fa fa-bullhorn mr-2 text-[26px]" aria-hidden="true"></i>
                                     Peer Advocacy</button>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-6 py-4'
-                                  onClick={()=>setIsModalOpen((st)=>({
+                                  onMouseEnter={()=>setIsModalOpen((st)=>({
                                     ...st,
                                     mod1:false,
                                     mod2:true,
@@ -56,7 +57,7 @@ const Homepagesec3 = () => {
                             </div>
                             <div className='flex gap-12 mt-8 justify-center'>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-14 py-4'
-                                   onClick={()=>setIsModalOpen((st)=>({
+                                   onMouseEnter={()=>setIsModalOpen((st)=>({
                                     ...st,
                                     mod1:false,
                                     mod2:false,
@@ -67,7 +68,7 @@ const Homepagesec3 = () => {
                                     <i class="fa fa-heartbeat mr-2 text-[26px]" aria-hidden="true"></i>
                                     Health</button>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-3 py-4'
-                                     onClick={()=>setIsModalOpen((st)=>({
+                                     onMouseEnter={()=>setIsModalOpen((st)=>({
                                         ...st,
                                         mod1:false,
                                         mod2:false,
