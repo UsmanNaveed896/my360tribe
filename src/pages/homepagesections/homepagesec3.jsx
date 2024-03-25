@@ -1,7 +1,7 @@
 import React ,{ useState } from 'react'
 import Img from '../../assets/1 (1).png'
 import Img2 from '../../assets/Capture-3-1065x684 2.png'
-import Img4 from '../../assets/dffd.png'
+import Img4 from '../../assets/Group2266.png'
 import Modal from '../../Popups/Modal';
 const Homepagesec3 = () => {
     const [isModalOpen, setIsModalOpen] = useState({
@@ -14,7 +14,7 @@ const Homepagesec3 = () => {
     const peer=['Transition Training','Education','Consulting','VA Programs','Assistance'];
     const transition=['Mentorship','Financial Support','Relocation','Assistance','Family/Legal','Support']
     const health=['Physical/Mental','Wellness','Recreational','Spiritual','Community']
-    const employ=['Job Services','Head hunting','entrepreneurship']
+    const employ=['Job Services','Head Hunting','Entrepreneurship']
   
     const handleCancel = () => {
       // Implement cancel logic here
@@ -32,7 +32,7 @@ const Homepagesec3 = () => {
                             </div>
                             <div className='flex gap-12 mt-16 justify-center'>
                                 <button className='border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white px-6 py-4'
-                               onMouseEnter={()=>setIsModalOpen((st)=>({
+                               onClick={()=>setIsModalOpen((st)=>({
                                 ...st,
                                 mod1:true,
                                 mod2:false,
@@ -44,7 +44,7 @@ const Homepagesec3 = () => {
                                     <i class="fa fa-bullhorn mr-2 text-[26px]" aria-hidden="true"></i>
                                     Peer Advocacy</button>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-6 py-4'
-                                  onMouseEnter={()=>setIsModalOpen((st)=>({
+                                  onClick={()=>setIsModalOpen((st)=>({
                                     ...st,
                                     mod1:false,
                                     mod2:true,
@@ -57,7 +57,7 @@ const Homepagesec3 = () => {
                             </div>
                             <div className='flex gap-12 mt-8 justify-center'>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-14 py-4'
-                                   onMouseEnter={()=>setIsModalOpen((st)=>({
+                                   onClick={()=>setIsModalOpen((st)=>({
                                     ...st,
                                     mod1:false,
                                     mod2:false,
@@ -68,7 +68,7 @@ const Homepagesec3 = () => {
                                     <i class="fa fa-heartbeat mr-2 text-[26px]" aria-hidden="true"></i>
                                     Health</button>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-3 py-4'
-                                     onMouseEnter={()=>setIsModalOpen((st)=>({
+                                     onClick={()=>setIsModalOpen((st)=>({
                                         ...st,
                                         mod1:false,
                                         mod2:false,
