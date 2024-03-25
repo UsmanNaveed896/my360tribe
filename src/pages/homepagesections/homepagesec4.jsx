@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../../assets/Group 1000006028.png'
-import Img4 from '../../assets/12.png'
+import Img4 from '../../assets/Group2266.png'
 
 const Homepagesec4 = () => {
     return (
