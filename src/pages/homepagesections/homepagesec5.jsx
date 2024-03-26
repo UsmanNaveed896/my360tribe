@@ -1,9 +1,10 @@
 import React from 'react'
 import Img from '../../assets/WW (1).png'
 import Img2 from '../../assets/WW (2).png'
+import Img4 from '../../assets/Group2266.png'
 const Homepagesec5 = () => {
     return (
-        <div className=' pb-16' id="targetDiv4" style={{ backgroundColor: 'rgb(18, 16, 50)' }} >
+        <div className=' pb-16 bg-[#1a2242] bg-cover' id="targetDiv4"  style={{ backgroundImage: `url(${Img4})`, }} >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 gap-12 items-center'>

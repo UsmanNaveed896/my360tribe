@@ -22,7 +22,7 @@ const Homepagesec3 = () => {
       setIsModalOpen(false);
     };
     return (
-        <div className='bg-[#192242] pb-16 bg-contain' id="targetDiv2" style={{ backgroundImage: `url(${Img4})`, }}>
+        <div className='bg-[#1a2242] pb-16 bg-contain' id="targetDiv2" style={{ backgroundImage: `url(${Img4})`, }}>
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid grid-cols-2 '>
