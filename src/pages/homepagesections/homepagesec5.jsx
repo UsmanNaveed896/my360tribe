@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from '../../assets/WW (1).png'
 import Img2 from '../../assets/WW (2).png'
-import Img4 from '../../assets/Group2266.png'
+import Img4 from '../../assets/Group1000006234.png'
 const Homepagesec5 = () => {
     return (
         <div className=' pb-16 bg-[#1a2242] bg-cover' id="targetDiv4"  style={{ backgroundImage: `url(${Img4})`, }} >

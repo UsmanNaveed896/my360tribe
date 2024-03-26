@@ -2,7 +2,7 @@ import React from 'react'
 import Usercard from '../../components/userCard/usercard'
 import Img from '../../assets/Rectangle123.png'
 import Img1 from '../../assets/Rectangle 1400.png'
-import Img4 from '../../assets/Group2266.png'
+import Img4 from '../../assets/Bg3.png'
 
 const Homepagesec6 = () => {
     const employees = [
