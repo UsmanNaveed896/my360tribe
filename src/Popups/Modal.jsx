@@ -8,15 +8,26 @@ const Modal = ({ isOpen, onDeactivate, onCancel, data }) => {
   }
 
   return (
-    <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div className="relative z-10 top-[5%]" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
       <div className="fixed inset-0 z-10 ">
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
 
-          <div className="relative transform overflow-hidden rounded-lg bg-gradient-to-b from-blue-900 to-black text-left shadow-xl transition-all sm:my-8 sm:w-[20%] sm:max-w-lg max-w-[32rem]">
-            <div className="bg-gradient-to-b from-blue-900 to-black px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+          <div className="relative transform overflow-hidden rounded-lg  text-left shadow-xl transition-all md:my-32 sm:my-8 sm:w-[20%] sm:max-w-lg max-w-[32rem]">
+            <div className="bg-[#0C1A4E] px-4 pb-2 pt-5  sm:p-6 sm:pb-4">
+              <div className='flex justify-center'>
+                <button className='border-[#D9D9D9] hover:border-2 mb-3 border rounded font-bold bg-[#0C1A4E] text-white px-3 py-4'
+                >
+                  {isOpen.mod1 ? <i class="fa fa-bullhorn mr-2 text-[26px]" aria-hidden="true"></i> :
+                    isOpen.mod2 ? <i class="fa fa-exchange  mr-2 text-[26px]" aria-hidden="true"></i> :
+                      isOpen.mod3 ? <i class="fa fa-heartbeat mr-2 text-[26px]" aria-hidden="true"></i> :
+                        <i class="fa fa-briefcase mr-2 text-[26px]" aria-hidden="true"></i>}
+
+                  {isOpen.mod1 ? 'Peer Advocacy' : isOpen.mod2 ? 'Transition' : isOpen.mod3 ? 'Health' : 'Employment'}
+                </button>
+              </div>
               <div className="flex justify-center text-white">
                 <ul className='text-center font-bold'>
                   {
@@ -26,7 +37,8 @@ const Modal = ({ isOpen, onDeactivate, onCancel, data }) => {
                       </li>
                     ))
                   }
-                  <li className='py-10'> <button type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-gradient-to-b from-blue-900 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onClick={onCancel}>Cancel</button></li>
+                  <li className='py-10'>
+                     <button type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  sm:mt-0 sm:w-auto" onClick={onCancel}>Cancel</button></li>
                 </ul>
 
               </div>
