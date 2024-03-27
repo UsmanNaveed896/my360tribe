@@ -11,7 +11,7 @@ const Homepagesec7 = () => {
                     <div className='container max-w-[1200px] mt-16'>
                         <div className='flex justify-center'>
                             <div>
-                                <h1 className='text-[#0a194e] text-center font-bold text-5xl'>Donation Request</h1>
+                                <h1 className='text-[#0a194e] text-center font-bold md:text-5xl text-2xl '>Donation Request</h1>
                             </div>
                         </div>
                         <div className='flex justify-center mt-12 '>

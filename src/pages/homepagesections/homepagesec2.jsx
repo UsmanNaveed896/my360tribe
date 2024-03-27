@@ -47,24 +47,24 @@ const Homepagesec2 = () => {
         <div className='bg-[#d1d8f5] pb-16 bg-cover' id="targetDiv1" style={{ backgroundImage: `url(${Img4})`, }} >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
-                    <div className='grid grid-cols-2 items-center gap-16'>
-                        <div className='colum1 mt-8'>
-                          <div className='relative h-[400px]'>
-                          <Pie  className='mt-12 z-[4] relative' data={data} options={options} />
+                    <div className='grid md:grid-cols-2 grid-cols-1 items-center md:gap-16 gap-2'>
+                        <div className='colum1 md:mt-8 mt-2 '>
+                          <div className='relative md:h-[400px] '>
+                          <Pie  className='md:mt-12 mt-4 z-[4] relative' data={data} options={options} />
                           <div className=''>
                             <p className='absolute text-white top-0 left-[219px] top-[80px] text-center font-bold text-[20px] z-[5]'>Executive <br></br> board</p>
                             <p className='absolute text-white top-0 left-[260px] top-[200px] text-center font-bold text-[20px] z-[5]'>Advisory <br></br> board</p>
                             <p className='absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px] z-[5]'>Service <br></br> organization</p>
                             <p className='absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]'>Concierge</p>
                             <p className='absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]'>Peer support <br></br> organization</p>
-                            <img className='absolute text-white top-0 left-[150px] top-[157px] h-[80px] z-[5]  ' src={Img} alt='logo' />
-                            <img className='absolute text-white top-0 left-[-35px] top-[-36px] h-[470px]' src={Img2} alt='logo' />
+                            <img className='absolute text-white top-0 left-[150px] top-[157px] h-[80px]  z-[5]  ' src={Img} alt='logo' />
+                            <img className='absolute text-white  md:left-[-35px] hidden md:block left-[0px] md:top-[-36px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] ' src={Img2} alt='logo' />
                           </div>
                           </div>
                        
                             {/* <img src={Img} alt='chart' /> */}
                         </div>
-                        <div className='column2'>
+                        <div className='column2 mt-6 md:mt-0 px-4 md:px-0'>
                             <div className='flex justify-center'>
                                 <h1 className='border-b border-[#0a194e] text-[#0a194e] border-b-4 text-center font-bold text-5xl'>Who We Are</h1>
 
