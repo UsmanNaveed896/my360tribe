@@ -78,7 +78,9 @@ const Header = ({ handleClick }) => {
                                                 </a>
                                             </li>
                                             <li className="border-b border-gray-400 my-8 uppercase">
-                                                <a className="block py-2 pl-3 pr-4  text-white cursor-pointer font-semibold hover:font-bold">
+                                                <a className="block py-2 pl-3 pr-4  text-white cursor-pointer font-semibold hover:font-bold"
+                                                 onClick={() => navigate('/')}
+                                                >
                                                     Home
                                                 </a>
                                             </li>

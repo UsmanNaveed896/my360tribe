@@ -30,7 +30,7 @@ const Homepagesec3 = () => {
                             <div className='flex justify-center mt-16'>
                                 <h1 className='border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl'>What We Do</h1>
                             </div>
-                            <div className='flex gap-12 mt-16 justify-center'>
+                            <div className='flex gap-12 mt-16 justify-center md:flex-row flex-col'>
                                 <button className='border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white px-6 py-4'
                                onClick={()=>setIsModalOpen((st)=>({
                                 ...st,
@@ -55,7 +55,7 @@ const Homepagesec3 = () => {
                                     <i class="fa fa-exchange mr-2 text-[26px]" aria-hidden="true"></i>
                                     Transition</button>
                             </div>
-                            <div className='flex gap-12 mt-8 justify-center'>
+                            <div className='flex gap-12 mt-8 justify-center md:flex-row flex-col'>
                                 <button className='border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-14 py-4'
                                    onClick={()=>setIsModalOpen((st)=>({
                                     ...st,
