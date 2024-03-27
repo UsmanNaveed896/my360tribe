@@ -13,9 +13,9 @@ const Modal = ({ isOpen, onDeactivate, onCancel, data }) => {
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
       <div className="fixed inset-0 z-10 ">
-        <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div className="flex md:min-h-full min-h-[80%] items-end justify-center p-4 text-center sm:items-center sm:p-0">
 
-          <div className="relative transform overflow-hidden rounded-lg  text-left shadow-xl transition-all md:my-32 sm:my-8 sm:w-[20%] sm:max-w-lg max-w-[32rem]">
+          <div className="relative transform overflow-hidden rounded-lg  text-left shadow-xl transition-all md:my-32 my-2 sm:my-8 sm:w-[20%] sm:max-w-lg md:max-w-[32rem] max-w-[55rem]">
             <div className="bg-[#0C1A4E] px-4 pb-2 pt-5  sm:p-6 sm:pb-4">
               <div className='flex justify-center'>
                 <button className='border-[#D9D9D9] hover:border-2 mb-3 border rounded font-bold bg-[#0C1A4E] text-white px-3 py-4'
