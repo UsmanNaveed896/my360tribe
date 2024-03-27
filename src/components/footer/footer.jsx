@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <div className='px-12 py-8 bg-gradient-to-r from-black to-gray-400'>
-            <div className='flex justify-between mt-16'>
+            <div className='flex justify-between mt-16 md:flex-row flex-col'>
                 <div className='logo text-white'>
                     <img src={Img} alt='logo' />
                     <p className='mt-4 font-bold'>NEW YORK OFFICE</p>
@@ -53,8 +53,6 @@ const Footer = () => {
                     <p>Our financials</p>
                     <p>Our mission and history</p>
                     <p>Our partners</p>
-                   
-                
                 </div>
             </div>
 

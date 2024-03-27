@@ -7,7 +7,7 @@ const Homepagesec5 = () => {
         <div className=' pb-16 bg-[#1a2242] bg-cover' id="targetDiv4"  style={{ backgroundImage: `url(${Img4})`, }} >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
-                    <div className='grid grid-cols-2 gap-12 items-center'>
+                    <div className='grid md:grid-cols-2 grid-cols-1 px-4 md:px-0 gap-12 items-center'>
                         <div className='column1'>
                             <div className='flex justify-center mt-16'>
                                 <h1 className='border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl'>Why We Do</h1>
@@ -37,8 +37,8 @@ const Homepagesec5 = () => {
                             </div>
                         </div>
                         <div className='column2 mt-16'>
-                            <img className='ml-24 w-[439px] h-[411px]' src={Img} alt='army' />
-                            <img className='mt-[-150px] w-[350px] h-[312px]' src={Img2} alt='girl' />
+                            <img className='md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[439px] md:h-[411px]' src={Img} alt='army' />
+                            <img className='mt-[-150px] w-[250px] h-[250px] md:w-[350px] md:h-[312px]' src={Img2} alt='girl' />
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const Usercard = (props) => {
     };
     console.log(props,"props")
     return (
-        <div className='bg-black py-4 px-6 mt-16' style={divStyle}>
+        <div className='bg-black py-4 px-6 md:mt-16 mt-8' style={divStyle}>
             <div className='flex justify-center '>
                 <div className='text-center'>
                 <i className='fa fa-user text-[84px] text-white'></i>

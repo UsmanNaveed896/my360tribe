@@ -40,9 +40,9 @@ const Homepage = () => {
           };
     const Gradient = 'linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)';
     return (
-        <div className='bg-[#070c1f] mt-16 bg-cover' style={{ backgroundImage: `url(${Img4})`, }}>
-            <div className='flex justify-center'>
-                <div className='container max-w-[1200px] mt-16'>
+        <div className='bg-[#070c1f] md:mt-16 mt-0 bg-cover' style={{ backgroundImage: `url(${Img4})`, }}>
+            <div className='flex justify-center px-4 md:px-0'>
+                <div className='container max-w-[1200px] md:mt-16 mt-4'>
                     <div className='flex justify-end'>
                         <div>
                             <h1 className='text-[55px] text-white'>Welcome To <br></br>
@@ -51,8 +51,8 @@ const Homepage = () => {
                                 Lorem Ipsum has been the industry's standard dummy text <br></br> ever since the 1500s,</p>
                         </div>
                     </div>
-                    <div className='flex justify-between mt-32 pb-16'>
-                    <div>
+                    <div className='flex md:justify-between justify-center md:mt-32 mt-8 pb-16 flex-wrap'>
+                    <div className='py-6 md:py-0'>
                             <img className='cursor-pointer' src={Img3} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
@@ -61,7 +61,7 @@ const Homepage = () => {
                                 mod4: true,
                             }))} />
                         </div>
-                        <div>
+                        <div  className='py-6 md:py-0'>
                             <img className='cursor-pointer' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: true,
@@ -70,7 +70,7 @@ const Homepage = () => {
                                 mod4: false,
                             }))} />
                         </div>
-                        <div>
+                        <div  className='py-6 md:py-0'>
                             <img className='cursor-pointer' src={Img1} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
@@ -80,7 +80,7 @@ const Homepage = () => {
                             }))} />
                         </div>
                        
-                        <div>
+                        <div  className='py-6 md:py-0'>
                             <img className='cursor-pointer' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
