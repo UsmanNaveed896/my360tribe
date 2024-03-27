@@ -5,6 +5,7 @@ import Img1 from '../../assets/Rectangle 1400.png'
 import Img4 from '../../assets/Bg3.png'
 
 const Homepagesec6 = () => {
+    const gradient='linear-gradient(90deg, rgba(20,18,52,1) 0%, rgba(16,30,77,1) 0%, rgba(61,67,91,1) 100%)'
     const employees = [
         {
             name: 'Brage Garofalo',
@@ -89,8 +90,8 @@ const Homepagesec6 = () => {
             </div>
 
             <div
-                className="bg-cover bg-center pb-16"
-                style={{ backgroundImage: `url(${Img})` }}
+                className="bg-cover   pb-16 "
+                style={{backgroundImage: `url(${Img4})`,background:gradient}}
             >
                 <div className='content '>
                     <h1 className='text-center text-5xl font-bold pt-12 text-white'> Our Partners</h1>

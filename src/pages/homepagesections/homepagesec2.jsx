@@ -44,7 +44,7 @@ const Homepagesec2 = () => {
     },
   };
     return (
-        <div className='bg-[#d1d8f5] pb-16 bg-cover' id="targetDiv1" style={{ backgroundImage: `url(${Img4})`, }} >
+        <div className='bg-[#d1d8f5] pb-24 bg-cover' id="targetDiv1" style={{ backgroundImage: `url(${Img4})`, }} >
             <div className='flex justify-center'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='grid md:grid-cols-2 grid-cols-1 items-center md:gap-16 gap-2'>
