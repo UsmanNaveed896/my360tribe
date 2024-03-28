@@ -99,59 +99,121 @@ const Homepagesec3 = () => {
                             <div className="flex justify-center text-white mt-6">
                                 {
                                     isModalOpen?.mod1 ?
-                                        <ul className='text-center font-bold'>
-                                            <li className='text-2xl rounded-xl border py-3 px-6'>Peer Advocacy</li>
-                                            {
-                                                peer?.map((item, index) => (
-                                                    <li className=' mt-3 py-2 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })} >
-                                                        {item}
-                                                    </li>
-                                                ))
-                                            }
-                                            <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  sm:w-auto"
-                                            >Cancel</button></li>
-                                        </ul>
+                                        <div className='abc mt-12'>
+                                            <div className='flex justify-center gap-16'>
+                                                <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Transition Training' })}>Transition Training</p>
+                                                <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Education' })}>Education</p>
+                                            </div>
+                                            <div className='flex justify-center gap-16 mt-8'>
+                                                <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Consulting' })}>Consulting</p>
+                                                <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'VA Programs' })}>VA Programs</p>
+                                            </div>
+                                            <div className='flex justify-center gap-16 mt-8'>
+                                                <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Assistance' })}>Assistance</p>
+                                            </div>
+                                            <div className='flex justify-center'>
+                                                <button onClick={handleCancel} type="button" className="mt-12 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-8 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                                >Cancel</button>
+                                            </div>
+                                        </div>
+                                        // <ul className='text-center font-bold'>
+                                        //     <li className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]'>Peer Advocacy</li>
+
+                                        //     <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  sm:w-auto"
+                                        //     >Cancel</button></li>
+                                        // </ul>
                                         :
                                         isModalOpen?.mod2 ?
-                                            <ul className='text-center font-bold'>
-                                                <li className='text-2xl rounded-xl border  py-3 px-6'>Transition</li>
-                                                {
-                                                    transition?.map((item, index) => (
-                                                        <li className='mt-3 py-2 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })}>
-                                                            {item}
-                                                        </li>
-                                                    ))
-                                                }
-                                                <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
-                                                >Cancel</button></li>
-                                            </ul>
+                                            <div className='abc mt-12'>
+                                                <div className='flex justify-center gap-16'>
+                                                    <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Mentorship' })}>Mentorship</p>
+                                                    <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Financial Support' })}>Financial Support</p>
+                                                </div>
+                                                <div className='flex justify-center gap-16 mt-8'>
+                                                    <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Relocation' })}>Relocation</p>
+                                                    <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Assistance' })}>Assistance</p>
+                                                </div>
+                                                <div className='flex justify-center gap-16 mt-8'>
+                                                    <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Family/Legal' })}>Family/Legal</p>
+                                                    <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Support' })}>Support</p>
+                                                </div>
+                                                <div className='flex justify-center'>
+                                                    <button onClick={handleCancel} type="button" className="mt-12 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-8 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                                    >Cancel</button>
+                                                </div>
+                                            </div>
+                                            // <ul className='text-center font-bold'>
+                                            //     <li className='text-2xl rounded cursor-pointer border  py-3 text-center w-[250px]'>Transition</li>
+                                            //     {
+                                            //         transition?.map((item, index) => (
+                                            //             <li className='mt-3 py-2 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })}>
+                                            //                 {item}
+                                            //             </li>
+                                            //         ))
+                                            //     }
+                                            //     <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                            //     >Cancel</button></li>
+                                            // </ul>
                                             :
                                             isModalOpen?.mod3 ?
-                                                <ul className='text-center font-bold'>
-                                                    <li className='text-2xl rounded-xl border  py-3 px-6'>Health</li>
-                                                    {
-                                                        health?.map((item, index) => (
-                                                            <li className='py-2 mt-3 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })} >
-                                                                {item}
-                                                            </li>
-                                                        ))
-                                                    }
-                                                    <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
-                                                    >Cancel</button></li>
-                                                </ul> :
+                                                <div className='abc mt-12'>
+                                                    <div className='flex justify-center gap-16'>
+                                                        <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Physical/Mental' })}>Physical/Mental</p>
+                                                        <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Wellness' })}>Wellness</p>
+                                                    </div>
+                                                    <div className='flex justify-center gap-16 mt-8'>
+                                                        <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Recreational' })}>Recreational</p>
+                                                        <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Spiritual' })}>Spiritual</p>
+                                                    </div>
+                                                    <div className='flex justify-center gap-16 mt-8'>
+                                                        <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Community' })}>Community</p>
+                                                    </div>
+                                                    <div className='flex justify-center'>
+                                                        <button onClick={handleCancel} type="button" className="mt-12 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-8 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                                        >Cancel</button>
+                                                    </div>
+                                                </div>
+                                                // <ul className='text-center font-bold'>
+                                                //     <li className='text-2xl rounded cursor-pointer border  py-3 text-center w-[250px]'>Health</li>
+                                                //     {
+                                                //         health?.map((item, index) => (
+                                                //             <li className='py-2 mt-3 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })} >
+                                                //                 {item}
+                                                //             </li>
+                                                //         ))
+                                                //     }
+                                                //     <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                                //     >Cancel</button></li>
+                                                // </ul>
+                                                :
                                                 isModalOpen?.mod4 ?
-                                                    <ul className='text-center font-bold'>
-                                                        <li className='text-2xl rounded-xl border  py-3 px-6'>Employ</li>
-                                                        {
-                                                            employ?.map((item, index) => (
-                                                                <li className='py-2 mt-3 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })}>
-                                                                    {item}
-                                                                </li>
-                                                            ))
-                                                        }
-                                                        <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
-                                                        >Cancel</button></li>
-                                                    </ul> : ''
+                                                    <div className='abc mt-12'>
+                                                        <div className='flex justify-center gap-16'>
+                                                            <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Job Services' })}>Job Services</p>
+                                                            <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Head Hunting' })}>Head Hunting</p>
+                                                        </div>
+                                                        <div className='flex justify-center gap-16 mt-8'>
+                                                            <p className='text-2xl rounded cursor-pointer border py-3 text-center w-[250px]' onClick={() => navigate('/dummy', { state: 'Entrepreneurship' })}>Entrepreneurship</p>
+                                                        </div>
+                                                        <div className='flex justify-center'>
+                                                            <button onClick={handleCancel} type="button" className="mt-12 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-8 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                                            >Cancel</button>
+                                                        </div>
+
+                                                    </div>
+                                                    // <ul className='text-center font-bold'>
+                                                    //     <li className='text-2xl rounded-xl border  py-3 px-6'>Employ</li>
+                                                    //     {
+                                                    //         employ?.map((item, index) => (
+                                                    //             <li className='py-2 mt-3 cursor-pointer hover:font-semibold' onClick={() => navigate('/dummy', { state: item })}>
+                                                    //                 {item}
+                                                    //             </li>
+                                                    //         ))
+                                                    //     }
+                                                    //     <li> <button onClick={handleCancel} type="button" className="mt-6 inline-flex w-full justify-center rounded-md bg-[#0C1A4E] px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300   sm:w-auto"
+                                                    //     >Cancel</button></li>
+                                                    // </ul>
+                                                    : ''
                                 }
 
                             </div>
