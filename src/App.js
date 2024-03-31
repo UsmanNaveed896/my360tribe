@@ -1,23 +1,20 @@
-import './App.css';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
-import Homepage from './pages/homepagesections/container'
-import MainContainer from '../src/Popups/MainContainer'
-import ForgotPassword from '../src/Popups/ForgotPassword'
-import SignUp from '../src/Popups/SignUp2'
-import OTP from '../src/Popups/OTP'
+import "./App.css";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
+import Homepage from "./pages/homepagesections/container";
+import { Route, Routes } from "react-router-dom";
+import PeerAdvocacy from "./pages/whatwedotabs/peer-advocacy";
+import ScrollToTopOnRouteChange from "./components/scroll";
+import Transition from "./pages/whatwedotabs/transition";
+import Health from "./pages/whatwedotabs/health";
+import Employment from "./pages/whatwedotabs/employment";
 
-
-import Terms from './pages/terms&condtion/terms';
-import { Route, Routes } from 'react-router-dom';
-import Dummy from './pages/dummypage/dummy';
-import ScrollToTopOnRouteChange from './components/scroll';
 function App() {
   const handleClick = (a) => {
     setTimeout(() => {
       const targetDiv = document.getElementById(`targetDiv${a}`);
       if (targetDiv) {
-        targetDiv.scrollIntoView({ behavior: 'smooth' });
+        targetDiv.scrollIntoView({ behavior: "smooth" });
       }
     }, 100);
   };
@@ -25,14 +22,21 @@ function App() {
     <>
       <Header handleClick={handleClick} />
       {/* <OTP /> */}
-      <ScrollToTopOnRouteChange/>
+      <ScrollToTopOnRouteChange />
       <Routes>
-        <Route exact path='/' element={< Homepage />} />
-        <Route exact path='/dummy' element={< Dummy  handleClick={handleClick} />} />
+        <Route exact path="/" element={<Homepage />} />
+        <Route
+          exact
+          path="/peeradvocacy"
+          element={<PeerAdvocacy handleClick={handleClick} />}
+        />
+        <Route exact path="/transition" element={<Transition />} />
+        <Route exact path="/Health" element={<Health />} />
+        <Route exact path="/employment" element={<Employment />} />
       </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
 export default App;
