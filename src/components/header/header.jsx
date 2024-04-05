@@ -29,7 +29,7 @@ const Header = ({ handleClick }) => {
                         <li className="mr-4"><a href="#">About Us</a></li>
                         <li className="mr-4"><a href="#">Get Involved</a></li>
                     </ul>
-                    <button className='px-4 py-2 rounded-xl' style={{background:buttonGradient}} onClick={() => handleClick(5)}>Donate</button>
+                    <button className='px-4 py-2 rounded-xl' style={{background:'red'}} onClick={() => handleClick(5)}>Donate</button>
                 </div>
             </nav>
 

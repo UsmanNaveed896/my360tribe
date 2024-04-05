@@ -20,7 +20,7 @@ const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
                                     <h1 className='font-bold text-white text-center text-[25px]'>{data?.heading}</h1>
                                     <p className='text-center font-semibold mt-4'>{data.text}</p>
                                     <div className='flex justify-center mt-4'>
-                                    <button className='py-2 px-4 border text-white rounded'>Apply</button>
+                                    <button className='py-2 px-4 border text-white rounded'>{data?.heading == "Operators" ? "Apply" : 'SUBMIT'}</button>
                                     </div>
                                 
                                 </div>
