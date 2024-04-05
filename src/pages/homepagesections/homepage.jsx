@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Img from '../../assets/Group 1000006061.png'
-import Img1 from '../../assets/Group 1000006062.png'
-import Img2 from '../../assets/Group 1000006063.png'
+import Img from '../../assets/Group 1000006061.jpeg'
+import Img1 from '../../assets/Group 1000006062.jpeg'
+import Img2 from '../../assets/Group 1000006063.jpeg'
 import Img3 from '../../assets/Group 1000006064.png'
 import Img4 from '../../assets/Group1000006234.png'
 
@@ -15,7 +15,7 @@ const Homepage = () => {
         mod4: false,
     });
 
-    const img1= 
+    const img4= 
         {
             heading: 'Service Organizations',
             text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
@@ -25,12 +25,12 @@ const Homepage = () => {
             heading: 'Concierge',
             text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
         }
-        const img3= {
+        const img1= {
             heading: 'Operators',
             text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
         }
-        const img4=  {
-            heading: 'Peer Support Members',
+        const img3=  {
+            heading: 'Peer Advocate Member',
             text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
         }
         const handleCancel = () => {
@@ -42,52 +42,67 @@ const Homepage = () => {
     return (
         <div className='bg-[#070c1f] md:mt-16 mt-0 bg-cover' style={{ backgroundImage: `url(${Img4})`, }}>
             <div className='flex justify-center px-4 md:px-0'>
-                <div className='container max-w-[1200px] md:mt-16 mt-4'>
+                <div className='container max-w-[1300px] md:mt-16 mt-4'>
                     <div className='flex justify-end'>
                         <div>
-                            <h1 className='text-[55px] text-white'>Welcome To <br></br>
+                            <h1 className='text-[55px] text-white font-bold'>
                                 My 360 Tribe</h1>
-                            <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting<br></br> industry.
-                                Lorem Ipsum has been the industry's standard dummy text <br></br> ever since the 1500s,</p>
+                            {/* <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting<br></br> industry.
+                                Lorem Ipsum has been the industry's standard dummy text <br></br> ever since the 1500s,</p> */}
                         </div>
                     </div>
                     <div className='flex md:justify-between justify-center md:mt-32 mt-8 pb-16 flex-wrap'>
                     <div className='py-6 md:py-0'>
-                            <img className='cursor-pointer' src={Img3} alt='pic' onClick={() => setIsModalOpen((st) => ({
-                                ...st,
-                                mod1: false,
-                                mod2: false,
-                                mod3: false,
-                                mod4: true,
-                            }))} />
-                        </div>
-                        <div  className='py-6 md:py-0'>
-                            <img className='cursor-pointer' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                    <div className='flex justify-center'>
+
+                            <img className='cursor-pointer w-[250px]  h-[200px]' src={Img3} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: true,
                                 mod2: false,
                                 mod3: false,
                                 mod4: false,
                             }))} />
+                            </div>
+                            <h1 className='font-semibold text-[29px] text-[#f9fafa] text-center mt-5'>Operators</h1>
+
                         </div>
                         <div  className='py-6 md:py-0'>
-                            <img className='cursor-pointer' src={Img1} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                            <div className='flex justify-center'>
+                            <img className='cursor-pointer w-[250px] rounded-lg h-[200px]' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
                                 mod2: true,
                                 mod3: false,
                                 mod4: false,
                             }))} />
+                            </div>
+                            <h1 className='font-semibold text-[29px] text-[#f9fafa] text-center mt-5'>Conceirge</h1>
                         </div>
-                       
                         <div  className='py-6 md:py-0'>
-                            <img className='cursor-pointer' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                        <div className='flex justify-center'>
+                            <img className='cursor-pointer  w-[250px] rounded-lg h-[200px]' src={Img1} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
                                 mod2: false,
                                 mod3: true,
                                 mod4: false,
                             }))} />
+                            </div>
+                            <h1 className='font-semibold text-[29px] text-[#f9fafa] text-center mt-5'>Peer Advocate Member</h1>
+                        </div>
+                       
+                        <div  className='py-6 md:py-0'>
+                        <div className='flex justify-center'>
+                            <img className='cursor-pointer  h-[200px] w-[250px] rounded-lg' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                                ...st,
+                                mod1: false,
+                                mod2: false,
+                                mod3: false,
+                                mod4: true,
+                            }))} />
+                            </div>
+                            <h1 className='font-semibold text-[29px] text-[#f9fafa] text-center mt-5'>Service Organizations</h1>
+
                         </div>
                     </div>
                     <PicsModal isOpen={isModalOpen} onCancel={handleCancel} data={isModalOpen.mod1 ? img1 : isModalOpen.mod2 ? img2 : isModalOpen.mod3 ? img3 : img4}/>
