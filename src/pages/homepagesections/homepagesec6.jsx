@@ -5,7 +5,7 @@ import Img2 from '../../assets/Bg3.png'
 import Img3 from '../../assets/a.png'
 import Img4 from '../../assets/b.png'
 import Img5 from '../../assets/c.png'
-
+import Img6 from '../../assets/d.png'
 const Homepagesec6 = () => {
     const gradient='linear-gradient(90deg, rgba(20,18,52,1) 0%, rgba(16,30,77,1) 0%, rgba(61,67,91,1) 100%)'
     const employees = [
@@ -48,6 +48,7 @@ const Homepagesec6 = () => {
             designation: 'Army (160th SOAR)',
         },
         {
+            img:Img6,
             name: 'Joe Hudak',
             designation: 'Army (SF)',
         },

@@ -19,7 +19,7 @@ const Usercard = (props) => {
             <i className="fa fa-user text-[84px] text-white"></i>
           )}
 
-          <p className="text-white font-bold mt-6">{props.name}</p>
+          {/* <p className="text-white font-bold mt-6">{props.name}</p> */}
           <p className="text-white mt-3">{props.designation}</p>
           <p className="text-[#5BF0F5] text-xs mt-3">{props.experience}</p>
         </div>
