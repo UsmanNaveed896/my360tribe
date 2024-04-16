@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Img from "../../assets/Group11.png";
+import Img from "../../assets/Group12.png";
 import Img2 from "../../assets/target.png";
 import Img4 from "../../assets/Bg3.png";
 import { Pie } from "react-chartjs-2";
@@ -14,7 +14,7 @@ const Homepagesec2 = () => {
       "Advisory board",
       "Service organization",
       "Concierge",
-      "Peer support organization",
+      "Peer Advocate Member",
     ], // Add your pie chart labels
     datasets: [
       {
@@ -85,7 +85,7 @@ const Homepagesec2 = () => {
                     Concierge
                   </p>
                   <p className="absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]">
-                    Peer support <br></br> organization
+                  Peer Advocate <br></br> Member
                   </p>
                   <img
                     className="absolute text-white top-0 left-[150px] top-[157px] h-[80px]  z-[5]  "
