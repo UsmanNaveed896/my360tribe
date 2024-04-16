@@ -68,7 +68,7 @@ const Homepage = () => {
                         </div>
                         <div  className='py-6 md:py-0'>
                             <div className='flex justify-center'>
-                            <img className='cursor-pointer w-[250px] rounded-lg h-[200px]' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                            <img className='cursor-pointer w-[250px] rounded-lg h-[200px]' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
                                 mod2: true,
@@ -80,7 +80,7 @@ const Homepage = () => {
                         </div>
                         <div  className='py-6 md:py-0'>
                         <div className='flex justify-center'>
-                            <img className='cursor-pointer  w-[250px] rounded-lg h-[200px]' src={Img1} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                            <img className='cursor-pointer  w-[250px] rounded-lg h-[200px]' src={Img} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
                                 mod2: false,
@@ -93,7 +93,7 @@ const Homepage = () => {
                        
                         <div  className='py-6 md:py-0'>
                         <div className='flex justify-center'>
-                            <img className='cursor-pointer  h-[200px] w-[250px] rounded-lg' src={Img2} alt='pic' onClick={() => setIsModalOpen((st) => ({
+                            <img className='cursor-pointer  h-[200px] w-[250px] rounded-lg' src={Img1} alt='pic' onClick={() => setIsModalOpen((st) => ({
                                 ...st,
                                 mod1: false,
                                 mod2: false,

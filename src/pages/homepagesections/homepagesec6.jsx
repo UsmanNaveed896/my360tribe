@@ -1,8 +1,10 @@
 import React from 'react'
 import Usercard from '../../components/userCard/usercard'
-import Img from '../../assets/Rectangle123.png'
 import Img1 from '../../assets/Rectangle 1400.png'
-import Img4 from '../../assets/Bg3.png'
+import Img2 from '../../assets/Bg3.png'
+import Img3 from '../../assets/a.png'
+import Img4 from '../../assets/b.png'
+import Img5 from '../../assets/c.png'
 
 const Homepagesec6 = () => {
     const gradient='linear-gradient(90deg, rgba(20,18,52,1) 0%, rgba(16,30,77,1) 0%, rgba(61,67,91,1) 100%)'
@@ -31,14 +33,17 @@ const Homepagesec6 = () => {
 
     const advisors = [
         {
+            img:Img3,
             name: 'Greg “Vinny” Vincent',
             designation: ' Navy (SEAL)',
         },
         {
+            img:Img4,
             name: 'Pat O’Rourke',
             designation: ' Air Force (720th STG, PJ)',
         },
         {
+            img:Img5,
             name: 'Brian Hughes',
             designation: 'Army (160th SOAR)',
         },
@@ -61,7 +66,7 @@ const Homepagesec6 = () => {
     ];
     return (
         <>
-            <div className='bg-[#d1d8f5] pb-16 bg-contain' style={{ backgroundImage: `url(${Img4})`, }}>
+            <div className='bg-[#d1d8f5] pb-16 bg-contain' style={{ backgroundImage: `url(${Img2})`, }}>
                 <div className='flex justify-center px-4 md:px-0'>
                     <div className='container max-w-[1200px] mt-16'>
                         <div className='flex justify-center'>
@@ -82,7 +87,7 @@ const Homepagesec6 = () => {
                         </div>
                         <div className='flex justify-center flex-wrap md:gap-32 gap-8 md:mt-12 mt-6'>
                             {advisors.map((item) => (
-                                <Usercard name={item.name} designation={item.designation} />
+                                <Usercard img={item.img} name={item.name} designation={item.designation} />
                             ))}
                         </div>
                     </div>
@@ -91,7 +96,7 @@ const Homepagesec6 = () => {
 
             <div
                 className="bg-cover   pb-16 "
-                style={{backgroundImage: `url(${Img4})`,background:gradient}}
+                style={{backgroundImage: `url(${Img2})`,background:gradient}}
             >
                 <div className='content '>
                     <h1 className='text-center text-5xl font-bold pt-12 text-white'> Our Partners</h1>
