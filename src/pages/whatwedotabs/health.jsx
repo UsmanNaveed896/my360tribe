@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
 const Health = () => {
-  const [activeTab, setActiveTab] = useState("Physical/Mental");
+  const [activeTab, setActiveTab] = useState("Medical");
 
   const handleTabs = (item) => {
     setActiveTab(item);
   };
   const health = [
-    "Physical/Mental",
-    "Wellness",
-    "Recreational",
-    "Spiritual",
-    "Community",
+    "Medical",
+    "Mental Health",
+    "Substance Abuse",
+    "Mobility",
+    "Sports and Recreation",
   ];
   return (
     <div className="main">
@@ -21,6 +21,14 @@ const Health = () => {
             <i class="fa fa-heartbeat mr-2 text-[36px]" aria-hidden="true"></i>{" "}
             Health
           </h1>
+          <p className="text-center mb-5 text-white text-xl">
+            <strong> At My360Tribe</strong>, we are committed to your health and
+            well-being. Providing referrals and services to <br></br> accomplish
+            360-degree warrior care is our mission. Above you will find a
+            listing of our areas of<br></br>
+            referrals and services as it relates to an operator’s health and
+            wellbeing.
+          </p>
 
           <ul class="flex gap-6  text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
             {health.map((item) => (
@@ -38,95 +46,63 @@ const Health = () => {
               </li>
             ))}
           </ul>
-          {activeTab == "Physical/Mental" ? (
+          {activeTab == "Medical" ? (
             <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 h-[500px] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Physical/Mental</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
+              <h1 className="font-bold text-3xl">Medical</h1>
+              <p className="font-semibold text-xl mt-4 leading-[30px]">
                 {" "}
-                Imagine yourself sitting behind the wheel of a car that has a
-                stick shift, but all you’ve ever driven is an automatic
-                transmission. Sure it’s a car like any other, but if you’re
-                driving a car with a stick shift, you’ll need to know how to
-                operate the gears and clutch. You’ll need transition training
-                from an automatic to the manual transmission. Similarly, pilots
-                who are transitioning to unfamiliar aircraft require not only
-                stick and rudder development, but also specific training in the
-                new aircraft’s systems and with it’s operating characteristics
-                to include normal, abnormal, and emergency procedures.{" "}
+                We have a network of organizations, providers, and others
+                committed to the mission of My360Tribe. We care about your
+                medical needs and will work with our service partners to ensure
+                you are getting the best possible medical treatments available
+                in your area.{" "}
               </p>
             </div>
-          ) : activeTab == "Wellness" ? (
+          ) : activeTab == "Mental Health" ? (
             <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 h-[500px] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Wellness</h1>
+              <h1 className="font-bold text-3xl">Mental Health</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.{" "}
+                Your mental health is of utmost importance to us. We want to
+                thrive and succeed in this next chapter of your life.
+                Understanding there can be a mental and emotional strain before,
+                during, and after transition is why we have a network of service
+                providers ready to assist with all your mental health needs.{" "}
               </p>
             </div>
-          ) : activeTab == "Recreational" ? (
+          ) : activeTab == "Substance Abuse" ? (
             <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 h-[500px] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Recreational</h1>
+              <h1 className="font-bold text-3xl">Substance Abuse</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).{" "}
+                We all know that substance abuse can become a factor in an
+                Operator’s life after transition. The feelings of desperation,
+                isolation, and lack of purpose can manifest into substance abuse
+                and addiction. My360Tribe will provide referrals to the
+                appropriate service partner to help you and your family through
+                this difficult time.{" "}
               </p>
             </div>
-          ) : activeTab == "Spiritual" ? (
+          ) : activeTab == "Mobility" ? (
             <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 h-[500px] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Spiritual</h1>
+              <h1 className="font-bold text-3xl">Mobility</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                written in 45 BC. This book is a treatise on the theory of
-                ethics, very popular during the Renaissance. The first line of
-                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
-                in section 1.10.32.{" "}
+                Leaving the service with mobility issues can be painful and
+                challenging. We at My360Tribe have a network of service partners
+                that are available to assist you and your family as you learn to
+                live your 'new normal'.{" "}
               </p>
             </div>
-          ) : activeTab == "Community" ? (
+          ) : activeTab == "Sports and Recreation" ? (
             <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 h-[500px] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Community</h1>
+              <h1 className="font-bold text-3xl">Sports and Recreation</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of
-                model sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc{" "}
+                We believe that sports and recreation are an important part of
+                your health and wellbeing. We have relationships with a variety
+                of sports networks and recreational retreats you may be
+                interested in exploring.{" "}
               </p>
             </div>
           ) : (
