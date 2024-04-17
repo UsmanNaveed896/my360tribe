@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Employment = () => {
+  const navigate = useNavigate();
+
   const [activeTab, setActiveTab] = useState("Job Services");
 
   const handleTabs = (item) => {
@@ -11,6 +14,10 @@ const Employment = () => {
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
         <div className="max-w-[1200px] container pb-24">
+          <i
+            class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
+            onClick={() => navigate("/")}
+          ></i>
           <h1 className="text-white md:text-5xl text-2xl mt-12 text-center pb-12 font-bold">
             <i class="fa fa-briefcase mr-2 text-[26px]" aria-hidden="true"></i>{" "}
             Employment
@@ -86,6 +93,11 @@ const Employment = () => {
           ) : (
             ""
           )}
+          <div className="flex justify-center mt-4">
+            <button className="rounded-lg py-3 w-[150px] border text-white bg-transparent hover:font-bold"
+            onClick={()=>navigate('/')}
+            >Back</button>
+          </div>
         </div>
       </div>
     </div>

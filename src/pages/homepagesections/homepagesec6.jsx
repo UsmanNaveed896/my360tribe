@@ -39,7 +39,7 @@ const Homepagesec6 = () => {
         },
         {
             img:Img4,
-            name: 'Pat O’Rourke',
+            name: 'Chris Philips',
             designation: ' Air Force (720th STG, PJ)',
         },
         {
@@ -49,7 +49,7 @@ const Homepagesec6 = () => {
         },
         {
             img:Img6,
-            name: 'Joe Hudak',
+            name: 'Brian Hughes',
             designation: 'Army (SF)',
         },
         {
@@ -73,20 +73,21 @@ const Homepagesec6 = () => {
                         <div className='flex justify-center'>
                             <div>
                                 <h1 className='text-[#0a194e] text-center font-bold text-5xl'>Meet our team</h1>
-                                <p className='text-[#0a194e] md:text-[35px] text-[25px] mt-6'>Founders and Founding Board </p>
+                                {/* <p className='text-[#0a194e] md:text-[35px] text-[25px] mt-6'>Founders and Founding Board </p> */}
                             </div>
                         </div>
-                        <div className='flex md:justify-between justify-center flex-wrap md:gap-0 gap-8'>
+                        {/* <div className='flex md:justify-between justify-center flex-wrap md:gap-0 gap-8'>
                             {employees.map((item) => (
                                 <Usercard name={item.name} designation={item.designation} experience={item.experience} />
                             ))}
-                        </div>
-                        <div className='flex justify-center mt-12'>
+                        </div> */}
+                        {/* <div className='flex justify-center mt-12'>
                             <div>
                                 <p className='text-[#0a194e] text-[35px] mt-6'>Advisory Board </p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='flex justify-center flex-wrap md:gap-32 gap-8 md:mt-12 mt-6'>
+                            
                             {advisors.map((item) => (
                                 <Usercard img={item.img} name={item.name} designation={item.designation} />
                             ))}
