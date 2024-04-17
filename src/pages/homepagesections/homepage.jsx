@@ -51,8 +51,8 @@ const Homepage = () => {
       <div className="flex justify-center px-4 md:px-0">
         <div className="container max-w-[1300px] md:mt-16 mt-4"
         >
-            <div className="relayive">
-                <img className="absolute md:left-[22%] left-[0] md:block hidden" src={Img6} alt="abc"/>
+            <div className="relative">
+                <img className="absolute md:left-[19%]  left-[0] top-[44px]  z-[33] md:block hidden" src={Img6} alt="abc"/>
             </div>
           <div className="flex justify-end">
             <div>
@@ -61,11 +61,11 @@ const Homepage = () => {
                                 Lorem Ipsum has been the industry's standard dummy text <br></br> ever since the 1500s,</p> */}
             </div>
           </div>
-          <div className="flex justify-center md:mt-[12rem] mt-12">
+          <div className="flex justify-center md:mt-[0rem] mt-12 relative z-[666]">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer w-[250px]  h-[200px]"
+                  className="cursor-pointer w-[250px]  h-[200px] border rounded-xl"
                   src={Img3}
                   alt="pic"
                   onClick={() =>
@@ -89,7 +89,7 @@ const Homepage = () => {
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer w-[250px] rounded-lg h-[200px]"
+                  className="cursor-pointer w-[250px] rounded-lg h-[200px] border rounded-xl"
                   src={Img2}
                   alt="pic"
                   onClick={() =>
@@ -110,7 +110,7 @@ const Homepage = () => {
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer  w-[250px] rounded-lg h-[200px]"
+                  className="cursor-pointer  w-[250px] rounded-lg h-[200px] border rounded-xl"
                   src={Img}
                   alt="pic"
                   onClick={() =>
@@ -132,7 +132,7 @@ const Homepage = () => {
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer  h-[200px] w-[250px] rounded-lg"
+                  className="cursor-pointer  h-[200px] w-[250px] border rounded-xl"
                   src={Img1}
                   alt="pic"
                   onClick={() =>

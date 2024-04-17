@@ -23,7 +23,7 @@ const Homepagesec3 = () => {
                 </h1>
               </div>
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col">
-                <button className="border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white px-6 py-4" 
+                <button className="border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white w-[200px] py-4" 
                 onClick={()=>navigate('/peeradvocacy')}
                 >
                   <i
@@ -32,7 +32,7 @@ const Homepagesec3 = () => {
                   ></i>
                   Peer Advocacy
                 </button>
-                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-6 py-4"
+                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
                 onClick={()=>navigate('/transition')}
                 >
                   <i
@@ -44,7 +44,7 @@ const Homepagesec3 = () => {
               </div>
 
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col">
-                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-14 py-4"
+                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
                  onClick={()=>navigate('/health')}
                 >
                   <i
@@ -54,7 +54,7 @@ const Homepagesec3 = () => {
                   Health
                 </button>
 
-                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white px-3 py-4"
+                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
                 onClick={()=>navigate('/employment')}
                 >
                   <i
@@ -69,12 +69,12 @@ const Homepagesec3 = () => {
             <div className="column2 mt-16 ">
               <div>
                 <img
-                  className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[439px] md:h-[411px]"
+                  className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[439px] md:h-[411px] border-2 rounded-xl"
                   src={Img}
                   alt="army"
                 />
                 <img
-                  className="mt-[-150px] w-[250px] h-[250px] md:w-[350px] md:h-[312px]"
+                  className="mt-[-150px] w-[250px] h-[250px] md:w-[350px] md:h-[312px] border-2 rounded-xl"
                   src={Img2}
                   alt="girl"
                 />
