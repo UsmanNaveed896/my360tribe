@@ -72,19 +72,19 @@ const Homepagesec2 = () => {
                   options={options}
                 />
                 <div className="">
-                  <p className="absolute text-white top-0 left-[219px] top-[80px] text-center font-bold text-[20px] z-[5]">
+                  <p className="absolute text-white  left-[249px] md:left-[219px] top-[80px] text-center font-bold text-[20px] z-[5]">
                     Executive <br></br> board
                   </p>
-                  <p className="absolute text-white top-0 left-[260px] top-[200px] text-center font-bold text-[20px] z-[5]">
+                  <p className="absolute text-white  md:left-[260px] left-[300px] top-[220px] md:top-[200px] text-center font-bold text-[20px] z-[5]">
                     Advisory <br></br> board
                   </p>
                   <p className="absolute text-white md:left-[140px] left-[155px] top-[300px] md:top-[280px] text-center font-bold text-[20px] z-[5]">
                     Service <br></br> organization
                   </p>
-                  <p className="absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]">
+                  <p className="absolute text-white  left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]">
                     Concierge
                   </p>
-                  <p className="absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]">
+                  <p className="absolute text-white  left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]">
                   Peer Advocate <br></br> Member
                   </p>
                   <div className="relative flex justify-center"> 

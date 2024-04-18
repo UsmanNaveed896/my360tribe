@@ -14,11 +14,11 @@ const Header = ({ handleClick }) => {
 
 
     return (
-        <div>
-           <nav className="md:flex hidden items-center justify-between  text-white px-2 py-3 fixed w-full top-0 z-[9999]"
+        <div className='relative z-[999]'>
+           <nav className="md:flex hidden items-center justify-between  text-white px-2 py-3 fixed w-full top-0 z-[999]"
             style={{background:gradient ,}}
             >
-                <div className='w-[300px]'>
+                <div className='w-[300px] relative '>
                     <img className='cursor-pointer h-[90px] py-1' src={Img} alt='logo' onClick={()=>navigate('/')} />
                 </div>
                 <div className="flex items-center ">
