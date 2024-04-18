@@ -37,7 +37,7 @@ const Transition = () => {
                   } bg-[#15214c]`}
                 >
                   <a
-                    class="inline-block p-4 text-[#d0d7f4] font-bold rounded-t-lg active"
+                    class="inline-block p-4 text-[#d0d7f4] w-[131px] md:w-full font-bold rounded-t-lg active"
                     onClick={() => handleTabs(item)}
                   >
                     {item}
@@ -48,7 +48,7 @@ const Transition = () => {
           </div>
 
           {activeTab == "Mentorship" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Mentorship</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -65,7 +65,7 @@ const Transition = () => {
               </p>
             </div>
           ) : activeTab == "Financial Support" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Financial Support</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -82,7 +82,7 @@ const Transition = () => {
               </p>
             </div>
           ) : activeTab == "Relocation" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Relocation</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -99,7 +99,7 @@ const Transition = () => {
               </p>
             </div>
           ) : activeTab == "Assistance" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Assistance</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -119,7 +119,7 @@ const Transition = () => {
               </p>
             </div>
           ) : activeTab == "Family/Legal" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Family/Legal</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -139,7 +139,7 @@ const Transition = () => {
               </p>
             </div>
           ) : activeTab == "Support" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Support</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
