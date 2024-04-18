@@ -65,7 +65,7 @@ const Homepagesec2 = () => {
         <div className="container max-w-[1200px] mt-16">
           <div className="grid md:grid-cols-2 grid-cols-1 items-start md:gap-16 gap-2">
             <div className="colum1 md:mt-8 mt-2 ">
-              <div className="relative md:h-[400px]  md:ml-0 ml-6">
+              <div className="relative md:h-[400px]">
                 <Pie
                   className="md:mt-12 mt-4 z-[4] relative"
                   data={data}
@@ -87,11 +87,14 @@ const Homepagesec2 = () => {
                   <p className="absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]">
                   Peer Advocate <br></br> Member
                   </p>
+                  <div className="relative"> 
                   <img
-                    className="absolute text-white top-0 md:left-[150px] left-[160px] top-[157px] h-[80px]  z-[5]  "
+                    className="absolute text-white top-[-255px] md:top-[-235px] left-[170px] md:left-[150px] h-[80px]  z-[5]  "
                     src={Img}
                     alt="logo"
                   />
+                  </div>
+                 
                   <img
                     className="absolute text-white  md:left-[-35px] hidden md:block left-[0px] md:top-[-36px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
                     src={Img2}
