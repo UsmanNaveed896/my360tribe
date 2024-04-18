@@ -61,7 +61,7 @@ const Homepage = () => {
                                 Lorem Ipsum has been the industry's standard dummy text <br></br> ever since the 1500s,</p> */}
             </div>
           </div>
-          <div className="flex justify-center md:mt-[0rem] mt-12 relative z-[666]">
+          <div className="flex justify-center md:mt-[0rem] mt-12 relative z-[35]">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
@@ -85,7 +85,7 @@ const Homepage = () => {
               <img className="md:block hidden" src={Img5} alt="connect" />
             </div>
           </div>
-          <div className="flex md:justify-center md:gap-[175px] gap-[70px] justify-center md:mt-2 mt-8 pb-16 flex-wrap">
+          <div className="flex md:justify-center md:gap-[175px] gap-[70px] justify-center md:mt-2 mt-8 pb-16 flex-wrap relative z-[35]">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
