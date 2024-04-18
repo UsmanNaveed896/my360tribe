@@ -67,7 +67,7 @@ const Homepagesec2 = () => {
             <div className="colum1 md:mt-8 mt-2 ">
               <div className="relative md:h-[400px]">
                 <Pie
-                  className="md:mt-12 mt-4 z-[4] relative"
+                  className="md:mt-12 mt-4 z-[4] "
                   data={data}
                   options={options}
                 />
@@ -78,7 +78,7 @@ const Homepagesec2 = () => {
                   <p className="absolute text-white top-0 left-[260px] top-[200px] text-center font-bold text-[20px] z-[5]">
                     Advisory <br></br> board
                   </p>
-                  <p className="absolute text-white top-0 left-[140px] top-[260px] text-center font-bold text-[20px] z-[5]">
+                  <p className="absolute text-white md:left-[140px] left-[155px] top-[300px] md:top-[280px] text-center font-bold text-[20px] z-[5]">
                     Service <br></br> organization
                   </p>
                   <p className="absolute text-white top-0 left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]">
@@ -87,9 +87,9 @@ const Homepagesec2 = () => {
                   <p className="absolute text-white top-0 left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]">
                   Peer Advocate <br></br> Member
                   </p>
-                  <div className="relative"> 
+                  <div className="relative flex justify-center"> 
                   <img
-                    className="absolute text-white top-[-255px] md:top-[-235px] left-[170px] md:left-[150px] h-[80px]  z-[5]  "
+                    className="mt-[-244px] text-white top-[-225px] md:top-[-235px] left-[140px] md:left-[150px] h-[80px]  z-[5]  "
                     src={Img}
                     alt="logo"
                   />
