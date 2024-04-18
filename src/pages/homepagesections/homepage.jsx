@@ -85,7 +85,7 @@ const Homepage = () => {
               <img className="md:block hidden" src={Img5} alt="connect" />
             </div>
           </div>
-          <div className="flex md:justify-center gap-[175px] justify-center md:mt-2 mt-8 pb-16 flex-wrap">
+          <div className="flex md:justify-center md:gap-[175px] gap-[70px] justify-center md:mt-2 mt-8 pb-16 flex-wrap">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
