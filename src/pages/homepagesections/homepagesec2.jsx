@@ -89,7 +89,7 @@ const Homepagesec2 = () => {
                   </p>
                   <div className="relative flex justify-center"> 
                   <img
-                    className="mt-[-244px] text-white top-[-225px] md:top-[-235px] left-[140px] md:left-[150px] h-[80px]  z-[5]  "
+                    className="mt-[-244px] md:ml-[-174px] ml-0 text-white top-[-225px] md:top-[-235px] left-[140px] md:left-[-50px] h-[80px]  z-[5]  "
                     src={Img}
                     alt="logo"
                   />
