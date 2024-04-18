@@ -65,7 +65,7 @@ const Homepagesec2 = () => {
         <div className="container max-w-[1200px] mt-16">
           <div className="grid md:grid-cols-2 grid-cols-1 items-start md:gap-16 gap-2">
             <div className="colum1 md:mt-8 mt-2 ">
-              <div className="relative md:h-[400px] ">
+              <div className="relative md:h-[400px]  md:ml-0 ml-6">
                 <Pie
                   className="md:mt-12 mt-4 z-[4] relative"
                   data={data}
@@ -88,7 +88,7 @@ const Homepagesec2 = () => {
                   Peer Advocate <br></br> Member
                   </p>
                   <img
-                    className="absolute text-white top-0 left-[150px] top-[157px] h-[80px]  z-[5]  "
+                    className="absolute text-white top-0 md:left-[150px] left-[160px] top-[157px] h-[80px]  z-[5]  "
                     src={Img}
                     alt="logo"
                   />
@@ -114,7 +114,7 @@ const Homepagesec2 = () => {
               {/* <p className="text-[29px] font-semibold text-[#0a194e] mt-12">
                 Lorem Ipsum is simply dummy <br></br> text of the printing
               </p> */}
-              <p className="text-[16px]  text-[#0a194e] mt-6 font-semibold">
+              {/* <p className="text-[16px]  text-[#0a194e] mt-6 font-semibold">
                <strong>  1. My360Tribe</strong>  all squished together in the watermark – not all
                 capitalized (see beginning of this action item highlighted in
                 yellow is how it should be. Please ensure it is consistent
@@ -147,7 +147,19 @@ const Homepagesec2 = () => {
                 </p>
                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>7.</strong> Vinny
                 will provide the verbiage for <strong>Concierge</strong> and <strong>Advisory Board</strong>
-                </p>
+                </p> */}
+                <p className="text-[16px]  text-[#0a194e] mt-6 font-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                   and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                   <p className="text-[16px] mt-6  text-[#0a194e] mt-6 font-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                   and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
           </div>
         </div>

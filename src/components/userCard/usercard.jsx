@@ -23,7 +23,7 @@ const Usercard = (props) => {
                 <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center">
                   <div className="rounded  bg-[#000] h-[240px]  pb-2 ">
                     <div className="flex justify-center ">
-                      <img className="h-[150px]" src={props.img} alt="line" />
+                      <img className="h-[130px]" src={props.img} alt="line" />
                     </div>
                     <p className="text-[#fff] font-bold text-center">
                       {props.name}
