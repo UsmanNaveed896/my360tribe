@@ -8,11 +8,11 @@ const Modal = ({ isOpen, onDeactivate, onCancel, data }) => {
   }
 
   return (
-    <div className="relative z-10 top-[5%]" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div className="relative z-[999] top-[5%]" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-      <div className="fixed inset-0 z-10 ">
+      <div className="fixed inset-0 z-[999] ">
         <div className="flex md:min-h-full min-h-[80%] items-end justify-center p-4 text-center sm:items-center sm:p-0">
 
           <div className="relative transform overflow-hidden rounded-lg  text-left shadow-xl transition-all md:my-32 my-2 sm:my-8 sm:w-[20%] sm:max-w-lg md:max-w-[32rem] max-w-[55rem]">
