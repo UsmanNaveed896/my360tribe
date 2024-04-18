@@ -22,7 +22,7 @@ const Homepagesec3 = () => {
                   What We Do
                 </h1>
               </div>
-              <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col">
+              <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
                 <button className="border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white w-[200px] py-4" 
                 onClick={()=>navigate('/peeradvocacy')}
                 >
@@ -43,7 +43,7 @@ const Homepagesec3 = () => {
                 </button>
               </div>
 
-              <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col">
+              <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
                 <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
                  onClick={()=>navigate('/health')}
                 >

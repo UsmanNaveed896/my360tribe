@@ -23,23 +23,23 @@ const Dummy = ({ handleClick }) => {
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
         <div className="max-w-[1200px] container pb-24">
           <i
-            class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
+            class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer pl-2 md:pl-0"
             onClick={() => navigate("/")}
           ></i>
           <h1 className="text-white md:text-5xl text-2xl mt-12 text-center md:pb-12 pb-2 font-bold">
             <i class="fa fa-bullhorn mr-2 text-[36px]" aria-hidden="true"></i>{" "}
             Peer Advocacy
           </h1>
-          <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3">
+          <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3 px-4">
             <ul class="flex md:gap-6 gap-2 text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
               {peer.map((item) => (
                 <li
-                  class={`me-2 md:pr-12 pr-1 cursor-pointer ${
+                  class={`me-2 md:pr-12 pr-1 md:py-6 py-0  cursor-pointer ${
                     activeTab === item ? "border-b-2 border-[#d0d7f4] " : ""
                   } bg-[#15214c]`}
                 >
                   <a
-                    class="inline-block md:p-4 px-2 py-4 md:px-0 md:py-0 text-[#d0d7f4] font-bold rounded-t-lg active"
+                    class="inline-block md:p-4 px-2 py-2 w-[131px] md:w-full py-4 md:px-0 md:py-0 text-[#d0d7f4] font-bold rounded-t-lg active"
                     onClick={() => handleTabs(item)}
                   >
                     {item}
@@ -50,7 +50,7 @@ const Dummy = ({ handleClick }) => {
           </div>
 
           {activeTab == "Transition Training" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Transition Training</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -67,7 +67,7 @@ const Dummy = ({ handleClick }) => {
               </p>
             </div>
           ) : activeTab == "Education" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Education</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -84,7 +84,7 @@ const Dummy = ({ handleClick }) => {
               </p>
             </div>
           ) : activeTab == "Consulting" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Consulting</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -101,7 +101,7 @@ const Dummy = ({ handleClick }) => {
               </p>
             </div>
           ) : activeTab == "VA Programs" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">VA Programs</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -121,7 +121,7 @@ const Dummy = ({ handleClick }) => {
               </p>
             </div>
           ) : activeTab == "Assistance" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Assistance</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}

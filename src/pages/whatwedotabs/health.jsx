@@ -27,7 +27,7 @@ const Health = () => {
             <i class="fa fa-heartbeat mr-2 text-[36px]" aria-hidden="true"></i>{" "}
             Health
           </h1>
-          <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal">
+          <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal px-4 md:px-0">
             <strong> At My360Tribe</strong>, we are committed to your health and
             well-being. Providing referrals and services to accomplish
             360-degree warrior care is our mission. Above you will find a
@@ -43,7 +43,7 @@ const Health = () => {
                   } bg-[#15214c]`}
                 >
                   <a
-                    class="inline-block md:p-4 px-2 py-1 md:px-0 md:py-0 text-[#d0d7f4] font-bold rounded-t-lg active"
+                    class="inline-block md:p-4 px-2 py-1 w-[131px] md:w-full md:px-0 md:py-0 text-[#d0d7f4] font-bold rounded-t-lg active"
                     onClick={() => handleTabs(item)}
                   >
                     {item}
@@ -54,7 +54,7 @@ const Health = () => {
           </div>
 
           {activeTab == "Medical" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0  bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[55%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Medical</h1>
               <p className="font-semibold text-xl mt-4 leading-[30px]">
                 {" "}
@@ -66,7 +66,7 @@ const Health = () => {
               </p>
             </div>
           ) : activeTab == "Mental Health" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[60%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Mental Health</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -78,7 +78,7 @@ const Health = () => {
               </p>
             </div>
           ) : activeTab == "Substance Abuse" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[60%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Substance Abuse</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -91,7 +91,7 @@ const Health = () => {
               </p>
             </div>
           ) : activeTab == "Mobility" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[55%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Mobility</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
@@ -102,7 +102,7 @@ const Health = () => {
               </p>
             </div>
           ) : activeTab == "Sports and Recreation" ? (
-            <div className="transition-training bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[55%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Sports and Recreation</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
