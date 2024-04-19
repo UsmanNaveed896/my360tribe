@@ -6,13 +6,13 @@ import { Pie } from "react-chartjs-2";
 import "chart.js/auto";
 import "chartjs-plugin-datalabels";
 const Homepagesec2 = () => {
-  const [selectedText, setSelectedText] = useState(""); // State to manage selected text
+  const [selectedText, setSelectedText] = useState(" Executive board"); // State to manage selected text
 
   const data = {
     labels: [
       "Executive board",
       "Advisory board",
-      "Service organization",
+      "Service Partners",
       "Concierge",
       "Peer Advocate Member",
     ], // Add your pie chart labels
@@ -55,6 +55,7 @@ const Homepagesec2 = () => {
       }
     },
   };
+  console.log( selectedText,"ss")
   return (
     <div
       className="bg-[#d1d8f5] pb-24 bg-cover"
@@ -64,7 +65,7 @@ const Homepagesec2 = () => {
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
           <div className="grid md:grid-cols-2 grid-cols-1 items-start md:gap-16 gap-2">
-            <div className="colum1 md:mt-8 mt-2 ">
+            {/* <div className="colum1 md:mt-8 mt-2 ">
               <div className="relative md:h-[400px]">
                 <Pie
                   className="md:mt-12 mt-4 z-[4] "
@@ -103,8 +104,58 @@ const Homepagesec2 = () => {
                 </div>
               </div>
 
-              {/* <img src={Img} alt='chart' /> */}
+             
+            </div> */}
+
+            <div className="colum1 md:mt-8 mt-2 ">
+              <div className="relative md:h-[400px] ">
+                <Pie
+                  className="md:mt-12 mt-4 z-[4] relative"
+                  data={data}
+                  options={options}
+                />
+                <div className="">
+                  <p className="absolute text-white  left-[249px] md:left-[219px] top-[80px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                  onClick={()=>setSelectedText(" Executive board")}
+                  >
+                    Executive <br></br> board
+                  </p>
+                  <p className="absolute text-white  md:left-[260px] left-[300px] top-[220px] md:top-[200px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                   onClick={()=>setSelectedText(" Advisory board")}
+                  >
+                    Advisory <br></br> board
+                  </p>
+                  <p className="absolute text-white md:left-[140px] left-[155px] top-[300px] md:top-[280px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                   onClick={()=>setSelectedText(" Service Partners")}
+                  >
+                    Service <br></br> organization
+                  </p>
+                  <p className="absolute text-white  left-[30px] top-[220px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                   onClick={()=>setSelectedText(" Concierge")}
+                  >
+                    Concierge
+                  </p>
+                  <p className="absolute text-white  left-[60px] top-[80px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                   onClick={()=>setSelectedText(" Peer Advocate Member")}
+                  >
+                  Peer Advocate <br></br> Member
+                  </p>
+                  <div className="relative flex justify-center"> 
+                  <img
+                    className="mt-[-244px] md:ml-[-174px] ml-0 text-white top-[-225px] md:top-[-235px] left-[140px] md:left-[-50px] h-[80px]  z-[5]  "
+                    src={Img}
+                    alt="logo"
+                  />
+                  </div>
+                  <img
+                    className="absolute text-white  md:left-[-35px] hidden md:block left-[0px] md:top-[-36px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
+                    src={Img2}
+                    alt="logo"
+                  />
+                </div>
+              </div>
             </div>
+
             <div className="column2 mt-6 md:mt-0 px-4 md:px-0">
               <div className="flex justify-center">
                 <h1 className="border-b border-[#0a194e] text-[#0a194e] border-b-4 text-center font-bold text-5xl">
@@ -117,26 +168,53 @@ const Homepagesec2 = () => {
               {/* <p className="text-[29px] font-semibold text-[#0a194e] mt-12">
                 Lorem Ipsum is simply dummy <br></br> text of the printing
               </p> */}
-              {/* <p className="text-[16px]  text-[#0a194e] mt-6 font-semibold">
-               <strong>  1. My360Tribe</strong>  all squished together in the watermark – not all
-                capitalized (see beginning of this action item highlighted in
-                yellow is how it should be. Please ensure it is consistent
-                throughout the site.
-                </p>
-                <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>2.</strong> Center circle behind the logo in white
+            
+                {/* <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>2.</strong> Center circle behind the logo in white
                 inside the scope graphic.
                 </p>
                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>3.</strong> Ensure when hovering over each
                 section of the graphic, the name and verbiage matches to the
                 right.
-                </p>
-                <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>4. Executive Board</strong>  – The Executive Board for My360Tribe
-                is made up of Military and Civilian professionals with a
-                deep-rooted passion for the SOF community. We are dedicated to
-                the Operator and their family’s success before, during and after
-                transition from military service.
-                </p>
-                <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>5. Service Organization</strong> 
+                </p> */}
+                {selectedText === " Executive board" ? 
+                 <p className="text-[17px]  text-[#0a194e] mt-2 font-semibold"> The Executive Board for My360Tribe
+                 is made up of Military and Civilian professionals with a
+                 deep-rooted passion for the SOF community. We are dedicated to
+                 the Operator and their family’s success before, during and after
+                 transition from military service.
+                 </p> :
+                 selectedText === " Peer Advocate Member" ?
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> Peer Advocate Network  –
+                 by offering peer – to – peer support, My360Tribe ensures that
+                 operators are helping operators with real life, real time advice
+                 and referrals to get the support and help they need.
+                 </p>
+                 :
+                 selectedText === " Advisory board" ?
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold">As advocates and ambassadors of the organization and its mission, the advisory board acts as
+                 liaison between the special operations community and the organization, providing strategic guidance, organizational
+                 planning and execution, and assisting with Veteran Service Organization (VSO) relationships. In addition to these
+                 duties the advisory board will also assist with fundraising activities when necessary.
+                 </p>
+                 :
+                 selectedText === " Service Partners" ?
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold">Our service partners are
+                 made up of companies and non-profit organizations dedicated to the success of our SOF
+                 operators in the civilian world. It is the dedication and commitment of these entities that help
+                 make My360Tribe a success.                 
+                 </p>
+                 :
+                 selectedText === " Concierge" ?
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold">As the first contact point, concierges are the ambassadors of the organization. They must possess a
+                 warm, friendly attitude paired with an intensely curious nature and an intense drive to help. Concierges will develop
+                 a more robust needs assessment through conversations with the veteran. Concierges are Veteran Service
+                 Organization (VSO) experts - responsible for making introductions, tracking and maintaining the relationship
+                 between the VSO and the veteran               
+                 </p>
+                 :""
+              }
+               
+                {/* <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>5. Service Organization</strong> 
                 Partners (please change to Service Partners)– Our service
                 partners are made up of companies and non-profit organizations
                 dedicated to the success of our SOF operators in the civilian
@@ -151,18 +229,30 @@ const Homepagesec2 = () => {
                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>7.</strong> Vinny
                 will provide the verbiage for <strong>Concierge</strong> and <strong>Advisory Board</strong>
                 </p> */}
-                <p className="text-[16px]  text-[#0a194e] mt-6 font-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                   and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                   <p className="text-[16px] mt-6  text-[#0a194e] mt-6 font-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                   and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              {/* <p className="text-[16px]  text-[#0a194e] mt-6 font-semibold">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <p className="text-[16px] mt-6  text-[#0a194e] mt-6 font-semibold">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p> */}
             </div>
           </div>
         </div>

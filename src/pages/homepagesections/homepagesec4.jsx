@@ -19,7 +19,7 @@ const Homepagesec4 = () => {
                     <div className='flex justify-center'>
                         <div className='relative mt-16'>
                             <input
-                                className='border bg-[#d1d8f5] text-[#0a194e] border-[#0a194e] rounded pl-2 pr-32 py-4'
+                                className='border bg-[#d1d8f5] text-[#0a194e] border-[#0a194e] rounded-xl pl-2 pr-32 py-4'
                                 placeholder='Enter Zip Code'
                                 type='text'
                             />

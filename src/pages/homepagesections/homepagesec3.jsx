@@ -23,7 +23,7 @@ const Homepagesec3 = () => {
                 </h1>
               </div>
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
-                <button className="border-[#D9D9D9] border hover:border-2 rounded font-bold bg-[#192242] text-white w-[200px] py-4" 
+                <button className="border-[#D9D9D9] border hover:border-2 rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4" 
                 onClick={()=>navigate('/peeradvocacy')}
                 >
                   <i
@@ -32,7 +32,7 @@ const Homepagesec3 = () => {
                   ></i>
                   Peer Advocacy
                 </button>
-                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
+                <button className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
                 onClick={()=>navigate('/transition')}
                 >
                   <i
@@ -44,7 +44,7 @@ const Homepagesec3 = () => {
               </div>
 
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
-                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
+                <button className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
                  onClick={()=>navigate('/health')}
                 >
                   <i
@@ -54,7 +54,7 @@ const Homepagesec3 = () => {
                   Health
                 </button>
 
-                <button className="border-[#D9D9D9] hover:border-2 border rounded font-bold bg-[#192242] text-white w-[200px] py-4"
+                <button className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
                 onClick={()=>navigate('/employment')}
                 >
                   <i
