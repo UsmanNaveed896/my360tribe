@@ -22,16 +22,16 @@ const Homepagesec7 = () => {
                                     <i className='fa fa-angle-right text-[50px] font-bold'></i>
                                 </div>
                                 <div className='flex justify-center mt-12 gap-8'>
-                                    <button className='py-1 px-8 border border-[#0C1A4C] rounded text-[20px] text-[#0C1A4C]'>One Time</button>
-                                    <button className='py-1 px-8 border border-[#0C1A4C] rounded text-[20px] bg-[#0C1A4C] text-white'>Monthly</button>
+                                    <button className='py-1 px-8 border border-[#0C1A4C] rounded-xl text-[20px] text-[#0C1A4C]'>One Time</button>
+                                    <button className='py-1 px-8 border border-[#0C1A4C] rounded-xl text-[20px] bg-[#0C1A4C] text-white'>Monthly</button>
                                 </div>
                                 <div className='flex items-center'>
                                 <hr className="w-full border-t border-[#0C1A4C] border-2 my-12" />
                                     <p className='px-2 text-[#0C1A4C] font-semibold text-xl'>or</p>
                                     <hr className="w-full border-t border-[#0C1A4C] border-2 my-12" />
                                 </div>
-                                <button className='w-full border border-[#0C1A4C] rounded text-[20px] text-[#0C1A4C] py-1'>Enter Price Manually</button>
-                                <button className='w-full mt-16 font-bold rounded text-white font-bold py-3 text-[20px]' style={{background:buttonGradient}}>Donate Now</button>
+                                <button className='w-full border border-[#0C1A4C] rounded-xl text-[20px] text-[#0C1A4C] py-1'>Enter Price Manually</button>
+                                <button className='w-full mt-16 font-bold rounded-xl text-white font-bold py-3 text-[20px]' style={{background:buttonGradient}}>Donate Now</button>
                             </div>
                         </div>
                     </div>
