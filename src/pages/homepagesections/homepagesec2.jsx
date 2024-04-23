@@ -116,7 +116,7 @@ const Homepagesec2 = () => {
                   options={options}
                 /> 
                 <div className="">
-                  <p className="absolute text-white  left-[209px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
+                  <p className="absolute text-white  left-[239px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                   onClick={()=>setSelectedText(" Executive board")}
                   >
                     Executive <br></br> board
@@ -126,7 +126,7 @@ const Homepagesec2 = () => {
                   >
                     Advisory <br></br> board
                   </p>
-                  <p className="absolute text-white md:left-[220px] left-[155px] top-[230px] md:top-[320px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
+                  <p className="absolute text-white md:left-[220px] left-[165px] top-[240px] md:top-[320px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Service Partners")}
                   >
                     Service <br></br> organization
@@ -136,7 +136,7 @@ const Homepagesec2 = () => {
                   >
                     Concierge
                   </p>
-                  <p className="absolute text-white md:left-[140px] md:top-[120px] left-[90px] top-[80px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
+                  <p className="absolute text-white md:left-[140px] md:top-[120px] left-[100px] top-[80px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Peer Advocate Member")}
                   >
                   Peer Advocate <br></br> Member
