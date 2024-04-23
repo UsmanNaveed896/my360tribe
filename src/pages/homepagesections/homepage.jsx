@@ -45,7 +45,7 @@ const Homepage = () => {
     "linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)";
   return (
     <div
-      className="bg-[#070c1f] md:mt-16 mt-0 bg-cover"
+      className="bg-[#070c1f] md:mt-16 mt-0 md:bg-cover bg-contain"
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center px-4 md:px-0">

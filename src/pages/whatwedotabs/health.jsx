@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Health = () => {
+const Health = ({ handleClick }) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("Medical");
 
@@ -15,18 +15,24 @@ const Health = () => {
     "Mobility",
     "Sports and Recreation",
   ];
+  const handleNavigate=()=>{
+    handleClick(2)
+    navigate('/')
+  }
   return (
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
         <div className="max-w-[1200px] container pb-24">
+        <div className="w-[60%] flex justify-between items-center">
           <i
             class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
-            onClick={() => navigate("/")}
+            onClick={()=>handleNavigate()}
           ></i>
           <h1 className="text-white md:text-5xl text-2xl mt-12 text-center pb-12 font-bold">
             <i class="fa fa-heartbeat mr-2 text-[36px]" aria-hidden="true"></i>{" "}
             Health
           </h1>
+          </div>
           <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal px-4 md:px-0">
             <strong> At My360Tribe</strong>, we are committed to your health and
             well-being. Providing referrals and services to accomplish
@@ -115,14 +121,7 @@ const Health = () => {
           ) : (
             ""
           )}
-          <div className="flex justify-center mt-4">
-            <button
-              className="rounded-lg py-3 w-[150px] border text-white bg-transparent hover:font-bold"
-              onClick={() => navigate("/")}
-            >
-              Back
-            </button>
-          </div>
+         
         </div>
       </div>
     </div>

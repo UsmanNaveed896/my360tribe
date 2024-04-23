@@ -11,6 +11,7 @@ import Employment from "./pages/whatwedotabs/employment";
 
 function App() {
   const handleClick = (a) => {
+    console.log(a,"aaa")
     setTimeout(() => {
       const targetDiv = document.getElementById(`targetDiv${a}`);
       if (targetDiv) {
@@ -30,9 +31,9 @@ function App() {
           path="/peeradvocacy"
           element={<PeerAdvocacy handleClick={handleClick} />}
         />
-        <Route exact path="/transition" element={<Transition />} />
-        <Route exact path="/Health" element={<Health />} />
-        <Route exact path="/employment" element={<Employment />} />
+        <Route exact path="/transition" element={<Transition handleClick={handleClick} />} />
+        <Route exact path="/Health" element={<Health handleClick={handleClick} />} />
+        <Route exact path="/employment" element={<Employment handleClick={handleClick} />} />
       </Routes>
       <Footer />
     </>

@@ -46,7 +46,8 @@ const Homepagesec6 = () => {
         {
             img:Img5,
             name: 'Brian Hughes',
-            designation: 'Army (160th SOAR)',
+            description:'Brian’s career, both in the military and as a civilian, reflects a legacy of strategic leadership and a commitment to innovation. As a 25+ year Navy SEAL and senior Special Operations Officer, Brian led hundreds of critical operations, organizations, and US strategies across challenging environments, demonstrating unparalleled leadership, strategic fluency, and tactical acumen. His military service, highlighted by leadership in multiple combat deployments, showcases his ability to navigate complex situations with precision and integrity. Transitioning into the corporate world, Brian has continued to make significant impacts as the Chief Strategy Officer at an advanced technology company where his expertise in leading-edge computing and AI/ML has propelled the company into a new era of tech innovation. His journey from the rigorous demands of Special Operations to the dynamic challenges of the tech industry exemplifies a dedication to excellence and a continuous pursuit of impactful solutions to improve humankind. Motivated by pivotal disappointing corporate encounters and value gaps in transition, which ignited his determination to empower SOF veterans, ensuring their incredibly rare skills and elite leadership are recognized, valued, never underestimated.'
+
         },
         {
             img:Img6,
@@ -75,19 +76,19 @@ const Homepagesec6 = () => {
                         <div className='flex justify-center'>
                             <div>
                                 <h1 className='text-[#0a194e] text-center font-bold text-5xl'>Meet our team</h1>
-                                {/* <p className='text-[#0a194e] md:text-[35px] text-[25px] mt-6'>Founders and Founding Board </p> */}
+                                <p className='text-[#0a194e] md:text-[35px] text-[25px] mt-6'>Founders and Founding Board </p>
                             </div>
                         </div>
-                        {/* <div className='flex md:justify-between justify-center flex-wrap md:gap-0 gap-8'>
+                        <div className='flex md:justify-between justify-center flex-wrap md:gap-0 gap-8'>
                             {employees.map((item) => (
                                 <Usercard name={item.name} designation={item.designation} experience={item.experience} />
                             ))}
-                        </div> */}
-                        {/* <div className='flex justify-center mt-12'>
+                        </div>
+                        <div className='flex justify-center mt-12'>
                             <div>
                                 <p className='text-[#0a194e] text-[35px] mt-6'>Advisory Board </p>
                             </div>
-                        </div> */}
+                        </div>
                         <div className='flex justify-center flex-wrap md:gap-32 gap-8 md:mt-12 mt-6'>
                             
                             {advisors.map((item) => (
