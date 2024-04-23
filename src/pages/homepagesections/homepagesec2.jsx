@@ -5,6 +5,7 @@ import Img4 from "../../assets/Bg3.png";
 import { Pie } from "react-chartjs-2";
 import "chart.js/auto";
 import "chartjs-plugin-datalabels";
+import './style.css'
 const Homepagesec2 = () => {
   const [selectedText, setSelectedText] = useState(" Executive board"); // State to manage selected text
 
@@ -55,16 +56,16 @@ const Homepagesec2 = () => {
       }
     },
   };
-  console.log( selectedText,"ss")
+
   return (
     <div
-      className="bg-[#d1d8f5] pb-24 bg-cover"
+      className="bg-[#d1d8f5] pb-24 md:bg-cover bg-contain"
       id="targetDiv1"
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
-          <div className="grid md:grid-cols-2 grid-cols-1 items-start md:gap-16 gap-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 items-center pb-12 md:gap-16 gap-2">
             {/* <div className="colum1 md:mt-8 mt-2 ">
               <div className="relative md:h-[400px]">
                 <Pie
@@ -108,47 +109,47 @@ const Homepagesec2 = () => {
             </div> */}
 
             <div className="colum1 md:mt-8 mt-2 ">
-              <div className="relative md:h-[400px] ">
-                <Pie
-                  className="md:mt-12 mt-4 z-[4] relative"
+              <div className="relative md:h-[400px] md:flex flex justify-center">
+                 <Pie
+                  className="md:mt-12 mt-4 z-[4] "
                   data={data}
                   options={options}
-                />
+                /> 
                 <div className="">
-                  <p className="absolute text-white  left-[249px] md:left-[219px] top-[80px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                  <p className="absolute text-white  left-[209px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                   onClick={()=>setSelectedText(" Executive board")}
                   >
                     Executive <br></br> board
                   </p>
-                  <p className="absolute text-white  md:left-[260px] left-[300px] top-[220px] md:top-[200px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                  <p className="absolute text-white  md:left-[340px] left-[260px] top-[170px] md:top-[240px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Advisory board")}
                   >
                     Advisory <br></br> board
                   </p>
-                  <p className="absolute text-white md:left-[140px] left-[155px] top-[300px] md:top-[280px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                  <p className="absolute text-white md:left-[220px] left-[155px] top-[230px] md:top-[320px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Service Partners")}
                   >
                     Service <br></br> organization
                   </p>
-                  <p className="absolute text-white  left-[30px] top-[220px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                  <p className="absolute text-white md:left-[130px] md:top-[260px] left-[80px] top-[170px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Concierge")}
                   >
                     Concierge
                   </p>
-                  <p className="absolute text-white  left-[60px] top-[80px] text-center font-bold text-[20px] z-[5] cursor-pointer"
+                  <p className="absolute text-white md:left-[140px] md:top-[120px] left-[90px] top-[80px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Peer Advocate Member")}
                   >
                   Peer Advocate <br></br> Member
                   </p>
-                  <div className="relative flex justify-center"> 
+                  {/* <div className="relative flex justify-center ">  */}
                   <img
-                    className="mt-[-244px] md:ml-[-174px] ml-0 text-white top-[-225px] md:top-[-235px] left-[140px] md:left-[-50px] h-[80px]  z-[5]  "
+                    className=" ml-0 text-white md:left-[42%] md:top-[50%] top-[40%] left-[39%] h-[80px] absolute z-[999]"
                     src={Img}
                     alt="logo"
                   />
-                  </div>
+                  {/* </div> */}
                   <img
-                    className="absolute text-white  md:left-[-35px] hidden md:block left-[0px] md:top-[-36px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
+                    className="absolute text-white  md:left-[50px] hidden md:block left-[0px] md:top-[12px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
                     src={Img2}
                     alt="logo"
                   />

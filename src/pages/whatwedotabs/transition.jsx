@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Transition = () => {
+const Transition = ({handleClick}) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("Mentorship");
 
@@ -16,19 +16,25 @@ const Transition = () => {
     "Family/Legal",
     "Support",
   ];
+  const handleNavigate=()=>{
+    handleClick(2)
+    navigate('/')
+  }
   return (
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
         <div className="max-w-[1200px] container pb-24">
-          <i
-            class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
-            onClick={() => navigate("/")}
-          ></i>
-          <h1 className="text-white md:text-5xl text-2xl mt-12 text-center md:pb-12 pb-2 font-bold">
-            <i class="fa fa-exchange mr-2 text-[36px]" aria-hidden="true"></i>{" "}
-            Transition
-          </h1>
-          <div  className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3">
+          <div className="w-[60%] flex justify-between items-center">
+            <i
+              class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
+              onClick={() => handleNavigate()}
+            ></i>
+            <h1 className="text-white md:text-5xl text-2xl mt-12 text-center md:pb-12 pb-2 font-bold">
+              <i class="fa fa-exchange mr-2 text-[36px]" aria-hidden="true"></i>{" "}
+              Transition
+            </h1>
+          </div>
+          <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3">
             <ul class="flex md:gap-6 gap-2 text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
               {transition.map((item) => (
                 <li
@@ -161,14 +167,7 @@ const Transition = () => {
           ) : (
             ""
           )}
-          <div className="flex justify-center mt-4">
-            <button
-              className="rounded-lg py-3 w-[150px] border text-white bg-transparent hover:font-bold"
-              onClick={() => navigate("/")}
-            >
-              Back
-            </button>
-          </div>
+      
         </div>
       </div>
     </div>
