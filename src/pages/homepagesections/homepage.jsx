@@ -132,7 +132,7 @@ const Homepage = () => {
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer  h-[200px] w-[250px] border rounded-xl"
+                  className="cursor-pointer ml-12  h-[200px] w-[250px] border rounded-xl"
                   src={Img1}
                   alt="pic"
                   onClick={() =>
