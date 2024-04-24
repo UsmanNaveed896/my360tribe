@@ -87,9 +87,9 @@ const Homepagesec6 = () => {
                         {/* <div className='flex justify-center mt-12'>
                             <div>
                                 <p className='text-[#0a194e] text-[35px] mt-6'>Advisory Board </p>
-                            </div>
+                            </div> 
                         </div> */}
-                        <div className='flex justify-center flex-wrap md:gap-32 gap-8 md:mt-12 mt-6'>
+                        <div className='flex justify-center flex-wrap md:gap-32 gap-8 md:mt-12 mt-6 '>
                             
                             {advisors.map((item) => (
                                 <Usercard img={item.img} name={item.name} designation={item.designation} description={item.description} />
