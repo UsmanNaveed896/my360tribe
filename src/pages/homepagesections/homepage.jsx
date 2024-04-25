@@ -7,8 +7,6 @@ import Img4 from "../../assets/Group1000006234.png";
 import Img5 from "../../assets/Group 1000006243.png";
 import Img6 from "../../assets/Untitled-h.png";
 
-
-
 import PicsModal from "../../Popups/picsModal";
 
 const Homepage = () => {
@@ -49,11 +47,14 @@ const Homepage = () => {
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center px-4 md:px-0">
-        <div className="container max-w-[1300px] md:mt-16 mt-4"
-        >
-            <div className="relative">
-                <img className="absolute md:left-[19%]  left-[0] top-[44px]  z-[33] md:block hidden" src={Img6} alt="abc"/>
-            </div>
+        <div className="container max-w-[1300px] md:mt-16 mt-4">
+          <div className="relative">
+            <img
+              className="absolute md:left-[19%]  left-[0] top-[44px]  z-[33] md:block hidden"
+              src={Img6}
+              alt="abc"
+            />
+          </div>
           <div className="flex justify-end">
             <div>
               <h1 className="text-[55px] text-white font-bold">My 360 Tribe</h1>
@@ -65,7 +66,7 @@ const Homepage = () => {
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer w-[250px]  h-[200px] border rounded-xl"
+                  className="cursor-pointer w-[250px] ml-[-20px]  h-[200px] border rounded-xl"
                   src={Img3}
                   alt="pic"
                   onClick={() =>
@@ -107,7 +108,7 @@ const Homepage = () => {
                 Conceirge
               </h1>
             </div>
-            <div className="py-6 md:py-0">
+            <div className="py-6 md:py-0 ml-[20px]">
               <div className="flex justify-center">
                 <img
                   className="cursor-pointer  w-[250px] rounded-lg h-[200px] border rounded-xl"
@@ -132,7 +133,7 @@ const Homepage = () => {
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer ml-12  h-[200px] w-[250px] border rounded-xl"
+                  className="cursor-pointer ml-10  h-[200px] w-[250px] border rounded-xl"
                   src={Img1}
                   alt="pic"
                   onClick={() =>
