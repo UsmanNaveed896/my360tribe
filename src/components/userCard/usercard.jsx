@@ -20,7 +20,7 @@ const Usercard = (props) => {
                 <div class="flip-box-front flex justify-center">
                   <img className="h-[130px] " src={props.img} alt="line" />
                 </div>
-                <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center">
+                <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center" onClick={()=>setIsModalOpen(true)}>
                   <div className="rounded  bg-[#000] h-[240px]  pb-2 ">
                     <div className="flex justify-center ">
                       <img className="h-[130px]" src={props.img} alt="line" />
