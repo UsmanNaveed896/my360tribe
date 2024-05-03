@@ -25,8 +25,8 @@ const Header = ({ handleClick }) => {
            <nav className="md:flex hidden items-center justify-between  text-white px-2 py-3 fixed w-full top-0 z-[999]"
             style={{background:gradient ,}}
             >
-                <div className='w-[300px] relative '>
-                    <img className='cursor-pointer h-[90px] py-1' src={Img} alt='logo' onClick={()=>navigate('/')} />
+                <div className='w-[200px] relative '>
+                    <img className='cursor-pointer h-[70px] py-1' src={Img} alt='logo' onClick={()=>navigate('/')} />
                 </div>
                 <div className="flex items-center ">
                     <ul className="flex gap-8 font-semibold">

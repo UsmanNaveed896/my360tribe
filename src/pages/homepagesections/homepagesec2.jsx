@@ -143,7 +143,7 @@ const Homepagesec2 = () => {
                   </p>
                   {/* <div className="relative flex justify-center ">  */}
                   <img
-                    className=" ml-0 text-white md:left-[42%] md:top-[50%] top-[40%] left-[39%] h-[80px] absolute z-[999]"
+                    className=" ml-0 text-white md:left-[42%] md:top-[50%] top-[40%] left-[39%] h-[80px] absolute z-[22]"
                     src={Img}
                     alt="logo"
                   />
@@ -178,35 +178,35 @@ const Homepagesec2 = () => {
                 right.
                 </p> */}
                 {selectedText === " Executive board" ? 
-                 <p className="text-[17px]  text-[#0a194e] mt-2 font-semibold"> The Executive Board for My360Tribe
+                 <p className="text-[17px]  text-[#0a194e] mt-2 font-semibold h-[200px]"> The Executive Board for My360Tribe
                  is made up of Military and Civilian professionals with a
                  deep-rooted passion for the SOF community. We are dedicated to
                  the Operator and their family’s success before, during and after
                  transition from military service.
                  </p> :
                  selectedText === " Peer Advocate Member" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> Peer Advocate Network  –
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]"> Peer Advocate Network  –
                  by offering peer – to – peer support, My360Tribe ensures that
                  operators are helping operators with real life, real time advice
                  and referrals to get the support and help they need.
                  </p>
                  :
                  selectedText === " Advisory board" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold">As advocates and ambassadors of the organization and its mission, the advisory board acts as
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">As advocates and ambassadors of the organization and its mission, the advisory board acts as
                  liaison between the special operations community and the organization, providing strategic guidance, organizational
                  planning and execution, and assisting with Veteran Service Organization (VSO) relationships. In addition to these
                  duties the advisory board will also assist with fundraising activities when necessary.
                  </p>
                  :
                  selectedText === " Service Partners" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold">Our service partners are
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">Our service partners are
                  made up of companies and non-profit organizations dedicated to the success of our SOF
                  operators in the civilian world. It is the dedication and commitment of these entities that help
                  make My360Tribe a success.                 
                  </p>
                  :
                  selectedText === " Concierge" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold">As the first contact point, concierges are the ambassadors of the organization. They must possess a
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">As the first contact point, concierges are the ambassadors of the organization. They must possess a
                  warm, friendly attitude paired with an intensely curious nature and an intense drive to help. Concierges will develop
                  a more robust needs assessment through conversations with the veteran. Concierges are Veteran Service
                  Organization (VSO) experts - responsible for making introductions, tracking and maintaining the relationship
