@@ -3,58 +3,102 @@ import Img from "../../assets/Group11.png";
 import { useNavigate } from "react-router-dom";
 
 const Header = ({ handleClick }) => {
-  const navigate = useNavigate();
-  const gradient =
-    "linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
-  const buttonGradient =
-    "linear-gradient(to bottom, #12179d, #001c83, #001c69, #031a4e, #0d1633)";
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-  // const handleClick = (value) => {
-  //     // handle click logic
-  // };
+    const navigate = useNavigate()
+    const gradient = 'linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)';
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
-  return (
-    <div className="relative z-[999]">
-      <nav
-        className="md:flex hidden  items-center justify-between  text-white px-2 py-3 fixed w-full top-0 z-[999]"
-        style={{ background: gradient }}
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null);
+  
+    const toggleDropdown = () => {
+      setIsOpen(!isOpen);
+    };
+  
+    const handleOptionClick = (option) => {
+      setSelectedOption(option);
+      setIsOpen(false);
+    };
+
+
+    return (
+        <div className='relative z-[999]'>
+           <nav className="md:flex hidden items-center justify-between  text-white px-2 py-3 fixed w-full top-0 z-[999]"
+            style={{background:gradient ,}}
+            >
+                <div className='w-[200px] relative '>
+                    <img className='cursor-pointer h-[70px] py-1' src={Img} alt='logo' onClick={()=>navigate('/')} />
+                </div>
+                <div className="flex items-center ">
+                    <ul className="flex gap-8 font-semibold">
+                        {/* <li className="mr-4"><i className='fa fa-user text-[20px]'></i></li> */}
+                        <li className="mr-4"><a href="#"><i className='fa fa-user text-[20px] mr-3'></i>Sign in</a></li>
+                        <li className="mr-4 cursor-pointer"><a onClick={()=>navigate('/')}>Home</a></li>
+                        <li className="mr-4"><a href="#">About Us</a></li>
+                        {/* <li className="mr-4"><a href="#">Get Involved</a></li> */}
+                        <li className="mr-4"> 
+                        <div className="relative">
+      <button
+        onClick={toggleDropdown}
+        className="inline-flex justify-center items-center px-4  border border-transparent text-base font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 "
       >
-        <div className="w-[200px] relative ">
-          <img
-            className="cursor-pointer h-[70px] py-1"
-            src={Img}
-            alt="logo"
-            onClick={() => navigate("/")}
+        {selectedOption || 'Get Involved'}
+        <svg
+          className="-mr-1 ml-2 h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10 12a1 1 0 01-.707-.293l-4-4a1 1 0 111.414-1.414L10 9.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-.707.293z"
+            clipRule="evenodd"
           />
-        </div>
-        <div className="flex items-center ">
-          <ul className="flex gap-8 font-semibold">
-            {/* <li className="mr-4"><i className='fa fa-user text-[20px]'></i></li> */}
-            <li className="mr-4">
-              <a href="#">
-                <i className="fa fa-user text-[20px] mr-3"></i>Sign in
-              </a>
-            </li>
-            <li className="mr-4 cursor-pointer">
-              <a onClick={() => navigate("/")}>Home</a>
-            </li>
-            <li className="mr-4">
-              <a href="#">About Us</a>
-            </li>
-            <li className="mr-4">
-              <a href="#">Get Involved</a>
-            </li>
-          </ul>
-          <button
-            className="px-4 py-2 rounded-xl"
-            style={{ background: "red" }}
-            onClick={() => handleClick(5)}
+        </svg>
+      </button>
+
+      {isOpen && (
+        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+          <div
+            className="py-1"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="options-menu"
           >
-            Donate
-          </button>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+              onClick={() => handleOptionClick('Conceirge')}
+            >
+              Conceirge
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+              onClick={() => handleOptionClick('Peer Advocate Member')}
+            >
+              Peer Advocate Member
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+              onClick={() => handleOptionClick('Option 3')}
+            >
+              Option 3
+            </a>
+          </div>
         </div>
-      </nav>
+      )}
+    </div>
+    </li>
+                    </ul>
+                    <button className='px-4 py-2 rounded-xl' style={{background:'red'}} onClick={() => handleClick(5)}>Donate</button>
+                </div>
+            </nav>
+
 
       <div className="overflow-x-hidden block md:hidden">
         <nav className="" style={{ background: gradient }}>

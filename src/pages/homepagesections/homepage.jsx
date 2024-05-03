@@ -18,7 +18,7 @@ const Homepage = () => {
   });
 
   const img4 = {
-    heading: "Service Organizations",
+    heading: " Service Partners",
     text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
   };
 
@@ -148,7 +148,7 @@ const Homepage = () => {
                 />
               </div>
               <h1 className="font-semibold text-[29px] text-[#f9fafa] text-center mt-5">
-                Service Organizations
+                Service Partners
               </h1>
             </div>
           </div>
