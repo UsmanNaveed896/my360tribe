@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Img from "../assets/Card1.png";
+import Img from "../assets/Card12.png";
 const TeamModal = ({ isOpen, props, setIsModalOpen }) => {
   const navigate = useNavigate();
   if (!isOpen) {
@@ -14,7 +14,7 @@ const TeamModal = ({ isOpen, props, setIsModalOpen }) => {
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div className="fixed inset-0 bg-black opactiy-100 transition-opacity"></div>
 
       <div className="fixed inset-0 z-10 ">
         <div className="flex md:min-h-full min-h-[80%] items-end justify-center p-4 text-center sm:items-center sm:p-0">

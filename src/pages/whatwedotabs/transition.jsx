@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Transition = ({handleClick}) => {
+const Transition = ({ handleClick }) => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("Mentorship");
+  const [activeTab, setActiveTab] = useState("Continuing Education");
 
   const handleTabs = (item) => {
     setActiveTab(item);
   };
   const transition = [
-    "Mentorship",
-    "Financial Support",
-    "Relocation",
-    "Assistance",
-    "Family/Legal",
-    "Support",
+    "Continuing Education",
+    "VA Programs",
+    "Education Consulting",
+    "VA Programs Assistance",
+  
   ];
-  const handleNavigate=()=>{
-    handleClick(2)
-    navigate('/')
-  }
+  const handleNavigate = () => {
+    handleClick(2);
+    navigate("/");
+  };
   return (
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
@@ -53,43 +52,31 @@ const Transition = ({handleClick}) => {
             </ul>
           </div>
 
-          {activeTab == "Mentorship" ? (
+          {activeTab == "Continuing Education" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Mentorship</h1>
+              <h1 className="font-bold text-3xl">Continuing Education</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Imagine yourself sitting behind the wheel of a car that has a
-                stick shift, but all you’ve ever driven is an automatic
-                transmission. Sure it’s a car like any other, but if you’re
-                driving a car with a stick shift, you’ll need to know how to
-                operate the gears and clutch. You’ll need transition training
-                from an automatic to the manual transmission. Similarly, pilots
-                who are transitioning to unfamiliar aircraft require not only
-                stick and rudder development, but also specific training in the
-                new aircraft’s systems and with it’s operating characteristics
-                to include normal, abnormal, and emergency procedures.{" "}
+                Continuing Education – want to go back to school, learn a new
+                trade or obtain a civilian certification? We have resources and
+                a referral network to introduce our operators to different
+                educational programming across the country. TRANSITION SERVICES{" "}
               </p>
             </div>
-          ) : activeTab == "Financial Support" ? (
+          ) : activeTab == "VA Programs" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Financial Support</h1>
+              <h1 className="font-bold text-3xl">VA Programs</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.{" "}
+                VA Programs are an important part of any transition. We work
+                with our operators with referrals to the VA system and
+                identifying a VA VSO that can assist them personally. TRANSITION
+                SERVICES{" "}
               </p>
             </div>
-          ) : activeTab == "Relocation" ? (
+          ) : activeTab == "Education Consulting" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Relocation</h1>
+              <h1 className="font-bold text-3xl">Education Consulting</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
                 It is a long established fact that a reader will be distracted
@@ -104,9 +91,9 @@ const Transition = ({handleClick}) => {
                 accident, sometimes on purpose (injected humour and the like).{" "}
               </p>
             </div>
-          ) : activeTab == "Assistance" ? (
+          ) : activeTab == "VA Programs Assistance" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Assistance</h1>
+              <h1 className="font-bold text-3xl">VA Programs Assistance</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
                 Contrary to popular belief, Lorem Ipsum is not simply random
@@ -124,50 +111,9 @@ const Transition = ({handleClick}) => {
                 in section 1.10.32.{" "}
               </p>
             </div>
-          ) : activeTab == "Family/Legal" ? (
-            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Family/Legal</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
-                {" "}
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of
-                model sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc{" "}
-              </p>
-            </div>
-          ) : activeTab == "Support" ? (
-            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Support</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
-                {" "}
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of
-                model sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc{" "}
-              </p>
-            </div>
-          ) : (
+          ) :  (
             ""
           )}
-      
         </div>
       </div>
     </div>

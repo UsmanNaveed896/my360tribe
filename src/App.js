@@ -8,8 +8,15 @@ import ScrollToTopOnRouteChange from "./components/scroll";
 import Transition from "./pages/whatwedotabs/transition";
 import Health from "./pages/whatwedotabs/health";
 import Employment from "./pages/whatwedotabs/employment";
+import { useState } from "react";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState({
+    mod1: false,
+    mod2: false,
+    mod3: false,
+    mod4: false,
+  });
   const handleClick = (a) => {
     console.log(a,"aaa")
     setTimeout(() => {
@@ -21,11 +28,11 @@ function App() {
   };
   return (
     <>
-      <Header handleClick={handleClick} />
+      <Header handleClick={handleClick} setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />
       {/* <OTP /> */}
       <ScrollToTopOnRouteChange />
       <Routes>
-        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/" element={<Homepage setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />} />
         <Route
           exact
           path="/peeradvocacy"

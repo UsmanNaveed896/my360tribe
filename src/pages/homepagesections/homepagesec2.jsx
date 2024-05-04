@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Img from "../../assets/Group12.png";
 import Img2 from "../../assets/target.png";
-import Img4 from "../../assets/Bg3.png";
+import Img4 from "../../assets/Group1000006267.png";
 import { Pie } from "react-chartjs-2";
 import "chart.js/auto";
 import "chartjs-plugin-datalabels";
@@ -59,7 +59,7 @@ const Homepagesec2 = () => {
 
   return (
     <div
-      className="bg-[#d1d8f5] pb-24 md:bg-cover bg-contain"
+      className="bg-[#d1d8f5] pb-[60px] bg-cover"
       id="targetDiv1"
       style={{ backgroundImage: `url(${Img4})` }}
     >
@@ -149,7 +149,7 @@ const Homepagesec2 = () => {
                   />
                   {/* </div> */}
                   <img
-                    className="absolute text-white  md:left-[50px] hidden md:block left-[0px] md:top-[12px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
+                    className="absolute text-white  md:left-[49px] hidden md:block left-[0px] md:top-[9px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
                     src={Img2}
                     alt="logo"
                   />

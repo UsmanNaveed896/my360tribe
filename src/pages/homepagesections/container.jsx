@@ -7,10 +7,10 @@ import Homepagesec5 from './homepagesec5'
 import Homepagesec6 from './homepagesec6'
 import Homepagesec7 from './homepagesec7'
 
-const Container = () => {
+const Container = ({isModalOpen,setIsModalOpen}) => {
     return (
         <div>
-            <Homepage />
+            <Homepage setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />
             <Homepagesec2 />
             <Homepagesec3 />
             <Homepagesec4 />
