@@ -1,10 +1,12 @@
 import React from 'react'
 import Img from '../../assets/Group 1000006028.png'
-import Img4 from '../../assets/Bg3.png'
+import Img4 from '../../assets/Group1000006267.png'
 
 const Homepagesec4 = () => {
     return (
-        <div className='bg-[#d1d8f5] pb-10 bg-contain ' id="targetDiv3" style={{ backgroundImage: `url(${Img4})`, }}>
+        <div className='bg-[#d1d8f5] pb-[80px] bg-contain' id="targetDiv3" 
+        style={{ backgroundImage: `url(${Img4})`, }}
+        >
             <div className='flex justify-center px-4 md:px-0'>
                 <div className='container max-w-[1200px] mt-16'>
                     <div className='flex justify-center'>

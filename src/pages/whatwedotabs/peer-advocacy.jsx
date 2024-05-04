@@ -7,34 +7,34 @@ const Dummy = ({ handleClick }) => {
   const buttonGradient =
     "linear-gradient(to bottom, #12179d, #001c83, #001c69, #031a4e, #0d1633)";
   const peer = [
-    "Transition Training",
-    "Education",
-    "Consulting",
-    "VA Programs",
-    "Assistance",
+    "Relocation",
+    "Legal Services",
+    "Financial Support",
+    "Relocation Assistance",
+    "Family/Legal Support",
   ];
-  const [activeTab, setActiveTab] = useState("Transition Training");
+  const [activeTab, setActiveTab] = useState("Relocation");
 
   const handleTabs = (item) => {
     setActiveTab(item);
   };
-  const handleNavigate=()=>{
-    handleClick(2)
-    navigate('/')
-  }
+  const handleNavigate = () => {
+    handleClick(2);
+    navigate("/");
+  };
   return (
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
         <div className="max-w-[1200px] container pb-24">
-        <div className="w-[60%] flex justify-between items-center">
-          <i
-            class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer pl-2 md:pl-0"
-            onClick={() => handleNavigate()}
-          ></i>
-          <h1 className="text-white md:text-5xl text-2xl mt-12 text-center md:pb-12 pb-2 font-bold">
-            <i class="fa fa-bullhorn mr-2 text-[36px]" aria-hidden="true"></i>{" "}
-            Peer Advocacy
-          </h1>
+          <div className="w-[60%] flex justify-between items-center">
+            <i
+              class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer pl-2 md:pl-0"
+              onClick={() => handleNavigate()}
+            ></i>
+            <h1 className="text-white md:text-5xl text-2xl mt-12 text-center md:pb-12 pb-2 font-bold">
+              <i class="fa fa-bullhorn mr-2 text-[36px]" aria-hidden="true"></i>{" "}
+              Peer Advocacy
+            </h1>
           </div>
           <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3 px-4">
             <ul class="flex md:gap-6 gap-2 text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
@@ -55,60 +55,44 @@ const Dummy = ({ handleClick }) => {
             </ul>
           </div>
 
-          {activeTab == "Transition Training" ? (
+          {activeTab == "Relocation" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Transition Training</h1>
+              <h1 className="font-bold text-3xl">Relocation</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Imagine yourself sitting behind the wheel of a car that has a
-                stick shift, but all you’ve ever driven is an automatic
-                transmission. Sure it’s a car like any other, but if you’re
-                driving a car with a stick shift, you’ll need to know how to
-                operate the gears and clutch. You’ll need transition training
-                from an automatic to the manual transmission. Similarly, pilots
-                who are transitioning to unfamiliar aircraft require not only
-                stick and rudder development, but also specific training in the
-                new aircraft’s systems and with it’s operating characteristics
-                to include normal, abnormal, and emergency procedures.{" "}
+                Relocation – relocating can be stressful and deciding where to
+                live and moving can be daunting. We have resources available
+                around the country to help you and your family make the best
+                decisions on where to settle and begin your life anew. PEER
+                ADVOCACY.{" "}
               </p>
             </div>
-          ) : activeTab == "Education" ? (
+          ) : activeTab == "Legal Services" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Education</h1>
+              <h1 className="font-bold text-3xl">Legal Services</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.{" "}
+                Legal Services – There will be times you may need an attorney to
+                have a consultation with or represent you in a legal matter. Our
+                team can provide you with referrals to established law firms and
+                attorneys available to speak with you. PEER ADVOCACY.{" "}
               </p>
             </div>
-          ) : activeTab == "Consulting" ? (
+          ) : activeTab == "Financial Support" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Consulting</h1>
+              <h1 className="font-bold text-3xl">Financial Support</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).{" "}
+                Financial Support – managing finances is an aspect of transition
+                that can cause stress. Finding a financial institution,
+                financial planner, etc. can seem like a monumental task with all
+                that you have going on. Please let your concierge or peer
+                advocate know if you guidance in this area and PEER ADVOCACY{" "}
               </p>
             </div>
-          ) : activeTab == "VA Programs" ? (
+          ) : activeTab == "Relocation Assistance" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">VA Programs</h1>
+              <h1 className="font-bold text-3xl"> Relocation Assistance</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
                 Contrary to popular belief, Lorem Ipsum is not simply random
@@ -126,9 +110,9 @@ const Dummy = ({ handleClick }) => {
                 in section 1.10.32.{" "}
               </p>
             </div>
-          ) : activeTab == "Assistance" ? (
+          ) : activeTab == "Family/Legal Support" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Assistance</h1>
+              <h1 className="font-bold text-3xl">Family/Legal Support</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
                 There are many variations of passages of Lorem Ipsum available,
@@ -149,7 +133,6 @@ const Dummy = ({ handleClick }) => {
           ) : (
             ""
           )}
-          
         </div>
       </div>
     </div>

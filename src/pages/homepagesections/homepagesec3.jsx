@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Img from "../../assets/1 (1).png";
-import Img2 from "../../assets/Capture-3-1065x684 2.png";
-import Img4 from "../../assets/Group1000006234.png";
+import Img2 from "../../assets/abc1.jpeg";
+import Img4 from "../../assets/Group1000006274.png";
 import Modal from "../../Popups/Modal";
 import { useNavigate } from "react-router-dom";
 const Homepagesec3 = () => {
@@ -9,7 +9,7 @@ const Homepagesec3 = () => {
 
   return (
     <div
-      className="bg-[#1a2242] pb-20 md:bg-cover bg-contain"
+      className="bg-[#1a2242] pb-24 md:bg-cover bg-contain"
       id="targetDiv2"
       style={{ backgroundImage: `url(${Img4})` }}
     >
@@ -22,30 +22,53 @@ const Homepagesec3 = () => {
                   What We Do
                 </h1>
               </div>
-              <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
-                <button className="border-[#D9D9D9] border hover:border-2 rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4" 
-                onClick={()=>navigate('/peeradvocacy')}
-                >
-                  <i
-                    class="fa fa-bullhorn mr-2 text-[26px]"
-                    aria-hidden="true"
-                  ></i>
-                  Peer Advocacy
-                </button>
-                <button className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
-                onClick={()=>navigate('/transition')}
-                >
-                  <i
-                    class="fa fa-exchange mr-2 text-[26px]"
-                    aria-hidden="true"
-                  ></i>
-                  Transition
-                </button>
+              <div className="flex gap-12 mt-32 justify-center md:flex-row flex-col items-center">
+                <div class="has-tooltip">
+                  <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] -mt-28  text-[12px]">
+                    One of the things that sets us apart is our Peer Advocate
+                    Network. Operators helping <br></br> Operators by providing support
+                    and guidance to you as a member of My360Tribe. Your peer<br></br>
+                    advocate will keep in contact with you and help coordinate
+                    the contact with the service partners <br></br> ready to answer your
+                    questions and assist you in navigating this new life outside
+                    the SOF. Click <br></br>  on the tabs above to learn more about the
+                    360-warrior care through Peer Advocacy we provide.
+                  </span>
+                  <button
+                    className="border-[#D9D9D9] border hover:border-2 rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
+                    onClick={() => navigate("/peeradvocacy")}
+                  >
+                    <i
+                      class="fa fa-bullhorn mr-2 text-[26px]"
+                      aria-hidden="true"
+                    ></i>
+                    Peer Advocacy
+                  </button>
+                </div>
+                <div class="has-tooltip">
+                  <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] -mt-20 text-[12px]">
+                    Transition services and referral to our strongest service
+                    <br></br>
+                    partners to guide you and assist with a successful<br></br>
+                    transition even years after you have separated.
+                  </span>
+                  <button
+                    className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
+                    onClick={() => navigate("/transition")}
+                  >
+                    <i
+                      class="fa fa-exchange mr-2 text-[26px]"
+                      aria-hidden="true"
+                    ></i>
+                    Transition
+                  </button>
+                </div>
               </div>
 
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
-                <button className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
-                 onClick={()=>navigate('/health')}
+                <button
+                  className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
+                  onClick={() => navigate("/health")}
                 >
                   <i
                     class="fa fa-heartbeat mr-2 text-[26px]"
@@ -54,8 +77,9 @@ const Homepagesec3 = () => {
                   Health
                 </button>
 
-                <button className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
-                onClick={()=>navigate('/employment')}
+                <button
+                  className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
+                  onClick={() => navigate("/employment")}
                 >
                   <i
                     class="fa fa-briefcase mr-2 text-[26px]"
@@ -64,18 +88,17 @@ const Homepagesec3 = () => {
                   Employment
                 </button>
               </div>
-
             </div>
             <div className="column2 mt-16 ">
               <div>
                 <img
-                  className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[439px] md:h-[411px] border-2 rounded-xl"
-                  src={Img}
+                  className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[390px] md:h-[350px] border-2 rounded-xl"
+                  src={Img2}
                   alt="army"
                 />
                 <img
-                  className="mt-[-150px] w-[250px] h-[250px] md:w-[350px] md:h-[312px] border-2 rounded-xl"
-                  src={Img2}
+                  className="mt-[-150px] w-[250px] h-[250px] md:w-[390px] md:h-[350px] border-2 rounded-xl"
+                  src={Img}
                   alt="girl"
                 />
               </div>
