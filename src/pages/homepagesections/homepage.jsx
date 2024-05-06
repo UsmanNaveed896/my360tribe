@@ -3,7 +3,7 @@ import Img from "../../assets/Group 1000006061.jpeg";
 import Img1 from "../../assets/Group 1000006062.jpeg";
 import Img2 from "../../assets/Group 1000006063.jpeg";
 import Img3 from "../../assets/Group 1000006064.png";
-import Img4 from "../../assets/Group1000006274.png";
+import Img4 from "../../assets/Group10000062671.png";
 import Img5 from "../../assets/Group 1000006243.png";
 import Img6 from "../../assets/Untitled-h.png";
 import PicsModal from "../../Popups/picsModal";
@@ -35,7 +35,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
     "linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)";
   return (
     <div
-      className="bg-[#070c1f] md:mt-12 mt-0 md:bg-cover bg-cover"
+      className="bg-[#070c1f] md:mt-12 mt-0 md:bg-cover bg-contain "
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center px-4 md:px-0">
@@ -63,12 +63,12 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
             </div>
           </div>
 
-          <div className="flex justify-center md:mt-[3rem] mt-12 relative z-[35]"></div>
+       
           <div className="flex md:justify-evenly justify-center md:mt-2 mt-8 pb-16 flex-wrap">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
-                  className="cursor-pointer w-[250px]   h-[200px] border rounded-xl"
+                  className="cursor-pointer w-[250px] h-[200px] border rounded-xl"
                   src={Img3}
                   alt="pic"
                   onClick={() =>

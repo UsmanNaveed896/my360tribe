@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from '../../assets/WW (1).png'
 import Img2 from '../../assets/WW (2).png'
-import Img4 from '../../assets/Group1000006274.png'
+import Img4 from '../../assets/Group10000062671.png'
 const Homepagesec5 = () => {
     return (
         <div className=' pb-20 bg-[#1a2242] md:bg-cover bg-contain ' id="targetDiv4" 
