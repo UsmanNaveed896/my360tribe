@@ -8,7 +8,6 @@ import Img5 from "../../assets/Group 1000006243.png";
 import Img6 from "../../assets/Untitled-h.png";
 import PicsModal from "../../Popups/picsModal";
 
-
 const Homepage = ({ isModalOpen, setIsModalOpen }) => {
   const img4 = {
     heading: " Service Partners",
@@ -55,9 +54,10 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                   My 360 Tribe
                 </h1>
                 <p className="text-white">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting<br></br> industry. Lorem Ipsum has been the
-                  industry's standard dummy text <br></br> ever since the 1500s,
+                  In support of U.S. Special Operations Forces Operators, our
+                  mission is <br></br> to bridge the gap between military service and
+                  civilian success; <br></br> honoring their service, exceptional skills
+                  and experience
                 </p>
               </div>
             </div>
@@ -167,7 +167,6 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
           />
         </div>
       </div>
-      
     </div>
   );
 };
