@@ -4,7 +4,7 @@ import Img4 from '../../assets/Group1000006267.png'
 
 const Homepagesec4 = () => {
     return (
-        <div className='bg-[#d1d8f5] pb-[80px] bg-contain' id="targetDiv3" 
+        <div className='bg-[#d1d8f5] pb-[85px] bg-contain' id="targetDiv3" 
         style={{ backgroundImage: `url(${Img4})`, }}
         >
             <div className='flex justify-center px-4 md:px-0'>

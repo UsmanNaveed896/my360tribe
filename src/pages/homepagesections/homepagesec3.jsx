@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Img from "../../assets/1 (1).png";
 import Img2 from "../../assets/abc1.jpeg";
-import Img4 from "../../assets/Group1000006274.png";
+import Img4 from "../../assets/Group10000062671.png";
 import Modal from "../../Popups/Modal";
 import { useNavigate } from "react-router-dom";
 const Homepagesec3 = () => {
@@ -9,7 +9,7 @@ const Homepagesec3 = () => {
 
   return (
     <div
-      className="bg-[#1a2242] pb-24 md:bg-cover bg-contain"
+      className="bg-[#1a2242] pb-28 md:bg-cover bg-contain"
       id="targetDiv2"
       style={{ backgroundImage: `url(${Img4})` }}
     >
