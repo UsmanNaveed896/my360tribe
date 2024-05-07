@@ -6,7 +6,7 @@ const Homepagesec7 = () => {
 
     return (
         <>
-            <div className='bg-[#d1d8f5] pb-[88px] md:bg-cover bg-contain ' id="targetDiv5" 
+            <div className='bg-[#d1d8f5] pb-[88px]   bg-cover' id="targetDiv5" 
             style={{ backgroundImage: `url(${Img4})`, }}
             >
                 <div className='flex justify-center'>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Employment = ({handleClick}) => {
+const Employment = ({ handleClick }) => {
   const navigate = useNavigate();
 
   const [activeTab, setActiveTab] = useState("Job Services");
@@ -10,10 +10,10 @@ const Employment = ({handleClick}) => {
     setActiveTab(item);
   };
   const employ = ["Job Services", "Head Hunting", "Entrepreneurship"];
-  const handleNavigate=()=>{
-    handleClick(2)
-    navigate('/')
-  }
+  const handleNavigate = () => {
+    handleClick(2);
+    navigate("/");
+  };
   return (
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
@@ -56,16 +56,12 @@ const Employment = ({handleClick}) => {
               <h1 className="font-bold text-3xl">Job Services</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Imagine yourself sitting behind the wheel of a car that has a
-                stick shift, but all you’ve ever driven is an automatic
-                transmission. Sure it’s a car like any other, but if you’re
-                driving a car with a stick shift, you’ll need to know how to
-                operate the gears and clutch. You’ll need transition training
-                from an automatic to the manual transmission. Similarly, pilots
-                who are transitioning to unfamiliar aircraft require not only
-                stick and rudder development, but also specific training in the
-                new aircraft’s systems and with it’s operating characteristics
-                to include normal, abnormal, and emergency procedures.{" "}
+                My360Tribe has an extensive network of service partners willing
+                to help you in your search for your next career. Job hunting
+                isn’t easy and requires dedication and commitment, We are here
+                to help with everything from resume’ pointers to mock
+                interviews, guiding you to the right career fair, helping you
+                build a strong LinkedIn profile and more.{" "}
               </p>
             </div>
           ) : activeTab == "Head Hunting" ? (
@@ -73,16 +69,11 @@ const Employment = ({handleClick}) => {
               <h1 className="font-bold text-3xl">Head Hunting</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.{" "}
+                This service provided by our partners is for those of you
+                looking to elevate your game and those that bring a strong sense
+                of leadership and adaptability to the civilian workforce. We
+                have partners who can help guide you and prepare you for your
+                next leadership role.{" "}
               </p>
             </div>
           ) : activeTab == "Entrepreneurship" ? (
@@ -90,22 +81,18 @@ const Employment = ({handleClick}) => {
               <h1 className="font-bold text-3xl">Entrepreneurship</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).{" "}
+              If working for someone else isn’t your thing, then
+                entrepreneurship may be just what you are looking for. We have
+                resources available to help guide you in establishing your own
+                way from concept to business case; launch to start-up and
+                avoiding pitfalls. This takes a special level of dedication and
+                a strong willingness to persevere through the challenges of
+                ownership.{" "}
               </p>
             </div>
           ) : (
             ""
           )}
-         
         </div>
       </div>
     </div>

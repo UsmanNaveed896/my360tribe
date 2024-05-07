@@ -9,7 +9,7 @@ const Homepagesec3 = () => {
 
   return (
     <div
-      className="bg-[#1a2242] pb-28 md:bg-cover bg-contain"
+      className="bg-[#1a2242] pb-24 md:bg-cover bg-contain"
       id="targetDiv2"
       style={{ backgroundImage: `url(${Img4})` }}
     >
@@ -26,13 +26,15 @@ const Homepagesec3 = () => {
                 <div class="has-tooltip">
                   <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] -mt-28  text-[12px]">
                     One of the things that sets us apart is our Peer Advocate
-                    Network. Operators helping <br></br> Operators by providing support
-                    and guidance to you as a member of My360Tribe. Your peer<br></br>
+                    Network. Operators helping <br></br> Operators by providing
+                    support and guidance to you as a member of My360Tribe. Your
+                    peer<br></br>
                     advocate will keep in contact with you and help coordinate
-                    the contact with the service partners <br></br> ready to answer your
-                    questions and assist you in navigating this new life outside
-                    the SOF. Click <br></br>  on the tabs above to learn more about the
-                    360-warrior care through Peer Advocacy we provide.
+                    the contact with the service partners <br></br> ready to
+                    answer your questions and assist you in navigating this new
+                    life outside the SOF. Click <br></br> on the tabs above to
+                    learn more about the 360-warrior care through Peer Advocacy
+                    we provide.
                   </span>
                   <button
                     className="border-[#D9D9D9] border hover:border-2 rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
@@ -76,17 +78,36 @@ const Homepagesec3 = () => {
                   ></i>
                   Health
                 </button>
-
-                <button
-                  className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
-                  onClick={() => navigate("/employment")}
-                >
-                  <i
-                    class="fa fa-briefcase mr-2 text-[26px]"
-                    aria-hidden="true"
-                  ></i>
-                  Employment
-                </button>
+                <div class="has-tooltip">
+                  <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] mt-[70px] text-[12px]">
+                    My360Tribe has established relationships <br></br> with service
+                    organizations, corporations <br></br> and businesses to  help you
+                    expand <br></br> your network, mentoring  opportunities, <br></br> job services 
+                    and even starting your own  business.<br></br> We want you to be  <span className="font-bold">See more...</span>
+                    {/* successful and part of that is providing for yourself and
+                    your family while being a contributing member of society as
+                    a civilian. Below are some of the services and referrals we
+                    offer to help you navigate the employment and
+                    entrepreneurial sector. Mentorship – we are a team of
+                    mentors and advisors with years of experience in a variety
+                    of industries, non-profits and organizations. We have years
+                    of mentoring experience and education to offer in hope that
+                    it will provide you with guidance and open doors to
+                    opportunities. We have extensive networks and want to share
+                    that knowledge with you as you navigate this next phase of
+                    your life. */}
+                  </span>
+                  <button
+                    className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
+                    onClick={() => navigate("/employment")}
+                  >
+                    <i
+                      class="fa fa-briefcase mr-2 text-[26px]"
+                      aria-hidden="true"
+                    ></i>
+                    Employment
+                  </button>
+                </div>
               </div>
             </div>
             <div className="column2 mt-16 ">
