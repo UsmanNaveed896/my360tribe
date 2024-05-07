@@ -4,7 +4,6 @@ import Img1 from "../../assets/Group 1000006062.jpeg";
 import Img2 from "../../assets/Group 1000006063.jpeg";
 import Img3 from "../../assets/Group 1000006064.png";
 import Img4 from "../../assets/Group10000062671.png";
-import Img5 from "../../assets/Group 1000006243.png";
 import Img6 from "../../assets/Untitled-h.png";
 import PicsModal from "../../Popups/picsModal";
 

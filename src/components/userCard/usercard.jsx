@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import TeamModal from "../../Popups/teamModal";
+import Img from '../../assets/aa.jpeg'
 const Usercard = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const divStyle = {
@@ -8,7 +9,7 @@ const Usercard = (props) => {
     height: "300px", // Adjust the height as needed
     clipPath: "polygon(0px 0px, 100% 0px, 100% 100%, 0px 86%)",
   };
-  console.log(props, "props");
+
   return (
     <div>
     <div className="bg-black py-4  md:mt-16 mt-8" style={divStyle}>
@@ -20,22 +21,21 @@ const Usercard = (props) => {
                 <div class="flip-box-front flex justify-center">
                   <img className="h-[130px] " src={props.img} alt="line" />
                 </div>
-                <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center" onClick={()=>setIsModalOpen(true)}>
-                  <div className="rounded  bg-[#000] h-[240px]  pb-2 ">
+                <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center h-[400px]" onClick={()=>setIsModalOpen(true)}>
+                  <div className="rounded  bg-[#000] h-[260px]  pb-2 ">
                     <div className="flex justify-center ">
                       <img className="h-[130px]" src={props.img} alt="line" />
                     </div>
                     <p className="text-[#fff] font-bold text-center">
                       {props.name}
                     </p>
-                    <div className="max-w-[200px]">
+                    <div className="max-w-[200px] ">
                       {" "}
                       {/* You can adjust the max-width according to your design */}
-                      <p className="text-[#fff] font-semibold text-xs text-center mt-1 line-clamp-2">
+                      <p className="text-[#fff] font-semibold text-xs text-center mt-1 line-clamp-3">
                         {" "}
                         {/* Adjust the line-clamp number as per your requirement */}
                         {props.description}
-                       
                       </p>
                       <span className="text-xs font-semibold hover:font-bold" onClick={()=>setIsModalOpen(true)}>Continue reading...</span>
                     </div>
@@ -44,12 +44,15 @@ const Usercard = (props) => {
               </div>
             </div>
           ) : (
-            <i className="fa fa-user text-[84px] text-white"></i>
+            // <i className="fa fa-user text-[84px] text-white"></i>
+            <div className="flex justify-center">
+            <img src={Img} alt="abc"/>
+            </div>
           )}
 
           <p className="text-white font-bold mt-6">{props.name}</p>
-          <p className="text-white mt-3 ">{props.designation}</p>
-          <p className="text-[#5BF0F5] text-xs mt-3">{props.experience}</p>
+          <p className="text-white mt-1 ">{props.designation}</p>
+          <p className="text-[#5BF0F5] text-xs mt-1">{props.experience}</p>
         </div>
       </div>
    

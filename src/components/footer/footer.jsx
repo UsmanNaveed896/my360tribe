@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../assets/charitylogo.png";
+import Img from "../../assets/charitylogo.jpeg";
 import Img2 from "../../assets/linkedin.png";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="px-12 py-1 bg-gradient-to-r from-black to-gray-400">
       <div className="flex justify-between mt-6 md:flex-row flex-col">
         <div className="logo text-white">
-          <img className="h-[70px] mt-5 " src={Img} alt="logo" />
+          <img className="h-[80px] mt-5 " src={Img} alt="logo" />
         </div>
 
         <div>
