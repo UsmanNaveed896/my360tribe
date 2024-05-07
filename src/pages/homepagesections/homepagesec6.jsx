@@ -6,7 +6,7 @@ import Img3 from "../../assets/a.png";
 import Img4 from "../../assets/b.png";
 import Img5 from "../../assets/c.png";
 import Img6 from "../../assets/d.png";
-import Img7 from "../../assets/Rectangle123.png";
+import Img7 from "../../assets/Group1000006281.png";
 
 const Homepagesec6 = () => {
   const gradient =
@@ -78,7 +78,7 @@ const Homepagesec6 = () => {
   return (
     <>
       <div
-        className="bg-[#d1d8f5] pb-[65px] bg-contain "
+        className="bg-[#d1d8f5] pb-[70px] bg-contain "
         style={{ backgroundImage: `url(${Img2})`, }}
       >
         <div className="flex justify-center px-4 md:px-0">
@@ -116,8 +116,8 @@ const Homepagesec6 = () => {
       </div>
 
       <div
-        className="bg-cover  pb-16 "
-        style={{ backgroundImage: `url(${Img7})`, background: gradient }}
+        className="bg-cover pb-12 "
+        style={{ backgroundImage: `url(${Img7})`, }}
       >
         <div className="content ">
           <h1 className="text-center text-5xl font-bold pt-12 text-white">
