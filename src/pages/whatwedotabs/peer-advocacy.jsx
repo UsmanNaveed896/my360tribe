@@ -63,8 +63,7 @@ const Dummy = ({ handleClick }) => {
                 Relocation – relocating can be stressful and deciding where to
                 live and moving can be daunting. We have resources available
                 around the country to help you and your family make the best
-                decisions on where to settle and begin your life anew. PEER
-                ADVOCACY.{" "}
+                decisions on where to settle and begin your life anew. {" "}
               </p>
             </div>
           ) : activeTab == "Legal Services" ? (
@@ -75,7 +74,7 @@ const Dummy = ({ handleClick }) => {
                 Legal Services – There will be times you may need an attorney to
                 have a consultation with or represent you in a legal matter. Our
                 team can provide you with referrals to established law firms and
-                attorneys available to speak with you. PEER ADVOCACY.{" "}
+                attorneys available to speak with you.{" "}
               </p>
             </div>
           ) : activeTab == "Financial Support" ? (

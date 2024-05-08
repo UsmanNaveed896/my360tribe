@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Img from "../../assets/Group11.png";
+import Img from "../../assets/logs.png";
 import { useNavigate } from "react-router-dom";
 import PicsModal from "../../Popups/picsModal";
+import Aboutus from "../../Popups/Aboutus";
 
 const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
   const navigate = useNavigate();
@@ -90,7 +91,15 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
             <li className="mr-4 cursor-pointer">
               <a onClick={() => navigate("/")}>Home</a>
             </li>
-            <li className="mr-4">
+            <li
+              className="mr-4"
+              onClick={() =>
+                setIsModalOpen((st) => ({
+                  ...st,
+                  mod5: true,
+                }))
+              }
+            >
               <a href="#">About Us</a>
             </li>
             {/* <li className="mr-4"><a href="#">Get Involved</a></li> */}
@@ -100,7 +109,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                   onClick={toggleDropdown}
                   className="inline-flex justify-center items-center px-4  border border-transparent text-base font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 "
                 >
-                  { "Get Involved"}
+                  {"Get Involved"}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +174,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
           </button>
         </div>
       </nav>
-
+      {/* Mobile MEnu */}
       <div className="overflow-x-hidden block md:hidden">
         <nav className="" style={{ background: gradient }}>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -215,7 +224,19 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                           Home
                         </a>
                       </li>
-                      <li className="border-b border-gray-400 my-8 uppercase">
+                      <li
+                        className="border-b border-gray-400 my-8 uppercase cursor-pointer"
+                        onClick={() =>
+                          setIsModalOpen((st) => ({
+                            ...st,
+                            mod1:false,
+                            mod2:false,
+                            mod3:false,
+                            mod4:false,
+                            mod5: true,
+                          }))
+                        }
+                      >
                         <a className="block py-2 pl-3 pr-4  text-white cursor-pointer font-semibold hover:font-bold">
                           About Us
                         </a>
@@ -253,6 +274,9 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
           </div>
         </nav>
       </div>
+
+     {isModalOpen.mod5 && <Aboutus isOpen={isModalOpen} onCancel={handleCancel} setIsModalOpen={setIsModalOpen} />} 
+
       <PicsModal
         isOpen={isModalOpen}
         onCancel={handleCancel}

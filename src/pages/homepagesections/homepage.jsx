@@ -4,7 +4,7 @@ import Img1 from "../../assets/Group 1000006062.jpeg";
 import Img2 from "../../assets/Group 1000006063.jpeg";
 import Img3 from "../../assets/Group 1000006064.png";
 import Img4 from "../../assets/Group10000062671.png";
-import Img6 from "../../assets/Untitled-h.png";
+import Img6 from "../../assets/logs.png";
 import PicsModal from "../../Popups/picsModal";
 
 const Homepage = ({ isModalOpen, setIsModalOpen }) => {
@@ -34,7 +34,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
     "linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)";
   return (
     <div
-      className="bg-[#070c1f] md:mt-12 mt-0 pb-[72px] md:bg-cover bg-contain "
+      className="bg-[#070c1f] md:mt-12 mt-0 pb-[45px] md:bg-cover bg-contain "
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center px-4 md:px-0">
@@ -42,7 +42,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
             <div>
               <img
-                className=" md:block hidden h-[400px]"
+                className=" md:block hidden h-[350px] opacity-40"
                 src={Img6}
                 alt="abc"
               />
@@ -52,10 +52,10 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 <h1 className="text-[55px] text-white font-bold">
                   My 360 Tribe
                 </h1>
-                <p className="text-white">
-                  In support of U.S. Special Operations Forces Operators, our
-                  mission is <br></br> to bridge the gap between military service and
-                  civilian success; <br></br> honoring their service, exceptional skills
+                <p className="text-white text-[22px]">
+                  In support of U.S. Special Operations Forces Operators, our<br></br>
+                  mission is  to bridge the gap between military service and
+                  civilian success;  honoring their service, exceptional skills
                   and experience
                 </p>
               </div>
@@ -63,7 +63,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
           </div>
 
        
-          <div className="flex md:justify-evenly justify-center md:mt-2 mt-8 pb-16 flex-wrap">
+          <div className="flex md:justify-evenly justify-center md:mt-8 mt-8 pb-16 flex-wrap gap-12">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
                 <img
@@ -77,6 +77,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                       mod2: false,
                       mod3: false,
                       mod4: false,
+                      mod5: false,
                     }))
                   }
                 />
@@ -99,6 +100,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                       mod2: true,
                       mod3: false,
                       mod4: false,
+                      mod5: false,
                     }))
                   }
                 />
@@ -120,6 +122,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                       mod2: false,
                       mod3: true,
                       mod4: false,
+                      mod5: false,
                     }))
                   }
                 />
@@ -142,6 +145,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                       mod2: false,
                       mod3: false,
                       mod4: true,
+                      mod5: false,
                     }))
                   }
                 />

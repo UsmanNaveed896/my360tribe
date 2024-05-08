@@ -60,7 +60,7 @@ const Transition = ({ handleClick }) => {
                 Continuing Education – want to go back to school, learn a new
                 trade or obtain a civilian certification? We have resources and
                 a referral network to introduce our operators to different
-                educational programming across the country. TRANSITION SERVICES{" "}
+                educational programming across the country. {" "}
               </p>
             </div>
           ) : activeTab == "VA Programs" ? (
@@ -70,8 +70,7 @@ const Transition = ({ handleClick }) => {
                 {" "}
                 VA Programs are an important part of any transition. We work
                 with our operators with referrals to the VA system and
-                identifying a VA VSO that can assist them personally. TRANSITION
-                SERVICES{" "}
+                identifying a VA VSO that can assist them personally. {" "}
               </p>
             </div>
           ) : activeTab == "Education Consulting" ? (
