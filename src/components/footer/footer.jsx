@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "../../assets/charitylogo.jpeg";
 import Img2 from "../../assets/linkedin.png";
+import Img3 from "../../assets/logs.png";
 
 const Footer = () => {
   const gradient =
@@ -27,10 +28,11 @@ const Footer = () => {
         </div>
 
         <div className="txt text-white text-[20px]">
-          <p className="mt-4 font-bold">Address</p>
+          <img className="h-[80px]" src={Img3} alt="logo"/>
+          <p className="mt-2 font-bold">Address</p>
           <p>43 west, 43 street New York</p>
 
-          <p className="mt-12 font-bold">Contact us</p>
+          <p className="mt-2 font-bold">Contact us</p>
           <div>
             <ul className="flex gap-2 mt-4 ">
               {/* <li className=" relative py-2 pb-4 h-8 w-8 rounded-full text-black  text-center bg-[white]">
@@ -72,7 +74,7 @@ const Footer = () => {
                     aria-hidden="true"
                   ></i>
                 </span> */}
-                <img className="h-8 cursor-pointer" src={Img2} alt="abc" />
+                <img className="h-6 cursor-pointer" src={Img2} alt="abc" />
               </li>
             </ul>
           </div>

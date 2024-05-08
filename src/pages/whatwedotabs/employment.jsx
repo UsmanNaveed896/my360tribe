@@ -9,7 +9,13 @@ const Employment = ({ handleClick }) => {
   const handleTabs = (item) => {
     setActiveTab(item);
   };
-  const employ = ["Job Services", "Head Hunting", "Entrepreneurship"];
+  const employ = [
+    "Job Services",
+    "Head Hunting",
+    "Entrepreneurship",
+    "Employment",
+    "Mentorship",
+  ];
   const handleNavigate = () => {
     handleClick(2);
     navigate("/");
@@ -81,13 +87,41 @@ const Employment = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Entrepreneurship</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-              If working for someone else isn’t your thing, then
+                If working for someone else isn’t your thing, then
                 entrepreneurship may be just what you are looking for. We have
                 resources available to help guide you in establishing your own
                 way from concept to business case; launch to start-up and
                 avoiding pitfalls. This takes a special level of dedication and
                 a strong willingness to persevere through the challenges of
                 ownership.{" "}
+              </p>
+            </div>
+          ) : activeTab == "Employment" ? (
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+              <h1 className="font-bold text-3xl">Employment</h1>
+              <p className="font-semibold text-xl mt-4 leading-[40px]">
+                {" "}
+                My360Tribe has established relationships with service
+                organizations, corporations and businesses to help you expand
+                your network, mentoring opportunities, job services and even
+                starting your own business. We want you to be successful and
+                part of that is providing for yourself and your family while
+                being a contributing member of society as a civilian. Below are
+                some of the services and referrals we offer to help you navigate
+                the employment and entrepreneurial sector.{" "}
+              </p>
+            </div>
+          ) :  activeTab == "Mentorship" ? (
+            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+              <h1 className="font-bold text-3xl">Mentorship</h1>
+              <p className="font-semibold text-xl mt-4 leading-[40px]">
+                {" "}
+                We are a team of mentors and advisors with years of experience
+                in a variety of industries, non-profits and organizations. We
+                have years of mentoring experience and education to offer in
+                hope that it will provide you with guidance and open doors to
+                opportunities. We have extensive networks and want to share that
+                knowledge with you as you navigate this next phase of your life.{" "}
               </p>
             </div>
           ) : (
