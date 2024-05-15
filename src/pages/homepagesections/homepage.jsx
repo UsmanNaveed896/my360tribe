@@ -38,7 +38,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center px-4 md:px-0">
-        <div className="container max-w-[1300px] md:mt-16 mt-4">
+        <div className="container max-w-[1400px] md:mt-16 mt-4">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
             <div>
               <img

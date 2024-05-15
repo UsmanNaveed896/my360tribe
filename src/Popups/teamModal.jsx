@@ -14,7 +14,7 @@ const TeamModal = ({ isOpen, props, setIsModalOpen }) => {
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed inset-0 bg-black opacity-90 transition-opacity"></div>
+      <div className="fixed inset-0 bg-black opacity-[94%] transition-opacity"></div>
 
       <div className="fixed inset-0 z-10 ">
         <div className="flex md:min-h-full min-h-[80%] items-end justify-center p-4 text-center sm:items-center sm:p-0">
