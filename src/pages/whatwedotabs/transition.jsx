@@ -10,8 +10,8 @@ const Transition = ({ handleClick }) => {
   };
   const transition = [
     "Continuing Education",
-    "VA Programs",
-    "Education Consulting",
+    // "VA Programs",
+    // "Education Consulting",
     "VA Programs Assistance",
   
   ];
@@ -63,34 +63,35 @@ const Transition = ({ handleClick }) => {
                 educational programming across the country. {" "}
               </p>
             </div>
-          ) : activeTab == "VA Programs" ? (
-            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">VA Programs</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
-                {" "}
-                VA Programs are an important part of any transition. We work
-                with our operators with referrals to the VA system and
-                identifying a VA VSO that can assist them personally. {" "}
-              </p>
-            </div>
-          ) : activeTab == "Education Consulting" ? (
-            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Education Consulting</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
-                {" "}
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).{" "}
-              </p>
-            </div>
-          ) : activeTab == "VA Programs Assistance" ? (
+          // ) : activeTab == "VA Programs" ? (
+          //   <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+          //     <h1 className="font-bold text-3xl">VA Programs</h1>
+          //     <p className="font-semibold text-xl mt-4 leading-[40px]">
+          //       {" "}
+          //       VA Programs are an important part of any transition. We work
+          //       with our operators with referrals to the VA system and
+          //       identifying a VA VSO that can assist them personally. {" "}
+          //     </p>
+          //   </div>
+          // ) : activeTab == "Education Consulting" ? (
+          //   <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+          //     <h1 className="font-bold text-3xl">Education Consulting</h1>
+          //     <p className="font-semibold text-xl mt-4 leading-[40px]">
+          //       {" "}
+          //       It is a long established fact that a reader will be distracted
+          //       by the readable content of a page when looking at its layout.
+          //       The point of using Lorem Ipsum is that it has a more-or-less
+          //       normal distribution of letters, as opposed to using 'Content
+          //       here, content here', making it look like readable English. Many
+          //       desktop publishing packages and web page editors now use Lorem
+          //       Ipsum as their default model text, and a search for 'lorem
+          //       ipsum' will uncover many web sites still in their infancy.
+          //       Various versions have evolved over the years, sometimes by
+          //       accident, sometimes on purpose (injected humour and the like).{" "}
+          //     </p>
+          //   </div>
+          // ) 
+          ): activeTab == "VA Programs Assistance" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">VA Programs Assistance</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
