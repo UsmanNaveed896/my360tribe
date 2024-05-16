@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 const Transition = ({ handleClick }) => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("Continuing Education");
+  const [activeTab, setActiveTab] = useState("Education");
 
   const handleTabs = (item) => {
     setActiveTab(item);
   };
   const transition = [
-    "Continuing Education",
+    "Education",
     // "VA Programs",
     // "Education Consulting",
     "VA Programs Assistance",
@@ -52,12 +52,12 @@ const Transition = ({ handleClick }) => {
             </ul>
           </div>
 
-          {activeTab == "Continuing Education" ? (
+          {activeTab == "Education" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Continuing Education</h1>
+              <h1 className="font-bold text-3xl">Education</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Continuing Education – want to go back to school, learn a new
+                Want to go back to school, learn a new
                 trade or obtain a civilian certification? We have resources and
                 a referral network to introduce our operators to different
                 educational programming across the country. {" "}

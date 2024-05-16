@@ -28,7 +28,7 @@ console.log(data,"data")
                   <p className="text-center font-semibold mt-4">{data.text}</p>
                   <div className="flex justify-center mt-4">
                     <button className="py-2 px-4 border text-white rounded hover:font-semibold">
-                      {data?.heading == "Operators" ? "Apply" : "SUBMIT"}
+                      {data?.heading == "Operators" ? "Apply" : "Join Us"}
                     </button>
                   </div>
                 </div>

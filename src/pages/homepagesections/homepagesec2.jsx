@@ -7,12 +7,12 @@ import "chart.js/auto";
 import "chartjs-plugin-datalabels";
 import './style.css'
 const Homepagesec2 = () => {
-  const [selectedText, setSelectedText] = useState(" Executive board"); // State to manage selected text
+  const [selectedText, setSelectedText] = useState(" Executive Board"); // State to manage selected text
 
   const data = {
     labels: [
-      "Executive board",
-      "Advisory board",
+      "Executive Board",
+      "Advisory Board",
       "Service Partners",
       "Concierge",
       "Peer Advocate Member",
@@ -119,17 +119,17 @@ const Homepagesec2 = () => {
                   <p className="absolute text-white  left-[239px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                   onClick={()=>setSelectedText(" Executive board")}
                   >
-                    Executive <br></br> board
+                    Executive <br></br> Board
                   </p>
                   <p className="absolute text-white  md:left-[340px] left-[260px] top-[170px] md:top-[240px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Advisory board")}
                   >
-                    Advisory <br></br> board
+                    Advisory <br></br> Board
                   </p>
                   <p className="absolute text-white md:left-[220px] left-[165px] top-[240px] md:top-[320px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Service Partners")}
                   >
-                    Service <br></br> organization
+                    Service <br></br> Organization
                   </p>
                   <p className="absolute text-white md:left-[130px] md:top-[260px] left-[80px] top-[170px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
                    onClick={()=>setSelectedText(" Concierge")}
@@ -177,7 +177,7 @@ const Homepagesec2 = () => {
                 section of the graphic, the name and verbiage matches to the
                 right.
                 </p> */}
-                {selectedText === " Executive board" ? 
+                {selectedText === " Executive Board" ? 
                  <p className="text-[17px]  text-[#0a194e] mt-2 font-semibold h-[200px]"> The Executive Board for My360Tribe
                  is made up of Military and Civilian professionals with a
                  deep-rooted passion for the SOF community. We are dedicated to
@@ -191,7 +191,7 @@ const Homepagesec2 = () => {
                  and referrals to get the support and help they need.
                  </p>
                  :
-                 selectedText === " Advisory board" ?
+                 selectedText === " Advisory Board" ?
                  <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">As advocates and ambassadors of the organization and its mission, the advisory board acts as
                  liaison between the special operations community and the organization, providing strategic guidance, organizational
                  planning and execution, and assisting with Veteran Service Organization (VSO) relationships. In addition to these

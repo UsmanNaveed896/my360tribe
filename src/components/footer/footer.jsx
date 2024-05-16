@@ -12,23 +12,28 @@ const Footer = () => {
   return (
     <div className="px-2 py-1 bg-gradient-to-r from-black to-gray-400 relative">
       <div className="grid grid-cols-3 mt-6 md:flex-row flex-col ">
-        <div className="logo text-white  ">
-        <div className="text-[25px] text-white  ">
-        <div className=" mb-[64px]">
-            <button className=" text-[25px]  rounded border-white text-white border px-8 py-2 mt-2 hover:border-2">
-              Get Involved
-            </button>
+        <div className="logo text-white  relative">
+          <div className="text-[25px] text-white  ">
+            <div className=" mb-[64px]">
+              <button className=" text-[25px]  rounded border-white text-white border px-8 py-2 mt-2 hover:border-2">
+                Get Involved
+              </button>
+            </div>
+            <div className="flex ml-1 ">
+              <button className=" text-[25px] absolute bottom-[-30px] rounded  text-white border px-8 py-2 mt-2 bg-[red] border-[red] hover:border-2">
+                Donate
+              </button>
+            </div>
           </div>
-          </div>
-          <img className="h-[80px] w-[180px] mt-5 absolute bottom-2 left-6" src={Img} alt="logo" />
         </div>
         <div>
-        <div className="flex justify-center mb-[64px]">
-            <button className=" text-[25px]  rounded border-white text-white border px-8 py-2 mt-2 hover:border-2">
-              Donate
-            </button>
+          <div className="flex justify-center">
+            <img className="h-[80px] w-[180px] mt-5 " src={Img} alt="logo" />
           </div>
-          <p className="text-center text-white text-[20px] mt-32">Terms & Conditions</p>
+
+          <p className="text-center text-white text-[20px] mt-32">
+            Terms & Conditions
+          </p>
         </div>
 
         <div className="txt text-white text-[20px] ">
@@ -36,7 +41,10 @@ const Footer = () => {
             <div>
               <img className="h-[80px]" src={Img3} alt="logo" />
               <p className="mt-2 font-bold">Address</p>
-              <p>43 west, 43 street New York</p>
+              <p>
+                My360Tribe<br></br> 128 Adrian Avenue, <br></br>South San
+                Francisco, CA 940802
+              </p>
 
               <p className="mt-2 font-bold">Contact us</p>
               <div>
@@ -89,12 +97,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center">
-          <div className="relative " >
-            <p className=" cursor-pointer mt-2 text-white text-center ">
-              Copyright © 2024 My360Tribe. All rights reserved.
-            </p>
-          </div>
+        <div className="relative ">
+          <p className=" cursor-pointer mt-2 text-white text-center ">
+            Copyright © 2024 My360Tribe. All rights reserved.
+          </p>
         </div>
+      </div>
     </div>
   );
 };

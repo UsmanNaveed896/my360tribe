@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Img from "../../assets/Group 1000006061.jpeg";
+import Img from "../../assets/Group 1000006061.jpg";
 import Img1 from "../../assets/Group 1000006062.jpeg";
-import Img2 from "../../assets/Group 1000006063.jpeg";
+import Img2 from "../../assets/Group 1000006063.jpg";
 import Img3 from "../../assets/Group 1000006064.png";
 import Img4 from "../../assets/Group10000062671.png";
 import Img6 from "../../assets/logs.png";
@@ -10,21 +10,22 @@ import PicsModal from "../../Popups/picsModal";
 const Homepage = ({ isModalOpen, setIsModalOpen }) => {
   const img4 = {
     heading: " Service Partners",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    text: "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
   };
 
   const img2 = {
     heading: "Concierge",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    text: "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
   };
   const img1 = {
     heading: "Operators",
     text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
   };
   const img3 = {
-    heading: "Peer Advocate Member",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    heading: "Peer Ambassador",
+    text: "Are you a SOF Operator who has been out of the military for more than a year and want to support a newly transitioning Operator?",
   };
+  console.log(isModalOpen, "is");
   const handleCancel = () => {
     // Implement cancel logic here
     console.log("Cancelling...");
@@ -49,20 +50,17 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
             </div>
             <div className="flex md:justify-end justify-center">
               <div>
-                <h1 className="text-[55px] text-white font-bold">
-                  My 360 Tribe
-                </h1>
+                <h1 className="text-[55px] text-white font-bold">My360Tribe</h1>
                 <p className="text-white text-[22px]">
                   In support of U.S. Special Operations Forces Operators, our<br></br>
-                  mission is  to bridge the gap between military service and
-                  civilian success;  honoring their service, exceptional skills
-                  and experience
+                  mission is to provide Peer Advocacy and Concierge level
+                  support for SOF Operators as they face the challenges before,
+                  during and after transition.
                 </p>
               </div>
             </div>
           </div>
 
-       
           <div className="flex md:justify-evenly justify-center md:mt-8 mt-8 pb-16 flex-wrap gap-12">
             <div className="py-6 md:py-0">
               <div className="flex justify-center">
@@ -106,7 +104,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 />
               </div>
               <h1 className="font-semibold text-[29px] text-[#f9fafa] text-center mt-5">
-                Conceirge
+                Concierge
               </h1>
             </div>
             <div className="py-6 md:py-0 w-[250px]">
@@ -128,7 +126,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 />
               </div>
               <h1 className="font-semibold text-[29px] text-[#f9fafa] text-center mt-5">
-                Peer Advocate Member
+                Peer Ambassador
               </h1>
             </div>
 
