@@ -15,23 +15,26 @@ const Health = ({ handleClick }) => {
     "Mobility",
     "Sports and Recreation",
   ];
-  const handleNavigate=()=>{
-    handleClick(2)
-    navigate('/')
-  }
+  const handleNavigate = () => {
+    handleClick(2);
+    navigate("/");
+  };
   return (
     <div className="main">
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12">
         <div className="max-w-[1200px] container pb-24">
-        <div className="w-[60%] flex justify-between items-center">
-          <i
-            class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
-            onClick={()=>handleNavigate()}
-          ></i>
-          <h1 className="text-white md:text-5xl text-2xl mt-12 text-center pb-12 font-bold">
-            <i class="fa fa-heartbeat mr-2 text-[36px]" aria-hidden="true"></i>{" "}
-            Health
-          </h1>
+          <div className="w-[60%] flex justify-between items-center">
+            <i
+              class="fa fa-long-arrow-left text-2xl text-white hover:font-bold cursor-pointer"
+              onClick={() => handleNavigate()}
+            ></i>
+            <h1 className="text-white md:text-5xl text-2xl mt-12 text-center pb-12 font-bold">
+              <i
+                class="fa fa-heartbeat mr-2 text-[36px]"
+                aria-hidden="true"
+              ></i>{" "}
+              Health
+            </h1>
           </div>
           <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal px-4 md:px-0">
             <strong> At My360Tribe</strong>, we are committed to your health and
@@ -64,11 +67,9 @@ const Health = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Medical</h1>
               <p className="font-semibold text-xl mt-4 leading-[30px]">
                 {" "}
-                We have a network of organizations, providers, and others
-                committed to the mission of My360Tribe. We care about your
-                medical needs and will work with our service partners to ensure
-                you are getting the best possible medical treatments available
-                in your area.{" "}
+                We have partnered with organizations and providers committed to
+                the mission of My360Tribe that will ensure you are getting the
+                most appropriate care based on your specific needs.{" "}
               </p>
             </div>
           ) : activeTab == "Mental Health" ? (
@@ -76,11 +77,10 @@ const Health = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Mental Health</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Your mental health is of utmost importance to us. We want to
-                thrive and succeed in this next chapter of your life.
-                Understanding there can be a mental and emotional strain before,
-                during, and after transition is why we have a network of service
-                providers ready to assist with all your mental health needs.{" "}
+                We want you to thrive and succeed in this next chapter.... We
+                understand the mental and emotional strain of transition and
+                have partnered with a range of service providers to support you
+                and your family during this challenging time..{" "}
               </p>
             </div>
           ) : activeTab == "Substance Abuse" ? (
@@ -112,16 +112,15 @@ const Health = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Sports and Recreation</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                We believe that sports and recreation are an important part of
-                your health and wellbeing. We have relationships with a variety
-                of sports networks and recreational retreats you may be
-                interested in exploring.{" "}
+                We believe that sports, recreation and physical activity are an
+                integral part of your overall physical and mental health.
+                My360Tribe has partnered with a variety of providers that
+                understand the needs of the transitioning warrior.{" "}
               </p>
             </div>
           ) : (
             ""
           )}
-         
         </div>
       </div>
     </div>

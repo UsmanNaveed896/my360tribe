@@ -1,9 +1,16 @@
 import React from 'react'
 import Img4 from '../../assets/Group1000006267.png'
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import Paypal from '../../components/paypal/paypal';
 
 const Homepagesec7 = () => {
     const buttonGradient='linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)';
-
+    const CLIENT_ID = 'YOUR_CLIENT_ID';
+    const initialOptions = {
+        clientId: "test",
+        currency: "USD",
+        intent: "capture",
+    };
     return (
         <>
             <div className='bg-[#d1d8f5] pb-[88px]   bg-cover' id="targetDiv5" 
@@ -32,9 +39,13 @@ const Homepagesec7 = () => {
                                     <p className='px-2 text-[#0C1A4C] font-semibold text-xl'>or</p>
                                     <hr className="w-full border-t border-[#0C1A4C] border-2 my-12" />
                                 </div>
+                                <PayPalScriptProvider options={initialOptions}>
+                                <PayPalButtons style={{ layout: "horizontal" }}/>
+                            </PayPalScriptProvider>,
                                 <button className='w-full border border-[#0C1A4C] rounded-xl text-[20px] text-[#0C1A4C] py-1'>Enter Price Manually</button>
                                 <button className='w-full mt-16 font-bold rounded-xl text-white font-bold py-3 text-[20px]' style={{background:buttonGradient}}>Donate Now</button>
                             </div>
+                        
                         </div>
                     </div>
                 </div>

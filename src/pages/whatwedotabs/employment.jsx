@@ -11,9 +11,8 @@ const Employment = ({ handleClick }) => {
   };
   const employ = [
     "Job Services",
-    "Head Hunting",
+    "Talent Acquisition/Recruiting",
     "Entrepreneurship",
-    "Employment",
     "Mentorship",
   ];
   const handleNavigate = () => {
@@ -62,17 +61,18 @@ const Employment = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Job Services</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                My360Tribe has an extensive network of service partners willing
-                to help you in your search for your next career. Job hunting
-                isn’t easy and requires dedication and commitment, We are here
-                to help with everything from resume’ pointers to mock
-                interviews, guiding you to the right career fair, helping you
-                build a strong LinkedIn profile and more.{" "}
+                My360Tribe knows job searching can be a full time job in and of
+                itself. We have a network of partners and providers who are well
+                versed in resume development, conducting mock interviews,
+                building a strong LinkedIn profile as well as other activities
+                critical in identifying your new mission.{" "}
               </p>
             </div>
-          ) : activeTab == "Head Hunting" ? (
+          ) : activeTab == "Talent Acquisition/Recruiting" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Head Hunting</h1>
+              <h1 className="font-bold text-3xl">
+                Talent Acquisition/Recruiting
+              </h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
                 This service provided by our partners is for those of you
@@ -87,41 +87,23 @@ const Employment = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Entrepreneurship</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                If working for someone else isn’t your thing, then
-                entrepreneurship may be just what you are looking for. We have
-                resources available to help guide you in establishing your own
-                way from concept to business case; launch to start-up and
-                avoiding pitfalls. This takes a special level of dedication and
-                a strong willingness to persevere through the challenges of
-                ownership.{" "}
+                If working for someone else...We have resources and partners
+                available to help support and guide you as you build your own
+                company, from concept to business case, understanding areas of
+                risk and how to successful raise money." Delete the last
+                sentence, "This takes a special level of dedication.{" "}
               </p>
             </div>
-          ) : activeTab == "Employment" ? (
-            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl">Employment</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
-                {" "}
-                My360Tribe has established relationships with service
-                organizations, corporations and businesses to help you expand
-                your network, mentoring opportunities, job services and even
-                starting your own business. We want you to be successful and
-                part of that is providing for yourself and your family while
-                being a contributing member of society as a civilian. Below are
-                some of the services and referrals we offer to help you navigate
-                the employment and entrepreneurial sector.{" "}
-              </p>
-            </div>
-          ) :  activeTab == "Mentorship" ? (
+          )  : activeTab == "Mentorship" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Mentorship</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                We are a team of mentors and advisors with years of experience
-                in a variety of industries, non-profits and organizations. We
-                have years of mentoring experience and education to offer in
-                hope that it will provide you with guidance and open doors to
-                opportunities. We have extensive networks and want to share that
-                knowledge with you as you navigate this next phase of your life.{" "}
+                My360Tribe is comprised of a team of mentors and advisors…We
+                have a vast pool of professional mentors and coaches who
+                understand your world, the path you walk and bring a wealth of
+                experience to the many facets of navigating this next phase of
+                your life.{" "}
               </p>
             </div>
           ) : (
