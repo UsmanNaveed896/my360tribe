@@ -25,7 +25,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
     heading: "Peer Ambassador",
     text: "Are you a SOF Operator who has been out of the military for more than a year and want to support a newly transitioning Operator?",
   };
-  console.log(isModalOpen, "is");
+
   const handleCancel = () => {
     // Implement cancel logic here
     console.log("Cancelling...");

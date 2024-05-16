@@ -4,7 +4,6 @@ const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
   if (!isOpen.mod1 && !isOpen.mod2 && !isOpen.mod3 && !isOpen.mod4 ) {
     return null;
   }
-console.log(data,"data")
   return (
     <div
       className="relative z-[999] "

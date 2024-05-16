@@ -18,7 +18,7 @@ function App() {
     mod4: false,
     mod5:false
   });
-  console.log(isModalOpen,"aaa")
+ 
   const handleClick = (a) => {
     setTimeout(() => {
       const targetDiv = document.getElementById(`targetDiv${a}`);
