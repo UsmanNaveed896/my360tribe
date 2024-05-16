@@ -46,20 +46,20 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
   };
   const img4 = {
     heading: " Service Partners",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    text: "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
   };
 
   const img2 = {
     heading: "Concierge",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    text: "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
   };
   const img1 = {
     heading: "Operators",
     text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
   };
   const img3 = {
-    heading: "Peer Advocate Member",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    heading: "Peer Ambassador",
+    text: "Are you a SOF Operator who has been out of the military for more than a year and want to support a newly transitioning Operator?",
   };
   const handleCancel = () => {
     // Implement cancel logic here
