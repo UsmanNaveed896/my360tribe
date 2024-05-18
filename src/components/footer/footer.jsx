@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "../../assets/charitylogo.jpeg";
 import Img2 from "../../assets/linkedin.png";
-import Img3 from "../../assets/logs.png";
+import Img3 from "../../assets/logo1.png";
 
 const Footer = () => {
   const gradient =
@@ -10,97 +10,59 @@ const Footer = () => {
     "linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)";
 
   return (
-    <div className="px-2 py-1 bg-gradient-to-r from-black to-gray-400 relative">
+    <div className="px-2 py-1 bg-gradient-to-r from-black to-gray-400 relative ">
       <div className="grid grid-cols-3 mt-6 md:flex-row flex-col ">
-        <div className="logo text-white  relative">
-          <div className="text-[25px] text-white  ">
-            <div className=" mb-[64px]">
-              <button className=" text-[25px]  rounded border-white text-white border px-8 py-2 mt-2 hover:border-2">
-                Get Involved
-              </button>
-            </div>
-            <div className="flex ml-1 ">
-              <button className=" text-[25px] absolute bottom-[-30px] rounded  text-white border px-8 py-2 mt-2 bg-[red] border-[red] hover:border-2">
-                Donate
-              </button>
+        <div className="txt text-white text-[16px] ">
+          <div className="flex justify-center">
+            <div>
+              <div className="flex justify-center">
+                <img className="h-[80px]" src={Img3} alt="logo" />
+              </div>
+              <p className="mt-2 font-bold text-center text-[#BDC6E6]">
+                Address
+              </p>
+              <p className="text-center font-bold">
+                My360Tribe<br></br> 128 Adrian Avenue, <br></br>South San
+                Francisco, CA 940802
+              </p>
+
+              <p className="font-bold text-center text-[#BDC6E6]">
+                Contact us
+              </p>
+              <div className="flex justify-center ">
+                <img className="h-4 cursor-pointer" src={Img2} alt="abc" />
+              </div>
             </div>
           </div>
         </div>
         <div>
           <div className="flex justify-center">
-            <img className="h-[80px] w-[180px] mt-5 " src={Img} alt="logo" />
+            <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
           </div>
 
-          <p className="text-center text-white text-[20px] mt-32">
+          <p className="text-center text-white text-[16px] mt-[90px] font-bold">
             Terms & Conditions
           </p>
-        </div>
-
-        <div className="txt text-white text-[20px] ">
-          <div className="flex justify-end">
-            <div>
-              <img className="h-[80px]" src={Img3} alt="logo" />
-              <p className="mt-2 font-bold">Address</p>
-              <p>
-                My360Tribe<br></br> 128 Adrian Avenue, <br></br>South San
-                Francisco, CA 940802
-              </p>
-
-              <p className="mt-2 font-bold">Contact us</p>
-              <div>
-                <ul className="flex gap-2 mt-4 ">
-                  {/* <li className=" relative py-2 pb-4 h-8 w-8 rounded-full text-black  text-center bg-[white]">
-                <span>
-                  <i
-                    class=" absolute left-3  fa fa-facebook "
-                    aria-hidden="true"
-                  ></i>
-                </span>
-              </li> */}
-                  {/* <li className="relative py-2 pb-4 h-8 w-8 rounded-full text-black  text-center bg-[white]  ">
-                <span>
-                  <i
-                    class="absolute left-2  fa fa-twitter "
-                    aria-hidden="true"
-                  ></i>
-                </span>
-              </li> */}
-                  {/* <li className="relative py-2 pb-4 h-8 w-8 rounded-full text-black  text-center bg-[white]    ">
-                <span>
-                  <i
-                    class="absolute left-2  fa fa-instagram "
-                    aria-hidden="true"
-                  ></i>
-                </span>
-              </li> */}
-                  {/* <li className="relative py-2 pb-4 h-8 w-8 rounded-full text-black  text-center bg-[white]    ">
-                <span>
-                  <i
-                    class="absolute left-2  fa fa-youtube "
-                    aria-hidden="true"
-                  ></i>
-                </span>
-              </li> */}
-                  <li className="rounded bg-white ">
-                    {/* <span>
-                  <i
-                    class="absolute left-2 fa fa-linkedin "
-                    aria-hidden="true"
-                  ></i>
-                </span> */}
-                    <img className="h-6 cursor-pointer" src={Img2} alt="abc" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="relative ">
-          <p className=" cursor-pointer mt-2 text-white text-center ">
+          <p className=" cursor-pointer mt-2 text-white text-center">
             Copyright © 2024 My360Tribe. All rights reserved.
           </p>
+        </div>
+        <div className="logo text-white flex justify-center relative">
+          <div className="text-[16px] text-white  ">
+            <div className=" mb-[64px] flex justify-center">
+              <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
+                Get Involved
+              </button>
+            </div>
+            <div className="flex ml-1 justify-center">
+              <button className="text-[16px] rounded-xl  text-white border w-[98px] h-[45px] mt-2 bg-[red] border-[red] hover:border-2">
+                Donate
+              </button>
+            </div>
+            <p className="text-center text-white mt-[42px] text-[16px]">
+              Design & developed by ZAMH Tech
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -32,11 +32,11 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
     setIsModalOpen(false);
   };
   const Gradient =
-    "linear-gradient(90.57deg, #0A194E 9.91%, #344DA5 53.29%, #0A194E 91.56%)";
+    "linear-gradient(to right, rgba(10, 25, 78, 1), rgba(1, 3, 11, 1))";
   return (
     <div
       className="bg-[#070c1f] md:mt-12 mt-0 pb-[35px] md:bg-cover bg-contain "
-      style={{ backgroundImage: `url(${Img4})` }}
+      style={{ backgroundImage: `url(${Img4})`,}}
     >
       <div className="flex justify-center px-4 md:px-0">
         <div className="container max-w-[1400px] md:mt-16 mt-4">

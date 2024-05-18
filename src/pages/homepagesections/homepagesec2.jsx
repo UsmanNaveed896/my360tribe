@@ -66,47 +66,7 @@ const Homepagesec2 = () => {
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center pb-12 md:gap-16 gap-2">
-            {/* <div className="colum1 md:mt-8 mt-2 ">
-              <div className="relative md:h-[400px]">
-                <Pie
-                  className="md:mt-12 mt-4 z-[4] "
-                  data={data}
-                  options={options}
-                />
-                <div className="">
-                  <p className="absolute text-white  left-[249px] md:left-[219px] top-[80px] text-center font-bold text-[20px] z-[5]">
-                    Executive <br></br> board
-                  </p>
-                  <p className="absolute text-white  md:left-[260px] left-[300px] top-[220px] md:top-[200px] text-center font-bold text-[20px] z-[5]">
-                    Advisory <br></br> board
-                  </p>
-                  <p className="absolute text-white md:left-[140px] left-[155px] top-[300px] md:top-[280px] text-center font-bold text-[20px] z-[5]">
-                    Service <br></br> organization
-                  </p>
-                  <p className="absolute text-white  left-[30px] top-[220px] text-center font-bold text-[20px] z-[5]">
-                    Concierge
-                  </p>
-                  <p className="absolute text-white  left-[60px] top-[80px] text-center font-bold text-[20px] z-[5]">
-                  Peer Advocate <br></br> Member
-                  </p>
-                  <div className="relative flex justify-center"> 
-                  <img
-                    className="mt-[-244px] md:ml-[-174px] ml-0 text-white top-[-225px] md:top-[-235px] left-[140px] md:left-[-50px] h-[80px]  z-[5]  "
-                    src={Img}
-                    alt="logo"
-                  />
-                  </div>
-                 
-                  <img
-                    className="absolute text-white  md:left-[-35px] hidden md:block left-[0px] md:top-[-36px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
-                    src={Img2}
-                    alt="logo"
-                  />
-                </div>
-              </div>
-
-             
-            </div> */}
+          
 
             <div className="colum1 md:mt-8 mt-2 ">
               <div className="relative md:h-[400px] md:flex flex justify-center">
@@ -117,12 +77,12 @@ const Homepagesec2 = () => {
                 /> 
                 <div className="">
                   <p className="absolute text-white  left-[239px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                  onClick={()=>setSelectedText(" Executive board")}
+                  onClick={()=>setSelectedText(" Executive Board")}
                   >
                     Executive <br></br> Board
                   </p>
                   <p className="absolute text-white  md:left-[340px] left-[260px] top-[170px] md:top-[240px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                   onClick={()=>setSelectedText(" Advisory board")}
+                   onClick={()=>setSelectedText(" Advisory Board")}
                   >
                     Advisory <br></br> Board
                   </p>
@@ -141,13 +101,12 @@ const Homepagesec2 = () => {
                   >
                   Peer Advocate <br></br> Member
                   </p>
-                  {/* <div className="relative flex justify-center ">  */}
+             
                   <img
                     className=" ml-0 text-white md:left-[42%] md:top-[50%] top-[40%] left-[39%] h-[80px] absolute z-[22]"
                     src={Img}
                     alt="logo"
                   />
-                  {/* </div> */}
                   <img
                     className="absolute text-white  md:left-[49px] hidden md:block left-[0px] md:top-[9px] top-[-30px] md:h-[470px]  h-[450px] w-[470px] "
                     src={Img2}
@@ -166,47 +125,37 @@ const Homepagesec2 = () => {
               <p className="text-[29px] font-semibold text-[#0a194e] mt-12">
                 {selectedText}
               </p>
-              {/* <p className="text-[29px] font-semibold text-[#0a194e] mt-12">
-                Lorem Ipsum is simply dummy <br></br> text of the printing
-              </p> */}
-            
-                {/* <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>2.</strong> Center circle behind the logo in white
-                inside the scope graphic.
-                </p>
-                <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold"> <strong>3.</strong> Ensure when hovering over each
-                section of the graphic, the name and verbiage matches to the
-                right.
-                </p> */}
+          
                 {selectedText === " Executive Board" ? 
-                 <p className="text-[17px]  text-[#0a194e] mt-2 font-semibold h-[200px]"> The Executive Board for My360Tribe
+                 <p className="text-[17px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0a194e]"> The Executive Board for My360Tribe
                  is made up of Military and Civilian professionals with a
                  deep-rooted passion for the SOF community. We are dedicated to
                  the Operator and their family’s success before, during and after
                  transition from military service.
                  </p> :
                  selectedText === " Peer Advocate Member" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]"> Peer Advocate Network  –
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0a194e]"> Peer Advocate Network  –
                  by offering peer – to – peer support, My360Tribe ensures that
                  operators are helping operators with real life, real time advice
                  and referrals to get the support and help they need.
                  </p>
                  :
                  selectedText === " Advisory Board" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">As advocates and ambassadors of the organization and its mission, the advisory board acts as
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0a194e]">As advocates and ambassadors of the organization and its mission, the advisory board acts as
                  liaison between the special operations community and the organization, providing strategic guidance, organizational
                  planning and execution, and assisting with Veteran Service Organization (VSO) relationships. In addition to these
                  duties the advisory board will also assist with fundraising activities when necessary.
                  </p>
                  :
                  selectedText === " Service Partners" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">Our service partners are
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0a194e]">Our service partners are
                  made up of companies and non-profit organizations dedicated to the success of our SOF
                  operators in the civilian world. It is the dedication and commitment of these entities that help
                  make My360Tribe a success.                 
                  </p>
                  :
                  selectedText === " Concierge" ?
-                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px]">As the first contact point, concierges are the ambassadors of the organization. They must possess a
+                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0a194e]">As the first contact point, concierges are the ambassadors of the organization. They must possess a
                  warm, friendly attitude paired with an intensely curious nature and an intense drive to help. Concierges will develop
                  a more robust needs assessment through conversations with the veteran. Concierges are Veteran Service
                  Organization (VSO) experts - responsible for making introductions, tracking and maintaining the relationship

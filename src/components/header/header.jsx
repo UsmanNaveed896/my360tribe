@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Img from "../../assets/logs.png";
+import Img from "../../assets/logo1.png";
 import { useNavigate } from "react-router-dom";
 import PicsModal from "../../Popups/picsModal";
 import Aboutus from "../../Popups/Aboutus";
