@@ -43,7 +43,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
             <div>
               <img
-                className=" md:block hidden h-[350px] opacity-40"
+                className=" md:block hidden h-[350px] "
                 src={Img6}
                 alt="abc"
               />
