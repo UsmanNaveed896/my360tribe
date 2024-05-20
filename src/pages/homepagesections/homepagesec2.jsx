@@ -7,7 +7,7 @@ import "chart.js/auto";
 import "chartjs-plugin-datalabels";
 import "./style.css";
 const Homepagesec2 = () => {
-  const [selectedText, setSelectedText] = useState(" Executive Board"); // State to manage selected text
+  const [selectedText, setSelectedText] = useState("Executive Board"); // State to manage selected text
 
   const data = {
     labels: [
@@ -15,7 +15,7 @@ const Homepagesec2 = () => {
       "Advisory Board",
       "Service Partners",
       "Concierge",
-      "Peer Advocate Member",
+      "Peer Ambassador",
     ], // Add your pie chart labels
     datasets: [
       {
@@ -100,9 +100,9 @@ const Homepagesec2 = () => {
                   </p>
                   <p
                     className="absolute text-white md:left-[140px] md:top-[120px] left-[100px] top-[80px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                    onClick={() => setSelectedText(" Peer Advocate Member")}
+                    onClick={() => setSelectedText("Peer Ambassador")}
                   >
-                    Peer Advocate <br></br> Member
+                    Peer<br></br>Ambassador
                   </p>
 
                   <img
@@ -133,7 +133,7 @@ const Homepagesec2 = () => {
                       ? "#0e0f3d"
                       : selectedText === " Advisory Board"
                       ? "#323494"
-                      : selectedText === " Peer Advocate Member"
+                      : selectedText === "Peer Ambassador"
                       ? "#464b99"
                       : selectedText === " Concierge"
                       ? "#344688"
@@ -152,7 +152,7 @@ const Homepagesec2 = () => {
                   success before, during and after transition from military
                   service.
                 </p>
-              ) : selectedText === " Peer Advocate Member" ? (
+              ) : selectedText === "Peer Ambassador" ? (
                 <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#464b99] bg-[#464b99]">
                   {" "}
                   Peer Advocate Network – by offering peer – to – peer support,
