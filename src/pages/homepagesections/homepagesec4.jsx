@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from '../../assets/Group 1000006028.png'
 import Img4 from '../../assets/Group1000006267.png'
+import GoogleMaps from '../../components/googlemap/google-map'
 
 const Homepagesec4 = () => {
     return (
@@ -17,7 +18,11 @@ const Homepagesec4 = () => {
                         </div>
 
                     </div>
-                    <img className='mt-12' src={Img} alt='abc' />
+                    <div className=' h-[600px] my-5'>
+                    <GoogleMaps/>
+                    </div>
+                   
+                    {/* <img className='mt-12' src={Img} alt='abc' /> */}
                     <div className='flex justify-center'>
                         <div className='relative mt-16'>
                             <input

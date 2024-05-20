@@ -7,12 +7,22 @@ import Img4 from "../../assets/b.png";
 import Img5 from "../../assets/c.png";
 import Img6 from "../../assets/d.png";
 import Img7 from "../../assets/Group1000006281.png";
+import Img8 from '../../assets/1.jpeg'
+import Img9 from '../../assets/2.jpeg'
+import Img10 from '../../assets/3.jpeg'
+import Img11 from '../../assets/4.jpg'
+import Img12 from '../../assets/5.jpeg'
+
+
+
+
 
 const Homepagesec6 = () => {
   const gradient =
     "linear-gradient(90deg, rgba(20,18,52,1) 0%, rgba(16,30,77,1) 0%, rgba(61,67,91,1) 100%)";
   const employees = [
     {
+      img: Img8,
       name: "Greg 'Vinny' Vincent ",
       designation: " Navy SEAL",
    
@@ -23,19 +33,18 @@ const Homepagesec6 = () => {
 
     },
     {
+      img: Img9,
       name: "Brian Hughes",
       designation: "Army (160 SOAR)",
      
     },
     {
+      img: Img11,
       name: "Joe Hudak",
       designation: "Army (SF)",
     },
     {
-      name: "Jack Davis",
-      designation: "Navy (EOD)",
-    },
-    {
+      img: Img10,
       name: "Jason Agopsowicz",
       designation: "Navy (SEAL)",
     },
@@ -131,6 +140,7 @@ const Homepagesec6 = () => {
             <div className="flex justify-center flex-wrap md:gap-16 gap-8">
               {employees.map((item) => (
                 <Usercard
+                img={item.img}
                   name={item.name}
                   designation={item.designation}
                   experience={item.experience}
