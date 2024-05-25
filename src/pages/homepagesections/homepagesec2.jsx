@@ -76,25 +76,25 @@ const Homepagesec2 = () => {
                 <div className="">
                   <p
                     className="absolute text-white  left-[239px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                    onClick={() => setSelectedText(" Executive Board")}
+                    onClick={() => setSelectedText("Executive Board")}
                   >
                     Executive <br></br> Board
                   </p>
                   <p
                     className="absolute text-white  md:left-[340px] left-[260px] top-[170px] md:top-[240px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                    onClick={() => setSelectedText(" Advisory Board")}
+                    onClick={() => setSelectedText("Advisory Board")}
                   >
                     Advisory <br></br> Board
                   </p>
                   <p
                     className="absolute text-white md:left-[244px] left-[165px] top-[240px] md:top-[320px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                    onClick={() => setSelectedText(" Service Partners")}
+                    onClick={() => setSelectedText("Service Partners")}
                   >
                     Service <br></br> Partners
                   </p>
                   <p
                     className="absolute text-white md:left-[130px] md:top-[260px] left-[80px] top-[170px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                    onClick={() => setSelectedText(" Concierge")}
+                    onClick={() => setSelectedText("Concierge")}
                   >
                     Concierge
                   </p>
@@ -129,13 +129,13 @@ const Homepagesec2 = () => {
                 className="text-[29px] font-semibold  mt-12"
                 style={{
                   color:
-                    selectedText === " Executive Board"
+                    selectedText === "Executive Board"
                       ? "#0e0f3d"
-                      : selectedText === " Advisory Board"
+                      : selectedText === "Advisory Board"
                       ? "#323494"
                       : selectedText === "Peer Ambassador"
                       ? "#464b99"
-                      : selectedText === " Concierge"
+                      : selectedText === "Concierge"
                       ? "#344688"
                       : "#000473",
                 }}
@@ -143,7 +143,7 @@ const Homepagesec2 = () => {
                 {selectedText}
               </p>
 
-              {selectedText === " Executive Board" ? (
+              {selectedText === "Executive Board" ? (
                 <p className="text-[17px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0e0f3d] bg-[#0e0f3d]">
                   {" "}
                   The Executive Board for My360Tribe is made up of Military and
@@ -160,7 +160,7 @@ const Homepagesec2 = () => {
                   real life, real time advice and referrals to get the support
                   and help they need.
                 </p>
-              ) : selectedText === " Advisory Board" ? (
+              ) : selectedText === "Advisory Board" ? (
                 <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#1a1ea9] bg-[#1a1ea9] text-white">
                   As advocates and ambassadors of the organization and its
                   mission, the advisory board acts as liaison between the
@@ -170,14 +170,14 @@ const Homepagesec2 = () => {
                   relationships. In addition to these duties the advisory board
                   will also assist with fundraising activities when necessary.
                 </p>
-              ) : selectedText === " Service Partners" ? (
+              ) : selectedText === "Service Partners" ? (
                 <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#101470] bg-[#101470]">
                   Our service partners are made up of companies and non-profit
                   organizations dedicated to the success of our SOF operators in
                   the civilian world. It is the dedication and commitment of
                   these entities that help make My360Tribe a success.
                 </p>
-              ) : selectedText === " Concierge" ? (
+              ) : selectedText === "Concierge" ? (
                 <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#344688] bg-[#344688]">
                   As the first contact point, concierges are the ambassadors of
                   the organization. They must possess a warm, friendly attitude
