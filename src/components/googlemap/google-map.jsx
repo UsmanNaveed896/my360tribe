@@ -7,7 +7,7 @@ import {
 
 const GoogleMaps = () => {
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-  const defaultCenter = { lat: 33.51653, lng: 73.10832 };
+  const defaultCenter = { lat: 	39.113014, lng: -105.358887 };
   const [center, setCenter] = useState({
     lat: defaultCenter.lat,
     lng: defaultCenter.lng,
@@ -18,17 +18,17 @@ const GoogleMaps = () => {
     googleMapsApiKey: apiKey
   });
 
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        const userLocation = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        };
-        setCenter(userLocation);
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition((position) => {
+  //       const userLocation = {
+  //         lat: position.coords.latitude,
+  //         lng: position.coords.longitude,
+  //       };
+  //       setCenter(userLocation);
+  //     });
+  //   }
+  // }, []);
 
   const containerStyle = {
     width: "100%",
@@ -39,10 +39,10 @@ const GoogleMaps = () => {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={11}
+      zoom={5}
       options={{ mapTypeControl: false }}
     >
-      <Marker position={{ lat: center.lat, lng: center.lng }} />
+      {/* <Marker position={{ lat: center.lat, lng: center.lng }} /> */}
     </GoogleMap>
   ) : null;
 };

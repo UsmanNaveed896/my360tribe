@@ -76,7 +76,7 @@ const Homepagesec2 = () => {
                 <div className="">
                   <p
                     className="absolute text-white  left-[239px] md:left-[319px] md:top-[120px] top-[60px] text-center font-bold md:text-[20px] text-[14px] z-[5] cursor-pointer"
-                    onClick={() => setSelectedText(" Executive Board")}
+                    onClick={() => setSelectedText("Executive Board")}
                   >
                     Executive <br></br> Board
                   </p>
@@ -143,7 +143,7 @@ const Homepagesec2 = () => {
                 {selectedText}
               </p>
 
-              {selectedText === " Executive Board" ? (
+              {selectedText === "Executive Board" ? (
                 <p className="text-[17px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0e0f3d] bg-[#0e0f3d]">
                   {" "}
                   The Executive Board for My360Tribe is made up of Military and
