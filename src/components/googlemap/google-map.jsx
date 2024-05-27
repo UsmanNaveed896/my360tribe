@@ -7,7 +7,7 @@ import {
 
 const GoogleMaps = () => {
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-  const defaultCenter = { lat: 	39.113014, lng: -105.358887 };
+  const defaultCenter = { lat: 39.113014, lng: -105.358887 };
   const [center, setCenter] = useState({
     lat: defaultCenter.lat,
     lng: defaultCenter.lng,
@@ -39,7 +39,7 @@ const GoogleMaps = () => {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={5}
+      zoom={6}
       options={{ mapTypeControl: false }}
     >
       {/* <Marker position={{ lat: center.lat, lng: center.lng }} /> */}

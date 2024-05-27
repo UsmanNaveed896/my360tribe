@@ -7,11 +7,12 @@ import Img4 from "../../assets/b.png";
 import Img5 from "../../assets/c.png";
 import Img6 from "../../assets/d.png";
 import Img7 from "../../assets/Group1000006281.png";
-import Img8 from '../../assets/1.jpeg'
-import Img9 from '../../assets/2.jpeg'
-import Img10 from '../../assets/3.jpeg'
+import Img8 from '../../assets/1.png'
+import Img9 from '../../assets/2.png'
+import Img10 from '../../assets/3.png'
 import Img11 from '../../assets/4.jpg'
-import Img12 from '../../assets/5.jpeg'
+import Img12 from '../../assets/7.png'
+import Img13 from '../../assets/6.png'
 
 
 
@@ -28,6 +29,7 @@ const Homepagesec6 = () => {
    
     },
     {
+      img: Img12,
       name: "Pat O'Rourke",
       designation: "Air Force (720 STG, PJ)",
 
@@ -49,6 +51,7 @@ const Homepagesec6 = () => {
       designation: "Navy (SEAL)",
     },
     {
+      img:Img13,
       name: "Matt Bruni",
       designation: "Army (Ranger)",
     },
