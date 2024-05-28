@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Img from "../../assets/Group 1000006061.jpg";
+import Img from "../../assets/122.png";
 import Img1 from "../../assets/Group 1000006062.jpeg";
 import Img2 from "../../assets/Group 1000006063.jpg";
 import Img3 from "../../assets/Group 1000006064.png";
