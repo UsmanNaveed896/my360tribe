@@ -155,7 +155,7 @@ const Homepagesec2 = () => {
               ) : selectedText === "Peer Ambassador" ? (
                 <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#464b99] bg-[#464b99]">
                   {" "}
-                  Peer Advocate Network – by offering peer – to – peer support,
+                  Peer Advocate Network by offering peer to peer support,
                   My360Tribe ensures that operators are helping operators with
                   real life, real time advice and referrals to get the support
                   and help they need.

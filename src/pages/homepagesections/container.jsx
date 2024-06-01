@@ -13,7 +13,7 @@ const Container = ({isModalOpen,setIsModalOpen}) => {
             <Homepage setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />
             <Homepagesec2 />
             <Homepagesec3 />
-            <Homepagesec4 />
+            {/* <Homepagesec4 /> */}
             <Homepagesec5 />
             <Homepagesec6 />
             <Homepagesec7 />

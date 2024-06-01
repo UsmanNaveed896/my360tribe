@@ -55,7 +55,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
   };
   const img1 = {
     heading: "Operators",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+    text: 'We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as operators at any of the U.S. Special Operations Command service component commands of U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command.',
   };
   const img3 = {
     heading: "Peer Ambassador",

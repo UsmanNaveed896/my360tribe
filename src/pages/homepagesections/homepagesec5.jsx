@@ -5,7 +5,7 @@ import Img4 from "../../assets/Group10000062671.png";
 const Homepagesec5 = () => {
   return (
     <div
-      className=" pb-[70px] bg-[#1a2242] md:bg-cover bg-contain "
+      className=" pb-[95px] bg-[#1a2242] md:bg-cover bg-contain "
       id="targetDiv4"
       style={{ backgroundImage: `url(${Img4})` }}
     >
@@ -19,9 +19,9 @@ const Homepagesec5 = () => {
                 </h1>
               </div>
               <div className="flex justify-center mt-12">
-                <div>
+                <div className="bg-[#d1d8f5] p-2 border rounded-xl ">
                   
-                  <p className="text-white text-sm mt-4">
+                  <p className="text-[#0a194e] text-[15px] mt-4 font-[600]">
                     My360Tribe exists to support the transitioning Special
                     Operator during and after their transition out of the
                     military. Our Tribe is unique in that it is comprised of

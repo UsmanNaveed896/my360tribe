@@ -45,11 +45,11 @@ const Homepagesec6 = () => {
       name: "Joe Hudak",
       designation: "Army (SF)",
     },
-    {
-      img: Img10,
-      name: "Jason Agopsowicz",
-      designation: "Navy (SEAL)",
-    },
+    // {
+    //   img: Img10,
+    //   name: "Jason Agopsowicz",
+    //   designation: "Navy (SEAL)",
+    // },
     {
       img:Img13,
       name: "Matt Bruni",

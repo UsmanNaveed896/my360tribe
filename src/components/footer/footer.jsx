@@ -23,7 +23,7 @@ const Footer = () => {
               </p>
               <p className="text-center font-bold">
                 My360Tribe<br></br> 128 Adrian Avenue, <br></br>South San
-                Francisco, CA 940802
+                Francisco, CA 94080
               </p>
 
               <p className="font-bold text-center text-[#BDC6E6]">
