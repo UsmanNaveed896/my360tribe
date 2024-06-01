@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Img from "../../assets/1 (1).png";
-import Img2 from "../../assets/Capture-3-1065x684 2.png";
+import Img2 from "../../assets/1 (1).png";
+import Img from "../../assets/screen.png";
 import Img4 from "../../assets/Group10000062671.png";
 import Modal from "../../Popups/Modal";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ const Homepagesec3 = () => {
 
   return (
     <div
-      className="bg-[#1a2242] pb-24 md:bg-cover bg-contain"
+      className="bg-[#1a2242] pb-[44px] md:bg-cover bg-contain"
       id="targetDiv2"
       style={{ backgroundImage: `url(${Img4})` }}
     >
