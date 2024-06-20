@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./style.css";
+
 import TeamModal from "../../Popups/teamModal";
 import Img from '../../assets/aa.jpeg'
-const Usercard = (props) => {
+const Advisorycard = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const divStyle = {
     width: "200px", // Adjust the width as needed
@@ -16,12 +16,12 @@ const Usercard = (props) => {
       <div className="flex justify-center ">
         <div className="text-center w-[185px]">
           {props?.img ? (
-            <div class="flip-box bg-transparent">
-              <div class="flip-box-inner">
-                <div class="flip-box-front flex justify-center">
+            <div class=" bg-transparent">
+              <div class="">
+                <div class=" flex justify-center">
                   <img className="h-[130px] " src={props.img} alt="line" />
                 </div>
-                <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center h-[400px]" onClick={()=>setIsModalOpen(true)}>
+                {/* <div class="flip-box-back  cursor-pointer bg-[#000] flex justify-center h-[400px]" onClick={()=>setIsModalOpen(true)}>
                   <div className="rounded  bg-[#000] h-[260px]  pb-2 ">
                     <div className="flex justify-center ">
                       <img className="h-[130px]" src={props.img} alt="line" />
@@ -40,7 +40,7 @@ const Usercard = (props) => {
                       <span className="text-xs font-semibold hover:font-bold" onClick={()=>setIsModalOpen(true)}>Continue reading...</span>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ) : (
@@ -62,4 +62,4 @@ const Usercard = (props) => {
   );
 };
 
-export default Usercard;
+export default Advisorycard;

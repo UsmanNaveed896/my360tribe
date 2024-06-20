@@ -15,7 +15,7 @@ const Homepagesec3 = () => {
     >
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
-          <div className="grid md:grid-cols-2 grid-cols-1 px-4 md:px-0">
+          <div className="grid md:grid-cols-2 grid-cols-1 px-4 md:px-0 gap-6">
             <div className="column1">
               <div className="flex justify-center mt-16">
                 <h1 className="border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl">
@@ -23,18 +23,16 @@ const Homepagesec3 = () => {
                 </h1>
               </div>
               <div className="flex gap-12 mt-32 justify-center md:flex-row flex-col items-center">
-                <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] -mt-28  text-[12px]">
+                <div class="has-tooltip ">
+                  <span class="tooltip rounded shadow-lg bg-[#192242] text-white border p-3 text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[180px] ">
                     One of the things that sets us apart is our Peer Advocate
-                    Network. Operators helping <br></br> Operators by providing
-                    support and guidance to you as a member of My360Tribe. Your
-                    peer<br></br>
+                    Network. Operators helping Operators by providing support
+                    and guidance to you as a member of My360Tribe. Your peer
                     advocate will keep in contact with you and help coordinate
-                    the contact with the service partners <br></br> ready to
-                    answer your questions and assist you in navigating this new
-                    life outside the SOF. Click <br></br> on the tabs above to
-                    learn more about the 360-warrior care through Peer Advocacy
-                    we provide.
+                    the contact with the service partners ready to answer your
+                    questions and assist you in navigating this new life outside
+                    the SOF. Click on the tabs above to learn more about the
+                    360-warrior care through Peer Advocacy we provide.
                   </span>
                   <button
                     className="border-[#D9D9D9] border hover:border-2 rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
@@ -48,10 +46,9 @@ const Homepagesec3 = () => {
                   </button>
                 </div>
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] -mt-20 text-[12px]">
+                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[180px] ml-[-254px]">
                     Transition services and referral to our strongest service
-                    <br></br>
-                    partners to guide you and assist with a successful<br></br>
+                    partners to guide you and assist with a successful
                     transition even years after you have separated.
                   </span>
                   <button
@@ -79,11 +76,12 @@ const Homepagesec3 = () => {
                   Health
                 </button>
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-1 bg-gray-100 text-[#0a194e] mt-[70px] text-[12px]">
-                    My360Tribe has established relationships <br></br> with service
-                    organizations, corporations <br></br> and businesses to  help you
-                    expand <br></br> your network, mentoring  opportunities, <br></br> job services 
-                    and even starting your own  business.<br></br> We want you to be  <span className="font-bold">See more...</span>
+                  <span class="tooltip rounded shadow-lg  bg-[#192242] text-white border p-3 text-[#0a194e] mt-[9rem] text-[14px] w-[500px] h-[180px] ml-[-254px]">
+                    My360Tribe has established relationships with service
+                    organizations, corporations and businesses to help you
+                    expand your network, mentoring opportunities, job services
+                    and even starting your own business. We want you to be{" "}
+                    <span className="font-bold">See more...</span>
                     {/* successful and part of that is providing for yourself and
                     your family while being a contributing member of society as
                     a civilian. Below are some of the services and referrals we
