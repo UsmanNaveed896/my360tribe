@@ -11,45 +11,52 @@ const Footer = () => {
 
   return (
     <div className="px-2 py-1 bg-gradient-to-r from-black to-gray-400 relative ">
-      <div className="grid grid-cols-3 mt-6 md:flex-row flex-col ">
+      <div className="grid md:grid-cols-3 mt-6 grid-cols-1  ">
         <div className="txt text-white text-[16px] ">
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <div>
               <div className="flex justify-center">
                 <img className="h-[80px]" src={Img3} alt="logo" />
               </div>
-              <p className="mt-2 font-bold text-center text-[#BDC6E6]">
+              <p className="mt-2 font-bold md:text-center text-start text-[#BDC6E6]">
                 Address
               </p>
-              <p className="text-center font-bold">
+              <p className="md:text-center text-start font-bold">
                 My360Tribe<br></br> 128 Adrian Avenue, <br></br>South San
                 Francisco, CA 94080
               </p>
 
-              <p className="font-bold text-center text-[#BDC6E6]">
+              <p className="font-bold md:text-center text-start text-[#BDC6E6]">
                 Contact us
               </p>
-              <div className="flex justify-center ">
-                <img className="h-4 cursor-pointer" src={Img2} alt="abc" />
+              <div className="flex md:justify-center justify-start">
+                <img
+                  className="h-4 cursor-pointer md:my-0 my-3"
+                  src={Img2}
+                  alt="abc"
+                />
               </div>
             </div>
           </div>
         </div>
         <div>
-          <div className="flex justify-center">
-            <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
+          <div className="flex justify-center mt-12 md:mt-0">
+            <div className="w-[75%] ">
+              <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
+              <div >
+              <p className="md:text-center text-start text-white w-[75%] text-[16px] md:mt-[90px] mt-5 font-bold">
+                  Terms & Conditions
+                </p>
+                <p className=" cursor-pointer mt-2 md:w-full w-[75%] text-white md:text-center text-start">
+                  Copyright © 2024 My360Tribe. All rights reserved.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <p className="text-center text-white text-[16px] mt-[90px] font-bold">
-            Terms & Conditions
-          </p>
-          <p className=" cursor-pointer mt-2 text-white text-center">
-            Copyright © 2024 My360Tribe. All rights reserved.
-          </p>
         </div>
-        <div className="logo text-white flex justify-center relative">
+        <div className="logo text-white flex justify-center relative pb-16">
           <div className="text-[16px] text-white  ">
-            <div className=" mb-[64px] flex justify-center">
+            <div className=" md:mb-[64px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
               <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
                 Get Involved
               </button>

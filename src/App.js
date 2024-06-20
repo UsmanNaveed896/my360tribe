@@ -10,6 +10,7 @@ import Health from "./pages/whatwedotabs/health";
 import Employment from "./pages/whatwedotabs/employment";
 import { useState } from "react";
 import InTakeForm from "./Popups/operators/inTakeForm";
+import ConciergeForm from "./Popups/conceige/conciergeForm";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -72,6 +73,11 @@ function App() {
           exact
           path="/intakeform"
           element={<InTakeForm />}
+        />
+          <Route
+          exact
+          path="/conciergeform"
+          element={<ConciergeForm />}
         />
       </Routes>
       <Footer />

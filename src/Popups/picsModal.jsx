@@ -2,17 +2,20 @@ import React from "react";
 import Img from "../assets/Card12.png";
 import { useNavigate } from "react-router-dom";
 const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
-  const navigate=useNavigate();
-  if (!isOpen.mod1 && !isOpen.mod2 && !isOpen.mod3 && !isOpen.mod4 ) {
+  const navigate = useNavigate();
+  if (!isOpen.mod1 && !isOpen.mod2 && !isOpen.mod3 && !isOpen.mod4) {
     return null;
   }
 
-  const handleClick=()=>{
-    if(data?.heading == "Operators"){
-   navigate('/intakeform')
-   onCancel()
+  const handleClick = () => {
+    if (data?.heading == "Operators") {
+      navigate("/intakeform");
+    } else if (data?.heading == "Concierge") {
+      navigate("/conciergeform");
     }
-  }
+    onCancel();
+  };
+  console.log(data,"data")
   return (
     <div
       className="relative z-[999] "
@@ -35,8 +38,9 @@ const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
                   </h1>
                   <p className="text-center font-semibold mt-4">{data.text}</p>
                   <div className="flex justify-center mt-4">
-                    <button className="py-2 px-4 border text-white rounded hover:font-semibold"
-                    onClick={handleClick}
+                    <button
+                      className="py-2 px-4 border text-white rounded hover:font-semibold"
+                      onClick={handleClick}
                     >
                       {data?.heading == "Operators" ? "Apply" : "Join Us"}
                     </button>

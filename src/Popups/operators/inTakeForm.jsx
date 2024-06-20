@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Img from "../../assets/cc.png";
+import Img from "../../assets/unnamed.png";
 
 const InTakeForm = () => {
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
@@ -43,7 +43,7 @@ const InTakeForm = () => {
     <div className="main" style={{ backgroundColor: linear }}>
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12 text-white">
         <div className="max-w-[1200px] container pb-24">
-          <img src={Img} alt="abc" />
+          <img className="h-[180px]" src={Img} alt="abc" />
           <div className="text text-center">
             <h1 className="font-bold text-[35px]">
               My360Tribe Operator Intake Form
