@@ -82,18 +82,7 @@ const Homepagesec3 = () => {
                     expand your network, mentoring opportunities, job services
                     and even starting your own business. We want you to be{" "}
                     <span className="font-bold">See more...</span>
-                    {/* successful and part of that is providing for yourself and
-                    your family while being a contributing member of society as
-                    a civilian. Below are some of the services and referrals we
-                    offer to help you navigate the employment and
-                    entrepreneurial sector. Mentorship – we are a team of
-                    mentors and advisors with years of experience in a variety
-                    of industries, non-profits and organizations. We have years
-                    of mentoring experience and education to offer in hope that
-                    it will provide you with guidance and open doors to
-                    opportunities. We have extensive networks and want to share
-                    that knowledge with you as you navigate this next phase of
-                    your life. */}
+                  
                   </span>
                   <button
                     className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"

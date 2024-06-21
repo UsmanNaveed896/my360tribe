@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Img from "../../assets/Group12.png";
 import Img2 from "../../assets/target.png";
 import Img4 from "../../assets/Group1000006267.png";
+import Img5 from "../../assets/1 (1).png";
+import Img6 from "../../assets/screen.png";
 import { Pie } from "react-chartjs-2";
 import "chart.js/auto";
 import "chartjs-plugin-datalabels";
@@ -65,8 +67,8 @@ const Homepagesec2 = () => {
     >
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
-          <div className="grid md:grid-cols-2 grid-cols-1 items-center pb-12 md:gap-16 gap-2">
-            <div className="colum1 md:mt-8 mt-2 ">
+          <div className="grid md:grid-cols-2 grid-cols-1 items-start pb-12 md:gap-16 gap-2">
+            <div className="colum1 md:mt-8 mt-2  h-[500px] ">
               <div className="relative md:h-[400px] md:flex flex justify-center">
                 <Pie
                   className="md:mt-12 mt-4 z-[4] "
@@ -144,55 +146,140 @@ const Homepagesec2 = () => {
               </p>
 
               {selectedText === "Executive Board" ? (
-                <p className="text-[17px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#0e0f3d] bg-[#0e0f3d]">
-                  {" "}
-                  The Executive Board for My360Tribe is made up of Military and
-                  Civilian professionals with a deep-rooted passion for the SOF
-                  community. We are dedicated to the Operator and their family’s
-                  success before, during and after transition from military
-                  service.
-                </p>
+                <>
+                  <div className="flex justify-center gap-5">
+                    <div>
+                      <p className="text-[17px]  text-white mt-2 font-semibold  w-[350px] p-4 border rounded-xl border-[#0e0f3d] bg-[#0e0f3d]">
+                        {" "}
+                        The Executive Board for My360Tribe is made up of
+                        Military and Civilian professionals with a deep-rooted
+                        passion for the SOF community. We are dedicated to the
+                        Operator and their family’s success before, during and
+                        after transition from military service.
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img5}
+                        alt="army"
+                      />
+                      <img
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img6}
+                        alt="girl"
+                      />
+                    </div>
+                  </div>
+                </>
               ) : selectedText === "Peer Ambassador" ? (
-                <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#464b99] bg-[#464b99]">
-                  {" "}
-                  Peer Advocate Network by offering peer to peer support,
-                  My360Tribe ensures that operators are helping operators with
-                  real life, real time advice and referrals to get the support
-                  and help they need.
-                </p>
+                <>
+                  <div className="flex justify-center gap-5">
+                  <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#464b99] bg-[#464b99]">
+                    {" "}
+                    Peer Advocate Network by offering peer to peer support,
+                    My360Tribe ensures that operators are helping operators with
+                    real life, real time advice and referrals to get the support
+                    and help they need.
+                  </p>
+                    <div>
+                      <img
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img5}
+                        alt="army"
+                      />
+                      <img
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img6}
+                        alt="girl"
+                      />
+                    </div>
+                  </div>
+                 
+                </>
               ) : selectedText === "Advisory Board" ? (
-                <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#1a1ea9] bg-[#1a1ea9] text-white">
-                  As advocates and ambassadors of the organization and its
-                  mission, the advisory board acts as liaison between the
-                  special operations community and the organization, providing
-                  strategic guidance, organizational planning and execution, and
-                  assisting with Veteran Service Organization (VSO)
-                  relationships. In addition to these duties the advisory board
-                  will also assist with fundraising activities when necessary.
-                </p>
+                <>
+                  <div className="flex justify-center gap-5">
+                  <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#1a1ea9] bg-[#1a1ea9] text-white">
+                    As advocates and ambassadors of the organization and its
+                    mission, the advisory board acts as liaison between the
+                    special operations community and the organization, providing
+                    strategic guidance, organizational planning and execution,
+                    and assisting with Veteran Service Organization (VSO)
+                    relationships. In addition to these duties the advisory
+                    board will also assist with fundraising activities when
+                    necessary.
+                  </p>
+                    <div>
+                      <img
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img5}
+                        alt="army"
+                      />
+                      <img
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img6}
+                        alt="girl"
+                      />
+                    </div>
+                  </div>
+               
+                </>
               ) : selectedText === "Service Partners" ? (
-                <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#101470] bg-[#101470]">
-                  Our service partners are made up of companies and non-profit
-                  organizations dedicated to the success of our SOF operators in
-                  the civilian world. It is the dedication and commitment of
-                  these entities that help make My360Tribe a success.
-                </p>
+                <>
+                  <div className="flex justify-center gap-5">
+                  <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#101470] bg-[#101470]">
+                    Our service partners are made up of companies and non-profit
+                    organizations dedicated to the success of our SOF operators
+                    in the civilian world. It is the dedication and commitment
+                    of these entities that help make My360Tribe a success.
+                  </p>
+                    <div>
+                      <img
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img5}
+                        alt="army"
+                      />
+                      <img
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img6}
+                        alt="girl"
+                      />
+                    </div>
+                  </div>
+                 
+                </>
               ) : selectedText === "Concierge" ? (
-                <p className="text-[16px]  text-white mt-2 font-semibold h-[200px] pt-4 px-2 border rounded-xl border-[#344688] bg-[#344688]">
-                  As the first contact point, concierges are the ambassadors of
-                  the organization. They must possess a warm, friendly attitude
-                  paired with an intensely curious nature and an intense drive
-                  to help. Concierges will develop a more robust needs
-                  assessment through conversations with the veteran. Concierges
-                  are Veteran Service Organization (VSO) experts - responsible
-                  for making introductions, tracking and maintaining the
-                  relationship between the VSO and the veteran
-                </p>
+                <>
+                  <div className="flex justify-center gap-5">
+                  <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#344688] bg-[#344688]">
+                    As the first contact point, concierges are the ambassadors
+                    of the organization. They must possess a warm, friendly
+                    attitude paired with an intensely curious nature and an
+                    intense drive to help. Concierges will develop a more robust
+                    needs assessment through conversations with the veteran.
+                    Concierges are Veteran Service Organization (VSO) experts -
+                    responsible for making introductions, tracking and
+                    maintaining the relationship between the VSO and the veteran
+                  </p>
+                    <div>
+                      <img
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img5}
+                        alt="army"
+                      />
+                      <img
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        src={Img6}
+                        alt="girl"
+                      />
+                    </div>
+                  </div>
+                 
+                </>
               ) : (
                 ""
               )}
-
-           
             </div>
           </div>
         </div>
