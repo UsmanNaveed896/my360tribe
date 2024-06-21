@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div>
           <div className="flex justify-center mt-12 md:mt-0">
-            <div className="w-[75%] ">
+            <div className=" flex justify-center flex-col">
               <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
               <div >
               <p className="md:text-center text-start text-white w-[75%] text-[16px] md:mt-[90px] mt-5 font-bold">
