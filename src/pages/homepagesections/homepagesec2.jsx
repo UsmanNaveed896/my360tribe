@@ -158,14 +158,14 @@ const Homepagesec2 = () => {
                         after transition from military service.
                       </p>
                     </div>
-                    <div>
+                    <div className="mt-[-80px]">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[300px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[300px] md:h-[200px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -182,7 +182,7 @@ const Homepagesec2 = () => {
                     real life, real time advice and referrals to get the support
                     and help they need.
                   </p>
-                    <div>
+                    <div  className="mt-[-80px]">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
@@ -210,7 +210,7 @@ const Homepagesec2 = () => {
                     board will also assist with fundraising activities when
                     necessary.
                   </p>
-                    <div>
+                    <div  className="mt-[-80px]">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
@@ -234,7 +234,7 @@ const Homepagesec2 = () => {
                     in the civilian world. It is the dedication and commitment
                     of these entities that help make My360Tribe a success.
                   </p>
-                    <div>
+                    <div  className="mt-[-80px]">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
@@ -262,7 +262,7 @@ const Homepagesec2 = () => {
                     responsible for making introductions, tracking and
                     maintaining the relationship between the VSO and the veteran
                   </p>
-                    <div>
+                    <div  className="mt-[-80px]">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}

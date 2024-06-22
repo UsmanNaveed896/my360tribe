@@ -65,16 +65,25 @@ const Homepagesec3 = () => {
               </div>
 
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
-                <button
-                  className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
-                  onClick={() => navigate("/health")}
-                >
-                  <i
-                    class="fa fa-heartbeat mr-2 text-[26px]"
-                    aria-hidden="true"
-                  ></i>
-                  Health
-                </button>
+                <div class="has-tooltip">
+                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[8rem] text-[14px] w-[500px] h-[180px] ml-[0]">
+                    At My360Tribe, we are committed to your health and
+                    well-being. Providing referrals and services to accomplish
+                    360-degree warrior care is our mission. Above you will find
+                    a listing of our areas of referrals and services as it
+                    relates to an operator’s health and wellbeing.
+                  </span>
+                  <button
+                    className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"
+                    onClick={() => navigate("/health")}
+                  >
+                    <i
+                      class="fa fa-heartbeat mr-2 text-[26px]"
+                      aria-hidden="true"
+                    ></i>
+                    Health
+                  </button>
+                </div>
                 <div class="has-tooltip">
                   <span class="tooltip rounded shadow-lg  bg-[#192242] text-white border p-3 text-[#0a194e] mt-[9rem] text-[14px] w-[500px] h-[180px] ml-[-254px]">
                     My360Tribe has established relationships with service
@@ -82,7 +91,6 @@ const Homepagesec3 = () => {
                     expand your network, mentoring opportunities, job services
                     and even starting your own business. We want you to be{" "}
                     <span className="font-bold">See more...</span>
-                  
                   </span>
                   <button
                     className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"

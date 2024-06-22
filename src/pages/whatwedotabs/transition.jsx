@@ -13,7 +13,6 @@ const Transition = ({ handleClick }) => {
     // "VA Programs",
     // "Education Consulting",
     "VA Programs Assistance",
-  
   ];
   const handleNavigate = () => {
     handleClick(2);
@@ -33,6 +32,13 @@ const Transition = ({ handleClick }) => {
               Transition
             </h1>
           </div>
+          <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal px-4 md:px-0">
+            At My360Tribe, we are committed to your health and well-being.
+            Providing referrals and services to accomplish 360-degree warrior
+            care is our mission. Above you will find a listing of our areas of
+            referrals and services as it relates to an operator’s health and
+            wellbeing.
+          </p>
           <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3">
             <ul class="flex md:gap-6 gap-2 text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
               {transition.map((item) => (
@@ -57,13 +63,13 @@ const Transition = ({ handleClick }) => {
               <h1 className="font-bold text-3xl">Education</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
                 {" "}
-                Want to go back to school, learn a new
-                trade or obtain a civilian certification? We have resources and
-                a referral network to introduce our operators to different
-                educational programming across the country. {" "}
+                Want to go back to school, learn a new trade or obtain a
+                civilian certification? We have resources and a referral network
+                to introduce our operators to different educational programming
+                across the country.{" "}
               </p>
             </div>
-          // ) : activeTab == "VA Programs" ? (
+          ) : // ) : activeTab == "VA Programs" ? (
           //   <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
           //     <h1 className="font-bold text-3xl">VA Programs</h1>
           //     <p className="font-semibold text-xl mt-4 leading-[40px]">
@@ -90,8 +96,8 @@ const Transition = ({ handleClick }) => {
           //       accident, sometimes on purpose (injected humour and the like).{" "}
           //     </p>
           //   </div>
-          // ) 
-          ): activeTab == "VA Programs Assistance" ? (
+          // )
+          activeTab == "VA Programs Assistance" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">VA Programs Assistance</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
@@ -111,7 +117,7 @@ const Transition = ({ handleClick }) => {
                 in section 1.10.32.{" "}
               </p>
             </div>
-          ) :  (
+          ) : (
             ""
           )}
         </div>

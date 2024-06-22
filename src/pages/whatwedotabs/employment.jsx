@@ -36,7 +36,12 @@ const Employment = ({ handleClick }) => {
               Employment
             </h1>
           </div>
-
+          <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal px-4 md:px-0">
+            My360Tribe has established relationships with service organizations,
+            corporations and businesses to help you expand your network,
+            mentoring opportunities, job services and even starting your own
+            business. We want you to be{" "}
+          </p>
           <div className="w-full overflow-x-scroll md:overflow-hidden">
             <ul class="flex md:gap-6 gap-2  text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
               {employ.map((item) => (
@@ -94,7 +99,7 @@ const Employment = ({ handleClick }) => {
                 sentence, "This takes a special level of dedication.{" "}
               </p>
             </div>
-          )  : activeTab == "Mentorship" ? (
+          ) : activeTab == "Mentorship" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Mentorship</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">
