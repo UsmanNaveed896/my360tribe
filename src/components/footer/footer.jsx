@@ -41,17 +41,19 @@ const Footer = () => {
         </div>
         <div>
           <div className="flex justify-center mt-12 md:mt-0">
-            <div className=" flex justify-center flex-col">
+            <div>
+            <div className=" flex justify-center">
               <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
+              </div>
               <div >
-              <p className="md:text-center text-start text-white w-[75%] text-[16px] md:mt-[90px] mt-5 font-bold">
+              <p className="md:text-center text-center text-white  text-[16px] md:mt-[90px] mt-5 font-bold">
                   Terms & Conditions
                 </p>
-                <p className=" cursor-pointer mt-2 md:w-full w-[75%] text-white md:text-center text-start">
+                <p className=" cursor-pointer mt-2 md:w-full text-white md:text-center text-center">
                   Copyright © 2024 My360Tribe. All rights reserved.
                 </p>
               </div>
-            </div>
+              </div>
           </div>
         </div>
         <div className="logo text-white flex justify-center relative pb-16">

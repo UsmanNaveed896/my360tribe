@@ -9,7 +9,7 @@ const Homepagesec3 = () => {
 
   return (
     <div
-      className="bg-[#1a2242] pb-[44px] md:bg-cover bg-contain"
+      className="bg-[#1a2242] pb-[154px] md:bg-cover bg-contain"
       id="targetDiv2"
       style={{ backgroundImage: `url(${Img4})` }}
     >

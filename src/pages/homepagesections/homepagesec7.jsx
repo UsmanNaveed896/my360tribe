@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Img4 from "../../assets/Group1000006267.png";
+import Img4 from "../../assets/Group10000062671.png";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Paypal from "../../components/paypal/paypal";
 
@@ -16,7 +16,7 @@ const Homepagesec7 = () => {
   return (
     <>
       <div
-        className="bg-[#d1d8f5] pb-[88px]   bg-cover"
+        className="bg-[#1a2242] pb-[44px] md:bg-cover bg-contain"
         id="targetDiv5"
         style={{ backgroundImage: `url(${Img4})` }}
       >
@@ -24,13 +24,13 @@ const Homepagesec7 = () => {
           <div className="container max-w-[1200px] mt-16">
             <div className="flex justify-center">
               <div>
-                <h1 className="text-[#0a194e] text-center font-bold md:text-5xl text-2xl ">
+              <h1 className="border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl">
                   Donation Request
                 </h1>
               </div>
             </div>
             <div className="flex justify-center mt-12 ">
-              <div className="border rounded-xl pt-8 pb-6 w-[500px] px-16 bg-white">
+              <div className="border rounded-xl pt-8 pb-6 md:w-[500px] w-full px-16 bg-white">
                 <div className="flex justify-between items-center text-[#0C1A4C]">
                   <i className="fa fa-angle-left text-[50px] font-bold"></i>
                   <p className="text-[50px] font-bold"> $150</p>
@@ -61,7 +61,12 @@ const Homepagesec7 = () => {
                 >
                   Enter Price Manually
                 </button>
-               {amount && <input className="rounded pl-2 py-4 w-full border mt-3 border-2" placeholder="e.g $ 150" />} 
+                {amount && (
+                  <input
+                    className="rounded pl-2 py-4 w-full border mt-3 border-2"
+                    placeholder="e.g $ 150"
+                  />
+                )}
                 <button
                   className="w-full mt-16 font-bold rounded-xl text-white font-bold py-3 text-[20px]"
                   style={{ background: buttonGradient }}
