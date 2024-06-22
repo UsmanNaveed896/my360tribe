@@ -61,14 +61,14 @@ const Homepagesec2 = () => {
 
   return (
     <div
-      className="bg-[#d1d8f5] pb-[60px] md:bg-cover bg-contain"
+      className="bg-[#d1d8f5] pb-[65px] md:bg-cover bg-contain"
       id="targetDiv1"
       style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
           <div className="grid md:grid-cols-2 grid-cols-1 items-start pb-12 md:gap-16 gap-2">
-            <div className="colum1 md:mt-8 mt-2  h-[500px] ">
+            <div className="colum1 md:mt-8 mt-2  md:h-[500px] h-[400px]">
               <div className="relative md:h-[400px] md:flex flex justify-center">
                 <Pie
                   className="md:mt-12 mt-4 z-[4] "
@@ -147,7 +147,7 @@ const Homepagesec2 = () => {
 
               {selectedText === "Executive Board" ? (
                 <>
-                  <div className="flex justify-center gap-5">
+                  <div className="flex justify-center gap-5 md:flex-row flex-col md:flex-row flex-col">
                     <div>
                       <p className="text-[17px]  text-white mt-2 font-semibold  w-[350px] p-4 border rounded-xl border-[#0e0f3d] bg-[#0e0f3d]">
                         {" "}
@@ -158,14 +158,14 @@ const Homepagesec2 = () => {
                         after transition from military service.
                       </p>
                     </div>
-                    <div>
+                    <div className="md:md:mt-[-80px] mt-0 mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[300px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[300px] md:h-[200px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -174,7 +174,7 @@ const Homepagesec2 = () => {
                 </>
               ) : selectedText === "Peer Ambassador" ? (
                 <>
-                  <div className="flex justify-center gap-5">
+                  <div className="flex justify-center gap-5 md:flex-row flex-col">
                   <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#464b99] bg-[#464b99]">
                     {" "}
                     Peer Advocate Network by offering peer to peer support,
@@ -182,7 +182,7 @@ const Homepagesec2 = () => {
                     real life, real time advice and referrals to get the support
                     and help they need.
                   </p>
-                    <div>
+                    <div  className="md:mt-[-80px] mt-0">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
@@ -199,7 +199,7 @@ const Homepagesec2 = () => {
                 </>
               ) : selectedText === "Advisory Board" ? (
                 <>
-                  <div className="flex justify-center gap-5">
+                  <div className="flex justify-center gap-5 md:flex-row flex-col">
                   <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#1a1ea9] bg-[#1a1ea9] text-white">
                     As advocates and ambassadors of the organization and its
                     mission, the advisory board acts as liaison between the
@@ -210,7 +210,7 @@ const Homepagesec2 = () => {
                     board will also assist with fundraising activities when
                     necessary.
                   </p>
-                    <div>
+                    <div  className="md:mt-[-80px] mt-0">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
@@ -227,14 +227,14 @@ const Homepagesec2 = () => {
                 </>
               ) : selectedText === "Service Partners" ? (
                 <>
-                  <div className="flex justify-center gap-5">
+                  <div className="flex justify-center gap-5 md:flex-row flex-col">
                   <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#101470] bg-[#101470]">
                     Our service partners are made up of companies and non-profit
                     organizations dedicated to the success of our SOF operators
                     in the civilian world. It is the dedication and commitment
                     of these entities that help make My360Tribe a success.
                   </p>
-                    <div>
+                    <div  className="md:mt-[-80px] mt-0">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}
@@ -251,7 +251,7 @@ const Homepagesec2 = () => {
                 </>
               ) : selectedText === "Concierge" ? (
                 <>
-                  <div className="flex justify-center gap-5">
+                  <div className="flex justify-center gap-5 md:flex-row flex-col">
                   <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#344688] bg-[#344688]">
                     As the first contact point, concierges are the ambassadors
                     of the organization. They must possess a warm, friendly
@@ -262,7 +262,7 @@ const Homepagesec2 = () => {
                     responsible for making introductions, tracking and
                     maintaining the relationship between the VSO and the veteran
                   </p>
-                    <div>
+                    <div  className="md:mt-[-80px] mt-0">
                       <img
                         className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
                         src={Img5}

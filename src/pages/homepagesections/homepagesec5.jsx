@@ -1,11 +1,11 @@
 import React from "react";
 import Img from "../../assets/WW (1).png";
 import Img2 from "../../assets/WW (2).png";
-import Img4 from "../../assets/Group10000062671.png";
+import Img4 from "../../assets/Group1000006267.png";
 const Homepagesec5 = () => {
   return (
     <div
-      className=" pb-[95px] bg-[#1a2242] md:bg-cover bg-contain "
+      className=" bg-[#d1d8f5] pb-[68px] md:bg-cover bg-contain "
       id="targetDiv4"
       style={{ backgroundImage: `url(${Img4})` }}
     >
@@ -14,14 +14,14 @@ const Homepagesec5 = () => {
           <div className="grid md:grid-cols-2 grid-cols-1 px-4 md:px-0 gap-12 items-center">
             <div className="column1">
               <div className="flex justify-center mt-16">
-                <h1 className="border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl">
+                <h1 className="border-b border-[#0a194e] text-[#0a194e] border-b-4 text-center font-bold text-5xl">
                   Why We Do What We Do
                 </h1>
               </div>
               <div className="flex justify-center mt-12">
-                <div className="bg-[#d1d8f5] p-2 border rounded-xl ">
+                <div className="bg-[#1a2242] p-2 border rounded-xl ">
                   
-                  <p className="text-[#0a194e] text-[15px] mt-4 font-[600]">
+                  <p className="text-[#fff] text-[15px] mt-4 font-[600]">
                     My360Tribe exists to support the transitioning Special
                     Operator during and after their transition out of the
                     military. Our Tribe is unique in that it is comprised of

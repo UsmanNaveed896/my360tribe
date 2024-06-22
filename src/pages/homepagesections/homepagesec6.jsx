@@ -1,12 +1,12 @@
 import React from "react";
 import Usercard from "../../components/userCard/usercard";
 import Img1 from "../../assets/Rectangle 1400.png";
-import Img2 from "../../assets/Group1000006267.png";
+import Img2 from "../../assets/Group10000062671.png";
 import Img3 from "../../assets/a.png";
 import Img4 from "../../assets/b.png";
 import Img5 from "../../assets/c.png";
 import Img6 from "../../assets/d.png";
-import Img7 from "../../assets/Group1000006281.png";
+import Img7 from "../../assets/Group1000006267.png";
 import Img8 from '../../assets/1.png'
 import Img9 from '../../assets/2.png'
 import Img10 from '../../assets/CW2.png'
@@ -108,17 +108,17 @@ const Homepagesec6 = () => {
   return (
     <>
       <div
-        className="bg-[#d1d8f5] pb-[58px] bg-contain "
+        className="bg-[#1a2242] pb-[44px] bg-contain"
         style={{ backgroundImage: `url(${Img2})` }}
       >
         <div className="flex justify-center px-4 md:px-0">
           <div className="container max-w-[1200px] mt-16">
             <div className="flex justify-center">
               <div>
-                <h1 className="text-[#0a194e] text-center font-bold text-5xl">
+              <h1 className="border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl">
                   Meet Our Team
                 </h1>
-                <p className="text-[#0a194e] md:text-[35px] text-[25px] mt-6">
+                <p className="text-[white] md:text-[35px] text-[25px] mt-6">
                   Founders and Founding Board{" "}
                 </p>
               </div>
@@ -137,7 +137,7 @@ const Homepagesec6 = () => {
             </div>
             <div className="flex justify-center mt-12">
               <div>
-                <p className="text-[#0a194e] text-[35px] mt-6">
+                <p className="text-[white] text-[35px] mt-6">
                   Advisory Board{" "}
                 </p>
               </div>
@@ -157,14 +157,17 @@ const Homepagesec6 = () => {
       </div>
 
       <div
-        className="bg-cover pb-12 "
+        className="bg-[#d1d8f5] pb-[90px]   bg-cover "
         style={{ backgroundImage: `url(${Img7})` }}
       >
         <div className="content ">
-          <h1 className="text-center text-5xl font-bold pt-12 text-white">
+          <div className="flex justify-center ">
+          <h1 className="border-b border-[#0a194e] mt-6 text-[#0a194e] border-b-4 text-center font-bold text-5xl">
             {" "}
             Our Partners
           </h1>
+          </div>
+        
           <div className="pt-16 flex justify-center gap-8 px-6">
             <div className="img">
               <img className="h-[120px] bg-white rounded" src={Img10} alt="blac" />

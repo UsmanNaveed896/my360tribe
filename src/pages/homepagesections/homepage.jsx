@@ -35,7 +35,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
     "linear-gradient(to right, rgba(10, 25, 78, 1), rgba(1, 3, 11, 1))";
   return (
     <div
-      className="bg-[#070c1f] md:mt-12 mt-0 pb-[35px] md:bg-cover bg-contain "
+      className="bg-[#070c1f] md:mt-12 mt-0 pb-[65px] md:bg-cover bg-contain "
       style={{ backgroundImage: `url(${Img4})`,}}
     >
       <div className="flex justify-center px-4 md:px-0">
