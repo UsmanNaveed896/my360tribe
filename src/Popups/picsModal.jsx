@@ -13,7 +13,11 @@ const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
     } else if (data?.heading == "Concierge") {
       navigate("/conciergeform");
     }
+    else if (data?.heading == "Peer Ambassador") {
+      navigate("/peerambassador-form");
+    }
     onCancel();
+  
   };
   console.log(data,"data")
   return (
