@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Img from "../../assets/unnamed.png";
+import { useNavigate } from "react-router-dom";
 
 const ConciergeForm = () => {
+  const navigate=useNavigate()
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
 
   const options = {
@@ -44,6 +46,7 @@ const ConciergeForm = () => {
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12 text-white">
         <div className="max-w-[1200px] container pb-24">
           <img className="h-[180px]" src={Img} alt="abc" />
+          <i class="fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer" aria-hidden="true" onClick={()=>navigate("/")}></i>
           <div className="flex justify-center mt-4">
             <div className="tct max-w-[70%]">
               <div className="form mt-6">
@@ -114,7 +117,9 @@ const ConciergeForm = () => {
                     placeholder="What area(s)/topics are you uncomfortable with?"
                   />
                 
-              
+                <div className="flex justify-center mt-5">
+                    <button className="rounded border bg-transparent py-2 px-5 hover:font-semibold">Submit</button>
+                  </div>
                 </form>
               </div>
             </div>
