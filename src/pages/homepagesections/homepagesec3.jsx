@@ -46,7 +46,7 @@ const Homepagesec3 = () => {
                   </button>
                 </div>
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[180px] ml-[-254px] md:block hidden">
+                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[100px] ml-[-254px] md:block hidden">
                     Transition services and referral to our strongest service
                     partners to guide you and assist with a successful
                     transition even years after you have separated.
@@ -66,7 +66,7 @@ const Homepagesec3 = () => {
 
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[8rem] text-[14px] w-[500px] h-[180px] ml-[0] md:block hidden">
+                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[8rem] text-[14px] w-[500px] h-[110px] ml-[0] md:block hidden">
                     At My360Tribe, we are committed to your health and
                     well-being. Providing referrals and services to accomplish
                     360-degree warrior care is our mission. Above you will find
@@ -85,7 +85,7 @@ const Homepagesec3 = () => {
                   </button>
                 </div>
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg  bg-[#192242] text-white border p-3 text-[#0a194e] mt-[9rem] text-[14px] w-[500px] h-[180px] ml-[-254px] md:block hidden">
+                  <span class="tooltip rounded shadow-lg  bg-[#192242] text-white border p-3 text-[#0a194e] mt-[9rem] text-[14px] w-[500px] h-[110px] ml-[-254px] md:block hidden">
                     My360Tribe has established relationships with service
                     organizations, corporations and businesses to help you
                     expand your network, mentoring opportunities, job services
