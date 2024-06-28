@@ -139,7 +139,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                         role="menuitem"
                         onClick={() => handleOptionClick("Conceirge")}
                       >
-                        Conceirge
+                        Concierge
                       </a>
                       <a
                         href="#"
@@ -149,7 +149,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                           handleOptionClick("Peer Advocate Member")
                         }
                       >
-                        Peer Advocate Member
+                        Peer Ambassador
                       </a>
                       <a
                         href="#"

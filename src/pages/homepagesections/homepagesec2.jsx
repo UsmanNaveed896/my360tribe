@@ -177,19 +177,19 @@ const Homepagesec2 = () => {
                   <div className="flex justify-center gap-5 md:flex-row flex-col">
                   <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#464b99] bg-[#464b99]">
                     {" "}
-                    Peer Advocate Network by offering peer to peer support,
+                    Peer Ambassador Network by offering peer to peer support,
                     My360Tribe ensures that operators are helping operators with
                     real life, real time advice and referrals to get the support
                     and help they need.
                   </p>
                     <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -212,12 +212,12 @@ const Homepagesec2 = () => {
                   </p>
                     <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -236,12 +236,12 @@ const Homepagesec2 = () => {
                   </p>
                     <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -264,12 +264,12 @@ const Homepagesec2 = () => {
                   </p>
                     <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[200px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
