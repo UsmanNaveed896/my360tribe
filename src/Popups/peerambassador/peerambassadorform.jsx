@@ -1,112 +1,148 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Img from "../../assets/unnamed.png";
 
 const Peerambassadorform = () => {
-    const navigate=useNavigate()
-    const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
-  
-    const options = {
-      AirForce: [
-        "Combat Controller/TACP",
-        " Pararescue (PJ)",
-        "24th Special Tactics Squadron (JSOC)",
-      ],
-      Army: [
-        "Ranger (75th Regiment)",
-        "Green Beret",
-        "SMU",
-        "Marine Force Recon",
-        "160th Special Operations Aviation Regiment (SOAR) Night Stalkers",
-      ],
-      Navy: ["EOD", "SEAL", "SWCC"],
-      Marines: ["Raider", "Marine Force Recon"],
-    };
-    const [selectedBranch, setSelectedBranch] = useState("AirForce");
+  const navigate = useNavigate();
+  const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
+
+  const options = {
+    AirForce: [
+      "Combat Controller/TACP",
+      " Pararescue (PJ)",
+      "24th Special Tactics Squadron (JSOC)",
+    ],
+    Army: [
+      "Ranger (75th Regiment)",
+      "Green Beret",
+      "SMU",
+      "Marine Force Recon",
+      "160th Special Operations Aviation Regiment (SOAR) Night Stalkers",
+    ],
+    Navy: ["EOD", "SEAL", "SWCC"],
+    Marines: ["Raider", "Marine Force Recon"],
+  };
+  const [selectedBranch, setSelectedBranch] = useState("AirForce");
   return (
     <div className="main" style={{ backgroundColor: linear }}>
-    <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12 text-white">
-      <div className="max-w-[1200px] container pb-24">
-        <img className="h-[180px]" src={Img} alt="abc" />
-        <i class="fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer" aria-hidden="true" onClick={()=>navigate("/")}></i>
-        <div className="flex justify-center mt-4">
-          <div className="tct max-w-[70%]">
-            <div className="form mt-6">
-              <form>
-                <input
-                  className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder="Name"
-                />
-                <div className="flex justify-between mt-5">
-                  <input
-                    className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    placeholder="Phone"
-                    type="number"
-                  />
-                  <input
-                    className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    placeholder="Email"
-                  />
-                </div>
-                <input
-                  className="rounded w-full mt-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder="Branch of Service"
-                />
-                <div className="flex justify-between mt-5">
-                  <input
-                    className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    placeholder="Date of Separation"
-                    type="date"
-                  />
-                  <input
-                    className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[55%]"
-                    placeholder="Preffered method of Contact e.g Phone/email"
-                  />
-                </div>
-                <input
-                  className="rounded w-full mt-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder="How did you hear about us?"
-                />
+      <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12 text-white">
+        <div className="max-w-[1200px] container pb-24">
+          <img className="h-[180px]" src={Img} alt="abc" />
+          <i
+            class="fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer"
+            aria-hidden="true"
+            onClick={() => navigate("/")}
+          ></i>
+            <div className="text text-center">
+            <h1 className="font-bold text-[35px]">
+              My360Tribe Operator Intake Form
+            </h1>
+            <p className="mt-2 font-bold">
+              Thank you for reaching out to My360Tribe. Our Mission is simple:
+            </p>
+            <p className="mt-2 font-bold">
+              In support of U.S. Special Operations Forces (SOF) Operators, our
+              <br></br>
+              mission is to provide Peer Advocacy and Concierge level support
+              for <br></br> SOF Operators as they face the challenges before,
+              during and after <br></br> transition.
+            </p>
+            <p className="mt-2 font-bold">
+              In order to receive support from My360Tribe, you need to meet the
+              <br></br>
+              definition of a SOF Operator.  A SOF Operator is defined by branch
+              <br></br>
+              as follows:
+            </p>
+          </div>
+          <div className="flex justify-center mt-4">
+            <div className="tct max-w-[70%]">
+              <div className="form mt-6">
+                <form>
+                  <p className="text-[#9ca3af] py-1">Your full name</p>
 
-                <input
-                  className="rounded w-full mt-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder=" Why would you like to be a Peer Ambassador?"
-                />
-                <input
-                  className="rounded w-full mt-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder=" How many hours a month can you commit to your Operator?"
-                />
+                  <input className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <div className="flex justify-between mt-5">
+                    <div>
+                      <p className="text-[#9ca3af] py-1">Phone</p>
+                      <input
+                        className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
+                        type="number"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-[#9ca3af] py-1">Email</p>
+                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                    </div>
+                  </div>
+                  <p className="text-[#9ca3af] py-1 mt-5">Branch of Service</p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <div className="flex justify-between mt-5">
+                    <div>
+                      <p className="text-[#9ca3af] py-1">Date</p>
+                      <input
+                        className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
+                        type="date"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-[#9ca3af] py-1">
+                        How we can contact you?
+                      </p>
 
-                <input
-                  className="rounded w-full my-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder="How many Operators would you be able to work with at one time if asked?"
-                />
-                <label className="mt-5">
-                  Did you work with any transition services / organizations
-                  during your transition, and would you recommend any of them?
-                  If yes, which ones?
-                </label>
-              
-                  <input
-                  className="rounded w-full my-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder="What areas of transition do you feel you can best support?"
-                />
-                    <input
-                  className="rounded w-full my-5 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                  placeholder="What area(s)/topics are you uncomfortable with?"
-                />
-              
-              <div className="flex justify-center mt-5">
-                  <button className="rounded border bg-transparent py-2 px-5 hover:font-semibold">Submit</button>
-                </div>
-              </form>
+                      <input
+                        className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[400px]"
+                        placeholder="Preffered method of Contact e.g Phone/email"
+                      />
+                    </div>
+                  </div>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    How did you hear about us?
+                  </p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    Why would you like to be a Peer Ambassador?
+                  </p>
+                  <input className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    How many hours a month can you commit to your Operator?
+                  </p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    How many Operators would you be able to work with at one
+                    time if asked?
+                  </p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <div className="mt-8">
+                    <label>
+                      Did you work with any transition services / organizations
+                      during your transition, and would you recommend any of
+                      them? If yes, which ones?
+                    </label>
+                  </div>
+
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    What areas of transition do you feel you can best support?
+                  </p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    What area(s)/topics are you uncomfortable with?
+                  </p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+
+                  <div className="flex justify-center mt-5">
+                    <button className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Peerambassadorform
+export default Peerambassadorform;

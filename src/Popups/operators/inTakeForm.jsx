@@ -3,7 +3,7 @@ import Img from "../../assets/unnamed.png";
 import { useNavigate } from "react-router-dom";
 
 const InTakeForm = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
 
   const options = {
@@ -46,7 +46,11 @@ const InTakeForm = () => {
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12 text-white">
         <div className="max-w-[1200px] container pb-24">
           <img className="h-[180px]" src={Img} alt="abc" />
-          <i class="fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer" aria-hidden="true" onClick={()=>navigate("/")}></i>
+          <i
+            class="fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer"
+            aria-hidden="true"
+            onClick={() => navigate("/")}
+          ></i>
           <div className="text text-center">
             <h1 className="font-bold text-[35px]">
               My360Tribe Operator Intake Form
@@ -176,14 +180,14 @@ const InTakeForm = () => {
               <div className="form mt-6">
                 <form>
                   <div className="flex justify-between">
-                    <input
-                      className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                      placeholder="First Name"
-                    />
-                    <input
-                      className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                      placeholder="Last Name"
-                    />
+                    <div>
+                      <p className="text-[#9ca3af] py-1">First Name</p>
+                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                    </div>
+                    <div>
+                      <p className="text-[#9ca3af] py-1">Last Name</p>
+                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                    </div>
                   </div>
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
@@ -247,10 +251,12 @@ const InTakeForm = () => {
                     />
                   </div>
                   <div className="ss">
+                    <p className="text-[#9ca3af] py-1 mt-5">
+                      Where are you located?
+                    </p>
                     <input
                       type="text"
-                      class="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                      placeholder="Where are you located?"
+                      class="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
                     />
                   </div>
                   <div className="mt-5">
@@ -277,9 +283,14 @@ const InTakeForm = () => {
                       What type of mental health information/support is needed?
                     </option>
                   </select>
-                  <p className="mt-2 font-bold">Please Note: My360Tribe does not provide mental health counseling/services, financial or legal advice.</p>
+                  <p className="mt-2 font-bold">
+                    Please Note: My360Tribe does not provide mental health
+                    counseling/services, financial or legal advice.
+                  </p>
                   <div className="flex justify-center mt-5">
-                    <button className="rounded border bg-transparent py-2 px-5 hover:font-semibold">Submit</button>
+                    <button className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
+                      Submit
+                    </button>
                   </div>
                 </form>
               </div>

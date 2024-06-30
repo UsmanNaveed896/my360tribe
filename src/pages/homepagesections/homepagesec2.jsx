@@ -148,7 +148,7 @@ const Homepagesec2 = () => {
               {selectedText === "Executive Board" ? (
                 <>
                   <div className="flex justify-center gap-5 md:flex-row flex-col md:flex-row flex-col">
-                    <div>
+                    <div className="flex justify-center">
                       <p className="text-[17px]  text-white mt-2 font-semibold  w-[350px] p-4 border rounded-xl border-[#0e0f3d] bg-[#0e0f3d]">
                         {" "}
                         The Executive Board for My360Tribe is made up of
@@ -158,14 +158,14 @@ const Homepagesec2 = () => {
                         after transition from military service.
                       </p>
                     </div>
-                    <div className="md:md:mt-[-80px] mt-0 mt-0">
+                    <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[300px] md:h-[200px] border-2 rounded-xl"
+                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[300px] md:h-[200px] border-2 rounded-xl"
+                        className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -175,6 +175,7 @@ const Homepagesec2 = () => {
               ) : selectedText === "Peer Ambassador" ? (
                 <>
                   <div className="flex justify-center gap-5 md:flex-row flex-col">
+                    <div className="flex justify-center">
                   <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#464b99] bg-[#464b99]">
                     {" "}
                     Peer Ambassador Network by offering peer to peer support,
@@ -182,14 +183,15 @@ const Homepagesec2 = () => {
                     real life, real time advice and referrals to get the support
                     and help they need.
                   </p>
-                    <div  className="md:mt-[-80px] mt-0">
+                  </div>
+                  <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -200,6 +202,7 @@ const Homepagesec2 = () => {
               ) : selectedText === "Advisory Board" ? (
                 <>
                   <div className="flex justify-center gap-5 md:flex-row flex-col">
+                    <div className="flex justify-center">
                   <p className="text-[16px]  text-[#0a194e] mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#1a1ea9] bg-[#1a1ea9] text-white">
                     As advocates and ambassadors of the organization and its
                     mission, the advisory board acts as liaison between the
@@ -210,14 +213,15 @@ const Homepagesec2 = () => {
                     board will also assist with fundraising activities when
                     necessary.
                   </p>
-                    <div  className="md:mt-[-80px] mt-0">
+                  </div>
+                  <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -228,20 +232,22 @@ const Homepagesec2 = () => {
               ) : selectedText === "Service Partners" ? (
                 <>
                   <div className="flex justify-center gap-5 md:flex-row flex-col">
+                  <div className="flex justify-center">
                   <p className="text-[16px]  text-white mt-2 font-semibold w-[350px] p-4 border rounded-xl border-[#101470] bg-[#101470]">
                     Our service partners are made up of companies and non-profit
                     organizations dedicated to the success of our SOF operators
                     in the civilian world. It is the dedication and commitment
                     of these entities that help make My360Tribe a success.
                   </p>
-                    <div  className="md:mt-[-80px] mt-0">
+                  </div>
+                  <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
@@ -264,12 +270,12 @@ const Homepagesec2 = () => {
                   </p>
                     <div  className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
                       <img
-                        className="mt-[-150px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img6}
                         alt="girl"
                       />
