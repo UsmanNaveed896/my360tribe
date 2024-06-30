@@ -24,7 +24,7 @@ const Homepagesec3 = () => {
               </div>
               <div className="flex gap-12 mt-32 justify-center md:flex-row flex-col items-center">
                 <div class="has-tooltip ">
-                  <span class="tooltip rounded shadow-lg bg-[#192242] text-white border p-3 text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[180px] md:block hidden">
+                  <span class="tooltip rounded shadow-lg bg-[#8da9db] text-white border p-3 text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[180px] md:block hidden">
                     One of the things that sets us apart is our Peer Advocate
                     Network. Operators helping Operators by providing support
                     and guidance to you as a member of My360Tribe. Your peer
@@ -46,7 +46,7 @@ const Homepagesec3 = () => {
                   </button>
                 </div>
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[100px] ml-[-254px] md:block hidden">
+                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#8da9db]  text-[#0a194e] mt-[17rem] text-[14px] w-[500px] h-[100px] ml-[-254px] md:block hidden">
                     Transition services and referral to our strongest service
                     partners to guide you and assist with a successful
                     transition even years after you have separated.
@@ -66,7 +66,7 @@ const Homepagesec3 = () => {
 
               <div className="flex gap-12 mt-16 justify-center md:flex-row flex-col items-center">
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#192242]  text-[#0a194e] mt-[8rem] text-[14px] w-[500px] h-[110px] ml-[0] md:block hidden">
+                  <span class="tooltip rounded shadow-lg p-3 border text-white bg-[#8da9db]  text-[#0a194e] mt-[8rem] text-[14px] w-[500px] h-[110px] ml-[0] md:block hidden">
                     At My360Tribe, we are committed to your health and
                     well-being. Providing referrals and services to accomplish
                     360-degree warrior care is our mission. Above you will find
@@ -85,7 +85,7 @@ const Homepagesec3 = () => {
                   </button>
                 </div>
                 <div class="has-tooltip">
-                  <span class="tooltip rounded shadow-lg  bg-[#192242] text-white border p-3 text-[#0a194e] mt-[9rem] text-[14px] w-[500px] h-[110px] ml-[-254px] md:block hidden">
+                  <span class="tooltip rounded shadow-lg  bg-[#8da9db] text-white border p-3 text-[#0a194e] mt-[9rem] text-[14px] w-[500px] h-[110px] ml-[-254px] md:block hidden">
                     My360Tribe has established relationships with service
                     organizations, corporations and businesses to help you
                     expand your network, mentoring opportunities, job services
@@ -106,14 +106,14 @@ const Homepagesec3 = () => {
               </div>
             </div>
             <div className="column2 mt-16 ">
-              <div>
+              <div className="">
                 <img
-                  className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[390px] md:h-[350px] border-2 rounded-xl"
+                  className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                   src={Img2}
                   alt="army"
                 />
                 <img
-                  className="mt-[-150px] w-[250px] h-[250px] md:w-[390px] md:h-[350px] border-2 rounded-xl"
+                  className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                   src={Img}
                   alt="girl"
                 />

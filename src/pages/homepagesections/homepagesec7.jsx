@@ -24,7 +24,7 @@ const Homepagesec7 = () => {
           <div className="container max-w-[1200px] mt-16">
             <div className="flex justify-center">
               <div>
-              <h1 className="border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold text-5xl">
+              <h1 className="border-b border-[#d9d9d9] text-white border-b-4 text-center font-bold md:text-5xl text-2xl">
                   Donation Request
                 </h1>
               </div>

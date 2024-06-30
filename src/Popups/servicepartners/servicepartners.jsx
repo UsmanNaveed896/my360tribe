@@ -1,46 +1,9 @@
-import React, { useState } from "react";
-import Img from "../../assets/unnamed.png";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-
-const ConciergeForm = () => {
+import Img from "../../assets/unnamed.png";
+const Servicepartners = () => {
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
-
-  const options = {
-    AirForce: [
-      "Combat Controller/TACP",
-      " Pararescue (PJ)",
-      "24th Special Tactics Squadron (JSOC)",
-    ],
-    Army: [
-      "Ranger (75th Regiment)",
-      "Green Beret",
-      "SMU",
-      "Marine Force Recon",
-      "160th Special Operations Aviation Regiment (SOAR) Night Stalkers",
-    ],
-    Navy: ["EOD", "SEAL", "SWCC"],
-    Marines: ["Raider", "Marine Force Recon"],
-  };
-  const [selectedBranch, setSelectedBranch] = useState("AirForce");
-  const [branchOptions, setBranchOptions] = useState(options[selectedBranch]);
-
-  const handleBranchChange = (event) => {
-    const branch = event.target.value;
-    setSelectedBranch(branch);
-    setBranchOptions(options[branch]);
-  };
-  const customStyles = `
-  input[type='date']::-webkit-calendar-picker-indicator {
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
-  }
-  input[type='date']::-ms-clear {
-    display: none;
-  }
-  input[type='date']::-ms-expand {
-    display: none;
-  }
-`;
   return (
     <div className="main" style={{ backgroundColor: linear }}>
       <div className="flex justify-center bg-[#15214c] md:pt-32 pt-12 text-white">
@@ -77,7 +40,9 @@ const ConciergeForm = () => {
             <div className="tct max-w-[70%]">
               <div className="form mt-6">
                 <form>
-                  <p className="text-[#9ca3af] py-1">Your full name</p>
+                  <p className="text-[#9ca3af] py-1">
+                    Organization or Company Name
+                  </p>
 
                   <input className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
                   <div className="flex justify-between mt-5">
@@ -89,60 +54,43 @@ const ConciergeForm = () => {
                       />
                     </div>
                     <div>
-                      <p className="text-[#9ca3af] py-1">Email</p>
+                      <p className="text-[#9ca3af] py-1">Address</p>
                       <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
                     </div>
                   </div>
-                  <p className="text-[#9ca3af] py-1 mt-5">Branch of Service</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">Website URL</p>
                   <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
                   <div className="flex justify-between mt-5">
                     <div>
-                      <p className="text-[#9ca3af] py-1">Date</p>
+                      <p className="text-[#9ca3af] py-1">
+                        Point of Contact Name
+                      </p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                        type="date"
+                        type="text"
                       />
                     </div>
                     <div>
                       <p className="text-[#9ca3af] py-1">
-                        How we can contact you?
+                        Point of Contact Email
                       </p>
 
                       <input className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[400px]" />
                     </div>
                   </div>
-                  <p className="text-[#9ca3af] py-1 mt-5">
+                  <p className="text-[#9ca3af] py-1 mt-5 mt-5">
                     How did you hear about us?
                   </p>
                   <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
                   <p className="text-[#9ca3af] py-1 mt-5">
-                    Why would you like to be a Concierge?
+                    Veteran specific services provided
                   </p>
                   <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <p className="text-[#9ca3af] py-1 mt-5">Services Provided</p>
+                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
                   <p className="text-[#9ca3af] py-1 mt-5">
-                    How many hours a month can you commit to your Operator?
-                  </p>
-                  <input className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
-                  <p className="text-[#9ca3af] py-1 mt-5">
-                    How many Operators would you be able to work with at one
-                    time if asked?
-                  </p>
-                  <input className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
-                  <label className="mt-5">
-                    Did you work with any transition services / organizations
-                    during your transition, and would you recommend any of them?
-                    If yes, which ones?
-                  </label>
-                  <p className="text-[#9ca3af] py-1 mt-5">
-                    Transition services / organization
-                  </p>
-                  <input className="rounded w-full mt-2 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
-                  <p className="text-[#9ca3af] py-1 mt-5">
-                    What areas of transition do you feel you can best support?
-                  </p>
-                  <input className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
-                  <p className="text-[#9ca3af] py-1 mt-5">
-                    What area(s)/topics are you uncomfortable with?
+                    Please tell us a little about your company/organization and
+                    why you want to partner with My360Tribe.
                   </p>
                   <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
 
@@ -161,4 +109,4 @@ const ConciergeForm = () => {
   );
 };
 
-export default ConciergeForm;
+export default Servicepartners;

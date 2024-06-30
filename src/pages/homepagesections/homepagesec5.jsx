@@ -37,16 +37,18 @@ const Homepagesec5 = () => {
               </div>
             </div>
             <div className="column2 mt-16">
-              <img
-                className="md:ml-24 ml-20 ml-0 w-[250px] h-[250px] md:w-[439px] md:h-[411px] border-2 rounded-xl"
-                src={Img}
-                alt="army"
-              />
-              <img
-                className="mt-[-150px] w-[250px] h-[250px] md:w-[350px] md:h-[312px] border-2 rounded-xl"
-                src={Img2}
-                alt="girl"
-              />
+            <div className="">
+                <img
+                  className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                  src={Img}
+                  alt="army"
+                />
+                <img
+                  className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                  src={Img2}
+                  alt="girl"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -56,11 +56,16 @@ const Footer = () => {
               </div>
           </div>
         </div>
-        <div className="logo text-white flex justify-center relative pb-16">
+        <div className="logo text-white flex md:justify-center relative pb-16 md:flex-row flex-col">
           <div className="text-[16px] text-white  ">
-            <div className=" md:mb-[64px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
               <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
                 Get Involved
+              </button>
+            </div>
+            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+              <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
+                Stay Connected
               </button>
             </div>
             <div className="flex ml-1 justify-center">
@@ -68,9 +73,9 @@ const Footer = () => {
                 Donate
               </button>
             </div>
-            <p className="text-center text-white mt-[42px] text-[16px]">
+            {/* <p className="text-center text-white mt-[42px] text-[16px]">
               Design & developed by ZAMH Tech
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
