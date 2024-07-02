@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Img2 from "../../assets/1 (1).png";
 import Img from "../../assets/screen.png";
 import Img4 from "../../assets/Group10000062671.png";
+import Img5 from '../../assets/ab.png'
+import Img6 from '../../assets/abc.jpg'
+
 import Modal from "../../Popups/Modal";
 import { useNavigate } from "react-router-dom";
 const Homepagesec3 = () => {
@@ -109,12 +112,12 @@ const Homepagesec3 = () => {
               <div className="">
                 <img
                   className="md:ml-24 ml-[80px] ml-0 w-[250px] h-[250px] md:w-[350px] md:h-[350px] border-2 rounded-xl"
-                  src={Img2}
+                  src={Img5}
                   alt="army"
                 />
                 <img
                   className="mt-[-70px] md:ml-0 ml-[4px] w-[250px] h-[250px] md:w-[350px] md:h-[350px] border-2 rounded-xl"
-                  src={Img}
+                  src={Img6}
                   alt="girl"
                 />
               </div>
