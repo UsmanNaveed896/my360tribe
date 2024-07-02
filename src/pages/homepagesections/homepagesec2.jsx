@@ -67,7 +67,7 @@ const Homepagesec2 = () => {
     >
       <div className="flex justify-center">
         <div className="container max-w-[1200px] mt-16">
-          <div className="grid md:grid-cols-2 grid-cols-1 items-start pb-12 md:gap-16 gap-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 items-start pb-12 md:gap-12 gap-2">
             <div className="colum1 md:mt-8 mt-2  md:h-[500px] h-[400px]">
               <div className="relative md:h-[400px] md:flex flex justify-center">
                 <Pie
@@ -161,7 +161,7 @@ const Homepagesec2 = () => {
                     </div>
                     <div className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-12 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
@@ -187,7 +187,7 @@ const Homepagesec2 = () => {
                     </div>
                     <div className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-12 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
@@ -216,7 +216,7 @@ const Homepagesec2 = () => {
                     </div>
                     <div className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-12 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
@@ -242,7 +242,7 @@ const Homepagesec2 = () => {
                     </div>
                     <div className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-12 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />
@@ -270,7 +270,7 @@ const Homepagesec2 = () => {
                     </p>
                     <div className="md:mt-[-80px] mt-0">
                       <img
-                        className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                        className="md:ml-12 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
                         src={Img5}
                         alt="army"
                       />

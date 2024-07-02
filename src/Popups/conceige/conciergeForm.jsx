@@ -47,7 +47,7 @@ const ConciergeForm = () => {
         <div className="max-w-[1200px] container pb-24">
           <img className="h-[180px]" src={Img} alt="abc" />
           <i
-            class="fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer"
+            class=" fa fa-arrow-left mt-6 ml-20 hover:text-[17px] cursor-pointer"
             aria-hidden="true"
             onClick={() => navigate("/")}
           ></i>
