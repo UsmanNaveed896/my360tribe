@@ -18,18 +18,18 @@ const Footer = () => {
               <div className="flex justify-center">
                 <img className="h-[80px]" src={Img3} alt="logo" />
               </div>
-              <p className="mt-2 font-bold md:text-center text-start text-[#BDC6E6]">
+              <p className="mt-2 font-bold md:text-center text-center text-[#BDC6E6]">
                 Address
               </p>
-              <p className="md:text-center text-start font-bold">
+              <p className="md:text-center text-center font-bold">
                 My360Tribe<br></br> 128 Adrian Avenue, <br></br>South San
                 Francisco, CA 94080
               </p>
 
-              <p className="font-bold md:text-center text-start text-[#BDC6E6]">
+              <p className="font-bold md:text-center text-center text-[#BDC6E6]">
                 Contact us
               </p>
-              <div className="flex md:justify-center justify-start">
+              <div className="flex md:justify-center justify-center">
                 <img
                   className="h-4 cursor-pointer md:my-0 my-3"
                   src={Img2}
