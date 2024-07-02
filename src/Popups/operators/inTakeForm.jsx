@@ -51,7 +51,7 @@ const InTakeForm = () => {
             aria-hidden="true"
             onClick={() => navigate("/")}
           ></i>
-          <div className="text text-center">
+          <div className="text text-center px-4 md:px-0">
             <h1 className="font-bold text-[35px]">
               My360Tribe Operator Intake Form
             </h1>
@@ -60,22 +60,22 @@ const InTakeForm = () => {
             </p>
             <p className="mt-2 font-bold">
               In support of U.S. Special Operations Forces (SOF) Operators, our
-              <br></br>
+              <br className="md:block hidden"></br>
               mission is to provide Peer Advocacy and Concierge level support
-              for <br></br> SOF Operators as they face the challenges before,
-              during and after <br></br> transition.
+              for <br className="md:block hidden"></br> SOF Operators as they face the challenges before,
+              during and after <br className="md:block hidden"></br> transition.
             </p>
             <p className="mt-2 font-bold">
               In order to receive support from My360Tribe, you need to meet the
-              <br></br>
+              <br className="md:block hidden"></br>
               definition of a SOF Operator.  A SOF Operator is defined by branch
-              <br></br>
+              <br className="md:block hidden"></br>
               as follows:
             </p>
           </div>
           <div className="tablexx mt-6 ">
-            <div className="overflow-x-auto flex justify-center">
-              <table className="min-w-[70%]  border-white border rounded-xl text-white">
+            <div className="overflow-x-auto flex md:justify-center flex justify-start">
+              <table className="md:min-w-[70%] min-w-full  border-white border rounded-xl text-white">
                 <thead className="bg-[#152252] rounded-xl font-bold">
                   <tr>
                     <th className="rounded-xl border px-6 py-3 text-left text-xs   uppercase tracking-wider">
@@ -166,8 +166,8 @@ const InTakeForm = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mt-4">
-            <div className="tct max-w-[70%]">
+          <div className="flex justify-center mt-4 px-4 md:px-0">
+            <div className="tct md:max-w-[70%] max-w-full">
               <p className="mt-2 font-bold">
                 You must also be transitioning or have already transitioned out
                 of the military.  If you have already transitioned, the time in
@@ -179,14 +179,14 @@ const InTakeForm = () => {
               </p>
               <div className="form mt-6">
                 <form>
-                  <div className="flex justify-between">
+                  <div className="flex md:justify-between md:flex-row flex-col ">
                     <div>
                       <p className="text-[#9ca3af] py-1">First Name</p>
-                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full" />
                     </div>
                     <div>
                       <p className="text-[#9ca3af] py-1">Last Name</p>
-                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                      <input className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full" />
                     </div>
                   </div>
                   <select
