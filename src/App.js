@@ -13,6 +13,7 @@ import InTakeForm from "./Popups/operators/inTakeForm";
 import ConciergeForm from "./Popups/conceige/conciergeForm";
 import Peerambassadorform from "./Popups/peerambassador/peerambassadorform";
 import Servicepartners from "./Popups/servicepartners/servicepartners";
+import SignUp from "./Popups/SignUp";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -38,7 +39,7 @@ function App() {
         setIsModalOpen={setIsModalOpen}
         isModalOpen={isModalOpen}
       />
-      {/* <OTP /> */}
+ 
       <ScrollToTopOnRouteChange />
       <Routes>
         <Route
@@ -94,6 +95,9 @@ function App() {
       </Routes>
       <Footer />
     </>
+    // <>
+    // <SignUp/>
+    // </>
   );
 }
 

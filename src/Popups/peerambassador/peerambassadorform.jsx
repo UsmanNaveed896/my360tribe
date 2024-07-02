@@ -76,7 +76,9 @@ const Peerambassadorform = () => {
                     </div>
                   </div>
                   <p className="text-[#9ca3af] py-1 mt-5">Branch of Service</p>
-                  <input className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]" />
+                  <select className="rounded w-full  py-2 pl-2 pr-12 bg-[#152252] border text-[#9ca3af]">
+                    <option className="">Army</option>
+                  </select>
                   <div className="flex justify-between mt-5">
                     <div>
                       <p className="text-[#9ca3af] py-1">Date</p>
@@ -92,7 +94,7 @@ const Peerambassadorform = () => {
 
                       <input
                         className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[400px]"
-                        placeholder="Preffered method of Contact e.g Phone/email"
+                        placeholder="Preferred method of Contact e.g Phone/email"
                       />
                     </div>
                   </div>

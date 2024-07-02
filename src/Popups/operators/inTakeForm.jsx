@@ -196,8 +196,9 @@ const InTakeForm = () => {
                   >
                     <option value="AirForce">Air Force AFSOC</option>
                     <option value="Army">Army USASOC</option>
-                    <option value="Navy">Navy NSW NSO</option>
                     <option value="Marines">Marines MARSOC</option>
+                    <option value="Navy">Navy NSW NSO</option>
+                 
                   </select>
                   <select className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2">
                     {branchOptions.map((option, index) => (
@@ -259,29 +260,19 @@ const InTakeForm = () => {
                       class="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
                     />
                   </div>
-                  <div className="mt-5">
-                    <input type="file" id="file-upload" className="hidden" />
-                    <div className="flex justify-between items-center block w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] px-2">
-                      <p className=" ">
-                        {" "}
-                        Please upload a copy of your DD214.  Please ensure your
-                        social security number and any other <br></br>
-                        sensitive information is redacted.
-                      </p>
-                      <label htmlFor="file-upload" className="cursor-pointer ">
-                        <i className="fa fa-upload text-white"></i>
-                      </label>
-                    </div>
-                  </div>
-                  <select className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2">
-                    <option className="">
-                      What type of support are you seeking ?
-                    </option>
-                  </select>
+                 
                   <select className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2">
                     <option className="">
                       What type of mental health information/support is needed?
                     </option>
+                  </select>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    Where are you located?
+                  </p>
+                  <select className="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2">
+                    <option>Individual</option>
+                    <option>Family</option>
+                    <option>Child</option>
                   </select>
                   <p className="mt-2 font-bold">
                     Please Note: My360Tribe does not provide mental health
