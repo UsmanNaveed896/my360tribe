@@ -53,7 +53,7 @@ const ConciergeForm = () => {
           ></i>
             <div className="text text-center">
             <h1 className="font-bold text-[35px]">
-              My360Tribe Operator Intake Form
+              My360Tribe  Concierge Form
             </h1>
             <p className="mt-2 font-bold">
               Thank you for reaching out to My360Tribe. Our Mission is simple:
