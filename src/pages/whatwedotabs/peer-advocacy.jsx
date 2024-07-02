@@ -38,13 +38,13 @@ const Dummy = ({ handleClick }) => {
             </h1>
           </div>
           <p className="text-center mb-5 text-white md:text-xl text-sm md:whitespace-normal px-4 md:px-0">
-            One of the things that sets us apart is our Peer Advocate Network.
-            Operators helping Operators by providing support and guidance to you
-            as a member of My360Tribe. Your peer advocate will keep in contact
-            with you and help coordinate the contact with the service partners
-            ready to answer your questions and assist you in navigating this new
-            life outside the SOF. Click on the tabs above to learn more about
-            the 360-warrior care through Peer Advocacy we provide.
+            What sets us apart is our Concierge-level support and extensive,
+            confidential Peer Ambassador network of Operators helping Operators
+            by providing support and guidance to you as a member of My360Tribe.
+            Your Concierge will keep in contact with you and help coordinate
+            contact with the service partners that can assist you in navigating
+            this new life. Click on the tabs above to learn more about the
+            360-Warrior Care.
           </p>
           <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3 px-4">
             <ul class="flex md:gap-6 gap-2 text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">

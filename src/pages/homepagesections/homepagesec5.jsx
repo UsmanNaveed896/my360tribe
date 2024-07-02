@@ -5,7 +5,7 @@ import Img4 from "../../assets/Group1000006267.png";
 const Homepagesec5 = () => {
   return (
     <div
-      className=" bg-[#d1d8f5] pb-[68px] md:bg-cover bg-contain "
+      className=" bg-[#d1d8f5] pb-[140px] md:bg-cover bg-contain "
       id="targetDiv4"
       style={{ backgroundImage: `url(${Img4})` }}
     >
@@ -36,15 +36,15 @@ const Homepagesec5 = () => {
                 </div>
               </div>
             </div>
-            <div className="column2 mt-16">
+            <div className="column2 mt-16 flex justify-center">
             <div className="">
                 <img
-                  className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                  className="md:ml-24 ml-[104px] ml-0 w-[250px] h-[250px] md:w-[350px] md:h-[350px] border-2 rounded-xl"
                   src={Img}
                   alt="army"
                 />
                 <img
-                  className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[240px] md:h-[240px] border-2 rounded-xl"
+                  className="mt-[-150px] md:ml-0 ml-[44px] w-[250px] h-[250px] md:w-[350px] md:h-[350px] border-2 rounded-xl"
                   src={Img2}
                   alt="girl"
                 />
