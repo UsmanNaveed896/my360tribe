@@ -53,7 +53,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 <h1 className="text-[55px] text-white font-bold">My360Tribe</h1>
                 <p className="text-white text-[22px]">
                   In support of U.S. Special Operations Forces Operators, our<br></br>
-                  mission is to provide Peer Advocacy and Concierge level
+                  mission is to provide Peer Ambassador and Concierge level
                   support for SOF Operators as they face the challenges before,
                   during and after transition.
                 </p>
