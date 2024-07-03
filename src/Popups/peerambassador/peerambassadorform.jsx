@@ -81,7 +81,7 @@ const Peerambassadorform = () => {
                   </select>
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
                     <div>
-                      <p className="text-[#9ca3af] py-1">Date</p>
+                      <p className="text-[#9ca3af] py-1">DOB</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
                         type="date"

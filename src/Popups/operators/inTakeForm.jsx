@@ -246,9 +246,10 @@ const InTakeForm = () => {
                   </div>
                   <style>{customStyles}</style>
                   <div>
+                  <p className="text-[#9ca3af] mt-5 py-1">DOB</p>
                     <input
                       type="date"
-                      class="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
+                      class="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
                     />
                   </div>
                   <div className="ss">
