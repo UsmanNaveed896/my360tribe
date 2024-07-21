@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Img from "../../assets/unnamed.png";
+import Img from "../../assets/unnamed.webp";
 
 const Peerambassadorform = () => {
   const navigate = useNavigate();

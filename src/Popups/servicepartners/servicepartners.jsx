@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Img from "../../assets/unnamed.png";
+import Img from "../../assets/unnamed.webp";
 const Servicepartners = () => {
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";

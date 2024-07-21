@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Img from "../../assets/unnamed.png";
+import Img from "../../assets/unnamed.webp";
 import { useNavigate } from "react-router-dom";
 
 const InTakeForm = () => {
