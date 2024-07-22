@@ -65,13 +65,7 @@ const InTakeForm = () => {
               for <br className="md:block hidden"></br> SOF Operators as they face the challenges before,
               during and after <br className="md:block hidden"></br> transition.
             </p>
-            <p className="mt-2 font-bold">
-              In order to receive support from My360Tribe, you need to meet the
-              <br className="md:block hidden"></br>
-              definition of a SOF Operator.  A SOF Operator is defined by branch
-              <br className="md:block hidden"></br>
-              as follows:
-            </p>
+          
           </div>
           <div className="tablexx mt-6 ">
             <div className="overflow-x-auto flex md:justify-center flex justify-start">

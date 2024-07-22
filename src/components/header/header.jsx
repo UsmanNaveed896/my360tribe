@@ -55,7 +55,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
   };
   const img1 = {
     heading: "Operators",
-    text: 'We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command',
+    text: "We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command",
   };
   const img3 = {
     heading: "Peer Ambassador",
@@ -168,7 +168,10 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
           <button
             className="px-4 py-2 rounded-xl"
             style={{ background: "red" }}
-            onClick={() => handleClick(5)}
+            onClick={() =>
+              (window.location.href =
+                "https://merchant.reverepayments.dev/forms/35SqPodk7aSXSW6tE3N9-ToxPhV_kGW1sTEVX3iM3X8=")
+            }
           >
             Donate
           </button>
@@ -229,10 +232,10 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                         onClick={() =>
                           setIsModalOpen((st) => ({
                             ...st,
-                            mod1:false,
-                            mod2:false,
-                            mod3:false,
-                            mod4:false,
+                            mod1: false,
+                            mod2: false,
+                            mod3: false,
+                            mod4: false,
                             mod5: true,
                           }))
                         }
@@ -275,7 +278,13 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
         </nav>
       </div>
 
-     {isModalOpen.mod5 && <Aboutus isOpen={isModalOpen} onCancel={handleCancel} setIsModalOpen={setIsModalOpen} />} 
+      {isModalOpen.mod5 && (
+        <Aboutus
+          isOpen={isModalOpen}
+          onCancel={handleCancel}
+          setIsModalOpen={setIsModalOpen}
+        />
+      )}
 
       <PicsModal
         isOpen={isModalOpen}

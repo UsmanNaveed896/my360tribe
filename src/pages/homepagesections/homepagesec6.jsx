@@ -13,6 +13,8 @@ import Img10 from '../../assets/CW2.png'
 import Img11 from '../../assets/4.jpg'
 import Img12 from '../../assets/7.png'
 import Img13 from '../../assets/6.png'
+import Img14 from '../../assets/8.png'
+
 import Advisorycard from "../../components/userCard/advisorycard";
 
 
@@ -54,6 +56,11 @@ const Homepagesec6 = () => {
     {
       img:Img13,
       name: "Matt Bruni",
+      designation: "Army (Ranger)",
+    },
+    {
+      img:Img14,
+      name: "Jason Schmidt",
       designation: "Army (Ranger)",
     },
   ];
@@ -156,7 +163,7 @@ const Homepagesec6 = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="bg-[#d1d8f5] pb-[90px]   bg-cover "
         style={{ backgroundImage: `url(${Img7})` }}
       >
@@ -172,38 +179,11 @@ const Homepagesec6 = () => {
             <div className="img">
               <img className="h-[120px] bg-white rounded" src={Img10} alt="blac" />
             </div>
-            {/* <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div> */}
+          
           </div>
-          {/* <div className="pt-12 flex justify-center gap-8 px-6">
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-            <div className="img">
-              <img className="h-[120px]" src={Img10} alt="blac" />
-            </div>
-          </div> */}
+         
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

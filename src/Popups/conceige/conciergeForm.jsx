@@ -53,7 +53,7 @@ const ConciergeForm = () => {
           ></i>
             <div className="text text-center px-4 md:px-0">
             <h1 className="font-bold text-[35px]">
-              My360Tribe  Concierge Form
+            My360Tribe Operator Intake Form
             </h1>
             <p className="mt-2 font-bold">
               Thank you for reaching out to My360Tribe. Our Mission is simple:
@@ -65,13 +65,7 @@ const ConciergeForm = () => {
               for <br className="md:block hidden"></br> SOF Operators as they face the challenges before,
               during and after <br className="md:block hidden"></br> transition.
             </p>
-            <p className="mt-2 font-bold">
-              In order to receive support from My360Tribe, you need to meet the
-              <br className="md:block hidden"></br>
-              definition of a SOF Operator.  A SOF Operator is defined by branch
-              <br className="md:block hidden"></br>
-              as follows:
-            </p>
+          
           </div>
           <div className="flex justify-center mt-4 px-4 md:px-0">
             <div className="tct md:max-w-[70%] max-w-full">
