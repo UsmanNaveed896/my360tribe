@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Img from "../../assets/logo1.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PicsModal from "../../Popups/picsModal";
 import Aboutus from "../../Popups/Aboutus";
 
@@ -84,9 +84,9 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
           <ul className="flex gap-8 font-semibold">
             {/* <li className="mr-4"><i className='fa fa-user text-[20px]'></i></li> */}
             <li className="mr-4">
-              <a href="#">
+              <Link to="/signin">
                 <i className="fa fa-user text-[20px] mr-3"></i>Sign in
-              </a>
+              </Link>
             </li>
             <li className="mr-4 cursor-pointer">
               <a onClick={() => navigate("/")}>Home</a>

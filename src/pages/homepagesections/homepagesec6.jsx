@@ -14,6 +14,8 @@ import Img11 from '../../assets/4.jpg'
 import Img12 from '../../assets/7.png'
 import Img13 from '../../assets/6.png'
 import Img14 from '../../assets/8.png'
+import Img15 from '../../assets/9.png'
+
 
 import Advisorycard from "../../components/userCard/advisorycard";
 
@@ -63,6 +65,11 @@ const Homepagesec6 = () => {
       name: "Jason Schmidt",
       designation: "Army (Ranger)",
     },
+    {
+      img:Img15,
+      name: "Jack Davis",
+      designation: "Army (Ranger)",
+    },
   ];
 
   const advisors = [
@@ -73,7 +80,7 @@ const Homepagesec6 = () => {
       experience:
         "10 Years of SOF Support, Cancer Researcher, Dog Lover, Cage Diver",
       description:
-        "Brage's career, as a civilian, reflects a legacy of strategic leadership and a commitment to innovation. As a 25+ year Navy SEAL and senior Special Operations Officer, Brian led hundreds of critical operations, organizations, and US strategies across challenging environments, demonstrating unparalleled leadership, strategic fluency, and tactical acumen. His military service, highlighted by leadership in multiple combat deployments, showcases his ability to navigate complex situations with precision and integrity. Transitioning into the corporate world, Brian has continued to make significant impacts as the Chief Strategy Officer at an advanced technology company where his expertise in leading-edge computing and AI/ML has propelled the company into a new era of tech innovation. His journey from the rigorous demands of Special Operations to the dynamic challenges of the tech industry exemplifies a dedication to excellence and a continuous pursuit of impactful solutions to improve humankind. Motivated by pivotal disappointing corporate encounters and value gaps in transition, which ignited his determination to empower SOF veterans, ensuring their incredibly rare skills and elite leadership are recognized, valued, never underestimated.",
+        "Brage Garofalo has been a transition mentor and coach with Special Operators for over a decade, and through this work saw firsthand the nuanced complexities that accompany transition, even more so for Operators. Transition is more than just the technical and tactical components; but also involves an emotional and intellectual aspect that needs to be addressed as well. My360Tribe was founded in the Summer of 2023 on the premise that Operators need a member of their own Tribe within the Special Operations community to work through the challenges that arise at any time as part of their transition.In addition to co-founding My360Tribe, Brage actively consults and volunteers with numerous veteran service organizations helping to develop, build and/or improve mentor programs and mentoring platforms. She was instrumental in helping to build and manage the Mentor program for The Honor Foundation as well as develop a transition-focused eLearning library for the members of Elite Meet. She is an advisor and lecturer in areas of company and culture research and the complexities of transition for Operators. She also served as a member of the Advisory Board and Board of Directors for organizations that support veterans and their families, including transition.Brage is also the Director of Clinical Study Management for a Bay Area biotech where she builds high performing teams and leads cross functional teams to develop and execute oncology clinical trials. Brage has over 20 years of successful implementation and execution of global clinical trials that led to several FDA approvals in numerous therapeutic areas, including pediatric oncology, HIV and the first cure for Hepatitis C.Brage and her husband currently reside in the San Francisco Bay Area with their rescue dogs Charlie and Eddie.",
     },
 
     {
