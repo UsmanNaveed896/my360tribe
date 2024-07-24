@@ -3,9 +3,11 @@ import { useForm } from "react-hook-form";
 import { FaUserCircle } from "react-icons/fa";
 import Img from "../../assets/Ellipse1.svg";
 import { useNavigate } from "react-router-dom";
+import { useRegisterHook } from "../../hooks/useRegisterHook";
 
 const SignUp = () => {
     const navigate=useNavigate()
+    const signUp=useRegisterHook()
   const {
     register,
     handleSubmit,
@@ -29,6 +31,7 @@ const SignUp = () => {
     if (selectedFile) {
       formData.append('photo', selectedFile);
     }
+    signUp.handleSignup(formData)
   };
 
   const password = watch('password');
@@ -45,9 +48,10 @@ const SignUp = () => {
         setPreviewImage(reader.result);
       };
       reader.readAsDataURL(file);
+      setSelectedFile(file)
     }
   };
-
+console.log(selectedFile,"selected")
   return (
     <div className="bg-gradient-to-b from-blue-900 to-black pb-12">
       <div className="px-6 pt-24">

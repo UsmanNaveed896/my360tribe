@@ -170,8 +170,8 @@ const Peerambassadorform = () => {
                   {errors.uncomfortableTopics && <p className="text-red-500">{errors.uncomfortableTopics.message}</p>}
 
                   <div className="flex justify-center mt-5">
-                    <button type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
-                      Submit
+                    <button disabled={peerAmbassador.loading} type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
+                    {peerAmbassador.loading ? "Submitting..." : "Submit"} 
                     </button>
                   </div>
                 </form>

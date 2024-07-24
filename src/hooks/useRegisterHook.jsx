@@ -7,7 +7,7 @@ import axios from "axios";
 export const useRegisterHook = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const [loginResponse,setLoginResponse]=useState()
+  const [loginResponse, setLoginResponse] = useState();
 
   const handleLogin = (data) => {
     setLoading(true);
@@ -24,10 +24,14 @@ export const useRegisterHook = () => {
           toast.success("Logged In Successfully");
           const token = res?.data?.token;
           const userid = res?.data?.data?.user?._id;
+          const name = res?.data?.data?.user?.fullName;
+          const photo = res?.data?.data?.user?.photo;
+          localStorage.setItem("photo", photo);
+          localStorage.setItem("name", name);
           localStorage.setItem("token", token);
           localStorage.setItem("user_id", userid);
           setLoading(false);
-        
+          navigate("/");
         } else {
           toast.error(res?.message);
           setLoading(false);
@@ -39,18 +43,17 @@ export const useRegisterHook = () => {
         toast.error(err?.response?.data?.message);
       });
   };
-  
+
   const handleSignup = (data) => {
     setLoading(true);
     axios
-      .post("https://searchapi.codematesolution.com/api/v1/users/login", data)
+      .post("https://backend-api.my360tribe.org/api/v1/users/signup", data)
       .then((res) => {
-        if (res?.status == 200) {
-          console.log(res, "response");
-          toast.success("Logged In Successfully");
-         
+        console.log(res, "response");
+        if (res?.status == 201) {
+          toast.success("SignedUp Successfully");
+
           setLoading(false);
-       
         } else {
           toast.error(res?.message);
           setLoading(false);
@@ -64,7 +67,8 @@ export const useRegisterHook = () => {
   };
   return {
     handleLogin,
+    handleSignup,
     loading,
-    loginResponse
+    loginResponse,
   };
 };

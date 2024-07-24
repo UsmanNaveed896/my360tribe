@@ -8,18 +8,24 @@ export const useAddOperatorHook = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [loginResponse, setLoginResponse] = useState();
+  let token = localStorage.getItem("token");
 
   const handleAdOperator = (data) => {
     setLoading(true);
-
+    let headers = {
+      Authorization: "Bearer " + token,
+    };
     axios
-      .post("https://searchapi.codematesolution.com/api/v1/users/login", data)
+      .post("https://backend-api.my360tribe.org/api/v1/operator-intake", data, {
+        headers,
+      })
       .then((res) => {
-        if (res?.status == 200) {
-          console.log(res, "response");
-          toast.success("Submitted Successfully");
+        console.log(res, "response");
+        if (res?.status == 201) {
+          toast.success("Form Submitted Successfully");
 
           setLoading(false);
+          navigate("/");
         } else {
           toast.error(res?.message);
           setLoading(false);

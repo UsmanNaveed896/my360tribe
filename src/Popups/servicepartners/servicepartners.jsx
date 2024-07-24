@@ -138,8 +138,8 @@ const Servicepartners = () => {
                   {errors.description && <p className="text-red-500">{errors.description.message}</p>}
 
                   <div className="flex justify-center mt-5">
-                    <button type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
-                      Submit
+                    <button disabled={servicePartner.loading} type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
+                    {servicePartner.loading ? "Submitting..." : "Submit"} 
                     </button>
                   </div>
                 </form>

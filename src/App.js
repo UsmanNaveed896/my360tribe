@@ -34,15 +34,14 @@ function App() {
       }
     }, 100);
   };
+
   return (
-    <>
-       <AuthProvider>
+    <AuthProvider>
       <Header
         handleClick={handleClick}
         setIsModalOpen={setIsModalOpen}
         isModalOpen={isModalOpen}
       />
-
       <ScrollToTopOnRouteChange />
       <Routes>
         <Route
@@ -65,45 +64,17 @@ function App() {
           path="/transition"
           element={<Transition handleClick={handleClick} />}
         />
-        <Route
-          exact
-          path="/Health"
-          element={<Health handleClick={handleClick} />}
-        />
-        <Route
-          exact
-          path="/employment"
-          element={<Employment handleClick={handleClick} />}
-        />
+        <Route exact path="/Health" element={<Health handleClick={handleClick} />} />
+        <Route exact path="/employment" element={<Employment handleClick={handleClick} />} />
         <Route exact path="/intakeform" element={<InTakeForm />} />
         <Route exact path="/conciergeform" element={<ConciergeForm />} />
-        <Route
-          exact
-          path="/peerambassador-form"
-          element={<Peerambassadorform />}
-        />
-        <Route
-          exact
-          path="/servicepartner-form"
-          element={<Servicepartners />}
-        />
-          <Route
-          exact
-          path="/signup"
-          element={<SignUp />}
-        />
-          <Route
-          exact
-          path="/signin"
-          element={<SignIn />}
-        />
+        <Route exact path="/peerambassador-form" element={<Peerambassadorform />} />
+        <Route exact path="/servicepartner-form" element={<Servicepartners />} />
+        <Route exact path="/signup" element={<SignUp />} />
+        <Route exact path="/signin" element={<SignIn />} />
       </Routes>
       <Footer />
-      </AuthProvider>
-    </>
-    // <>
-    // <SignUp/>
-    // </>
+    </AuthProvider>
   );
 }
 

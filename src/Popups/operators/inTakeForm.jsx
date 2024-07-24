@@ -37,12 +37,16 @@ const InTakeForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
     operator.handleAdOperator(data)
+    if(operator.loginResponse ==  201){
+      reset()
+    }
     // Handle form submission
   };
 
@@ -257,10 +261,12 @@ const InTakeForm = () => {
                   {errors.employment && <p className="text-red-500">{errors.employment.message}</p>}
                   <style>{customStyles}</style>
                   <div>
+                  <p className="text-[#9ca3af] py-1 mt-5">DOB</p>
+
                     <input
                       type="date"
-                      className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                      {...register("dateOfBirth", { required: "Date of Birth is required" })}
+                      className="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
+                      {...register("DOB", { required: "Date of Birth is required" })}
                     />
                     {errors.dateOfBirth && <p className="text-red-500">{errors.dateOfBirth.message}</p>}
                   </div>
@@ -288,8 +294,8 @@ const InTakeForm = () => {
                     counseling/services, financial or legal advice.
                   </p>
                   <div className="flex justify-center mt-5">
-                    <button type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
-                      Submit
+                    <button type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold" disabled={operator.loading}>
+                    {operator.loading ? "Submitting.." : 'Submit'} 
                     </button>
                   </div>
                 </form>

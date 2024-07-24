@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { useAddConceirgeHook } from "../../hooks/useAddConceirgeHook";
 
 const ConciergeForm = () => {
-  const Conceirge=useAddConceirgeHook()
+  const Conceirge = useAddConceirgeHook();
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
 
@@ -17,7 +17,7 @@ const ConciergeForm = () => {
 
   const onSubmit = (data) => {
     console.log(data, "data");
-    Conceirge.handleAdConceirge(data)
+    Conceirge.handleAdConceirge(data);
   };
 
   return (
@@ -241,10 +241,11 @@ const ConciergeForm = () => {
 
                   <div className="flex justify-center mt-5">
                     <button
+                      disabled={Conceirge.loading}
                       type="submit"
                       className="rounded border bg-transparent py-2 px-5 hover:font-semibold"
                     >
-                      Submit
+                      {Conceirge.loading ? "Submitting..." : "Submit"}
                     </button>
                   </div>
                 </form>

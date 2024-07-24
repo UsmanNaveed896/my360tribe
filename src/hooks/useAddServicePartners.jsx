@@ -8,18 +8,22 @@ export const useAddServicePartnersHook = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [loginResponse, setLoginResponse] = useState();
+  let token = localStorage.getItem("token");
 
   const handleAdServicePartner = (data) => {
     setLoading(true);
-
+    let headers = {
+      Authorization: "Bearer " + token,
+    };
     axios
-      .post("https://searchapi.codematesolution.com/api/v1/users/login", data)
+      .post("https://backend-api.my360tribe.org/api/v1/service-intake", data ,{headers})
       .then((res) => {
-        if (res?.status == 200) {
+        if (res?.status == 201) {
           console.log(res, "response");
           toast.success("Submitted Successfully");
 
           setLoading(false);
+          navigate("/")
         } else {
           toast.error(res?.message);
           setLoading(false);
