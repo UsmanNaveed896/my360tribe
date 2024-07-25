@@ -1,5 +1,6 @@
 {
   "name": "my-360-tribe",
+  "homepage": "http://my360tribe.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

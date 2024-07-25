@@ -83,10 +83,12 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
     console.log("Cancelling...");
     setIsModalOpen(false);
   };
-
+if(auth){
   const photo = localStorage.getItem("photo");
-  const securePhotoUrl = photo.replace("http://", "https://");
-
+  var securePhotoUrl = photo?.replace("http://", "https://");
+}
+  
+console.log(auth,"aut")
   return (
     <div className="relative z-[999]">
       <nav
