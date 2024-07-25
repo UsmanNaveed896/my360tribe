@@ -13,7 +13,9 @@ import InTakeForm from "./Popups/operators/inTakeForm";
 import ConciergeForm from "./Popups/conceige/conciergeForm";
 import Peerambassadorform from "./Popups/peerambassador/peerambassadorform";
 import Servicepartners from "./Popups/servicepartners/servicepartners";
-import SignUp from "./Popups/SignUp";
+import SignUp from "./pages/Authentication/SignUp";
+import { AuthProvider } from "./pages/Authentication/authecontext";
+import SignIn from "./pages/Authentication/SignIn";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -32,14 +34,14 @@ function App() {
       }
     }, 100);
   };
+
   return (
-    <>
+    <AuthProvider>
       <Header
         handleClick={handleClick}
         setIsModalOpen={setIsModalOpen}
         isModalOpen={isModalOpen}
       />
- 
       <ScrollToTopOnRouteChange />
       <Routes>
         <Route
@@ -62,42 +64,17 @@ function App() {
           path="/transition"
           element={<Transition handleClick={handleClick} />}
         />
-        <Route
-          exact
-          path="/Health"
-          element={<Health handleClick={handleClick} />}
-        />
-        <Route
-          exact
-          path="/employment"
-          element={<Employment handleClick={handleClick} />}
-        />
-         <Route
-          exact
-          path="/intakeform"
-          element={<InTakeForm />}
-        />
-          <Route
-          exact
-          path="/conciergeform"
-          element={<ConciergeForm />}
-        />
-         <Route
-          exact
-          path="/peerambassador-form"
-          element={<Peerambassadorform />}
-        />
-           <Route
-          exact
-          path="/servicepartner-form"
-          element={<Servicepartners />}
-        />
+        <Route exact path="/Health" element={<Health handleClick={handleClick} />} />
+        <Route exact path="/employment" element={<Employment handleClick={handleClick} />} />
+        <Route exact path="/intakeform" element={<InTakeForm />} />
+        <Route exact path="/conciergeform" element={<ConciergeForm />} />
+        <Route exact path="/peerambassador-form" element={<Peerambassadorform />} />
+        <Route exact path="/servicepartner-form" element={<Servicepartners />} />
+        <Route exact path="/signup" element={<SignUp />} />
+        <Route exact path="/signin" element={<SignIn />} />
       </Routes>
       <Footer />
-    </>
-    // <>
-    // <SignUp/>
-    // </>
+    </AuthProvider>
   );
 }
 
