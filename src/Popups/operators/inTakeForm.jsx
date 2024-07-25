@@ -291,6 +291,7 @@ const InTakeForm = () => {
                   )}
                   <style>{customStyles}</style>
                   <div>
+
                     <p className="text-[#9ca3af] py-1 mt-5">DOB</p>
 
                     <input
@@ -299,6 +300,7 @@ const InTakeForm = () => {
                       {...register("DOB", {
                         required: "Date of Birth is required",
                       })}
+
                     />
                     {errors.dateOfBirth && (
                       <p className="text-red-500">
