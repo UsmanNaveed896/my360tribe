@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Img from "../../assets/unnamed.webp";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAddOperatorHook } from "../../hooks/useAddOperatorHook";
+import { AuthContext } from "../../pages/Authentication/authecontext";
 
 const InTakeForm = () => {
+  const { auth } = useContext(AuthContext);
+
   const navigate = useNavigate();
-  const operator=useAddOperatorHook()
+  const operator = useAddOperatorHook();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
 
   const options = {
@@ -42,11 +45,15 @@ const InTakeForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    operator.handleAdOperator(data)
-    if(operator.loginResponse ==  201){
-      reset()
+    if (!auth) {
+      navigate("/signin");
+    } else {
+      operator.handleAdOperator(data);
+      if (operator.loginResponse == 201) {
+        reset();
+      }
     }
+
     // Handle form submission
   };
 
@@ -83,8 +90,9 @@ const InTakeForm = () => {
               In support of U.S. Special Operations Forces (SOF) Operators, our
               <br className="md:block hidden"></br>
               mission is to provide Peer Advocacy and Concierge level support
-              for <br className="md:block hidden"></br> SOF Operators as they face the challenges before,
-              during and after <br className="md:block hidden"></br> transition.
+              for <br className="md:block hidden"></br> SOF Operators as they
+              face the challenges before, during and after{" "}
+              <br className="md:block hidden"></br> transition.
             </p>
           </div>
           <div className="tablexx mt-6 ">
@@ -145,7 +153,8 @@ const InTakeForm = () => {
                   </tr>
                   <tr>
                     <td className="rounded-xl border px-6 py-4 whitespace-nowrap text-sm font-medium ">
-                      24th Special Tactics <br />Squadron (JSOC)
+                      24th Special Tactics <br />
+                      Squadron (JSOC)
                     </td>
                     <td className="rounded-xl border px-6 py-4 whitespace-nowrap text-sm ">
                       SMU
@@ -174,9 +183,9 @@ const InTakeForm = () => {
               <p className="mt-2 font-bold">
                 You must also be transitioning or have already transitioned out
                 of the military. If you have already transitioned, the time in
-                which you have been out does not matter. In order for us to
-                make a meaningful match with a Peer Ambassador and ensure you
-                are connected with the appropriate resources and service
+                which you have been out does not matter. In order for us to make
+                a meaningful match with a Peer Ambassador and ensure you are
+                connected with the appropriate resources and service
                 organizations, please provide us with a little information about
                 you.
               </p>
@@ -187,17 +196,29 @@ const InTakeForm = () => {
                       <p className="text-[#9ca3af] py-1">First Name</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        {...register("firstName", { required: "First Name is required" })}
+                        {...register("firstName", {
+                          required: "First Name is required",
+                        })}
                       />
-                      {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
+                      {errors.firstName && (
+                        <p className="text-red-500">
+                          {errors.firstName.message}
+                        </p>
+                      )}
                     </div>
                     <div>
                       <p className="text-[#9ca3af] py-1">Last Name</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        {...register("lastName", { required: "Last Name is required" })}
+                        {...register("lastName", {
+                          required: "Last Name is required",
+                        })}
                       />
-                      {errors.lastName && <p className="text-red-500">{errors.lastName.message}</p>}
+                      {errors.lastName && (
+                        <p className="text-red-500">
+                          {errors.lastName.message}
+                        </p>
+                      )}
                     </div>
                   </div>
                   <select
@@ -212,7 +233,9 @@ const InTakeForm = () => {
                   </select>
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                    {...register("specialty", { required: "Please select a specialty" })}
+                    {...register("specialty", {
+                      required: "Please select a specialty",
+                    })}
                   >
                     {branchOptions.map((option, index) => (
                       <option key={index} value={option}>
@@ -221,7 +244,9 @@ const InTakeForm = () => {
                     ))}
                   </select>
                   <div className="flex justify-between mt-5">
-                    <p className="text-[#9ca3af]">Are you currently employed?</p>
+                    <p className="text-[#9ca3af]">
+                      Are you currently employed?
+                    </p>
                     <div className="flex gap-3">
                       <div className="flex items-center">
                         <input
@@ -230,7 +255,9 @@ const InTakeForm = () => {
                           type="radio"
                           value="yes"
                           className="h-4 w-4 text-[#9ca3af] border-gray-300 focus:ring-indigo-500"
-                          {...register("employment", { required: "Please select an option" })}
+                          {...register("employment", {
+                            required: "Please select an option",
+                          })}
                         />
                         <label
                           htmlFor="yes"
@@ -246,7 +273,9 @@ const InTakeForm = () => {
                           type="radio"
                           value="no"
                           className="h-4 w-4 text-[#9ca3af] border-gray-300 focus:ring-indigo-500"
-                          {...register("employment", { required: "Please select an option" })}
+                          {...register("employment", {
+                            required: "Please select an option",
+                          })}
                         />
                         <label
                           htmlFor="no"
@@ -256,46 +285,71 @@ const InTakeForm = () => {
                         </label>
                       </div>
                     </div>
-                   
                   </div>
-                  {errors.employment && <p className="text-red-500">{errors.employment.message}</p>}
+                  {errors.employment && (
+                    <p className="text-red-500">{errors.employment.message}</p>
+                  )}
                   <style>{customStyles}</style>
                   <div>
-                  <p className="text-[#9ca3af] py-1 mt-5">DOB</p>
+                    <p className="text-[#9ca3af] py-1 mt-5">DOB</p>
 
                     <input
                       type="date"
                       className="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                      {...register("DOB", { required: "Date of Birth is required" })}
+                      {...register("DOB", {
+                        required: "Date of Birth is required",
+                      })}
                     />
-                    {errors.dateOfBirth && <p className="text-red-500">{errors.dateOfBirth.message}</p>}
+                    {errors.dateOfBirth && (
+                      <p className="text-red-500">
+                        {errors.dateOfBirth.message}
+                      </p>
+                    )}
                   </div>
                   <div className="ss">
-                    <p className="text-[#9ca3af] py-1 mt-5">Where are you located?</p>
+                    <p className="text-[#9ca3af] py-1 mt-5">
+                      Where are you located?
+                    </p>
                     <input
                       type="text"
                       className="w-full py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                      {...register("location", { required: "Location is required" })}
+                      {...register("location", {
+                        required: "Location is required",
+                      })}
                     />
-                    {errors.location && <p className="text-red-500">{errors.location.message}</p>}
+                    {errors.location && (
+                      <p className="text-red-500">{errors.location.message}</p>
+                    )}
                   </div>
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                    {...register("mentalHealthSupport", { required: "Mental health support is required" })}
+                    {...register("mentalHealthSupport", {
+                      required: "Mental health support is required",
+                    })}
                   >
-                    <option value="">What type of mental health information/support is needed?</option>
+                    <option value="">
+                      What type of mental health information/support is needed?
+                    </option>
                     <option value="Individual">Individual</option>
                     <option value="Family">Family</option>
                     <option value="Child">Child</option>
                   </select>
-                  {errors.mentalHealthSupport && <p className="text-red-500">{errors.mentalHealthSupport.message}</p>}
+                  {errors.mentalHealthSupport && (
+                    <p className="text-red-500">
+                      {errors.mentalHealthSupport.message}
+                    </p>
+                  )}
                   <p className="mt-2 font-bold">
                     Please Note: My360Tribe does not provide mental health
                     counseling/services, financial or legal advice.
                   </p>
                   <div className="flex justify-center mt-5">
-                    <button type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold" disabled={operator.loading}>
-                    {operator.loading ? "Submitting.." : 'Submit'} 
+                    <button
+                      type="submit"
+                      className="rounded border bg-transparent py-2 px-5 hover:font-semibold"
+                      disabled={operator.loading}
+                    >
+                      {operator.loading ? "Submitting.." : "Submit"}
                     </button>
                   </div>
                 </form>

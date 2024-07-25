@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Img from "../../assets/unnamed.webp";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAddConceirgeHook } from "../../hooks/useAddConceirgeHook";
+import { AuthContext } from "../../pages/Authentication/authecontext";
 
 const ConciergeForm = () => {
+  const { auth } = useContext(AuthContext);
   const Conceirge = useAddConceirgeHook();
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
@@ -16,8 +18,12 @@ const ConciergeForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data, "data");
-    Conceirge.handleAdConceirge(data);
+    if(!auth) {
+      navigate('/signin')
+    }else{
+      Conceirge.handleAdConceirge(data);
+
+    }
   };
 
   return (

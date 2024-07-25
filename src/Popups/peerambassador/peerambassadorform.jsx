@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddPeerAmbassadorHook } from "../../hooks/useAddPeerAmbassadorHook";
+import { AuthContext } from "../../pages/Authentication/authecontext";
 
 const Peerambassadorform = () => {
+  const { auth } = useContext(AuthContext);
+
   const peerAmbassador=useAddPeerAmbassadorHook()
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
@@ -17,7 +20,12 @@ const Peerambassadorform = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    peerAmbassador.handleAdPeerAmbassador(data)
+    if(!auth){
+      navigate('/signin')
+    }else{
+      peerAmbassador.handleAdPeerAmbassador(data)
+
+    }
     // Handle form submission
   };
 
@@ -92,7 +100,7 @@ const Peerambassadorform = () => {
 
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
                     <div>
-                      <p className="text-[#9ca3af] py-1">Date of Birth</p>
+                      <p className="text-[#9ca3af] py-1">DO</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
                         type="date"
