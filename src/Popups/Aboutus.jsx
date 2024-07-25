@@ -17,12 +17,12 @@ const Aboutus = ({ isOpen, setIsModalOpen}) => {
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed inset-0 bg-black text-white opacity-80"></div>
+      <div className="fixed inset-0 bg-black text-white opacity-80 "></div>
 
-      <div className="fixed inset-0 z-10 ">
-        <div className="flex md:min-h-full min-h-[90%] items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <div className="fixed inset-0 z-10 mt-16">
+        <div className="flex h-[100vh] items-end justify-center p-4 text-center sm:items-center sm:p-0 ">
           <div className="relative transform overflow-hidden rounded-lg  text-left shadow-xl transition-all md:my-32 my-2 sm:my-8 max-w-[900px] bg-[#15214c] ">
-            <div
+            <div className="h-[500px] overflow-y-scroll"
             //   style={{ backgroundImage: `url(${Img})` }}
             >
               <div className="flex justify-end p-2">

@@ -1,6 +1,6 @@
 import React from "react";
-import Img from "../../assets/WW (1).png";
-import Img2 from "../../assets/WW (2).png";
+import Img from "../../assets/WW (1).webp";
+import Img2 from "../../assets/WW (2).webp";
 import Img4 from "../../assets/Group1000006267.png";
 const Homepagesec5 = () => {
   return (

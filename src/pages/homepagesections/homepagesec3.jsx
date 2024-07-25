@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Img2 from "../../assets/1 (1).png";
 import Img from "../../assets/screen.png";
 import Img4 from "../../assets/Group10000062671.png";
-import Img5 from '../../assets/ab.png'
-import Img6 from '../../assets/abc.jpg'
+import Img5 from '../../assets/ab.webp'
+import Img6 from '../../assets/abc.webp'
 
 import Modal from "../../Popups/Modal";
 import { useNavigate } from "react-router-dom";

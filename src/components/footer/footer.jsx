@@ -69,7 +69,12 @@ const Footer = () => {
               </button>
             </div>
             <div className="flex ml-1 justify-center">
-              <button className="text-[16px] rounded-xl  text-white border w-[98px] h-[45px] mt-2 bg-[red] border-[red] hover:border-2">
+              <button className="text-[16px] rounded-xl  text-white border w-[98px] h-[45px] mt-2 bg-[red] border-[red] hover:border-2"
+                onClick={() =>
+                  (window.location.href =
+                    "https://merchant.reverepayments.dev/forms/35SqPodk7aSXSW6tE3N9-ToxPhV_kGW1sTEVX3iM3X8=")
+                }
+              >
                 Donate
               </button>
             </div>

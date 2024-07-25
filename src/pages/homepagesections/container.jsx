@@ -16,7 +16,7 @@ const Container = ({isModalOpen,setIsModalOpen}) => {
             {/* <Homepagesec4 /> */}
             <Homepagesec5 />
             <Homepagesec6 />
-            <Homepagesec7 />
+            {/* <Homepagesec7 /> */}
         </div>
     )
 }
