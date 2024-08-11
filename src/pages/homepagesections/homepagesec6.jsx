@@ -9,7 +9,7 @@ import Img6 from "../../assets/d.png";
 import Img7 from "../../assets/Group1000006267.png";
 import Img8 from '../../assets/1.png'
 import Img9 from '../../assets/2.png'
-import Img10 from '../../assets/CW2.png'
+import Img10 from '../../assets/ScottMcKeeBW9068.webp'
 import Img11 from '../../assets/4.jpg'
 import Img12 from '../../assets/7.png'
 import Img13 from '../../assets/6.png'
@@ -106,18 +106,15 @@ const Homepagesec6 = () => {
       description:
         "Brian’s career, both in the military and as a civilian, reflects a legacy of strategic leadership and a commitment to innovation. As a 25+ year Navy SEAL and senior Special Operations Officer, Brian led hundreds of critical operations, organizations, and US strategies across challenging environments, demonstrating unparalleled leadership, strategic fluency, and tactical acumen. His military service, highlighted by leadership in multiple combat deployments, showcases his ability to navigate complex situations with precision and integrity. Transitioning into the corporate world, Brian has continued to make significant impacts as the Chief Strategy Officer at an advanced technology company where his expertise in leading-edge computing and AI/ML has propelled the company into a new era of tech innovation. His journey from the rigorous demands of Special Operations to the dynamic challenges of the tech industry exemplifies a dedication to excellence and a continuous pursuit of impactful solutions to improve humankind. Motivated by pivotal disappointing corporate encounters and value gaps in transition, which ignited his determination to empower SOF veterans, ensuring their incredibly rare skills and elite leadership are recognized, valued, never underestimated.",
     },
-    // {
-    //   name: "Jack Davis",
-    //   designation: "Navy (EOD)",
-    // },
-    // {
-    //   name: "Jason Agopsowicz",
-    //   designation: "Navy (SEAL)",
-    // },
-    // {
-    //   name: "Matt Bruni",
-    //   designation: "Army (Ranger)",
-    // },
+    {
+      img: Img10,
+      name: " Scott McKee",
+      designation: "Board Member (Military)",
+      experience: "20 years of corporate development ,Founder  of Sidecar Group",
+      description:
+        "Scott is the Founder and Managing Member of Sidecar Group. With over 20 years of corporate development experience, Scott has initiated investments, acquisitions, mergers, partnerships, divestitures, product lines and a variety of other development efforts to create value for companies. Scott has assisted The Honor Foundation as well as Seals Future Foundation members since 2019. Scott’s formal education includes a Masters of Business Administration degree and a Bachelor’s Degree from the University of North Dakota. Scott resides in the Atlanta, GA area with his wife of 25 years and their three children.",
+    },
+
   ];
   return (
     <>
