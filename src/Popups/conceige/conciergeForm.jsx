@@ -23,7 +23,6 @@ const ConciergeForm = () => {
     if(!auth) {
       navigate('/signin')
     }else{
-      data.role = "CONCIERGE"
       Conceirge.handleAdConceirge(data);
 
     }

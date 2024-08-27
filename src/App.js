@@ -16,6 +16,7 @@ import Servicepartners from "./Popups/servicepartners/servicepartners";
 import SignUp from "./pages/Authentication/SignUp";
 import { AuthProvider } from "./pages/Authentication/authecontext";
 import SignIn from "./pages/Authentication/SignIn";
+import ViewStatus from "./pages/viewstatus/viewstatus";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -72,6 +73,7 @@ function App() {
         <Route exact path="/servicepartner-form" element={<Servicepartners />} />
         <Route exact path="/signup" element={<SignUp />} />
         <Route exact path="/signin" element={<SignIn />} />
+        <Route exact path="/viewstatus" element={<ViewStatus />} />
       </Routes>
       <Footer />
     </AuthProvider>

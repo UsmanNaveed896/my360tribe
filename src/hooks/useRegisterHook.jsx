@@ -26,6 +26,10 @@ export const useRegisterHook = () => {
           const token = res?.data?.response?.data?.token;
           const userid = res?.data?.response?.data?.id;
           const name = res?.data?.response?.data?.name;
+          const email = res?.data?.response?.data?.email;
+          const role = res?.data?.response?.data?.role;
+          localStorage.setItem("role", role);
+          localStorage.setItem("email", email);
           localStorage.setItem("name", name);
           localStorage.setItem("token", token);
           localStorage.setItem("user_id", userid);
