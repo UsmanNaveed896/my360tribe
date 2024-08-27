@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAddConceirgeHook } from "../../hooks/useAddConceirgeHook";
 import { AuthContext } from "../../pages/Authentication/authecontext";
+import PhoneInput from "react-phone-input-2";
 
 const ConciergeForm = () => {
   const { auth } = useContext(AuthContext);
@@ -14,6 +15,7 @@ const ConciergeForm = () => {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm();
 
@@ -21,6 +23,7 @@ const ConciergeForm = () => {
     if(!auth) {
       navigate('/signin')
     }else{
+      data.role = "CONCIERGE"
       Conceirge.handleAdConceirge(data);
 
     }
@@ -59,31 +62,32 @@ const ConciergeForm = () => {
                   <p className="text-[#9ca3af] py-1">Your full name</p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("fullName", { required: true })}
+                    {...register("full_name", { required: true })}
                   />
-                  {errors.fullName && (
+                  {errors.full_name && (
                     <span className="text-red-500">Full name is required</span>
                   )}
 
                   <div className="flex md:justify-between flex-col md:flex-row mt-5">
-                    <div>
-                      <p className="text-[#9ca3af] py-1">Phone</p>
-                      <input
-                        className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] "
-                        type="tel"
-                        {...register("phone", {
-                          required: true,
-                          pattern: /^[0-9-]+$/,
-                        })}
-                      />
-                      {errors.phone && (
-                        <div>
-                          <span className="text-red-500">
-                            Valid phone number is required
-                          </span>{" "}
-                        </div>
+                    <div className="pt-4">
+                        <PhoneInput
+                          country={'us'}
+                          inputStyle={{
+                            width: '100%',
+                            backgroundColor: 'transparent',
+                            borderColor: 'white',
+                            color: 'white'
+                          }}
+                          inputClass="rounded-xl"
+                          placeholder="Phone"
+                          onChange={(phone) => setValue('phone_number', phone, { shouldValidate: true })}
+                        />
+                      </div>
+                      {errors.phone_number && (
+                        <span className="text-red-500">
+                          Valid phone number is required
+                        </span>
                       )}
-                    </div>
                     <div>
                       <p className="text-[#9ca3af] py-1">Email</p>
                       <input
@@ -109,9 +113,9 @@ const ConciergeForm = () => {
                   <p className="text-[#9ca3af] py-1 mt-5">Branch of Service</p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("branchOfService", { required: true })}
+                    {...register("service_branch", { required: true })}
                   />
-                  {errors.branchOfService && (
+                  {errors.service_branch && (
                     <span className="text-red-500">
                       Branch of Service is required
                     </span>
@@ -123,9 +127,9 @@ const ConciergeForm = () => {
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
                         type="date"
-                        {...register("DOB", { required: true })}
+                        {...register("birth_date", { required: true })}
                       />
-                      {errors.DOB && (
+                      {errors.birth_date && (
                         <span className="text-red-500">
                           Date of Birth is required
                         </span>
@@ -137,9 +141,9 @@ const ConciergeForm = () => {
                       </p>
                       <input
                         className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[400px]"
-                        {...register("contactMethod", { required: true })}
+                        {...register("contact_number", { required: true })}
                       />
-                      {errors.contactMethod && (
+                      {errors.contact_number && (
                         <div>
                           {" "}
                           <span className="text-red-500">
@@ -155,9 +159,9 @@ const ConciergeForm = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("howHeardAboutUs", { required: true })}
+                    {...register("how_heard_about_us", { required: true })}
                   />
-                  {errors.howHeardAboutUs && (
+                  {errors.how_heard_about_us && (
                     <span className="text-red-500">This field is required</span>
                   )}
 
@@ -166,9 +170,9 @@ const ConciergeForm = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("whyConcierge", { required: true })}
+                    {...register("why_concierge", { required: true })}
                   />
-                  {errors.whyConcierge && (
+                  {errors.why_concierge && (
                     <span className="text-red-500">This field is required</span>
                   )}
 
@@ -178,12 +182,12 @@ const ConciergeForm = () => {
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
                     type="number"
-                    {...register("hoursPerMonth", {
+                    {...register("hours_per_month", {
                       required: true,
                       valueAsNumber: true,
                     })}
                   />
-                  {errors.hoursPerMonth && (
+                  {errors.hours_per_month && (
                     <span className="text-red-500">This field is required</span>
                   )}
 
@@ -194,12 +198,12 @@ const ConciergeForm = () => {
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
                     type="number"
-                    {...register("numberOfOperators", {
+                    {...register("number_of_operators", {
                       required: true,
                       valueAsNumber: true,
                     })}
                   />
-                  {errors.numberOfOperators && (
+                  {errors.number_of_operators && (
                     <div>
                       <span className="text-red-500">
                         This field is required
@@ -217,9 +221,9 @@ const ConciergeForm = () => {
                   </p>
                   <input
                     className="rounded w-full mt-2 py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("transitionServices", { required: true })}
+                    {...register("transition_services", { required: true })}
                   />
-                  {errors.transitionServices && (
+                  {errors.transition_services && (
                     <span className="text-red-500">This field is required</span>
                   )}
 
@@ -228,9 +232,9 @@ const ConciergeForm = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("areasOfSupport", { required: true })}
+                    {...register("areas_of_support", { required: true })}
                   />
-                  {errors.areasOfSupport && (
+                  {errors.areas_of_support && (
                     <span className="text-red-500">This field is required</span>
                   )}
 
@@ -239,9 +243,9 @@ const ConciergeForm = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("uncomfortableTopics", { required: true })}
+                    {...register("uncomfortable_topics", { required: true })}
                   />
-                  {errors.uncomfortableTopics && (
+                  {errors.uncomfortable_topics && (
                     <span className="text-red-500">This field is required</span>
                   )}
 

@@ -8,7 +8,7 @@ import { AuthContext } from "../../pages/Authentication/authecontext";
 const Peerambassadorform = () => {
   const { auth } = useContext(AuthContext);
 
-  const peerAmbassador=useAddPeerAmbassadorHook()
+  const peerAmbassador = useAddPeerAmbassadorHook();
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
 
@@ -20,11 +20,10 @@ const Peerambassadorform = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    if(!auth){
-      navigate('/signin')
-    }else{
-      peerAmbassador.handleAdPeerAmbassador(data)
-
+    if (!auth) {
+      navigate("/signin");
+    } else {
+      peerAmbassador.handleAdPeerAmbassador(data);
     }
     // Handle form submission
   };
@@ -50,8 +49,9 @@ const Peerambassadorform = () => {
               In support of U.S. Special Operations Forces (SOF) Operators, our
               <br className="md:block hidden"></br>
               mission is to provide Peer Advocacy and Concierge level support
-              for <br className="md:block hidden"></br> SOF Operators as they face the challenges before,
-              during and after <br className="md:block hidden"></br> transition.
+              for <br className="md:block hidden"></br> SOF Operators as they
+              face the challenges before, during and after{" "}
+              <br className="md:block hidden"></br> transition.
             </p>
           </div>
           <div className="flex justify-center mt-4 px-4 md:px-0">
@@ -61,42 +61,62 @@ const Peerambassadorform = () => {
                   <p className="text-[#9ca3af] py-1">Your full name</p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("fullName", { required: "Full Name is required" })}
+                    {...register("full_name", {
+                      required: "Full Name is required",
+                    })}
                   />
-                  {errors.fullName && <p className="text-red-500">{errors.fullName.message}</p>}
-                  
+                  {errors.full_name && (
+                    <p className="text-red-500">{errors.full_name.message}</p>
+                  )}
+
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
                     <div>
                       <p className="text-[#9ca3af] py-1">Phone</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
                         type="text"
-                        {...register("phone", { required: "Phone is required" })}
+                        {...register("phone_number", {
+                          required: "Phone is required",
+                        })}
                       />
-                      {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
+                      {errors.phone_number && (
+                        <p className="text-red-500">
+                          {errors.phone_number.message}
+                        </p>
+                      )}
                     </div>
                     <div>
                       <p className="text-[#9ca3af] py-1">Email</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
                         type="email"
-                        {...register("email", { required: "Email is required" })}
+                        {...register("email", {
+                          required: "Email is required",
+                        })}
                       />
-                      {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                      {errors.email && (
+                        <p className="text-red-500">{errors.email.message}</p>
+                      )}
                     </div>
                   </div>
-                  
+
                   <p className="text-[#9ca3af] py-1 mt-5">Branch of Service</p>
                   <select
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#9ca3af]"
-                    {...register("branchOfService", { required: "Branch of Service is required" })}
+                    {...register("service_branch", {
+                      required: "Branch of Service is required",
+                    })}
                   >
                     <option value="AirForce">Air Force AFSOC</option>
                     <option value="Army">Army USASOC</option>
                     <option value="Navy">Navy NSW NSO</option>
                     <option value="Marines">Marines MARSOC</option>
                   </select>
-                  {errors.branchOfService && <p className="text-red-500">{errors.branchOfService.message}</p>}
+                  {errors.service_branch && (
+                    <p className="text-red-500">
+                      {errors.service_branch.message}
+                    </p>
+                  )}
 
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
                     <div>
@@ -104,82 +124,167 @@ const Peerambassadorform = () => {
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
                         type="date"
-                        {...register("dob", { required: "Date of Birth is required" })}
+                        {...register("birth_date", {
+                          required: "Date of Birth is required",
+                        })}
                       />
-                      {errors.dob && <p className="text-red-500">{errors.dob.message}</p>}
+                      {errors.birth_date && (
+                        <p className="text-red-500">
+                          {errors.birth_date.message}
+                        </p>
+                      )}
                     </div>
                     <div>
-                      <p className="text-[#9ca3af] py-1">Preferred method of Contact</p>
+                      <p className="text-[#9ca3af] py-1">
+                        Preferred method of Contact
+                      </p>
                       <input
                         className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[400px]"
                         placeholder="Phone/email"
-                        {...register("contactMethod", { required: "Preferred method of Contact is required" })}
+                        {...register("contact_number", {
+                          required: "Preferred method of Contact is required",
+                        })}
                       />
-                      {errors.contactMethod && <p className="text-red-500">{errors.contactMethod.message}</p>}
+                      {errors.contact_number && (
+                        <p className="text-red-500">
+                          {errors.contact_number.message}
+                        </p>
+                      )}
                     </div>
                   </div>
-                  
-                  <p className="text-[#9ca3af] py-1 mt-5">How did you hear about us?</p>
+
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    How did you hear about us?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("howHeardAboutUs", { required: "This field is required" })}
+                    {...register("how_heard_about_us", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.howHeardAboutUs && <p className="text-red-500">{errors.howHeardAboutUs.message}</p>}
+                  {errors.how_heard_about_us && (
+                    <p className="text-red-500">
+                      {errors.how_heard_about_us.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">Why would you like to be a Peer Ambassador?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    Why would you like to be a Peer Ambassador?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("whyPeerAmbassador", { required: "This field is required" })}
+                    {...register("why_peer_ambassador", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.whyPeerAmbassador && <p className="text-red-500">{errors.whyPeerAmbassador.message}</p>}
+                  {errors.why_peer_ambassador && (
+                    <p className="text-red-500">
+                      {errors.why_peer_ambassador.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">How many hours a month can you commit to your Operator?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    How many hours a month can you commit to your Operator?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
                     type="number"
-                    {...register("hoursPerMonth", { required: "This field is required" })}
+                    {...register("hours_per_month", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.hoursPerMonth && <p className="text-red-500">{errors.hoursPerMonth.message}</p>}
+                  {errors.hours_per_month && (
+                    <p className="text-red-500">
+                      {errors.hours_per_month.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">How many Operators would you be able to work with at one time if asked?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    How many Operators would you be able to work with at one
+                    time if asked?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
                     type="number"
-                    {...register("numberOfOperators", { required: "This field is required" })}
+                    {...register("number_of_operators", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.numberOfOperators && <p className="text-red-500">{errors.numberOfOperators.message}</p>}
+                  {errors.number_of_operators && (
+                    <p className="text-red-500">
+                      {errors.number_of_operators.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">Did you work with any transition services / organizations during your transition, and would you recommend any of them? If yes, which ones?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    Did you work with any transition services / organizations
+                    during your transition, and would you recommend any of them?
+                    If yes, which ones?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("transitionServices", { required: "This field is required" })}
+                    {...register("transitionServices", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.transitionServices && <p className="text-red-500">{errors.transitionServices.message}</p>}
+                  {errors.transitionServices && (
+                    <p className="text-red-500">
+                      {errors.transitionServices.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">Do you recommend any transition services?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    Do you recommend any transition services?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("recommendedTransitionServices", { required: "This field is required" })}
+                    {...register("recommendedTransitionServices", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.recommendedTransitionServices && <p className="text-red-500">{errors.recommendedTransitionServices.message}</p>}
+                  {errors.recommendedTransitionServices && (
+                    <p className="text-red-500">
+                      {errors.recommendedTransitionServices.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">What areas of transition do you feel you can best support?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    What areas of transition do you feel you can best support?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("areasOfSupport", { required: "This field is required" })}
+                    {...register("areas_of_support", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.areasOfSupport && <p className="text-red-500">{errors.areasOfSupport.message}</p>}
+                  {errors.areas_of_support && (
+                    <p className="text-red-500">
+                      {errors.areas_of_support.message}
+                    </p>
+                  )}
 
-                  <p className="text-[#9ca3af] py-1 mt-5">What area(s)/topics are you uncomfortable with?</p>
+                  <p className="text-[#9ca3af] py-1 mt-5">
+                    What area(s)/topics are you uncomfortable with?
+                  </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("uncomfortableTopics", { required: "This field is required" })}
+                    {...register("uncomfortable_topics", {
+                      required: "This field is required",
+                    })}
                   />
-                  {errors.uncomfortableTopics && <p className="text-red-500">{errors.uncomfortableTopics.message}</p>}
+                  {errors.uncomfortable_topics && (
+                    <p className="text-red-500">
+                      {errors.uncomfortable_topics.message}
+                    </p>
+                  )}
 
                   <div className="flex justify-center mt-5">
-                    <button disabled={peerAmbassador.loading} type="submit" className="rounded border bg-transparent py-2 px-5 hover:font-semibold">
-                    {peerAmbassador.loading ? "Submitting..." : "Submit"} 
+                    <button
+                      disabled={peerAmbassador.loading}
+                      type="submit"
+                      className="rounded border bg-transparent py-2 px-5 hover:font-semibold"
+                    >
+                      {peerAmbassador.loading ? "Submitting..." : "Submit"}
                     </button>
                   </div>
                 </form>

@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddServicePartnersHook } from "../../hooks/useAddServicePartners";
 import { AuthContext } from "../../pages/Authentication/authecontext";
+import PhoneInput from "react-phone-input-2";
 
 const Servicepartners = () => {
   const { auth } = useContext(AuthContext);
@@ -14,6 +15,7 @@ const Servicepartners = () => {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm();
 
@@ -61,30 +63,40 @@ const Servicepartners = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("organizationName", {
+                    {...register("organization_name", {
                       required: "Organization Name is required",
                     })}
                   />
-                  {errors.organizationName && (
+                  {errors.organization_name && (
                     <p className="text-red-500">
-                      {errors.organizationName.message}
+                      {errors.organization_name.message}
                     </p>
                   )}
 
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
-                    <div>
-                      <p className="text-[#9ca3af] py-1">Phone</p>
-                      <input
-                        className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        type="tel"
-                        {...register("phone", {
-                          required: "Phone is required",
-                        })}
+                    <div className="pt-4">
+                      <PhoneInput
+                        country={"us"}
+                        inputStyle={{
+                          width: "100%",
+                          backgroundColor: "transparent",
+                          borderColor: "white",
+                          color: "white",
+                        }}
+                        inputClass="rounded-xl"
+                        placeholder="Phone"
+                        onChange={(phone) =>
+                          setValue("phone_number", phone, {
+                            shouldValidate: true,
+                          })
+                        }
                       />
-                      {errors.phone && (
-                        <p className="text-red-500">{errors.phone.message}</p>
-                      )}
                     </div>
+                    {errors.phone_number && (
+                      <span className="text-red-500">
+                        Valid phone number is required
+                      </span>
+                    )}
                     <div>
                       <p className="text-[#9ca3af] py-1">Address</p>
                       <input
@@ -103,12 +115,12 @@ const Servicepartners = () => {
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
                     type="url"
-                    {...register("websiteUrl", {
+                    {...register("web_url", {
                       required: "Website URL is required",
                     })}
                   />
-                  {errors.websiteUrl && (
-                    <p className="text-red-500">{errors.websiteUrl.message}</p>
+                  {errors.web_url && (
+                    <p className="text-red-500">{errors.web_url.message}</p>
                   )}
 
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
@@ -118,13 +130,13 @@ const Servicepartners = () => {
                       </p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        {...register("pointOfContactName", {
+                        {...register("point_of_contact_name", {
                           required: "Point of Contact Name is required",
                         })}
                       />
-                      {errors.pointOfContactName && (
+                      {errors.point_of_contact_name && (
                         <p className="text-red-500">
-                          {errors.pointOfContactName.message}
+                          {errors.point_of_contact_name.message}
                         </p>
                       )}
                     </div>
@@ -135,13 +147,13 @@ const Servicepartners = () => {
                       <input
                         className="rounded py-2 pl-6 pr-8 bg-[#152252] border text-[#fff] w-[400px]"
                         type="email"
-                        {...register("pointOfContactEmail", {
+                        {...register("point_of_contact_email", {
                           required: "Point of Contact Email is required",
                         })}
                       />
-                      {errors.pointOfContactEmail && (
+                      {errors.point_of_contact_email && (
                         <p className="text-red-500">
-                          {errors.pointOfContactEmail.message}
+                          {errors.point_of_contact_email.message}
                         </p>
                       )}
                     </div>
@@ -152,13 +164,13 @@ const Servicepartners = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("howHeardAboutUs", {
+                    {...register("how_heard_about_us", {
                       required: "This field is required",
                     })}
                   />
-                  {errors.howHeardAboutUs && (
+                  {errors.how_heard_about_us && (
                     <p className="text-red-500">
-                      {errors.howHeardAboutUs.message}
+                      {errors.how_heard_about_us.message}
                     </p>
                   )}
 
@@ -167,26 +179,26 @@ const Servicepartners = () => {
                   </p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("veteranSpecificServices", {
+                    {...register("veteran_specific_services", {
                       required: "This field is required",
                     })}
                   />
-                  {errors.veteranSpecificServices && (
+                  {errors.veteran_specific_services && (
                     <p className="text-red-500">
-                      {errors.veteranSpecificServices.message}
+                      {errors.veteran_specific_services.message}
                     </p>
                   )}
 
                   <p className="text-[#9ca3af] py-1 mt-5">Services Provided</p>
                   <input
                     className="rounded w-full py-2 pl-2 pr-12 bg-[#152252] border text-[#fff]"
-                    {...register("servicesProvided", {
+                    {...register("service_provided", {
                       required: "This field is required",
                     })}
                   />
-                  {errors.servicesProvided && (
+                  {errors.service_provided && (
                     <p className="text-red-500">
-                      {errors.servicesProvided.message}
+                      {errors.service_provided.message}
                     </p>
                   )}
 

@@ -32,9 +32,9 @@ const InTakeForm = () => {
   const [branchOptions, setBranchOptions] = useState(options[selectedBranch]);
 
   const handleBranchChange = (event) => {
-    const branch = event.target.value;
-    setSelectedBranch(branch);
-    setBranchOptions(options[branch]);
+    const force = event.target.value;
+    setSelectedBranch(force);
+    setBranchOptions(options[force]);
   };
 
   const {
@@ -196,13 +196,13 @@ const InTakeForm = () => {
                       <p className="text-[#9ca3af] py-1">First Name</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        {...register("firstName", {
+                        {...register("first_name", {
                           required: "First Name is required",
                         })}
                       />
-                      {errors.firstName && (
+                      {errors.first_name && (
                         <p className="text-red-500">
-                          {errors.firstName.message}
+                          {errors.first_name.message}
                         </p>
                       )}
                     </div>
@@ -210,13 +210,13 @@ const InTakeForm = () => {
                       <p className="text-[#9ca3af] py-1">Last Name</p>
                       <input
                         className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        {...register("lastName", {
+                        {...register("last_name", {
                           required: "Last Name is required",
                         })}
                       />
-                      {errors.lastName && (
+                      {errors.last_name && (
                         <p className="text-red-500">
-                          {errors.lastName.message}
+                          {errors.last_name.message}
                         </p>
                       )}
                     </div>
@@ -233,8 +233,8 @@ const InTakeForm = () => {
                   </select>
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                    {...register("specialty", {
-                      required: "Please select a specialty",
+                    {...register("speciality", {
+                      required: "Please select a speciality",
                     })}
                   >
                     {branchOptions.map((option, index) => (
@@ -251,11 +251,11 @@ const InTakeForm = () => {
                       <div className="flex items-center">
                         <input
                           id="yes"
-                          name="employment"
+                          name="currently_employed"
                           type="radio"
                           value="yes"
                           className="h-4 w-4 text-[#9ca3af] border-gray-300 focus:ring-indigo-500"
-                          {...register("employment", {
+                          {...register("currently_employed", {
                             required: "Please select an option",
                           })}
                         />
@@ -269,11 +269,11 @@ const InTakeForm = () => {
                       <div className="flex items-center">
                         <input
                           id="no"
-                          name="employment"
+                          name="currently_employed"
                           type="radio"
                           value="no"
                           className="h-4 w-4 text-[#9ca3af] border-gray-300 focus:ring-indigo-500"
-                          {...register("employment", {
+                          {...register("currently_employed", {
                             required: "Please select an option",
                           })}
                         />
@@ -286,8 +286,8 @@ const InTakeForm = () => {
                       </div>
                     </div>
                   </div>
-                  {errors.employment && (
-                    <p className="text-red-500">{errors.employment.message}</p>
+                  {errors.currently_employed && (
+                    <p className="text-red-500">{errors.currently_employed.message}</p>
                   )}
                   <style>{customStyles}</style>
                   <div>
@@ -297,14 +297,14 @@ const InTakeForm = () => {
                     <input
                       type="date"
                       className="w-full  py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                      {...register("DOB", {
+                      {...register("birth_date", {
                         required: "Date of Birth is required",
                       })}
 
                     />
-                    {errors.dateOfBirth && (
+                    {errors.birth_date && (
                       <p className="text-red-500">
-                        {errors.dateOfBirth.message}
+                        {errors.birth_date.message}
                       </p>
                     )}
                   </div>
@@ -315,17 +315,17 @@ const InTakeForm = () => {
                     <input
                       type="text"
                       className="w-full py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                      {...register("location", {
+                      {...register("address", {
                         required: "Location is required",
                       })}
                     />
-                    {errors.location && (
-                      <p className="text-red-500">{errors.location.message}</p>
+                    {errors.address && (
+                      <p className="text-red-500">{errors.address.message}</p>
                     )}
                   </div>
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
-                    {...register("mentalHealthSupport", {
+                    {...register("mental_health_support", {
                       required: "Mental health support is required",
                     })}
                   >
@@ -336,9 +336,9 @@ const InTakeForm = () => {
                     <option value="Family">Family</option>
                     <option value="Child">Child</option>
                   </select>
-                  {errors.mentalHealthSupport && (
+                  {errors.mental_health_support && (
                     <p className="text-red-500">
-                      {errors.mentalHealthSupport.message}
+                      {errors.mental_health_support.message}
                     </p>
                   )}
                   <p className="mt-2 font-bold">

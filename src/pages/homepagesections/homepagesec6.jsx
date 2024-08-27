@@ -1,12 +1,10 @@
 import React from "react";
 import Usercard from "../../components/userCard/usercard";
-import Img1 from "../../assets/Rectangle 1400.png";
 import Img2 from "../../assets/Group10000062671.png";
 import Img3 from "../../assets/a.png";
 import Img4 from "../../assets/b.png";
 import Img5 from "../../assets/c.png";
 import Img6 from "../../assets/d.png";
-import Img7 from "../../assets/Group1000006267.png";
 import Img8 from '../../assets/1.png'
 import Img9 from '../../assets/2.png'
 import Img10 from '../../assets/ScottMcKeeBW9068.webp'
@@ -15,13 +13,8 @@ import Img12 from '../../assets/7.png'
 import Img13 from '../../assets/6.png'
 import Img14 from '../../assets/8.png'
 import Img15 from '../../assets/9.png'
-
-
+import Img16 from '../../assets/RD.png'
 import Advisorycard from "../../components/userCard/advisorycard";
-
-
-
-
 
 const Homepagesec6 = () => {
   const gradient =
@@ -114,7 +107,14 @@ const Homepagesec6 = () => {
       description:
         "Scott is the Founder and Managing Member of Sidecar Group. With over 20 years of corporate development experience, Scott has initiated investments, acquisitions, mergers, partnerships, divestitures, product lines and a variety of other development efforts to create value for companies. Scott has assisted The Honor Foundation as well as Seals Future Foundation members since 2019. Scott’s formal education includes a Masters of Business Administration degree and a Bachelor’s Degree from the University of North Dakota. Scott resides in the Atlanta, GA area with his wife of 25 years and their three children.",
     },
-
+    {
+      img: Img16,
+      name: " Ryan Duhon",
+      designation: "Board Member (AirForce)",
+      experience: "Director- Product Development for Lumen Technologies",
+      description:
+        "Ryan Duhon currently serves as Director- Product Development for Lumen Technologies. In this role Ryan is responsible for delivering next-generation Customer Premise Equipment (CPE), Multi-Gig Advancement, and a digital-first, data driven defined network model.Ryan served 9 years in the United States Air Force Special Operations as a Joint-Terminal Attack Controller within SOCOM. He received his B.S. in Information Technology from Columbia Southern University and a M.S. degree in Information Systems from the University of Maine with a concentration in spatial computing. He currently is pursuing his Doctorate degree in Business with a concentration of Strategic Leadership from Regent University.Ryan currently lives in Salt Lake City, UT where he loves spending time in the backcountry with his wife and son.",
+    },
   ];
   return (
     <>

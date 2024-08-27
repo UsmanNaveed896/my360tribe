@@ -17,16 +17,15 @@ export const useRegisterHook = () => {
     };
 
     axios
-      .post("https://backend-api.my360tribe.org/api/v1/users/login", payLoad)
+      .post("https://task-sk2q.onrender.com/registration/login", payLoad)
       .then((res) => {
+        console.log(res, "response");
         if (res?.status == 200) {
           console.log(res, "response");
           toast.success("Logged In Successfully");
-          const token = res?.data?.token;
-          const userid = res?.data?.data?.user?._id;
-          const name = res?.data?.data?.user?.fullName;
-          const photo = res?.data?.data?.user?.photo;
-          localStorage.setItem("photo", photo);
+          const token = res?.data?.response?.data?.token;
+          const userid = res?.data?.response?.data?.id;
+          const name = res?.data?.response?.data?.name;
           localStorage.setItem("name", name);
           localStorage.setItem("token", token);
           localStorage.setItem("user_id", userid);
@@ -47,10 +46,10 @@ export const useRegisterHook = () => {
   const handleSignup = (data) => {
     setLoading(true);
     axios
-      .post("https://backend-api.my360tribe.org/api/v1/users/signup", data)
+      .post("https://task-sk2q.onrender.com/registration/signup", data)
       .then((res) => {
         console.log(res, "response");
-        if (res?.status == 201) {
+        if (res?.status == 200) {
           toast.success("SignedUp Successfully");
 
           setLoading(false);
@@ -62,7 +61,7 @@ export const useRegisterHook = () => {
       .catch((err) => {
         setLoading(false);
         console.log("err", err);
-        toast.error(err?.response?.data?.message);
+        toast.error(err?.response?.data?.error);
       });
   };
   return {

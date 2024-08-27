@@ -16,7 +16,7 @@ export const useAddOperatorHook = () => {
       Authorization: "Bearer " + token,
     };
     axios
-      .post("https://backend-api.my360tribe.org/api/v1/operator-intake", data, {
+      .post("https://task-sk2q.onrender.com/operators/create-operator", data, {
         headers,
       })
       .then((res) => {
