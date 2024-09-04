@@ -30,7 +30,7 @@ const SignIn = () => {
               <div className="border border-white rounded-xl py-4 px-24 mt-12">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="content">
-                    <h1 className="text-white font-bold text-3xl mt-5">Signin</h1>
+                    <h1 className="text-white font-bold text-3xl mt-5">Sign in</h1>
                     <h1 className="text-white mt-2">
                       Just some details to get you in.!
                     </h1>
@@ -64,12 +64,12 @@ const SignIn = () => {
                         type="submit"
                         className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white font-bold py-2 px-4 rounded w-full h-55 p-14 gap-10 text-center pt-4"
                       >
-                       {login.loading ? "Signing In..." : "Signin"}
+                       {login.loading ? "Signing In..." : "Sign in"}
                       </button>
                       <h1 className="text-white mt-2 text-center">
                         Don't have an account? <span className="hover:underline hover:font-bold hover:cursor-pointer" 
                         onClick={()=>navigate('/signup')}
-                        >Signup</span>
+                        >Sign up</span>
                       </h1>
                     </div>
                   </div>

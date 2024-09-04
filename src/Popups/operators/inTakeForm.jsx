@@ -22,7 +22,6 @@ const InTakeForm = () => {
       "Ranger (75th Regiment)",
       "Green Beret",
       "SMU",
-      "Marine Force Recon",
       "160th Special Operations Aviation Regiment (SOAR) Night Stalkers",
     ],
     Navy: ["EOD", "SEAL", "SWCC"],

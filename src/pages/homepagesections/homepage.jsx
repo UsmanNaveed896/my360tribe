@@ -10,20 +10,24 @@ import PicsModal from "../../Popups/picsModal";
 const Homepage = ({ isModalOpen, setIsModalOpen }) => {
   const img4 = {
     heading: " Service Partners",
-    text: "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
+    text:
+      "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
   };
 
   const img2 = {
     heading: "Concierge",
-    text: "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
+    text:
+      "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
   };
   const img1 = {
     heading: "Operators",
-    text: '"We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command.',
+    text:
+      '"We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command.',
   };
   const img3 = {
     heading: "Peer Ambassador",
-    text: "Are you a SOF Operator who has been out of the military for more than a year and wants to support a newly transitioning Operator?",
+    text:
+      "Are you a SOF Operator who has been out of the military for more than a year and wants to support a newly transitioning Operator?",
   };
 
   const handleCancel = () => {
@@ -36,7 +40,8 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
   return (
     <div
       className="bg-[#070c1f] md:mt-12 mt-0 pb-[65px] md:bg-cover bg-contain "
-      style={{ backgroundImage: `url(${Img4})`,}}
+      id="targetDiv0"
+      style={{ backgroundImage: `url(${Img4})` }}
     >
       <div className="flex justify-center px-4 md:px-0">
         <div className="container max-w-[1400px] md:mt-16 mt-4">
@@ -51,11 +56,18 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
             <div className="flex md:justify-end justify-center">
               <div>
                 <h1 className="text-[55px] text-white font-bold">My360Tribe</h1>
-                <p className="text-white text-[22px]">
-                  In support of U.S. Special Operations Forces Operators, our<br></br>
-                  mission is to provide Peer Ambassador and Concierge level
-                  support for SOF Operators as they face the challenges before,
-                  during and after transition.
+                <p className="text-white text-[18px]">
+                  Dedicated to offering peer-to-peer and concierge-level
+                  support, My 360 Tribe ensures U.S. Special Operations
+                  ForcesSOF Operators are well-prepared, empowered, and
+                  supported by those who understand the emotional and
+                  intellectual challenges of transition. Our mission is to
+                  bridge the gap between military service and civilian success,
+                  addressing the challenging aspects of transition while
+                  honoring their service, exceptional skills and experience. We
+                  are here to ensure these Operators have access to the services
+                  that set them up for success during their transition and
+                  beyond.
                 </p>
               </div>
             </div>

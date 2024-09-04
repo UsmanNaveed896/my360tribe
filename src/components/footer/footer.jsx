@@ -3,7 +3,7 @@ import Img from "../../assets/charitylogo.jpeg";
 import Img2 from "../../assets/linkedin.png";
 import Img3 from "../../assets/logo1.png";
 
-const Footer = () => {
+const Footer = ({handleClick}) => {
   const gradient =
     "linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
   const buttonGradient =
@@ -59,15 +59,17 @@ const Footer = () => {
         <div className="logo text-white flex md:justify-center relative pb-16 md:flex-row flex-col">
           <div className="text-[16px] text-white  ">
             <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
-              <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
+              <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2"
+              onClick={()=>handleClick(0)}
+              >
                 Get Involved
               </button>
             </div>
-            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+            {/* <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
               <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
                 Stay Connected
               </button>
-            </div>
+            </div> */}
             <div className="flex ml-1 justify-center">
               <button className="text-[16px] rounded-xl  text-white border w-[98px] h-[45px] mt-2 bg-[red] border-[red] hover:border-2"
                 onClick={() =>

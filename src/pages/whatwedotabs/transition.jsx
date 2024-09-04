@@ -37,7 +37,7 @@ const Transition = ({ handleClick }) => {
             Providing referrals and services to accomplish 360-degree warrior
             care is our mission. Above you will find a listing of our areas of
             referrals and services as it relates to an operator’s health and
-            wellbeing.
+            well-being.
           </p>
           <div className="w-full overflow-x-scroll md:overflow-hidden md:mt-12 mt-3">
             <ul class="flex md:gap-6 gap-2 text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
@@ -112,9 +112,7 @@ const Transition = ({ handleClick }) => {
                 Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
                 Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
                 written in 45 BC. This book is a treatise on the theory of
-                ethics, very popular during the Renaissance. The first line of
-                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
-                in section 1.10.32.{" "}
+                ethics, very popular during the Renaissance. {" "}
               </p>
             </div>
           ) : (

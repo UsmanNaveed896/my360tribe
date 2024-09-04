@@ -75,7 +75,7 @@ function App() {
         <Route exact path="/signin" element={<SignIn />} />
         <Route exact path="/viewstatus" element={<ViewStatus />} />
       </Routes>
-      <Footer />
+      <Footer handleClick={handleClick} />
     </AuthProvider>
   );
 }

@@ -10,7 +10,7 @@ const Dummy = ({ handleClick }) => {
     "Relocation",
     "Legal Services",
     "Financial Support",
-    "Relocation Assistance",
+    // "Relocation Assistance",
     "Family/Legal Support",
     "Mentorship",
   ];
@@ -96,17 +96,19 @@ const Dummy = ({ handleClick }) => {
                 resources.{" "}
               </p>
             </div>
-          ) : activeTab == "Relocation Assistance" ? (
-            <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
-              <h1 className="font-bold text-3xl"> Relocation Assistance</h1>
-              <p className="font-semibold text-xl mt-4 leading-[40px]">
-                {" "}
-                Relocating after transition can be a monumental task and
-                stressful. My360Tribe can connect you with a realtor or other
-                resources to make your move as smooth as possible.{" "}
-              </p>
-            </div>
-          ) : activeTab == "Family/Legal Support" ? (
+          )
+          // ) : activeTab == "Relocation Assistance" ? (
+          //   <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
+          //     <h1 className="font-bold text-3xl"> Relocation Assistance</h1>
+          //     <p className="font-semibold text-xl mt-4 leading-[40px]">
+          //       {" "}
+          //       Relocating after transition can be a monumental task and
+          //       stressful. My360Tribe can connect you with a realtor or other
+          //       resources to make your move as smooth as possible.{" "}
+          //     </p>
+          //   </div>
+          // ) 
+          : activeTab == "Family/Legal Support" ? (
             <div className="transition-training mx-4 md:mx-0 bg-[#d0d7f4] px-6 rounded-xl py-12 md:h-[500px] h-[80%] text-[#001c7a] mt-4">
               <h1 className="font-bold text-3xl">Family/Legal Support</h1>
               <p className="font-semibold text-xl mt-4 leading-[40px]">

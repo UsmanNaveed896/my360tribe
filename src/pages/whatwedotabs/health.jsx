@@ -41,7 +41,7 @@ const Health = ({ handleClick }) => {
             well-being. Providing referrals and services to accomplish
             360-degree warrior care is our mission. Above you will find a
             listing of our areas of referrals and services as it relates to an
-            operator’s health and wellbeing.
+            operator’s health and well-being.
           </p>
           <div className="w-full overflow-x-scroll md:overflow-hidden mt-12 ">
             <ul class="flex md:gap-6 gap-2   text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">

@@ -40,7 +40,7 @@ const Employment = ({ handleClick }) => {
             My360Tribe has established relationships with service organizations,
             corporations and businesses to help you expand your network,
             mentoring opportunities, job services and even starting your own
-            business. We want you to be{" "}
+            business.{" "}
           </p>
           <div className="w-full overflow-x-scroll md:overflow-hidden">
             <ul class="flex md:gap-6 gap-2  text-xs md:text-sm font-medium text-center  border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
@@ -95,8 +95,7 @@ const Employment = ({ handleClick }) => {
                 If working for someone else...We have resources and partners
                 available to help support and guide you as you build your own
                 company, from concept to business case, understanding areas of
-                risk and how to successful raise money." Delete the last
-                sentence, "This takes a special level of dedication.{" "}
+                risk and how to successful raise money.{" "}
               </p>
             </div>
           ) : activeTab == "Mentorship" ? (

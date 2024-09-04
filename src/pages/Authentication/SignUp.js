@@ -38,7 +38,7 @@ const SignUp = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="content">
                     <h1 className="text-white font-bold text-3xl mt-5">
-                      Signup
+                      Sign up
                     </h1>
                     <h1 className="text-white mt-2">
                       Just some details to get you in.!
@@ -147,7 +147,7 @@ const SignUp = () => {
                         type="submit"
                         className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white font-bold py-2 px-4 rounded w-full h-55 p-14 gap-10 text-center pt-4"
                       >
-                      {signUp.loading ? "Please wait" : "Signup"}  
+                      {signUp.loading ? "Please wait" : "Sign up"}  
                       </button>
                       <h1 className="text-white mt-2 text-center">
                         Already have an account?{" "}
@@ -155,7 +155,7 @@ const SignUp = () => {
                           className="hover:underline hover:font-bold hover:cursor-pointer"
                           onClick={() => navigate("/signin")}
                         >
-                          Signin
+                          Sign in
                         </span>
                       </h1>
                     </div>
