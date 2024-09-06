@@ -74,7 +74,7 @@ const Homepagesec3 = () => {
                     well-being. Providing referrals and services to accomplish
                     360-degree warrior care is our mission. Above you will find
                     a listing of our areas of referrals and services as it
-                    relates to an operator’s health and wellbeing.
+                    relates to an operator’s health and well-being.
                   </span>
                   <button
                     className="border-[#D9D9D9] hover:border-2 border rounded-xl font-bold bg-[#192242] text-white w-[200px] py-4"

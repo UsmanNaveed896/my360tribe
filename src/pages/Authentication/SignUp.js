@@ -41,7 +41,7 @@ const SignUp = () => {
                       Sign up
                     </h1>
                     <h1 className="text-white mt-2">
-                      Just some details to get you in.!
+                      Just some details to get you in !
                     </h1>
                     <div className="inputs mt-5">
                       <div className="pt-4">

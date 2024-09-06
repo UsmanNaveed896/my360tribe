@@ -56,12 +56,12 @@ const Homepagesec6 = () => {
     {
       img:Img14,
       name: "Jason Schmidt",
-      designation: "Army (Ranger)",
+      designation: "Marine Raider",
     },
     {
       img:Img15,
       name: "Jack Davis",
-      designation: "Army (Ranger)",
+      designation: "Navy EOD",
     },
   ];
 
