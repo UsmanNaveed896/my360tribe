@@ -97,11 +97,6 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
       "Are you a SOF Operator who has been out of the military for more than a year and want to support a newly transitioning Operator?",
   };
 
-  const handleCancel = () => {
-    console.log("Cancelling...");
-    setIsModalOpen(false);
-  };
-
   if (auth) {
     const photo = localStorage.getItem("photo");
     var securePhotoUrl = photo?.replace("http://", "https://");
@@ -166,7 +161,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
               <a onClick={() => navigate("/")}>Home</a>
             </li>
             <li
-              className="mr-4"
+              className="mr-4 cursor-pointer"
               onClick={() =>
                 setIsModalOpen((st) => ({
                   ...st,
@@ -174,7 +169,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                 }))
               }
             >
-              <a href="#">About Us</a>
+             About Us
             </li>
             <li className="mr-4">
               <div className="relative">

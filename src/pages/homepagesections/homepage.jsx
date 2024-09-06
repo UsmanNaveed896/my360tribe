@@ -6,6 +6,7 @@ import Img3 from "../../assets/Group 1000006064.png";
 import Img4 from "../../assets/Group10000062671.png";
 import Img6 from "../../assets/unnamed.webp";
 import PicsModal from "../../Popups/picsModal";
+import Aboutus from "../../Popups/Aboutus";
 
 const Homepage = ({ isModalOpen, setIsModalOpen }) => {
   const img4 = {
@@ -178,6 +179,8 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 : img4
             }
           />
+          <Aboutus  isOpen={isModalOpen}
+            onCancel={handleCancel}/>
         </div>
       </div>
     </div>

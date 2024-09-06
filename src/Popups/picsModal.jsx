@@ -23,7 +23,7 @@ const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
     onCancel();
   
   };
-  console.log(data,"data")
+ 
   return (
     <div
       className="relative z-[999] "

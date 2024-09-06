@@ -25,6 +25,7 @@ function App() {
     mod3: false,
     mod4: false,
     mod5: false,
+    mod6:false
   });
 
   const handleClick = (a) => {
