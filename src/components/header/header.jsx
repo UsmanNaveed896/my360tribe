@@ -165,6 +165,11 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
               onClick={() =>
                 setIsModalOpen((st) => ({
                   ...st,
+                  ...st,
+                  mod1: false,
+                  mod2: false,
+                  mod3: false,
+                  mod4: false,
                   mod5: true,
                 }))
               }
@@ -289,6 +294,10 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
                             setIsNavOpen(false);
                             setIsModalOpen((st) => ({
                               ...st,
+                              mod1: false,
+                              mod2: false,
+                              mod3: false,
+                              mod4: false,
                               mod5: true,
                             }));
                           }}

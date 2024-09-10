@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddPeerAmbassadorHook } from "../../hooks/useAddPeerAmbassadorHook";
 import { AuthContext } from "../../pages/Authentication/authecontext";
+import PhoneInput from "react-phone-input-2";
 
 const Peerambassadorform = () => {
   const { auth } = useContext(AuthContext);
@@ -15,6 +16,7 @@ const Peerambassadorform = () => {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm();
 
@@ -70,21 +72,31 @@ const Peerambassadorform = () => {
                   )}
 
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
-                    <div>
+                    <div className="">
                       <p className="text-[#9ca3af] py-1">Phone</p>
-                      <input
-                        className="rounded py-2 pl-2 pr-12 bg-[#152252] border text-[#fff] w-full"
-                        type="text"
-                        {...register("phone_number", {
-                          required: "Phone is required",
-                        })}
+
+                      <PhoneInput
+                        country={"us"}
+                        inputStyle={{
+                          width: "100%",
+                          backgroundColor: "transparent",
+                          borderColor: "white",
+                          color: "white",
+                        }}
+                        inputClass="rounded-xl"
+                        placeholder="Phone"
+                        onChange={(phone) =>
+                          setValue("phone_number", phone, {
+                            shouldValidate: true,
+                          })
+                        }
                       />
-                      {errors.phone_number && (
-                        <p className="text-red-500">
-                          {errors.phone_number.message}
-                        </p>
-                      )}
                     </div>
+                    {errors.phone_number && (
+                      <span className="text-red-500">
+                        Valid phone number is required
+                      </span>
+                    )}
                     <div>
                       <p className="text-[#9ca3af] py-1">Email</p>
                       <input

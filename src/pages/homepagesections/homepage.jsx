@@ -179,8 +179,9 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 : img4
             }
           />
-          <Aboutus  isOpen={isModalOpen}
-            onCancel={handleCancel}/>
+          {isModalOpen.mod5 && (
+            <Aboutus isOpen={isModalOpen} onCancel={handleCancel} />
+          )}
         </div>
       </div>
     </div>

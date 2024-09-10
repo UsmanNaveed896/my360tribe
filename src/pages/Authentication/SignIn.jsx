@@ -60,11 +60,16 @@ const SignIn = () => {
                         )}
                     </div>
                     <div className="pt-6">
-                      <button
+                       <button
+                        disabled={login.loading}
                         type="submit"
-                        className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white font-bold py-2 px-4 rounded w-full h-55 p-14 gap-10 text-center pt-4"
+                        className={`${
+                          login.loading
+                            ? "bg-gray-400 cursor-not-allowed"
+                            : "bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800"
+                        } text-white font-bold py-2 px-4 rounded w-full h-55 p-14 gap-10 text-center pt-4`}
                       >
-                       {login.loading ? "Signing In..." : "Sign in"}
+                        {login.loading ? "Please wait" : "Sign in"}
                       </button>
                       <h1 className="text-white mt-2 text-center">
                         Don't have an account? <span className="hover:underline hover:font-bold hover:cursor-pointer" 

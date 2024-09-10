@@ -10,6 +10,7 @@ const Aboutus = ({ isOpen, setIsModalOpen ,onCancel}) => {
   ) {
     return null;
   }
+  
   return (
     <div
       className="relative z-10 top-[5%]"

@@ -222,6 +222,9 @@ const InTakeForm = () => {
                   </div>
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
+                    {...register("force", {
+                      required: "Please select a force branch",
+                    })}
                     value={selectedBranch}
                     onChange={handleBranchChange}
                   >
@@ -230,6 +233,9 @@ const InTakeForm = () => {
                     <option value="Marines">Marines MARSOC</option>
                     <option value="Navy">Navy NSW NSO</option>
                   </select>
+                  {errors.force && (
+                    <p className="text-red-500">{errors.force.message}</p>
+                  )}
                   <select
                     className="w-full mt-5 py-2 bg-[#152252] border text-[#fff] rounded text-[#9ca3af] pl-2"
                     {...register("speciality", {
@@ -286,11 +292,12 @@ const InTakeForm = () => {
                     </div>
                   </div>
                   {errors.currently_employed && (
-                    <p className="text-red-500">{errors.currently_employed.message}</p>
+                    <p className="text-red-500">
+                      {errors.currently_employed.message}
+                    </p>
                   )}
                   <style>{customStyles}</style>
                   <div>
-
                     <p className="text-[#9ca3af] py-1 mt-5">DOB</p>
 
                     <input
@@ -299,7 +306,6 @@ const InTakeForm = () => {
                       {...register("birth_date", {
                         required: "Date of Birth is required",
                       })}
-
                     />
                     {errors.birth_date && (
                       <p className="text-red-500">

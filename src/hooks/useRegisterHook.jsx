@@ -21,8 +21,8 @@ export const useRegisterHook = () => {
       .then((res) => {
         console.log(res, "response");
         if (res?.status == 200) {
-          console.log(res, "response");
-          toast.success("Logged In Successfully");
+         
+        
           const token = res?.data?.response?.data?.token;
           const userid = res?.data?.response?.data?.id;
           const name = res?.data?.response?.data?.name;
@@ -33,6 +33,7 @@ export const useRegisterHook = () => {
           localStorage.setItem("name", name);
           localStorage.setItem("token", token);
           localStorage.setItem("user_id", userid);
+            toast.success("Logged In Successfully");
           setLoading(false);
           navigate("/");
         } else {
@@ -53,7 +54,7 @@ export const useRegisterHook = () => {
       .post("https://task-sk2q.onrender.com/registration/signup", data)
       .then((res) => {
         console.log(res, "response");
-        if (res?.status == 200) {
+        if (res) {
           toast.success("SignedUp Successfully");
 
           setLoading(false);

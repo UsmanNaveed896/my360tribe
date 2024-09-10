@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useRegisterHook } from "../../hooks/useRegisterHook";
 import Img from "../../assets/Ellipse1.svg";
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -13,11 +13,13 @@ const SignUp = () => {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     signUp.handleSignup(data);
+    reset()
   };
 
   return (
@@ -71,16 +73,20 @@ const SignUp = () => {
 
                       <div className="pt-4">
                         <PhoneInput
-                          country={'us'}
+                          country={"us"}
                           inputStyle={{
-                            width: '100%',
-                            backgroundColor: 'transparent',
-                            borderColor: 'white',
-                            color: 'white'
+                            width: "100%",
+                            backgroundColor: "transparent",
+                            borderColor: "white",
+                            color: "white",
                           }}
                           inputClass="rounded-xl"
                           placeholder="Phone"
-                          onChange={(phone) => setValue('phone_number', phone, { shouldValidate: true })}
+                          onChange={(phone) =>
+                            setValue("phone_number", phone, {
+                              shouldValidate: true,
+                            })
+                          }
                         />
                       </div>
                       {errors.phone_number && (
@@ -130,9 +136,13 @@ const SignUp = () => {
                           {...register("role", { required: true })}
                         >
                           <option value="OPERATOR">Operator</option>
-                          <option value="SERVICE_PARTNER">Service Partner</option>
+                          <option value="SERVICE_PARTNER">
+                            Service Partner
+                          </option>
                           <option value="CONCIERGE">Concierge</option>
-                          <option value="PEER_AMBASSADOR">Peer Ambassador</option>
+                          <option value="PEER_AMBASSADOR">
+                            Peer Ambassador
+                          </option>
                         </select>
                       </div>
                       {errors.role && (
@@ -143,11 +153,15 @@ const SignUp = () => {
                     </div>
                     <div className="pt-6">
                       <button
-                      disabled={signUp.loading}
+                        disabled={signUp.loading}
                         type="submit"
-                        className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white font-bold py-2 px-4 rounded w-full h-55 p-14 gap-10 text-center pt-4"
+                        className={`${
+                          signUp.loading
+                            ? "bg-gray-400 cursor-not-allowed"
+                            : "bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800"
+                        } text-white font-bold py-2 px-4 rounded w-full h-55 p-14 gap-10 text-center pt-4`}
                       >
-                      {signUp.loading ? "Please wait" : "Sign up"}  
+                        {signUp.loading ? "Please wait" : "Sign up"}
                       </button>
                       <h1 className="text-white mt-2 text-center">
                         Already have an account?{" "}
