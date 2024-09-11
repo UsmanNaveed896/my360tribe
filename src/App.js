@@ -17,6 +17,8 @@ import SignUp from "./pages/Authentication/SignUp";
 import { AuthProvider } from "./pages/Authentication/authecontext";
 import SignIn from "./pages/Authentication/SignIn";
 import ViewStatus from "./pages/viewstatus/viewstatus";
+import AboutUs from "./pages/aboutUs/aboutUs";
+import PicsModal from "./Popups/picsModal";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -27,6 +29,7 @@ function App() {
     mod5: false,
     mod6:false
   });
+
   console.log(isModalOpen,"OPEN")
   const handleClick = (a) => {
     setTimeout(() => {
@@ -36,7 +39,32 @@ function App() {
       }
     }, 100);
   };
+  const handleCancel = () => {
+    // Implement cancel logic here
+    console.log("Cancelling...");
+    setIsModalOpen(false);
+  };
+ const img4 = {
+    heading: " Service Partners",
+    text:
+      "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
+  };
 
+  const img2 = {
+    heading: "Concierge",
+    text:
+      "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
+  };
+  const img1 = {
+    heading: "Operators",
+    text:
+      '"We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command.',
+  };
+  const img3 = {
+    heading: "Peer Ambassador",
+    text:
+      "Are you a SOF Operator who has been out of the military for more than a year and wants to support a newly transitioning Operator?",
+  };
   return (
     <AuthProvider>
       <Header
@@ -75,8 +103,24 @@ function App() {
         <Route exact path="/signup" element={<SignUp />} />
         <Route exact path="/signin" element={<SignIn />} />
         <Route exact path="/viewstatus" element={<ViewStatus />} />
+        <Route exact path="/aboutus" element={<AboutUs />} />
       </Routes>
       <Footer handleClick={handleClick} />
+
+      {/* "Modal" */}
+      <PicsModal
+            isOpen={isModalOpen}
+            onCancel={handleCancel}
+            data={
+              isModalOpen.mod1
+                ? img1
+                : isModalOpen.mod2
+                ? img2
+                : isModalOpen.mod3
+                ? img3
+                : img4
+            }
+          />
     </AuthProvider>
   );
 }

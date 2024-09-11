@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Img from "../assets/Card12.png";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../pages/Authentication/authecontext";
 const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
+  const { auth } = useContext(AuthContext);
   const navigate = useNavigate();
   if (!isOpen.mod1 && !isOpen.mod2 && !isOpen.mod3 && !isOpen.mod4) {
     return null;
   }
 
   const handleClick = () => {
+    if (!auth) {
+      navigate("/signin");
+      onCancel();
+    } else {
     if (data?.heading == "Operators") {
       navigate("/intakeform");
     } else if (data?.heading == "Concierge") {
@@ -21,7 +27,7 @@ const PicsModal = ({ isOpen, onDeactivate, onCancel, data }) => {
 
     }
     onCancel();
-  
+    }
   };
  
   return (

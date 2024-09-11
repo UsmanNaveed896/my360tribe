@@ -77,11 +77,11 @@ const Homepagesec6 = () => {
     },
 
     {
-      "img": Img3,
-      "name": "Michael Hudson",
-      "designation": "Co-Founder",
-      "experience": "10 Years of SOF Support, Banker, Golfer, and Traveller",
-      "description": "Mike is a Pittsburgh native, who grew up in Clearwater, Florida, and has lived in Roswell, GA for the past 25 years. He is currently the Chief Administrative Officer for Consumer Operations at Wells Fargo. With over 30 years in banking, Mike has held executive-level positions in credit, operations, and innovation since 2007. Mike’s passion for the Special Operations community started in August 2011 after both a significant personal tragedy and Extortion 17. For the past 12 years, he has mentored over 75 individuals, co-founded the PNC Community Mutt Strut (an event to raise money to pair Veterans with Service Dogs), and has sat on the advisory board for several organizations, including Guardian Angels and SEAL Future Foundation. Mike is married to his wife Nicole of 24 years. They have a daughter, Delaney (20), who plays Division 1 Lacrosse, and a high school senior, Luke (18). Mike is an avid golfer, playing almost 100 rounds a year, and he travels extensively with his family and for work."
+      img: Img3,
+      name: "Michael Hudson",
+      designation: "Co-Founder",
+      experience: "10 Years of SOF Support, Banker, Golfer, and Traveller",
+      description: "Mike is a Pittsburgh native, who grew up in Clearwater, Florida, and has lived in Roswell, GA for the past 25 years. He is currently the Chief Administrative Officer for Consumer Operations at Wells Fargo. With over 30 years in banking, Mike has held executive-level positions in credit, operations, and innovation since 2007. Mike’s passion for the Special Operations community started in August 2011 after both a significant personal tragedy and Extortion 17. For the past 12 years, he has mentored over 75 individuals, co-founded the PNC Community Mutt Strut (an event to raise money to pair Veterans with Service Dogs), and has sat on the advisory board for several organizations, including Guardian Angels and SEAL Future Foundation. Mike is married to his wife Nicole of 24 years. They have a daughter, Delaney (20), who plays Division 1 Lacrosse, and a high school senior, Luke (18). Mike is an avid golfer, playing almost 100 rounds a year, and he travels extensively with his family and for work."
   },
     {
       img: Img4,
@@ -102,7 +102,7 @@ const Homepagesec6 = () => {
     {
       img: Img10,
       name: " Scott McKee",
-      designation: "Board Member (Military)",
+      designation: "Co-Founder",
       experience: "20 years of corporate development ,Founder  of Sidecar Group",
       description:
         "Scott is the Founder and Managing Member of Sidecar Group. With over 20 years of corporate development experience, Scott has initiated investments, acquisitions, mergers, partnerships, divestitures, product lines and a variety of other development efforts to create value for companies. Scott has assisted The Honor Foundation as well as Seals Future Foundation members since 2019. Scott’s formal education includes a Masters of Business Administration degree and a Bachelor’s Degree from the University of North Dakota. Scott resides in the Atlanta, GA area with his wife of 25 years and their three children.",

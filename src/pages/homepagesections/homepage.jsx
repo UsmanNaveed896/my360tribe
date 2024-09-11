@@ -166,7 +166,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
               </h1>
             </div>
           </div>
-          <PicsModal
+          {/* <PicsModal
             isOpen={isModalOpen}
             onCancel={handleCancel}
             data={
@@ -178,10 +178,8 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 ? img3
                 : img4
             }
-          />
-          {isModalOpen.mod5 && (
-            <Aboutus isOpen={isModalOpen} onCancel={handleCancel} />
-          )}
+          /> */}
+       
         </div>
       </div>
     </div>

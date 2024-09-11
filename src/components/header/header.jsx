@@ -18,7 +18,6 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    setUserMenuAnchorEl(null);
     toast.success("Successfully Logged Out!");
     window.location.reload();
   };
@@ -163,15 +162,7 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
             <li
               className="mr-4 cursor-pointer"
               onClick={() =>
-                setIsModalOpen((st) => ({
-                  ...st,
-                  ...st,
-                  mod1: false,
-                  mod2: false,
-                  mod3: false,
-                  mod4: false,
-                  mod5: true,
-                }))
+              navigate('/aboutus')
               }
             >
              About Us

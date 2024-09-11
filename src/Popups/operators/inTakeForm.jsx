@@ -1,12 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, {useState } from "react";
 import Img from "../../assets/unnamed.webp";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAddOperatorHook } from "../../hooks/useAddOperatorHook";
-import { AuthContext } from "../../pages/Authentication/authecontext";
+
 
 const InTakeForm = () => {
-  const { auth } = useContext(AuthContext);
+ 
 
   const navigate = useNavigate();
   const operator = useAddOperatorHook();
@@ -40,20 +40,12 @@ const InTakeForm = () => {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    if (!auth) {
-      navigate("/signin");
-    } else {
-      operator.handleAdOperator(data);
-      if (operator.loginResponse == 201) {
-        reset();
-      }
-    }
-
-    // Handle form submission
+    operator.handleAdOperator(data);
   };
 
   const customStyles = `

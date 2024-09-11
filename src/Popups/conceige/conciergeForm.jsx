@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Img from "../../assets/unnamed.webp";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -16,16 +16,12 @@ const ConciergeForm = () => {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    if(!auth) {
-      navigate('/signin')
-    }else{
-      Conceirge.handleAdConceirge(data);
-
-    }
+    Conceirge.handleAdConceirge(data);
   };
 
   return (
@@ -69,24 +65,28 @@ const ConciergeForm = () => {
 
                   <div className="flex md:justify-between flex-col md:flex-row mt-5">
                     <div className="pt-4">
-                        <PhoneInput
-                          country={'us'}
-                          inputStyle={{
-                            width: '100%',
-                            backgroundColor: 'transparent',
-                            borderColor: 'white',
-                            color: 'white'
-                          }}
-                          inputClass="rounded-xl"
-                          placeholder="Phone"
-                          onChange={(phone) => setValue('phone_number', phone, { shouldValidate: true })}
-                        />
-                      </div>
-                      {errors.phone_number && (
-                        <span className="text-red-500">
-                          Valid phone number is required
-                        </span>
-                      )}
+                      <PhoneInput
+                        country={"us"}
+                        inputStyle={{
+                          width: "100%",
+                          backgroundColor: "transparent",
+                          borderColor: "white",
+                          color: "white",
+                        }}
+                        inputClass="rounded-xl"
+                        placeholder="Phone"
+                        onChange={(phone) =>
+                          setValue("phone_number", phone, {
+                            shouldValidate: true,
+                          })
+                        }
+                      />
+                    </div>
+                    {errors.phone_number && (
+                      <span className="text-red-500">
+                        Valid phone number is required
+                      </span>
+                    )}
                     <div>
                       <p className="text-[#9ca3af] py-1">Email</p>
                       <input
@@ -94,8 +94,7 @@ const ConciergeForm = () => {
                         type="email"
                         {...register("email", {
                           required: true,
-                          pattern:
-                            /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                          pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
                         })}
                       />
                       {errors.email && (

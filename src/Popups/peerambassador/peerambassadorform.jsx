@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddPeerAmbassadorHook } from "../../hooks/useAddPeerAmbassadorHook";
-import { AuthContext } from "../../pages/Authentication/authecontext";
+
 import PhoneInput from "react-phone-input-2";
 
 const Peerambassadorform = () => {
-  const { auth } = useContext(AuthContext);
 
   const peerAmbassador = useAddPeerAmbassadorHook();
   const navigate = useNavigate();
@@ -16,18 +15,13 @@ const Peerambassadorform = () => {
   const {
     register,
     handleSubmit,
+    reset,
     setValue,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    if (!auth) {
-      navigate("/signin");
-    } else {
-      peerAmbassador.handleAdPeerAmbassador(data);
-    }
-    // Handle form submission
+    peerAmbassador.handleAdPeerAmbassador(data);
   };
 
   return (
@@ -74,7 +68,6 @@ const Peerambassadorform = () => {
                   <div className="flex md:justify-between md:flex-row flex-col mt-5">
                     <div className="">
                       <p className="text-[#9ca3af] py-1">Phone</p>
-
                       <PhoneInput
                         country={"us"}
                         inputStyle={{

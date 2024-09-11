@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddServicePartnersHook } from "../../hooks/useAddServicePartners";
-import { AuthContext } from "../../pages/Authentication/authecontext";
+
 import PhoneInput from "react-phone-input-2";
 
 const Servicepartners = () => {
-  const { auth } = useContext(AuthContext);
   const servicePartner = useAddServicePartnersHook();
   const navigate = useNavigate();
   const linear = "linear-gradient(90deg, #0C1A4C 0%, #28345F 100%)";
@@ -16,16 +15,12 @@ const Servicepartners = () => {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    if (!auth) {
-      navigate("/signin");
-    } else {
-      servicePartner.handleAdServicePartner(data);
-    }
-    // Handle form submission
+    servicePartner.handleAdServicePartner(data);
   };
 
   return (
