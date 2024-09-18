@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 export const UseViewStatus = () => {
   const [viewStatus, setViewStatus] = useState();
   const [loading, setLoading] = useState();
+  const [info, setInfo] = useState();
   const token = localStorage.getItem("token");
   const getStatus = (role) => {
     setLoading(true);
@@ -55,7 +56,38 @@ export const UseViewStatus = () => {
       });
   };
 
+  const handleGetStatusInfo = async (id) => {
+    setLoading(true);
+    const headers = {
+      Authorization: "Bearer " + token,
+    };
+    
+    const urls = [
+      `https://task-sk2q.onrender.com/operators/signed-to/${id}`,
+      `https://task-sk2q.onrender.com/peer-ambassadors/signed-to/${id}`,
+      `https://task-sk2q.onrender.com/service-partners/signed-to/${id}`
+    ];
+  
+    try {
+      for (const url of urls) {
+        const res = await axios.get(url, { headers });
+        console.log(res, "response from", url);
+        if (res?.data?.status === 200 && res?.data?.data) {
+          setInfo(res.data.data); // Set the response data into state
+          break; // Exit loop once data is found
+        }
+      }
+    } catch (err) {
+      console.log("err", err);
+      toast.error(err?.response?.data?.error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return {
+    info,
+    handleGetStatusInfo,
     loading,
     getStatus,
     viewStatus,

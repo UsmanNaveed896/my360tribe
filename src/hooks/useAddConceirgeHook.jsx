@@ -17,7 +17,7 @@ export const useAddConceirgeHook = () => {
     axios
       .post("https://task-sk2q.onrender.com/concierge/create-concierge", data,{headers})
       .then((res) => {
-        if (res?.status == 200) {
+        if (res) {
           console.log(res, "response");
           toast.success("Submitted Successfully");
           setLoading(false);

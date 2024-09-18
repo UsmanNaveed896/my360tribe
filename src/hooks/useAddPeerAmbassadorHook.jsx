@@ -18,7 +18,7 @@ export const useAddPeerAmbassadorHook = () => {
     axios
       .post("https://task-sk2q.onrender.com/peer-ambassadors/create-peer", data,{headers})
       .then((res) => {
-        if (res?.status == 201) {
+        if (res) {
           console.log(res, "response");
           toast.success("Submitted Successfully");
 

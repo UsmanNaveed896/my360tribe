@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useAddConceirgeHook } from "../../hooks/useAddConceirgeHook";
 import { AuthContext } from "../../pages/Authentication/authecontext";
 import PhoneInput from "react-phone-input-2";
+import '../../App.css'
 
 const ConciergeForm = () => {
   const { auth } = useContext(AuthContext);
@@ -19,9 +20,13 @@ const ConciergeForm = () => {
     reset,
     formState: { errors },
   } = useForm();
-
+  const userid=localStorage.getItem('user_id')
   const onSubmit = (data) => {
-    Conceirge.handleAdConceirge(data);
+    let payLoad={
+      ...data,
+      user_id:parseInt(userid)
+    }
+    Conceirge.handleAdConceirge(payLoad);
   };
 
   return (

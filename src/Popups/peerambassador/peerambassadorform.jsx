@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddPeerAmbassadorHook } from "../../hooks/useAddPeerAmbassadorHook";
-
+import '../../App.css'
 import PhoneInput from "react-phone-input-2";
 
 const Peerambassadorform = () => {
@@ -19,9 +19,14 @@ const Peerambassadorform = () => {
     setValue,
     formState: { errors },
   } = useForm();
+  const userid=localStorage.getItem('user_id')
 
   const onSubmit = (data) => {
-    peerAmbassador.handleAdPeerAmbassador(data);
+    let payLoad={
+      ...data,
+      user_id:parseInt(userid)
+    }
+    peerAmbassador.handleAdPeerAmbassador(payLoad);
   };
 
   return (

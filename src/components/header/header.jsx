@@ -100,7 +100,9 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
     const photo = localStorage.getItem("photo");
     var securePhotoUrl = photo?.replace("http://", "https://");
   }
-
+  const toggleNav = () => {
+    setIsNavOpen((prev) => !prev); // Toggle the state to open/close menu
+  };
   return (
     <div className="relative z-[999]">
       <nav
@@ -225,149 +227,116 @@ const Header = ({ handleClick, isModalOpen, setIsModalOpen }) => {
       </nav>
 
       {/* Mobile Menu */}
-      <div className="overflow-x-hidden block md:hidden">
-        <nav className="" style={{ background: gradient }}>
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div>
-              <img className="" src={Img} alt="logo" />
-            </div>
-            <div>
-              <div className="flex items-center justify-between md:hidden border-gray-400 py-8">
-                <section className="MOBILE-MENU flex lg:hidden">
-                  <div
-                    className="HAMBURGER-ICON space-y-2 cursor-pointer"
-                    onClick={() => setIsNavOpen((prev) => !prev)}
-                  >
-                    <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-                    <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-                    <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-                  </div>
-
-                  <div
-                    className={
-                      isNavOpen
-                        ? "showMenuNav overflow-x-hidden"
-                        : "hideMenuNav"
-                    }
-                  >
-                    <div
-                      className="absolute top-0 right-0 px-8 py-8 cursor-pointer"
-                      onClick={() => setIsNavOpen(false)}
-                    >
-                      <svg
-                        className="h-8 w-8 text-white"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <line x1="18" y1="6" x2="6" y2="18" />
-                        <line x1="6" y1="6" x2="18" y2="18" />
-                      </svg>
-                    </div>
-
-                    <ul className="flex flex-col items-center justify-between min-h-[250px] text-white">
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <Link to="/" onClick={() => setIsNavOpen(false)}>
-                          Home
-                        </Link>
-                      </li>
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <Link to="/signin" onClick={() => setIsNavOpen(false)}>
-                          Sign in
-                        </Link>
-                      </li>
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <Link
-                          onClick={() => {
-                            setIsNavOpen(false);
-                            setIsModalOpen((st) => ({
-                              ...st,
-                              mod1: false,
-                              mod2: false,
-                              mod3: false,
-                              mod4: false,
-                              mod5: true,
-                            }));
-                          }}
-                        >
-                          About Us
-                        </Link>
-                      </li>
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <Link
-                          onClick={() => {
-                            setIsNavOpen(false);
-                            setIsModalOpen((st) => ({
-                              ...st,
-                              mod1: false,
-                              mod2: true,
-                              mod3: false,
-                              mod4: false,
-                            }));
-                          }}
-                        >
-                          Concierge
-                        </Link>
-                      </li>
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <Link
-                          onClick={() => {
-                            setIsNavOpen(false);
-                            setIsModalOpen((st) => ({
-                              ...st,
-                              mod1: false,
-                              mod2: false,
-                              mod3: true,
-                              mod4: false,
-                            }));
-                          }}
-                        >
-                          Peer Ambassador
-                        </Link>
-                      </li>
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <Link
-                          onClick={() => {
-                            setIsNavOpen(false);
-                            setIsModalOpen((st) => ({
-                              ...st,
-                              mod1: false,
-                              mod2: false,
-                              mod3: false,
-                              mod4: true,
-                            }));
-                          }}
-                        >
-                          Service Partners
-                        </Link>
-                      </li>
-                      <li className="my-8 uppercase border-b border-gray-400">
-                        <a
-                          onClick={() => {
-                            setIsNavOpen(false);
-                            window.location.href =
-                              "https://merchant.reverepayments.dev/forms/35SqPodk7aSXSW6tE3N9-ToxPhV_kGW1sTEVX3iM3X8=";
-                          }}
-                        >
-                          Donate
-                        </a>
-                      </li>
-                      {auth && (
-                        <li className="my-8 uppercase border-b border-gray-400">
-                          <a onClick={handleLogout}>Logout</a>
-                        </li>
-                      )}
-                    </ul>
-                  </div>
-                </section>
+      <div className="relative z-[999]">
+      {/* Mobile Menu */}
+      <div className="block md:hidden">
+        <nav style={{ background: gradient }}>
+          <div className="flex items-center justify-between mx-auto p-4">
+            <img src={Img} alt="logo" className="h-[70px]" />
+            <div className="flex items-center">
+              <div className="space-y-2 cursor-pointer" onClick={toggleNav}>
+                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
               </div>
             </div>
           </div>
+          {isNavOpen && (
+            <div className="absolute top-0 right-0 h-screen w-screen bg-black text-white">
+              <div className="p-8">
+                <button className="text-white" onClick={toggleNav}>
+                  X
+                </button>
+              </div>
+              <ul className="flex flex-col items-center gap-8">
+                <li onClick={toggleNav}>
+                  <Link to="/">Home</Link>
+                </li>
+                <li onClick={toggleNav}>
+                  <Link to="/signin">Sign In</Link>
+                </li>
+                <li onClick={toggleNav}>
+                  <Link
+                    onClick={() =>
+                      setIsModalOpen((st) => ({
+                        ...st,
+                        mod1: false,
+                        mod2: false,
+                        mod3: false,
+                        mod4: false,
+                        mod5: true,
+                      }))
+                    }
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li onClick={toggleNav}>
+                  <Link
+                    onClick={() =>
+                      setIsModalOpen((st) => ({
+                        ...st,
+                        mod1: false,
+                        mod2: true,
+                        mod3: false,
+                        mod4: false,
+                      }))
+                    }
+                  >
+                    Concierge
+                  </Link>
+                </li>
+                <li onClick={toggleNav}>
+                  <Link
+                    onClick={() =>
+                      setIsModalOpen((st) => ({
+                        ...st,
+                        mod1: false,
+                        mod2: false,
+                        mod3: true,
+                        mod4: false,
+                      }))
+                    }
+                  >
+                    Peer Ambassador
+                  </Link>
+                </li>
+                <li onClick={toggleNav}>
+                  <Link
+                    onClick={() =>
+                      setIsModalOpen((st) => ({
+                        ...st,
+                        mod1: false,
+                        mod2: false,
+                        mod3: false,
+                        mod4: true,
+                      }))
+                    }
+                  >
+                    Service Partners
+                  </Link>
+                </li>
+                <li onClick={toggleNav}>
+                  <a
+                    onClick={() =>
+                      (window.location.href =
+                        "https://merchant.reverepayments.dev/forms/35SqPodk7aSXSW6tE3N9-ToxPhV_kGW1sTEVX3iM3X8=")
+                    }
+                  >
+                    Donate
+                  </a>
+                </li>
+                {auth && (
+                  <li onClick={toggleNav}>
+                    <a onClick={handleLogout}>Logout</a>
+                  </li>
+                )}
+              </ul>
+            </div>
+          )}
         </nav>
       </div>
+    </div>
     </div>
   );
 };

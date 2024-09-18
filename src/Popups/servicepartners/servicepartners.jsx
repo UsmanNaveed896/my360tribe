@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Img from "../../assets/unnamed.webp";
 import { useAddServicePartnersHook } from "../../hooks/useAddServicePartners";
+import '../../App.css'
 
 import PhoneInput from "react-phone-input-2";
 
@@ -18,9 +19,14 @@ const Servicepartners = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const userid=localStorage.getItem('user_id')
 
   const onSubmit = (data) => {
-    servicePartner.handleAdServicePartner(data);
+    let payLoad={
+      ...data,
+      user_id:parseInt(userid)
+    }
+    servicePartner.handleAdServicePartner(payLoad);
   };
 
   return (

@@ -40,7 +40,7 @@ const Footer = ({handleClick}) => {
           </div>
         </div>
         <div>
-          <div className="flex justify-center mt-12 md:mt-0">
+          <div className="flex justify-center mt-12 md:mt-0 md:block lg:block xl:block hidden">
             <div>
             <div className=" flex justify-center">
               <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
@@ -65,11 +65,7 @@ const Footer = ({handleClick}) => {
                 Get Involved
               </button>
             </div>
-            {/* <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
-              <button className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2">
-                Stay Connected
-              </button>
-            </div> */}
+          
             <div className="flex ml-1 justify-center">
               <button className="text-[16px] rounded-xl  text-white border w-[98px] h-[45px] mt-2 bg-[red] border-[red] hover:border-2"
                 onClick={() =>
@@ -80,11 +76,24 @@ const Footer = ({handleClick}) => {
                 Donate
               </button>
             </div>
-            {/* <p className="text-center text-white mt-[42px] text-[16px]">
-              Design & developed by ZAMH Tech
-            </p> */}
+         
           </div>
         </div>
+        <div className="flex justify-center mt-12 md:mt-0 md:hidden lg:hidden xl:hidden block">
+            <div>
+            <div className=" flex justify-center">
+              <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
+              </div>
+              <div >
+              <p className="md:text-center text-center text-white  text-[16px] md:mt-[90px] mt-5 font-bold">
+                  Terms & Conditions
+                </p>
+                <p className=" cursor-pointer mt-2 md:w-full text-white md:text-center text-center">
+                  Copyright © 2024 My360Tribe. All rights reserved.
+                </p>
+              </div>
+              </div>
+          </div>
       </div>
     </div>
   );

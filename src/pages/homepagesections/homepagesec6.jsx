@@ -63,6 +63,14 @@ const Homepagesec6 = () => {
       name: "Jack Davis",
       designation: "Navy EOD",
     },
+    {
+      img: Img16,
+      name: " Ryan Duhon",
+      designation: "Board Member (AirForce)",
+      // experience: "Director- Product Development for Lumen Technologies",
+      // description:
+      //   "Ryan Duhon currently serves as Director- Product Development for Lumen Technologies. In this role Ryan is responsible for delivering next-generation Customer Premise Equipment (CPE), Multi-Gig Advancement, and a digital-first, data driven defined network model.Ryan served 9 years in the United States Air Force Special Operations as a Joint-Terminal Attack Controller within SOCOM. He received his B.S. in Information Technology from Columbia Southern University and a M.S. degree in Information Systems from the University of Maine with a concentration in spatial computing. He currently is pursuing his Doctorate degree in Business with a concentration of Strategic Leadership from Regent University.Ryan currently lives in Salt Lake City, UT where he loves spending time in the backcountry with his wife and son.",
+    },
   ];
 
   const advisors = [
@@ -107,14 +115,7 @@ const Homepagesec6 = () => {
       description:
         "Scott is the Founder and Managing Member of Sidecar Group. With over 20 years of corporate development experience, Scott has initiated investments, acquisitions, mergers, partnerships, divestitures, product lines and a variety of other development efforts to create value for companies. Scott has assisted The Honor Foundation as well as Seals Future Foundation members since 2019. Scott’s formal education includes a Masters of Business Administration degree and a Bachelor’s Degree from the University of North Dakota. Scott resides in the Atlanta, GA area with his wife of 25 years and their three children.",
     },
-    {
-      img: Img16,
-      name: " Ryan Duhon",
-      designation: "Board Member (AirForce)",
-      experience: "Director- Product Development for Lumen Technologies",
-      description:
-        "Ryan Duhon currently serves as Director- Product Development for Lumen Technologies. In this role Ryan is responsible for delivering next-generation Customer Premise Equipment (CPE), Multi-Gig Advancement, and a digital-first, data driven defined network model.Ryan served 9 years in the United States Air Force Special Operations as a Joint-Terminal Attack Controller within SOCOM. He received his B.S. in Information Technology from Columbia Southern University and a M.S. degree in Information Systems from the University of Maine with a concentration in spatial computing. He currently is pursuing his Doctorate degree in Business with a concentration of Strategic Leadership from Regent University.Ryan currently lives in Salt Lake City, UT where he loves spending time in the backcountry with his wife and son.",
-    },
+  
   ];
   return (
     <>

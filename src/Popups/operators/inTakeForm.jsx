@@ -3,6 +3,7 @@ import Img from "../../assets/unnamed.webp";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAddOperatorHook } from "../../hooks/useAddOperatorHook";
+import '../../App.css'
 
 
 const InTakeForm = () => {
@@ -44,8 +45,13 @@ const InTakeForm = () => {
     formState: { errors },
   } = useForm();
 
+  const userid=localStorage.getItem('user_id')
   const onSubmit = (data) => {
-    operator.handleAdOperator(data);
+    let payLoad={
+      ...data,
+      user_id:parseInt(userid)
+    }
+    operator.handleAdOperator(payLoad);
   };
 
   const customStyles = `

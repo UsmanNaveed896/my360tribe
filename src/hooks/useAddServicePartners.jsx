@@ -18,8 +18,8 @@ export const useAddServicePartnersHook = () => {
     axios
       .post("https://task-sk2q.onrender.com/service-partners/create-service", data ,{headers})
       .then((res) => {
-        if (res?.status == 201) {
-          console.log(res, "response");
+        if (res) {
+       
           toast.success("Submitted Successfully");
 
           setLoading(false);
