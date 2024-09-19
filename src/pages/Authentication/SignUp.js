@@ -5,6 +5,7 @@ import { useRegisterHook } from "../../hooks/useRegisterHook";
 import Img from "../../assets/Ellipse1.svg";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import Img2 from "../../assets/unnamed.webp";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -27,16 +28,18 @@ const SignUp = () => {
       <div className="px-6 pt-24">
         <div className="grid md:grid-cols-2 grid-cols-1 items-center">
           <div className="colum1">
-            <div className="text-white font-semibold text-6xl text-center">
-              Welcome
-            </div>
+          <img
+                className=" md:block hidden h-[350px] opacity-50 "
+                src={Img2}
+                alt="abc"
+              />
           </div>
           <div className="column2">
             <div className="relative md:block hidden">
               <img className="absolute z-1" src={Img} alt="bubble" />
             </div>
             <div className="flex justify-center relative z-[1]">
-              <div className="border border-white rounded-xl py-4 px-24 mt-12">
+              <div className="border-2 border-white rounded-xl py-4 px-24 mt-12">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="content">
                     <h1 className="text-white font-bold text-3xl mt-5">

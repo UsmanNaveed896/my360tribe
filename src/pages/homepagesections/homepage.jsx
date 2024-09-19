@@ -60,7 +60,7 @@ const Homepage = ({ isModalOpen, setIsModalOpen }) => {
                 <p className="text-white text-[18px]">
                   Dedicated to offering peer-to-peer and concierge-level
                   support, My 360 Tribe ensures U.S. Special Operations
-                  ForcesSOF Operators are well-prepared, empowered, and
+                  Forces SOF Operators are well-prepared, empowered, and
                   supported by those who understand the emotional and
                   intellectual challenges of transition. Our mission is to
                   bridge the gap between military service and civilian success,
