@@ -57,6 +57,7 @@ export const useRegisterHook = () => {
           toast.success("SignedUp Successfully");
 
           setLoading(false);
+          navigate("/signin");
         } else {
           toast.error(res?.message);
           setLoading(false);

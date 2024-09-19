@@ -42,6 +42,7 @@ const ViewStatus = () => {
 
   useEffect(() => {
     status.getStatus(role);
+    status.handleGetFormid(role)
   }, []);
 
   useEffect(() => {
@@ -74,8 +75,12 @@ const ViewStatus = () => {
 
   useEffect(() => {
     status.handleGetStatusInfo(id);
-  }, []);
+    if(status?.formId){
+      status.handleGetDataforPeerAndConciegre(status?.formId[0]?.id)
+    }
+  }, [status?.formId]);
 
+  console.log(status.data,"formId")
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#000032] to-[#0A0A52] text-white">
