@@ -13,7 +13,7 @@ import Img12 from '../../assets/7.png'
 import Img13 from '../../assets/6.png'
 import Img14 from '../../assets/8.png'
 import Img15 from '../../assets/9.png'
-import Img16 from '../../assets/RD.png'
+import Img16 from '../../assets/AirForceSpecialOperationspng.png'
 import Advisorycard from "../../components/userCard/advisorycard";
 
 const Homepagesec6 = () => {
@@ -66,7 +66,7 @@ const Homepagesec6 = () => {
     {
       img: Img16,
       name: " Ryan Duhon",
-      designation: "Board Member (AirForce)",
+      designation: "AFSOC",
       // experience: "Director- Product Development for Lumen Technologies",
       // description:
       //   "Ryan Duhon currently serves as Director- Product Development for Lumen Technologies. In this role Ryan is responsible for delivering next-generation Customer Premise Equipment (CPE), Multi-Gig Advancement, and a digital-first, data driven defined network model.Ryan served 9 years in the United States Air Force Special Operations as a Joint-Terminal Attack Controller within SOCOM. He received his B.S. in Information Technology from Columbia Southern University and a M.S. degree in Information Systems from the University of Maine with a concentration in spatial computing. He currently is pursuing his Doctorate degree in Business with a concentration of Strategic Leadership from Regent University.Ryan currently lives in Salt Lake City, UT where he loves spending time in the backcountry with his wife and son.",

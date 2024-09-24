@@ -17,7 +17,7 @@ export const useRegisterHook = () => {
     };
 
     axios
-      .post("https://task-sk2q.onrender.com/registration/login", payLoad)
+      .post("https://task-backend.my360tribe.org/registration/login", payLoad)
       .then((res) => {
         console.log(res, "response");
         if (res?.status == 200) {
@@ -33,8 +33,8 @@ export const useRegisterHook = () => {
           localStorage.setItem("user_id", userid);
           toast.success("Logged In Successfully");
           setLoading(false);
-
-          navigate("/");
+          navigate("/verify-otp")
+          // navigate("/");
         } else {
           toast.error(res?.message);
           setLoading(false);
@@ -50,14 +50,14 @@ export const useRegisterHook = () => {
   const handleSignup = (data) => {
     setLoading(true);
     axios
-      .post("https://task-sk2q.onrender.com/registration/signup", data)
+      .post("https://task-backend.my360tribe.org/registration/signup", data)
       .then((res) => {
         console.log(res, "response");
         if (res) {
           toast.success("SignedUp Successfully");
 
           setLoading(false);
-          navigate("/signin");
+          navigate("/verify-otp");
         } else {
           toast.error(res?.message);
           setLoading(false);

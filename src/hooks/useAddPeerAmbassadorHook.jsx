@@ -16,7 +16,7 @@ export const useAddPeerAmbassadorHook = () => {
       Authorization: "Bearer " + token,
     };
     axios
-      .post("https://task-sk2q.onrender.com/peer-ambassadors/create-peer", data,{headers})
+      .post("https://task-backend.my360tribe.org/peer-ambassadors/create-peer", data,{headers})
       .then((res) => {
         if (res) {
           console.log(res, "response");

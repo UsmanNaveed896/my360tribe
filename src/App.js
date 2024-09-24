@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Homepage from "./pages/homepagesections/container";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import PeerAdvocacy from "./pages/whatwedotabs/peer-advocacy";
 import ScrollToTopOnRouteChange from "./components/scroll";
 import Transition from "./pages/whatwedotabs/transition";
@@ -19,6 +19,7 @@ import SignIn from "./pages/Authentication/SignIn";
 import ViewStatus from "./pages/viewstatus/viewstatus";
 import AboutUs from "./pages/aboutUs/aboutUs";
 import PicsModal from "./Popups/picsModal";
+import VerifyOTP from "./pages/verifyOtp/verifyOtp";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -27,10 +28,11 @@ function App() {
     mod3: false,
     mod4: false,
     mod5: false,
-    mod6:false
+    mod6: false,
   });
 
-  console.log(isModalOpen,"OPEN")
+  const location = useLocation();
+
   const handleClick = (a) => {
     setTimeout(() => {
       const targetDiv = document.getElementById(`targetDiv${a}`);
@@ -44,7 +46,7 @@ function App() {
     console.log("Cancelling...");
     setIsModalOpen(false);
   };
- const img4 = {
+  const img4 = {
     heading: " Service Partners",
     text:
       "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
@@ -67,11 +69,16 @@ function App() {
   };
   return (
     <AuthProvider>
-      <Header
-        handleClick={handleClick}
-        setIsModalOpen={setIsModalOpen}
-        isModalOpen={isModalOpen}
-      />
+      {!location.pathname == "/verif-otp" ? (
+        <Header
+          handleClick={handleClick}
+          setIsModalOpen={setIsModalOpen}
+          isModalOpen={isModalOpen}
+        />
+      ) : (
+        ""
+      )}
+
       <ScrollToTopOnRouteChange />
       <Routes>
         <Route
@@ -94,33 +101,58 @@ function App() {
           path="/transition"
           element={<Transition handleClick={handleClick} />}
         />
-        <Route exact path="/Health" element={<Health handleClick={handleClick} />} />
-        <Route exact path="/employment" element={<Employment handleClick={handleClick} />} />
+        <Route
+          exact
+          path="/Health"
+          element={<Health handleClick={handleClick} />}
+        />
+        <Route
+          exact
+          path="/employment"
+          element={<Employment handleClick={handleClick} />}
+        />
         <Route exact path="/intakeform" element={<InTakeForm />} />
         <Route exact path="/conciergeform" element={<ConciergeForm />} />
-        <Route exact path="/peerambassador-form" element={<Peerambassadorform />} />
-        <Route exact path="/servicepartner-form" element={<Servicepartners />} />
+        <Route
+          exact
+          path="/peerambassador-form"
+          element={<Peerambassadorform />}
+        />
+        <Route
+          exact
+          path="/servicepartner-form"
+          element={<Servicepartners />}
+        />
         <Route exact path="/signup" element={<SignUp />} />
         <Route exact path="/signin" element={<SignIn />} />
         <Route exact path="/viewstatus" element={<ViewStatus />} />
         <Route exact path="/aboutus" element={<AboutUs />} />
+        <Route exact path="/verify-otp" element={<VerifyOTP />} />
       </Routes>
-      <Footer handleClick={handleClick} />
+      {!location.pathname == "/verif-otp" ? (
+        <Footer
+          handleClick={handleClick}
+          setIsModalOpen={setIsModalOpen}
+          isModalOpen={isModalOpen}
+        />
+      ) : (
+        ""
+      )}
 
       {/* "Modal" */}
       <PicsModal
-            isOpen={isModalOpen}
-            onCancel={handleCancel}
-            data={
-              isModalOpen.mod1
-                ? img1
-                : isModalOpen.mod2
-                ? img2
-                : isModalOpen.mod3
-                ? img3
-                : img4
-            }
-          />
+        isOpen={isModalOpen}
+        onCancel={handleCancel}
+        data={
+          isModalOpen.mod1
+            ? img1
+            : isModalOpen.mod2
+            ? img2
+            : isModalOpen.mod3
+            ? img3
+            : img4
+        }
+      />
     </AuthProvider>
   );
 }

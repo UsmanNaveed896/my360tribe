@@ -46,7 +46,7 @@ const SignUp = () => {
                       Sign up
                     </h1>
                     <h1 className="text-white mt-2">
-                      Just some details to get you in !
+                      Just some details to get you in!
                     </h1>
                     <div className="inputs mt-5">
                       <div className="pt-4">
@@ -132,7 +132,7 @@ const SignUp = () => {
                       {/* Role Selection */}
                       <div className="pt-4">
                         <p className="text-xs mb-1 text-white">
-                          Select how you want to join us ?
+                          Select how you want to join us?
                         </p>
                         <select
                           className="rounded-xl bg-[#0a1039] border border-white pl-2 pr-16 py-2 w-full text-white placeholder-white"

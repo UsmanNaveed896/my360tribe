@@ -20,19 +20,19 @@ export const UseViewStatus = () => {
     switch (role) {
       case "OPERATOR":
         apiUrl =
-          "https://task-sk2q.onrender.com/operators/operator-form-status";
+          "https://task-backend.my360tribe.org/operators/operator-form-status";
         break;
       case "CONCIERGE":
         apiUrl =
-          "https://task-sk2q.onrender.com/concierge/concierge-form-status";
+          "https://task-backend.my360tribe.org/concierge/concierge-form-status";
         break;
       case "PEER_AMBASSADOR":
         apiUrl =
-          "https://task-sk2q.onrender.com/peer-ambassadors/peer-form-status";
+          "https://task-backend.my360tribe.org/peer-ambassadors/peer-form-status";
         break;
       case "SERVICE_PARTNER":
         apiUrl =
-          "https://task-sk2q.onrender.com/service-partners/service-form-status";
+          "https://task-backend.my360tribe.org/service-partners/service-form-status";
         break;
       default:
         toast.error("Invalid role");
@@ -65,9 +65,9 @@ export const UseViewStatus = () => {
     };
 
     const urls = [
-      `https://task-sk2q.onrender.com/operators/signed-to/${id}`,
-      `https://task-sk2q.onrender.com/peer-ambassadors/signed-to/${id}`,
-      `https://task-sk2q.onrender.com/service-partners/signed-to/${id}`,
+      `https://task-backend.my360tribe.org/operators/signed-to/${id}`,
+      `https://task-backend.my360tribe.org/peer-ambassadors/signed-to/${id}`,
+      `https://task-backend.my360tribe.org/service-partners/signed-to/${id}`,
     ];
 
     try {
@@ -96,11 +96,11 @@ export const UseViewStatus = () => {
     let url;
   
     if (role === "CONCIERGE") {
-      url = "https://task-sk2q.onrender.com/concierge/get-concierge";
+      url = "https://task-backend.my360tribe.org/concierge/get-concierge";
     } else if (role === "PEER_AMBASSADOR") {
-      url = "https://task-sk2q.onrender.com/peer-ambassadors/get-peer";
+      url = "https://task-backend.my360tribe.org/peer-ambassadors/get-peer";
     }else {
-      url= "https://task-sk2q.onrender.com/service-partners/get-service"
+      url= "https://task-backend.my360tribe.org/service-partners/get-service"
     }
   
     if (url) {
@@ -127,11 +127,11 @@ export const UseViewStatus = () => {
     let url;
   
     if (role === "CONCIERGE") {
-      url = `https://task-sk2q.onrender.com/concierge/get-signed-operator/${id}`;
+      url = `https://task-backend.my360tribe.org/concierge/get-signed-operator/${id}`;
     } else if (role === "PEER_AMBASSADOR") {
-      url = `https://task-sk2q.onrender.com/peer-ambassadors/get-signed-operator/${id}`;
+      url = `https://task-backend.my360tribe.org/peer-ambassadors/get-signed-operator/${id}`;
     }else {
-      url=`https://task-sk2q.onrender.com/service-partners/get-signed-operator/${id}`
+      url=`https://task-backend.my360tribe.org/service-partners/get-signed-operator/${id}`
     }
   
     if (url) {

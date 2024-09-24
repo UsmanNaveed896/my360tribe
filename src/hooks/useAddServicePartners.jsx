@@ -16,7 +16,7 @@ export const useAddServicePartnersHook = () => {
       Authorization: "Bearer " + token,
     };
     axios
-      .post("https://task-sk2q.onrender.com/service-partners/create-service", data ,{headers})
+      .post("https://task-backend.my360tribe.org/service-partners/create-service", data ,{headers})
       .then((res) => {
         if (res) {
        

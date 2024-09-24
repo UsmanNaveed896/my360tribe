@@ -15,7 +15,7 @@ export const useAddConceirgeHook = () => {
       Authorization: "Bearer " + token,
     };
     axios
-      .post("https://task-sk2q.onrender.com/concierge/create-concierge", data,{headers})
+      .post("https://task-backend.my360tribe.org/concierge/create-concierge", data,{headers})
       .then((res) => {
         if (res) {
           console.log(res, "response");
