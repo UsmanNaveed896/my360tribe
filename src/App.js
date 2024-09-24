@@ -41,105 +41,67 @@ function App() {
       }
     }, 100);
   };
+
   const handleCancel = () => {
-    // Implement cancel logic here
     console.log("Cancelling...");
     setIsModalOpen(false);
   };
+
   const img4 = {
-    heading: " Service Partners",
-    text:
-      "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
+    heading: "Service Partners",
+    text: "We are always looking to build new partnerships that can support transitioning warriors. Please click here if you would like to partner with My360Tribe or to learn more",
   };
 
   const img2 = {
     heading: "Concierge",
-    text:
-      "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
+    text: "Are you passionate about making a difference in the life of a transitioning Operator?  Are you an Operator who has already transitioned and wants to give back to your Community?  Apply here to be a Concierge.",
   };
+
   const img1 = {
     heading: "Operators",
-    text:
-      '"We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command.',
+    text: '"We are dedicated to serving those U.S. Special Operations members that were assessed, selected, trained, qualified, and served honorably as Operators at any of the U.S. Special Operations Commands, specifically, the U.S. Army Special Operations Command, U.S. Air Force Special Operations Command, U.S. Marine Forces Special Operations Command, Naval Special Warfare Command, and Joint Special Operations Command.',
   };
+
   const img3 = {
     heading: "Peer Ambassador",
-    text:
-      "Are you a SOF Operator who has been out of the military for more than a year and wants to support a newly transitioning Operator?",
+    text: "Are you a SOF Operator who has been out of the military for more than a year and wants to support a newly transitioning Operator?",
   };
+
   return (
     <AuthProvider>
-      {!location.pathname == "/verif-otp" ? (
+      {location.pathname === "/verify-otp" ? null : (
         <Header
           handleClick={handleClick}
           setIsModalOpen={setIsModalOpen}
           isModalOpen={isModalOpen}
         />
-      ) : (
-        ""
       )}
 
       <ScrollToTopOnRouteChange />
       <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <Homepage
-              setIsModalOpen={setIsModalOpen}
-              isModalOpen={isModalOpen}
-            />
-          }
-        />
-        <Route
-          exact
-          path="/peeradvocacy"
-          element={<PeerAdvocacy handleClick={handleClick} />}
-        />
-        <Route
-          exact
-          path="/transition"
-          element={<Transition handleClick={handleClick} />}
-        />
-        <Route
-          exact
-          path="/Health"
-          element={<Health handleClick={handleClick} />}
-        />
-        <Route
-          exact
-          path="/employment"
-          element={<Employment handleClick={handleClick} />}
-        />
+        <Route exact path="/" element={<Homepage setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />} />
+        <Route exact path="/peeradvocacy" element={<PeerAdvocacy handleClick={handleClick} />} />
+        <Route exact path="/transition" element={<Transition handleClick={handleClick} />} />
+        <Route exact path="/Health" element={<Health handleClick={handleClick} />} />
+        <Route exact path="/employment" element={<Employment handleClick={handleClick} />} />
         <Route exact path="/intakeform" element={<InTakeForm />} />
         <Route exact path="/conciergeform" element={<ConciergeForm />} />
-        <Route
-          exact
-          path="/peerambassador-form"
-          element={<Peerambassadorform />}
-        />
-        <Route
-          exact
-          path="/servicepartner-form"
-          element={<Servicepartners />}
-        />
+        <Route exact path="/peerambassador-form" element={<Peerambassadorform />} />
+        <Route exact path="/servicepartner-form" element={<Servicepartners />} />
         <Route exact path="/signup" element={<SignUp />} />
         <Route exact path="/signin" element={<SignIn />} />
         <Route exact path="/viewstatus" element={<ViewStatus />} />
         <Route exact path="/aboutus" element={<AboutUs />} />
         <Route exact path="/verify-otp" element={<VerifyOTP />} />
       </Routes>
-      {!location.pathname == "/verif-otp" ? (
+      {location.pathname === "/verify-otp" ? null : (
         <Footer
           handleClick={handleClick}
           setIsModalOpen={setIsModalOpen}
           isModalOpen={isModalOpen}
         />
-      ) : (
-        ""
       )}
 
-      {/* "Modal" */}
       <PicsModal
         isOpen={isModalOpen}
         onCancel={handleCancel}
