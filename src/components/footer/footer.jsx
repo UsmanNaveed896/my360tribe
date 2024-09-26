@@ -36,9 +36,9 @@ const Footer = ({ handleClick, setIsModalOpen }) => {
     }
   };
   return (
-    <div className="px-2 py-1 bg-gradient-to-r from-black to-gray-400 relative ">
+    <div className="px-2 py-2 bg-[#1C1B3A] relative ">
       <div className="grid md:grid-cols-3 mt-6 grid-cols-1  ">
-        <div className="txt text-white text-[16px] ">
+        <div className="txt text-white text-[16px] mt-2">
           <div className="flex justify-center ">
             <div>
               <div className="flex justify-center">
@@ -66,51 +66,51 @@ const Footer = ({ handleClick, setIsModalOpen }) => {
           </div>
         </div>
         <div>
-          <div className="flex justify-center mt-12 md:mt-0 md:block lg:block xl:block hidden">
+          <div className="flex justify-center mt-12 md:mt-0 md:block lg:block xl:block hidden ">
             <div>
               <div className=" flex justify-center">
                 <img className="h-[80px] w-[180px] " src={Img} alt="logo" />
               </div>
-              <div>
-                <p className="md:text-center text-center text-white  text-[16px] md:mt-[90px] mt-5 font-bold">
+              <div className="">
+                <p className="md:text-center text-center text-white  text-[16px]  pt-12 font-bold">
                   Terms & Conditions
                 </p>
-                <p className=" cursor-pointer mt-2 md:w-full text-white md:text-center text-center">
+                <p className=" cursor-pointer mt-2 md:w-full text-white md:text-center md:mt-[80px] text-center">
                   Copyright © 2024 My360Tribe. All rights reserved.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="logo text-white flex md:justify-center relative pb-16 md:flex-row flex-col">
+        <div className="logo text-white flex md:justify-center relative  md:flex-row flex-col">
           <div className="text-[16px] text-white  ">
-            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+            <div className=" md:mb-[10px] mb-[10px] mt-[20px] md:mt-0 flex justify-center">
               <button
-                className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2"
+                className=" text-sm  rounded border-white text-white border w-[162px] h-[40px]  hover:border-2"
                 onClick={() => handleClick(0)}
               >
                 Get Involved
               </button>
             </div>
-            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+            <div className=" md:mb-[10px] mb-[00px] mt-[20px] md:mt-0 flex justify-center">
               <button
-                className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2"
+                className=" text-sm  rounded border-white text-white border w-[162px] h-[40px]  hover:border-2"
                 onClick={() => handleOptionClick("Concierge")}
               >
                 Concierge
               </button>
             </div>
-            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+            <div className=" md:mb-[10px] mb-[10px] mt-[20px] md:mt-0 flex justify-center">
               <button
-                className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2"
+                className=" text-sm  rounded border-white text-white border w-[162px] h-[40px]  hover:border-2"
                 onClick={() => handleOptionClick("Peer Advocate Member")}
               >
                 Peer Ambassador
               </button>
             </div>
-            <div className=" md:mb-[16px] mb-[20px] mt-[20px] md:mt-0 flex justify-center">
+            <div className=" md:mb-[10px] mb-[10px] mt-[20px] md:mt-0 flex justify-center">
               <button
-                className=" text-sm  rounded border-white text-white border w-[192px] h-[45px]  hover:border-2"
+                className=" text-sm  rounded border-white text-white border w-[162px] h-[40px]  hover:border-2"
                 onClick={() => handleOptionClick("Service Partners")}
               >
                 Service Partners
@@ -118,7 +118,7 @@ const Footer = ({ handleClick, setIsModalOpen }) => {
             </div>
             <div className="flex ml-1 justify-center">
               <button
-                className="text-[16px] rounded-xl  text-white border w-[98px] h-[45px] mt-2 bg-[red] border-[red] hover:border-2"
+                className="text-[16px] rounded-xl  text-white border w-[98px] h-[40px] mt-2 bg-[red] border-[red] hover:border-2"
                 onClick={() =>
                   (window.location.href =
                     "https://merchant.reverepayments.dev/forms/35SqPodk7aSXSW6tE3N9-ToxPhV_kGW1sTEVX3iM3X8=")
